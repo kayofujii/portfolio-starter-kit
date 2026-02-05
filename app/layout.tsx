@@ -1,8 +1,8 @@
 import './global.css'
 import type { Metadata } from 'next'
 import { baseUrl } from './sitemap'
-import Header from './components/header'
-import Footer from './components/footer'
+import Header from './components/site_header'
+import Footer from './components/site_footer'
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
