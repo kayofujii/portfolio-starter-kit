@@ -5,14 +5,15 @@ import { GeistMono } from 'geist/font/mono'
 import { Navbar } from './components/nav'
 import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
-import Footer from './components/footer'
 import { baseUrl } from './sitemap'
+import Header from './components/Header'
+import Footer from './components/Footer'
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: {
-    default: 'Next.js Portfolio Starter',
-    template: '%s | Next.js Portfolio Starter',
+    default: 'Kayo Fujii Portfolio',
+    template: '%s | Kayo Fujii Portfolio',
   },
   description: 'This is my portfolio.',
   openGraph: {
@@ -44,22 +45,16 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html
-      lang="en"
-      className={cx(
-        'text-black bg-white dark:text-white dark:bg-black',
-        GeistSans.variable,
-        GeistMono.variable
-      )}
-    >
-      <body className="antialiased max-w-xl mx-4 mt-8 lg:mx-auto">
-        <main className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">
-          <Navbar />
+    <html lang="en">
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous"/>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+      </head>
+      <body>
+        <Header />
           {children}
-          <Footer />
-          <Analytics />
-          <SpeedInsights />
-        </main>
+        <Footer />
       </body>
     </html>
   )
