@@ -5,7 +5,7 @@ import { Badge } from "@/ui/components/Badge";
 import { Button } from "@/ui/components/Button";
 import { CheckboxCard } from "@/ui/components/CheckboxCard";
 import { Footer } from "@/ui/components/Footer";
-import SiteHeader from "./components/Header";
+import SiteHeader from "./components/header";
 import { IconButton } from "@/ui/components/IconButton";
 import { FeatherArrowRight } from "@subframe/core";
 import { FeatherArrowUpRight } from "@subframe/core";
