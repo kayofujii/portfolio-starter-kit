@@ -1,1 +1,40 @@
 @import 'tailwindcss';
+@import '../src/ui/theme.css';
+
+html, body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+/* Subframe text and font utilities (ensure text-heading-* classes work) */
+.text-heading-1 {
+  font-size: var(--text-heading-1);
+  font-weight: var(--text-heading-1--font-weight);
+  letter-spacing: var(--text-heading-1--letter-spacing);
+  line-height: var(--text-heading-1--line-height);
+}
+
+.text-heading-2 {
+  font-size: var(--text-heading-2);
+  font-weight: var(--text-heading-2--font-weight);
+  letter-spacing: var(--text-heading-2--letter-spacing);
+  line-height: var(--text-heading-2--line-height);
+}
+
+.text-heading-3 {
+  font-size: var(--text-heading-3);
+  font-weight: var(--text-heading-3--font-weight);
+  letter-spacing: var(--text-heading-3--letter-spacing);
+  line-height: var(--text-heading-3--line-height);
+}
+
+.font-heading-1 {
+  font-family: var(--font-heading-1);
+}
+
+.font-heading-2 {
+  font-family: var(--font-heading-2);
+}
+
+.font-heading-3 {
+  font-family: var(--font-heading-3);
+}

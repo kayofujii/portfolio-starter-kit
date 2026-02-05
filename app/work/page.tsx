@@ -6,7 +6,7 @@ export const metadata = {
   description: 'Case studies and project highlights.',
 }
 
-export default function Page() {
+export default function WorkIndexPage() {
   return (
     <section>
       <h1 className="font-semibold text-2xl mb-8 tracking-tighter">My Work</h1>
