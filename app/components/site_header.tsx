@@ -1,39 +1,91 @@
 "use client";
 
+import React from "react";
+import Link from "next/link";
 import { Header as UiHeader } from "@/ui/components/Header";
 import { Button } from "@/ui/components/Button";
+import { Drawer } from "@/ui/components/Drawer";
 import { IconButton } from "@/ui/components/IconButton";
 import { FeatherMenu } from "@subframe/core";
 
 export default function SiteHeader() {
+  const [menuOpen, setMenuOpen] = React.useState(false);
+
+  const closeMenu = () => setMenuOpen(false);
+
   return (
-    <UiHeader
-      logo="alex.dev"
-      navigationLinks={
-        <>
-          <span className="text-body-bold font-body-bold text-[#2c2c2cff] cursor-pointer hover:text-teal-600">
-            Home
-          </span>
-          <span className="text-body-bold font-body-bold text-subtext-color cursor-pointer hover:text-teal-600">
-            Work
-          </span>
-          <span className="text-body-bold font-body-bold text-subtext-color cursor-pointer hover:text-teal-600">
-            Resume
-          </span>
-        </>
-      }
-      ctaButton={
-        <Button
-          className="bg-teal-600 hover:bg-teal-700"
-          variant="brand-primary"
-          onClick={() => {}}
-        >
-          Contact Me
-        </Button>
-      }
-      mobileMenuButton={
-        <IconButton icon={<FeatherMenu />} onClick={() => {}} />
-      }
-    />
+    <>
+      <UiHeader
+        logo="alex.dev"
+        navigationLinks={
+          <>
+            <Link
+              href="/"
+              className="text-body-bold font-body-bold text-[#2c2c2cff] hover:text-teal-600"
+            >
+              Home
+            </Link>
+            <Link
+              href="/work"
+              className="text-body-bold font-body-bold text-subtext-color hover:text-teal-600"
+            >
+              Work
+            </Link>
+            <Link
+              href="/#resume"
+              className="text-body-bold font-body-bold text-subtext-color hover:text-teal-600"
+            >
+              Resume
+            </Link>
+          </>
+        }
+        ctaButton={
+          <Button
+            className="bg-teal-600 hover:bg-teal-700"
+            variant="brand-primary"
+          >
+            Contact Me
+          </Button>
+        }
+        mobileMenuButton={
+          <IconButton icon={<FeatherMenu />} onClick={() => setMenuOpen(true)} />
+        }
+      />
+
+      <Drawer open={menuOpen} onOpenChange={setMenuOpen}>
+        <Drawer.Content className="w-[80vw] max-w-[360px] px-6 py-8">
+          <div className="flex w-full flex-col gap-6">
+            <Link
+              href="/"
+              onClick={closeMenu}
+              className="text-heading-2 font-heading-2 text-default-font"
+            >
+              Home
+            </Link>
+            <Link
+              href="/work"
+              onClick={closeMenu}
+              className="text-heading-2 font-heading-2 text-default-font"
+            >
+              Work
+            </Link>
+            <Link
+              href="/#resume"
+              onClick={closeMenu}
+              className="text-heading-2 font-heading-2 text-default-font"
+            >
+              Resume
+            </Link>
+            <Button
+              className="w-full bg-teal-600 hover:bg-teal-700"
+              variant="brand-primary"
+              onClick={closeMenu}
+            >
+              Contact Me
+            </Button>
+          </div>
+        </Drawer.Content>
+      </Drawer>
+    </>
   );
 }

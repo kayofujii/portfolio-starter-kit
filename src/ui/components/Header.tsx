@@ -42,7 +42,7 @@ const HeaderRoot = React.forwardRef<HTMLDivElement, HeaderRootProps>(
               {logo}
             </span>
           ) : null}
-          <div className="flex items-center gap-8">
+          <div className="hidden items-center gap-8 md:flex">
             {navigationLinks ? (
               <div className="flex items-center gap-8">{navigationLinks}</div>
             ) : null}
@@ -50,7 +50,7 @@ const HeaderRoot = React.forwardRef<HTMLDivElement, HeaderRootProps>(
               <div className="flex items-center gap-8">{ctaButton}</div>
             ) : null}
           </div>
-          <div className="hidden items-start">
+          <div className="flex items-start md:hidden">
             {mobileMenuButton ? (
               <div className="flex items-start">{mobileMenuButton}</div>
             ) : null}

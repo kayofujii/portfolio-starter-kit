@@ -52,9 +52,6 @@ export default function Page() {
             <span className="text-heading-2 font-heading-2 text-[#2c2c2cff]">
               Technical Skills
             </span>
-            <span className="text-body font-body text-subtext-color">
-              The tools and technologies I use to bring ideas to life.
-            </span>
           </div>
           <div className="w-full items-start gap-12 grid grid-cols-1 md:grid-cols-3">
             <div className="flex flex-col items-start gap-4 rounded-md bg-default-background px-6 py-6 shadow-sm">
@@ -112,9 +109,9 @@ export default function Page() {
             </div>
           </div>
         </div>
-        <div className="max-w-[1024px] w-full flex-col items-start gap-12">
-          <div className="flex w-full max-w-[1024px] flex-col items-start gap-4">
-            <span className="text-heading-1 font-heading-1 text-default-font">
+        <div className="flex w-full max-w-[1024px] flex-col items-start gap-12">
+          <div className="flex w-full flex-col items-start gap-2">
+            <span className="text-heading-2 font-heading-2 text-[#2c2c2cff]">
               Work
             </span>
           </div>
@@ -164,9 +161,6 @@ export default function Page() {
           <div className="flex w-full flex-col items-start gap-2">
             <span className="text-heading-2 font-heading-2 text-[#2c2c2cff]">
               Recommendations
-            </span>
-            <span className="text-body font-body text-subtext-color">
-              Kind words from people I&#39;ve collaborated with.
             </span>
           </div>
           <div className="w-full items-start gap-6 grid grid-cols-1 md:grid-cols-3">
@@ -250,7 +244,7 @@ export default function Page() {
             </span>
           </div>
           <div className="flex w-full flex-col items-start gap-4">
-            <div className="flex flex-col gap-4 md:flex-row w-full items-start md:items-center rounded-xl border-neutral-100 bg-white px-6 py-6 transition-colors hover:border-teal-200">
+            <div className="w-full flex grow shrink-0 basis-0 flex-col items-start gap-6 rounded-lg bg-default-background px-6 py-6 shadow-sm transition-transform hover:-translate-y-1 hover:shadow-md">
               <div className="flex h-12 w-12 flex-none items-center justify-center rounded-lg bg-[#e0f7f4ff] text-teal-700">
                 <FeatherFileText className="text-body font-body text-default-font" />
               </div>
