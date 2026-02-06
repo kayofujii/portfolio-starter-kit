@@ -50,10 +50,10 @@ export default function WorkDetail({
   nextProject,
 }: WorkDetailProps) {
   return (
-    <div className="flex w-full flex-col items-center">
+    <div className="flex w-full px-6 flex-col items-center bg-[#fafaf8ff] text-[#2C2C2C]">
       <div className="flex w-full flex-col items-center justify-center px-6 py-24">
         <div className="flex w-full max-w-[1280px] flex-col items-center gap-12">
-          <div className="flex w-256 flex-col items-start gap-4">
+          <div className="flex max-w-[1024px] flex-col items-start gap-4">
             <span className="text-heading-1 font-heading-1 text-default-font text-center -tracking-[0.04em]">
               {title}
             </span>
@@ -68,7 +68,7 @@ export default function WorkDetail({
         </div>
       </div>
 
-      <div className="flex w-256 flex-col items-center px-6 py-24">
+      <div className="flex max-w-[1024px] flex-col items-center px-6 py-24">
         <div className="flex w-full max-w-[1280px] flex-col items-start gap-24">
           <div className="flex w-full flex-wrap items-start gap-12">
             <div className="flex min-w-[320px] grow shrink-0 basis-0 flex-col items-start gap-6">

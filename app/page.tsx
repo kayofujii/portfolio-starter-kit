@@ -237,8 +237,8 @@ export default function Page() {
             </div>
           </div>
         </div>
-        <div className="w-full max-w-[1024px] px-6 flex-col items-start gap-12">
-          <div className="flex w-full flex-col items-start gap-2 mb-12">
+        <div className="flex w-full max-w-[1024px] flex-col items-start gap-12">
+          <div className="flex w-full flex-col items-start gap-2">
             <span className="text-heading-2 font-heading-2 text-[#2c2c2cff]">
               Creative Outputs
             </span>
