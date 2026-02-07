@@ -105,7 +105,7 @@ export default function WorkDetail({
               <span className="text-heading-1 font-heading-1 text-default-font">
                 Project Details
               </span>
-              <div className="flex w-full flex-col items-start gap-8 rounded-lg bg-white px-8 py-8">
+              <div className="flex w-full flex-col items-start gap-8 rounded-lg bg-white px-8 py-8 shadow-sm">
                 <div className="flex w-full flex-col items-start gap-2">
                   <span className="text-caption-bold font-caption-bold text-subtext-color">
                     PERIOD
@@ -203,7 +203,7 @@ export default function WorkDetail({
             </div>
           </div>
 
-          <div className="flex w-full flex-col items-center gap-8 rounded-lg bg-white px-12 py-16">
+          <div className="flex w-full flex-col items-center gap-8 rounded-lg bg-white px-12 py-12 shadow-sm">
             <div className="flex w-full flex-col items-start gap-8">
               <span className="text-heading-2 font-heading-2 text-subtext-color text-center">
                 Up next

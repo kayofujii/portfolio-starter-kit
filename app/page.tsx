@@ -14,8 +14,11 @@ import { FeatherLayout } from "@subframe/core";
 import { FeatherPenTool } from "@subframe/core";
 import { FeatherServer } from "@subframe/core";
 import { FeatherYoutube } from "@subframe/core";
+import { useRouter } from "next/navigation";
+
 
 export default function Page() {
+  const router = useRouter();
   return (
     <div className="flex w-full px-6 flex-col items-center bg-[#fafaf8ff] text-[#2C2C2C]">
       <div className="flex w-full flex-col items-center gap-24 py-24 mobile:flex-col mobile:flex-nowrap mobile:gap-16 mobile:px-6 mobile:py-16">
@@ -32,7 +35,7 @@ export default function Page() {
                 variant="brand-primary"
                 size="large"
                 iconRight={<FeatherArrowRight />}
-                onClick={(event: React.MouseEvent<HTMLButtonElement>) => {}}
+                onClick={() => router.push("/work")}
               >
                 View Selected Work
               </Button>
@@ -40,7 +43,13 @@ export default function Page() {
                 className="h-12 w-auto flex-none px-8"
                 variant="neutral-secondary"
                 size="large"
-                onClick={(event: React.MouseEvent<HTMLButtonElement>) => {}}
+                onClick={() =>
+                  window.open(
+                    "https://drive.google.com/file/d/1Ka1K6BmBeQjqlC6F5yFB-q1DyjZrM9so/view?usp=sharing",
+                    "_blank",
+                    "noreferrer"
+                  )
+                }
               >
                 Download Resume
               </Button>
@@ -111,7 +120,7 @@ export default function Page() {
         </div>
         <div className="flex w-full max-w-[1024px] flex-col items-start gap-12">
           <div className="flex w-full flex-col items-start gap-2">
-            <span className="text-heading-2 font-heading-2 text-[#2c2c2cff]">
+            <span className="text-heading-2 font-heading-2 text-[#2c2c2cff]" id="work">
               Work
             </span>
           </div>
@@ -129,7 +138,7 @@ export default function Page() {
                   />
                   <div className="flex w-full flex-col items-start gap-4">
                     <div className="flex w-full flex-col items-start gap-2">
-                      <span className="text-heading-2 font-heading-2 text-default-font">
+                      <span className="text-heading-3 font-heading-3 text-default-font">
                         {work.title}
                       </span>
                       <span className="text-body font-body text-subtext-color">
@@ -164,87 +173,84 @@ export default function Page() {
             </span>
           </div>
           <div className="w-full items-start gap-6 grid grid-cols-1 md:grid-cols-3">
-            <div className="flex flex-col items-start gap-6 rounded-2xl bg-white px-8 py-8 transition-transform hover:-translate-y-1 hover:shadow-md">
+            <div className="flex flex-col items-start gap-6 rounded-2xl bg-white px-8 py-8 shadow-sm transition-transform hover:-translate-y-1 hover:shadow-md">
               <div className="flex items-center gap-4">
-                <Avatar
-                  size="large"
-                  image="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
-                >
-                  SJ
-                </Avatar>
                 <div className="flex flex-col items-start">
                   <span className="text-body-bold font-body-bold text-[#2c2c2cff]">
-                    Sarah Jenkins
+                    Fuyuko Ikeguchi
                   </span>
                   <span className="text-caption font-caption text-subtext-color">
-                    Senior PM at TechFlow
+                    UX Designer, mediPhone, Inc.
                   </span>
                 </div>
               </div>
               <span className="text-body font-body text-[#2c2c2cff]">
-                &quot;Alex is one of those rare developers who truly understands
-                design. He doesn&#39;t just implement specs; he improves them. His
-                ability to bridge the gap between our design team and engineering
-                was invaluable.&quot;
+                I had the pleasure of working with Kayo at mediPhone, Inc. As a
+                UI designer with a web engineering background, she consistently
+                delivered designs that met our project requirements. Her ability
+                to quickly grasp complex customer needs and rapidly understand
+                domain knowledge was a standout quality. She effectively
+                translated this understanding into user interfaces. Her
+                reliability and dedication make her a valuable asset to any
+                team.
               </span>
             </div>
-            <div className="flex flex-col items-start gap-6 rounded-2xl bg-white px-8 py-8 transition-transform hover:-translate-y-1 hover:shadow-md">
+            <div className="flex flex-col items-start gap-6 rounded-2xl bg-white px-8 py-8 shadow-sm transition-transform hover:-translate-y-1 hover:shadow-md">
               <div className="flex items-center gap-4">
-                <Avatar
-                  size="large"
-                  image="https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
-                >
-                  MR
-                </Avatar>
                 <div className="flex flex-col items-start">
                   <span className="text-body-bold font-body-bold text-[#2c2c2cff]">
-                    Marcus Reid
+                    Yusuke Tabata
                   </span>
                   <span className="text-caption font-caption text-subtext-color">
-                    CTO at StartUp Inc
+                    CTO, mediPhone, Inc.
                   </span>
                 </div>
               </div>
               <span className="text-body font-body text-[#2c2c2cff]">
-                &quot;I&#39;ve never met a developer more reliable than Alex. When
-                he says a feature will be done, it&#39;s done—and usually with
-                better performance metrics than we anticipated. A true
-                professional.&quot;
+                I was really fortunate to work with Kayo-san to build our new
+                SaaS product. She always did great work both as a backend
+                engineer and UX designer. In both roles, she has been trying
+                hard to understand every aspect of the product like users’
+                requirements and expectations, how team mates build the product,
+                how software framework works and so on.
               </span>
             </div>
-            <div className="flex flex-col items-start gap-6 rounded-2xl bg-white px-8 py-8 transition-transform hover:-translate-y-1 hover:shadow-md">
+            <div className="flex flex-col items-start gap-6 rounded-2xl bg-white px-8 py-8 shadow-sm transition-transform hover:-translate-y-1 hover:shadow-md">
               <div className="flex items-center gap-4">
-                <Avatar
-                  size="large"
-                  image="https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1061&q=80"
-                >
-                  EL
-                </Avatar>
                 <div className="flex flex-col items-start">
                   <span className="text-body-bold font-body-bold text-[#2c2c2cff]">
-                    Emily Liu
+                    Mai Takagi
                   </span>
                   <span className="text-caption font-caption text-subtext-color">
-                    Lead Designer
+                    Sales and an Intern, La Maison du Saké and ERH
                   </span>
                 </div>
               </div>
               <span className="text-body font-body text-[#2c2c2cff]">
-                &quot;Collaborating with Alex is a dream. He respects the design
-                process and often catches edge cases we missed during the prototype
-                phase. His attention to detail is unmatched.&quot;
+                I am delighted to have collaborated with Kayo in the software
+                team at Temona for a year. She demonstrates great dedication to
+                her work, sharing her to-do list and accomplishments with her
+                manager every morning and evening, which allows for effective
+                tracking of project progress. When it comes to coding questions,
+                she is always available and has been a tremendous help to me. I
+                highly recommend Kayo for her professionalism and expertise.
               </span>
             </div>
           </div>
         </div>
-        <div className="flex w-full max-w-[1024px] flex-col items-start gap-12">
+        <div className="flex w-full max-w-[1024px] flex-col items-start gap-12 shadow-sm">
           <div className="flex w-full flex-col items-start gap-2">
             <span className="text-heading-2 font-heading-2 text-[#2c2c2cff]">
               Creative Outputs
             </span>
           </div>
           <div className="flex w-full flex-col items-start gap-4">
-            <div className="w-full flex grow shrink-0 basis-0 flex-col items-start gap-6 rounded-lg bg-default-background px-6 py-6 shadow-sm transition-transform hover:-translate-y-1 hover:shadow-md">
+            <Link
+              href="https://medium.com/@kayosamu1025/category-pages-vs-filters-in-e-commerce-seo-e5480b981b4b"
+              target="_blank"
+              rel="noreferrer"
+              className="w-full flex grow shrink-0 basis-0 flex-col items-start gap-6 rounded-lg bg-default-background px-6 py-6 shadow-sm transition-transform hover:-translate-y-1 hover:shadow-md"
+            >
               <div className="flex h-12 w-12 flex-none items-center justify-center rounded-lg bg-[#e0f7f4ff] text-teal-700">
                 <FeatherFileText className="text-body font-body text-default-font" />
               </div>
@@ -253,39 +259,13 @@ export default function Page() {
                   Category Pages vs Filters in E-commerce SEO
                 </span>
                 <span className="text-body font-body text-subtext-color">
-                  A deep dive into site architecture and how it affects search
-                  engine ranking for large scale e-commerce sites.
+                  Why do dedicated category pages drive stronger organic traffic?
                 </span>
               </div>
               <div className="flex items-center gap-2">
                 <Badge variant="neutral">Medium</Badge>
-                <IconButton
-                  icon={<FeatherArrowUpRight />}
-                  onClick={(event: React.MouseEvent<HTMLButtonElement>) => {}}
-                />
               </div>
-            </div>
-            {/* <div className="flex flex-col gap-4 md:flex-row w-full items-start md:items-center rounded-xl border-neutral-100 bg-white px-6 py-6 transition-colors hover:border-teal-200">
-              <div className="flex h-12 w-12 flex-none items-center justify-center rounded-lg bg-[#e0f7f4ff] text-teal-700">
-                <FeatherYoutube className="text-body font-body text-default-font" />
-              </div>
-              <div className="flex grow shrink-0 basis-0 flex-col items-start gap-1">
-                <span className="text-heading-3 font-heading-3 text-[#2c2c2cff]">
-                  Building a Component Library from Scratch
-                </span>
-                <span className="text-body font-body text-subtext-color">
-                  Live coding session demonstrating how to build accessible,
-                  reusable React components using Tailwind CSS.
-                </span>
-              </div>
-              <div className="flex items-center gap-2">
-                <Badge variant="neutral">YouTube</Badge>
-                <IconButton
-                  icon={<FeatherArrowUpRight />}
-                  onClick={(event: React.MouseEvent<HTMLButtonElement>) => {}}
-                />
-              </div>
-            </div> */}
+            </Link>
           </div>
         </div>
       </div>
