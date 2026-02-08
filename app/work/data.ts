@@ -39,13 +39,13 @@ export type WorkDetailData = {
 
 export const workDetails: WorkDetailData[] = [
   {
-    slug: 'ecommerce-dashboard',
+    slug: 'mattress-comparison',
     title: 'High-SEO Mattress Comparison Platform',
     subtitle: 'A comparison site that boosts traffic for a mattress e-commerce business',
     order: 1,
     publishedAt: '2026-01-15',
     heroImage:
-      '/images/work/ecommerce-dashboard.webp',
+      '/images/work/mattress_comparison.webp',
     heroVideo:
       'videos/work/mattress_comparison.mp4',
     overview: {
