@@ -7,15 +7,15 @@ import Footer from './components/site_footer'
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: {
-    default: 'Kayo Fujii Portfolio',
-    template: '%s | Kayo Fujii Portfolio',
+    default: 'Kayo Fujii | Full-Stack Developer',
+    template: '%s | Kayo Fujii',
   },
-  description: 'This is my portfolio.',
+  description: 'I’m Kayo Fujii, a full-stack web developer with 5 years of experience based in Canada. I connect design and development to build high-quality websites that help businesses grow.',
   openGraph: {
-    title: 'My Portfolio',
-    description: 'This is my portfolio.',
+    title: 'Kayo Fujii | Full-Stack Developer',
+    description: 'I’m Kayo Fujii, a full-stack web developer with 5 years of experience based in Canada. I connect design and development to build high-quality websites that help businesses grow.',
     url: baseUrl,
-    siteName: 'My Portfolio',
+    siteName: 'Kayo Fujii Portfolio',
     locale: 'en_US',
     type: 'website',
   },

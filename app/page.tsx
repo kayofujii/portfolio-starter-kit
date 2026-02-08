@@ -3,12 +3,8 @@ import React from "react";
 import { Avatar } from "@/ui/components/Avatar";
 import { Badge } from "@/ui/components/Badge";
 import { Button } from "@/ui/components/Button";
-import { CheckboxCard } from "@/ui/components/CheckboxCard";
-import { IconButton } from "@/ui/components/IconButton";
 import Link from "next/link";
-import { workDetails } from "app/work/data";
 import { FeatherArrowRight, FeatherShoppingCart } from "@subframe/core";
-import { FeatherArrowUpRight } from "@subframe/core";
 import { FeatherFileText } from "@subframe/core";
 import { FeatherLayout } from "@subframe/core";
 import { FeatherPenTool } from "@subframe/core";
@@ -25,7 +21,7 @@ export default function Page() {
           <div className="">
             <div className="mb-8">
               <h1 className="w-full text-heading-2 text-default-font">
-                I’m Kayo Fujii, a Full Stack Developer who transforms ideas into valuable experiences by connecting design, UX, and engineering.
+                I’m Kayo Fujii, a full‑stack web developer with 5 years of experience based in Canada. <br/> I connect design and development to build high‑quality websites that help businesses grow.
               </h1>
             </div>
             <div className="flex flex-col gap-4 md:flex-row md:items-center">
@@ -133,78 +129,6 @@ export default function Page() {
               </div>
             </div>
           </div>
-        </div>
-        <div className="flex w-full max-w-[1024px] flex-col items-start gap-12">
-          <div className="flex w-full flex-col items-start gap-2">
-            <h2 className="text-heading-2 font-heading-2 text-[#2c2c2cff]" id="work">
-              Work
-            </h2>
-          </div>
-          <div className="w-full grid grid-cols-1 gap-12">
-            {workDetails
-              .slice()
-              .sort((a, b) => (a.order ?? 0) - (b.order ?? 0))
-              .slice(0, 4)
-              .map((work) => (
-              <Link
-                key={work.slug}
-                href={`/work/${work.slug}`}
-                className="flex grow shrink-0 basis-0 flex-col items-start gap-6 rounded-lg bg-default-background px-6 py-6 shadow-sm transition-transform hover:-translate-y-1 hover:shadow-md"
-              >
-                {work.heroVideo ? (
-                  <video
-                    className="flex w-full flex-none rounded-md object-cover"
-                    src={work.heroVideo}
-                    poster={work.heroImage}
-                    autoPlay
-                    muted
-                    loop
-                    playsInline
-                    preload="metadata"
-                  />
-                ) : (
-                  <img
-                    className="flex h-64 w-full flex-none rounded-md object-cover"
-                    src={work.heroImage}
-                  />
-                )}
-                <div className="flex w-full flex-col items-start gap-4">
-                  <div className="flex w-full flex-col items-start gap-2">
-                    <h3 className="text-heading-3 font-heading-3 text-default-font">
-                      {work.title}
-                    </h3>
-                    <p className="text-body font-body text-subtext-color">
-                      {work.subtitle}
-                    </p>
-                  </div>
-                  <div className="flex flex-wrap items-center gap-2">
-                    {work.details.techStack.slice(0, 4).map((tech) => (
-                      <Badge key={tech} variant="neutral" icon={null}>
-                        {tech}
-                      </Badge>
-                    ))}
-                  </div>
-                  <div className="flex w-full items-center justify-between">
-                    <p className="text-caption font-caption text-subtext-color">
-                      {work.details.company}
-                    </p>
-                    <p className="text-caption font-caption text-subtext-color">
-                      {work.details.period}
-                    </p>
-                  </div>
-                </div>
-              </Link>
-            ))}
-          </div>
-          <Button
-            className="h-12 w-auto flex-none px-8"
-            variant="neutral-secondary"
-            size="large"
-            iconRight={<FeatherArrowRight />}
-            onClick={() => router.push("/work")}
-          >
-            View More Work
-          </Button>
         </div>
         <div className="flex w-full max-w-[1024px] flex-col items-start gap-12">
           <div className="flex w-full flex-col items-start gap-2">
