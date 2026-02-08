@@ -6,7 +6,7 @@ import Link from "next/link";
 import { FeatherArrowRight } from "@subframe/core";
 
 type WorkDetailFeature = {
-  images: string;
+  images: string[];
   title: string;
   description: string;
 };
