@@ -37,11 +37,7 @@ const HeaderRoot = React.forwardRef<HTMLDivElement, HeaderRootProps>(
         {...otherProps}
       >
         <div className="flex w-full max-w-[1280px] items-center justify-between">
-          {logo ? (
-            <span className="font-heading-3 text-[#2c2c2cff] font-bold">
-              {logo}
-            </span>
-          ) : null}
+          {logo ? <div>{logo}</div> : null}
           <div className="hidden items-center gap-8 md:flex">
             {navigationLinks ? (
               <div className="flex items-center gap-8">{navigationLinks}</div>

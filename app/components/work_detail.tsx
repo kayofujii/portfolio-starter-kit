@@ -6,7 +6,7 @@ import Link from "next/link";
 import { FeatherArrowRight } from "@subframe/core";
 
 type WorkDetailFeature = {
-  image: string;
+  images: string;
   title: string;
   description: string;
 };
@@ -31,7 +31,7 @@ type WorkDetailProps = {
     teamDetails: string;
   };
   features: WorkDetailFeature[];
-  nextProject: {
+  nextProject?: {
     image: string;
     title: string;
     description: string;
@@ -188,10 +188,9 @@ export default function WorkDetail({
                   key={feature.title}
                   className="flex w-full flex-col items-start gap-4"
                 >
-                  <img
-                    className="w-full flex-none rounded-lg shadow-md"
-                    src={feature.image}
-                  />
+                  {feature.images.map((img) => (
+                    <img key={img} className="w-full flex-none rounded-lg shadow-md" src={img} />
+                  ))}
                   <span className="text-heading-3 font-heading-3 text-default-font">
                     {feature.title}
                   </span>
@@ -203,25 +202,35 @@ export default function WorkDetail({
             </div>
           </div>
 
-          <div className="flex w-full flex-col items-center gap-8 rounded-lg bg-white px-12 py-12 shadow-sm">
-            <div className="flex w-full flex-col items-start gap-8">
-              <span className="text-heading-2 font-heading-2 text-subtext-color text-center">
-                Up next
-              </span>
-            </div>
-            <div className="flex flex-col items-start gap-6">
-              <img className="w-full flex-none rounded-md" src={nextProject.image} />
-              <div className="flex flex-col items-start gap-2">
-                <span className="text-heading-2 font-heading-2 text-default-font">
-                  {nextProject.title}
-                </span>
-                <span className="text-body font-body text-subtext-color">
-                  {nextProject.description}
+          {nextProject ? (
+            <div className="flex w-full flex-col items-center gap-8 rounded-lg bg-white px-12 py-12 shadow-sm">
+              <div className="flex w-full flex-col items-start gap-8">
+                <span className="text-heading-2 font-heading-2 text-subtext-color text-center">
+                  Up next
                 </span>
               </div>
-            </div>
-            {nextProject.ctaHref ? (
-              <Link href={nextProject.ctaHref}>
+              <div className="flex flex-col items-start gap-6">
+                <img className="w-full flex-none rounded-md" src={nextProject.image} />
+                <div className="flex flex-col items-start gap-2">
+                  <span className="text-heading-2 font-heading-2 text-default-font">
+                    {nextProject.title}
+                  </span>
+                  <span className="text-body font-body text-subtext-color">
+                    {nextProject.description}
+                  </span>
+                </div>
+              </div>
+              {nextProject.ctaHref ? (
+                <Link href={nextProject.ctaHref}>
+                  <Button
+                    variant="neutral-secondary"
+                    size="large"
+                    iconRight={<FeatherArrowRight />}
+                  >
+                    {nextProject.ctaLabel}
+                  </Button>
+                </Link>
+              ) : (
                 <Button
                   variant="neutral-secondary"
                   size="large"
@@ -229,17 +238,9 @@ export default function WorkDetail({
                 >
                   {nextProject.ctaLabel}
                 </Button>
-              </Link>
-            ) : (
-              <Button
-                variant="neutral-secondary"
-                size="large"
-                iconRight={<FeatherArrowRight />}
-              >
-                {nextProject.ctaLabel}
-              </Button>
-            )}
-          </div>
+              )}
+            </div>
+          ) : null}
         </div>
       </div>
     </div>

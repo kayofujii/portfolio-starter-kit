@@ -16,7 +16,14 @@ export default function SiteHeader() {
   return (
     <>
       <UiHeader
-        logo="K.F"
+        logo={
+          <Link
+            href="/"
+            className="font-heading-3 font-bold text-[#2c2c2cff] hover:text-teal-600"
+          >
+            K.F
+          </Link>
+        }          
         navigationLinks={
           <>
             <Link
@@ -42,12 +49,14 @@ export default function SiteHeader() {
           </>
         }
         ctaButton={
-          <Button
-            className="bg-teal-600 hover:bg-teal-700"
-            variant="brand-primary"
-          >
-            Contact Me
-          </Button>
+          <Link href="mailto:kayofujii1025@gmail.com">
+            <Button
+              className="bg-teal-600 hover:bg-teal-700"
+              variant="brand-primary"
+            >
+              Contact Me
+            </Button>
+          </Link>
         }
         mobileMenuButton={
           <IconButton icon={<FeatherMenu />} onClick={() => setMenuOpen(true)} />
@@ -80,13 +89,15 @@ export default function SiteHeader() {
             >
               Resume
             </Link>
-            <Button
-              className="w-full bg-teal-600 hover:bg-teal-700"
-              variant="brand-primary"
-              onClick={closeMenu}
-            >
-              Contact Me
-            </Button>
+            <Link href="mailto:kayofujii1025@gmail.com">
+              <Button
+                className="w-full bg-teal-600 hover:bg-teal-700"
+                variant="brand-primary"
+                onClick={closeMenu}
+              >
+                Contact Me
+              </Button>
+            </Link>
           </div>
         </Drawer.Content>
       </Drawer>

@@ -1,6 +1,6 @@
 import { notFound } from 'next/navigation'
 import WorkDetail from 'app/components/work_detail'
-import { getWorkDetailBySlug, workDetails } from 'app/work/data'
+import { getNextWorkByOrder, getWorkDetailBySlug, workDetails } from 'app/work/data'
 import { baseUrl } from 'app/sitemap'
 
 export async function generateStaticParams() {
@@ -47,5 +47,17 @@ export default async function WorkCaseStudy({ params }) {
     notFound()
   }
 
-  return <WorkDetail {...work} />
+  const nextWork = getNextWorkByOrder(slug)
+  const nextProject =
+    nextWork
+      ? {
+          image: nextWork.heroImage,
+          title: nextWork.title,
+          description: nextWork.subtitle,
+          ctaLabel: 'View Next Project',
+          ctaHref: `/work/${nextWork.slug}`,
+        }
+      : work.nextProject
+
+  return <WorkDetail {...work} nextProject={nextProject} />
 }
