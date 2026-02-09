@@ -1,4 +1,4 @@
-# Portfolio Blog Starter
+# My Portfolio using Next.js
 
 Personal portfolio site built with Next.js App Router and Subframe UI components.
 
@@ -13,7 +13,7 @@ Personal portfolio site built with Next.js App Router and Subframe UI components
 
 ## Demo
 
-https://portfolio-blog-starter.vercel.app
+https://kayofujii.vercel.app/
 
 ## Tech Stack
 
