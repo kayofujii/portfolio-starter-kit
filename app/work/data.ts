@@ -39,6 +39,58 @@ export type WorkDetailData = {
 
 export const workDetails: WorkDetailData[] = [
   {
+    slug: 'ghost-product-finder',
+    title: 'Ghost Product Finder — Shopify Admin Tool',
+    subtitle: 'Identify and fix missing-image products fast with a realtime admin workflow',
+    order: 4,
+    publishedAt: '2026-02-01',
+    heroImage:
+      '/images/work/ghost_product_finder.webp',
+    heroVideo:
+      '/videos/work/ghost_product_finder.mp4',
+    overview: {
+      background:
+        'Catalog managers were shipping new products without images, creating broken listings and manual follow-up.',
+      challenge:
+        'Build a fast, reliable admin tool that surfaces missing-image products and lets teams resolve them in bulk.',
+      solution:
+        'I built a Shopify Admin app with realtime updates, bulk image uploads, and webhook-driven alerts to keep the catalog clean.',
+    },
+    details: {
+      period: 'February 2026 (3person-day project)',
+      techStack: [
+        'Ruby on Rails',
+        'Shopify App gem',
+        'Shopify Admin API (GraphQL + REST)',
+        'React',
+        'Polaris UI',
+        'Webhooks',
+      ],
+      company: 'Personal Project',
+      role: 'Full-stack Engineer',
+      roleDescription:
+        'Owned the admin UX, Shopify Admin API integrations, and webhook automation for missing-image detection.',
+      outcome: [
+        '• Reduced time-to-fix for image-less products from days to minutes',
+        '• Enabled bulk image uploads with instant UI refresh',
+        '• Automated manager alerts when new ghost products are created',
+        '• Improved catalog quality and reduced admin overhead',
+      ],
+      team: '1 full-stack engineer (me)',
+      teamDetails:
+        'Product Manager, Front-end Engineer, Full-stack Engineer (me)',
+    },
+    features: [
+      {
+        images:
+          ['/images/work/ghost_product_finder.webp'],
+        title: 'Missing-Image Product Dashboard',
+        description:
+          'A focused admin dashboard that lists ghost products with filters for vendor, collection, and status to prioritize fixes.',
+      }
+    ],
+  },
+  {
     slug: 'mattress-comparison',
     title: 'High-SEO Mattress Comparison Platform',
     subtitle: 'A comparison site that boosts traffic for a mattress e-commerce business',
