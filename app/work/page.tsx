@@ -17,7 +17,11 @@ export default function WorkIndexPage() {
           </span>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 w-full max-w-[1024px] flex-wrap items-start gap-8">
-          {workDetails.map((work) => (
+          {workDetails
+            .slice()
+            .sort((a, b) => (a.order ?? 0) - (b.order ?? 0))
+            .slice(0, 4)
+            .map((work) => (
             <Link
               key={work.slug}
               href={`/work/${work.slug}`}
