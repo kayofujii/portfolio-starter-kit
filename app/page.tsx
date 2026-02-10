@@ -141,30 +141,32 @@ export default function Page() {
             {workDetails
               .slice()
               .sort((a, b) => (a.order ?? 0) - (b.order ?? 0))
-              .slice(0, 4)
+              .slice(0, 3)
               .map((work) => (
               <Link
                 key={work.slug}
                 href={`/work/${work.slug}`}
                 className="flex grow shrink-0 basis-0 flex-col items-start gap-6 rounded-lg bg-default-background px-6 py-6 shadow-sm transition-transform hover:-translate-y-1 hover:shadow-md"
               >
-                {work.heroVideo ? (
-                  <video
-                    className="flex w-full flex-none rounded-md object-cover"
-                    src={work.heroVideo}
-                    poster={work.heroImage}
-                    autoPlay
-                    muted
-                    loop
-                    playsInline
-                    preload="metadata"
-                  />
-                ) : (
-                  <img
-                    className="flex h-64 w-full flex-none rounded-md object-cover"
-                    src={work.heroImage}
-                  />
-                )}
+                <div className="w-full overflow-hidden rounded-md aspect-[12/7]">
+                  {work.heroVideo ? (
+                    <video
+                      className="h-full w-full object-cover object-center"
+                      src={work.heroVideo}
+                      poster={work.heroImage}
+                      autoPlay
+                      muted
+                      loop
+                      playsInline
+                      preload="metadata"
+                    />
+                  ) : (
+                    <img
+                      className="h-full w-full object-cover object-center"
+                      src={work.heroImage}
+                    />
+                  )}
+                </div>
                 <div className="flex w-full flex-col items-start gap-4">
                   <div className="flex w-full flex-col items-start gap-2">
                     <h3 className="text-heading-3 font-heading-3 text-default-font">

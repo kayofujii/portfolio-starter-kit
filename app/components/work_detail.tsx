@@ -61,10 +61,12 @@ export default function WorkDetail({
               {subtitle}
             </span>
           </div>
-          <img
-            className="w-full max-w-[1024px] flex-none rounded-lg"
-            src={heroImage}
-          />
+          <div className="w-full max-w-[1200px] overflow-hidden rounded-lg aspect-[12/7]">
+            <img
+              className="h-full w-full object-cover object-center"
+              src={heroImage}
+            />
+          </div>
         </div>
       </div>
 
@@ -189,7 +191,9 @@ export default function WorkDetail({
                   className="flex w-full flex-col items-start gap-4"
                 >
                   {feature.images.map((img) => (
-                    <img key={img} className="w-full flex-none rounded-lg shadow-md" src={img} />
+                    <div key={img} className="w-full overflow-hidden rounded-lg shadow-md max-w-[1200px]">
+                      <img className="h-full w-full object-cover object-center" src={img} />
+                    </div>
                   ))}
                   <span className="text-heading-3 font-heading-3 text-default-font">
                     {feature.title}
@@ -210,7 +214,9 @@ export default function WorkDetail({
                 </span>
               </div>
               <div className="flex flex-col items-start gap-6">
-                <img className="w-full flex-none rounded-md" src={nextProject.image} />
+                <div className="w-full overflow-hidden rounded-md aspect-[12/7]">
+                  <img className="h-full w-full object-cover object-center" src={nextProject.image} />
+                </div>
                 <div className="flex flex-col items-start gap-2">
                   <span className="text-heading-2 font-heading-2 text-default-font">
                     {nextProject.title}

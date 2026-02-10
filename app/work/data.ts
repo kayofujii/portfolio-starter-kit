@@ -42,7 +42,7 @@ export const workDetails: WorkDetailData[] = [
     slug: 'ghost-product-finder',
     title: 'Ghost Product Finder — Shopify Admin Tool',
     subtitle: 'Identify and fix missing-image products fast with a realtime admin workflow',
-    order: 4,
+    order: 5,
     publishedAt: '2026-02-01',
     heroImage:
       '/images/work/ghost_product_finder.webp',
@@ -275,6 +275,64 @@ export const workDetails: WorkDetailData[] = [
           'Enhanced the Blocksy theme with a custom product variation interface and direct Add to Cart buttons, enabling wholesale customers to buy multiple products efficiently and reducing cart abandonment.',
       },
     ],
+  },
+  {
+    slug: 'mind-spark-academy',
+    title: 'Mind Spark Academy Preschool Website',
+    subtitle: 'Education-first brand and WordPress site that launched a new preschool in Canada',
+    order: 4,
+    publishedAt: '2025-08-15',
+    heroImage:
+      '/images/work/mind_spark.webp',
+    heroVideo:
+      '/videos/work/mind_spark.mp4',
+    overview: {
+      background:
+        'A new preschool in Burnaby, BC needed to launch quickly and differentiate from traditional daycares.',
+      challenge:
+        'Translate a complex educational philosophy into a clear value proposition while building trust for first-time families.',
+      solution:
+        'I led discovery, created a playful-yet-premium brand system, and built a responsive WordPress site that guided parents to register.',
+    },
+    details: {
+      period: '1 person-week',
+      techStack: [
+        'Figma',
+        'WordPress',
+        'Elementor',
+        'HTML/CSS',
+        'SEO',
+        'Google Analytics',
+      ],
+      company: 'Mind Spark Academy',
+      role: 'UX/UI Designer, Brand Strategist, WordPress Developer',
+      roleDescription:
+        'Owned brand strategy, UI design, and WordPress implementation from discovery to launch.',
+      outcome: [
+        '• Generated 10 registrations for the first information session within one week of launch',
+        '• Established a premium, education-first brand in a competitive market',
+        '• Delivered a responsive site with clear IA and family-focused messaging',
+      ],
+      team: '2 members',
+      teamDetails:
+        'CEO, Designer & Developer (me)',
+    },
+    features: [
+      {
+        images:
+          ['/images/work/mind_spark_responsive.webp'],
+        title: 'Responsive WordPress Build',
+        description:
+          'Designed and launched a mobile-first WordPress site with Elementor, clear IA, and conversion-focused CTAs.',
+      }
+    ],
+    nextProject: {
+      image: '/images/work/mind_spark_hero.svg',
+      title: 'Visit the live website',
+      description: 'Mind Spark Academy, Burnaby, BC',
+      ctaLabel: 'Open Website',
+      ctaHref: 'https://mindsparkacademycanada.com/',
+    },
   },
 ]
 
