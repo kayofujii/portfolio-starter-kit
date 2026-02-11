@@ -170,6 +170,7 @@ export const workDetails: WorkDetailData[] = [
       period: '2 person-months',
       techStack: [
         'JavaScript',
+        'TypeScript',
         'Vue.js',
         'Python',
         'Django REST Framework',
