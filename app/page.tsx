@@ -22,7 +22,7 @@ export default function Page() {
           <div className="">
             <div className="mb-8">
               <h1 className="w-full text-heading-2 text-default-font">
-                I’m Kayo Fujii, a full‑stack web developer with 5 years of experience based in Canada. <br/> I connect design and development to build high‑quality websites that help businesses grow.
+                I’m Kayo Fujii, a full‑stack web developer with 5 years of experience based in Canada.
               </h1>
             </div>
             <div className="flex flex-col gap-4 md:flex-row md:items-center">
