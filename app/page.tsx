@@ -22,7 +22,7 @@ export default function Page() {
           <div className="">
             <div className="mb-8">
               <h1 className="w-full text-heading-2 text-default-font">
-                I’m Kayo Fujii, a full‑stack web developer with 5 years of experience based in Canada.
+                I’m Kayo Fujii, a full‑stack web developer with 5 years of experience based in Canada.<br></br> I contributed to a start-up’s growth and helped it reach break-even through end-to-end development and maintenance.
               </h1>
             </div>
             <div className="flex flex-col gap-4 md:flex-row md:items-center">
@@ -91,6 +91,24 @@ export default function Page() {
                 <Badge variant="neutral">Python (Django)</Badge>
                 <Badge variant="neutral">PHP</Badge>
                 <Badge variant="neutral">SQL (MySQL, PostgreSQL)</Badge>
+              </div>
+            </div>
+            <div className="flex flex-col items-start gap-4 rounded-md bg-default-background px-6 py-6 shadow-sm">
+              <div className="flex items-center gap-2">
+                <div className="flex h-8 w-8 flex-none items-center justify-center rounded-md bg-[#f0fdfaff] text-teal-600">
+                  <FeatherFileText className="text-body font-body text-default-font" />
+                </div>
+                <h3 className="text-heading-3 font-heading-3 text-[#2c2c2cff]">
+                  QA Engineering
+                </h3>
+              </div>
+              <div className="flex flex-wrap items-start gap-2">
+                <Badge variant="neutral">Cypress</Badge>
+                <Badge variant="neutral">Playwright</Badge>
+                <Badge variant="neutral">RSpec</Badge>
+                <Badge variant="neutral">Postman</Badge>
+                <Badge variant="neutral">Regression Testing</Badge>
+                <Badge variant="neutral">E2E/API Testing</Badge>
               </div>
             </div>
             <div className="flex flex-col items-start gap-4 rounded-md bg-default-background px-6 py-6 shadow-sm">
