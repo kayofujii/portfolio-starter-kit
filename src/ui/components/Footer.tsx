@@ -53,7 +53,7 @@ const FooterRoot = React.forwardRef<HTMLDivElement, FooterRootProps>(
               </span>
             ) : null}
           </div>
-          <div className="flex items-center gap-4">
+          <div className="flex flex-wrap justify-center items-center gap-4">
             {primaryAction ? (
               <div className="flex items-center gap-4">{primaryAction}</div>
             ) : null}
