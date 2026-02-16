@@ -38,14 +38,6 @@ export default function SiteHeader() {
             >
               Work
             </Link>
-            <Link
-              href="https://drive.google.com/file/d/1Ka1K6BmBeQjqlC6F5yFB-q1DyjZrM9so/view?usp=sharing"
-              target="_blank"
-              rel="noreferrer"
-              className="text-body-bold font-body-bold text-subtext-color hover:text-teal-600"
-            >
-              Resume
-            </Link>
           </>
         }
         ctaButton={
@@ -79,15 +71,6 @@ export default function SiteHeader() {
               className="text-heading-2 font-heading-2 text-default-font"
             >
               Work
-            </Link>
-            <Link
-              href="https://drive.google.com/file/d/1Ka1K6BmBeQjqlC6F5yFB-q1DyjZrM9so/view?usp=sharing"
-              onClick={closeMenu}
-              className="text-heading-2 font-heading-2 text-default-font"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Resume
             </Link>
             <Link href="mailto:kayofujii1025@gmail.com">
               <Button

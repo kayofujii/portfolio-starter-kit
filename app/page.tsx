@@ -35,20 +35,6 @@ export default function Page() {
               >
                 View Selected Work
               </Button>
-              <Button
-                className="h-12 w-auto flex-none px-8"
-                variant="neutral-secondary"
-                size="large"
-                onClick={() =>
-                  window.open(
-                    "https://drive.google.com/file/d/1Ka1K6BmBeQjqlC6F5yFB-q1DyjZrM9so/view?usp=sharing",
-                    "_blank",
-                    "noreferrer"
-                  )
-                }
-              >
-                Download Resume
-              </Button>
             </div>
           </div>
         </div>
@@ -155,16 +141,18 @@ export default function Page() {
               Work
             </h2>
           </div>
-          <div className="w-full grid grid-cols-1 gap-12">
+          <div className="grid w-full grid-cols-1 md:grid-cols-2 gap-12">
             {workDetails
               .slice()
               .sort((a, b) => (a.order ?? 0) - (b.order ?? 0))
               .slice(0, 3)
-              .map((work) => (
+              .map((work, i) => (
               <Link
                 key={work.slug}
                 href={`/work/${work.slug}`}
-                className="flex grow shrink-0 basis-0 flex-col items-start gap-6 rounded-lg bg-default-background px-6 py-6 shadow-sm transition-transform hover:-translate-y-1 hover:shadow-md"
+                className={`flex flex-col gap-6 rounded-lg bg-default-background px-6 py-6 shadow-sm transition-transform hover:-translate-y-1 hover:shadow-md ${
+                  i === 0 ? "md:col-span-2" : "md:col-span-1"
+                }`}
               >
                 <div className="w-full overflow-hidden rounded-md aspect-[12/7]">
                   {work.heroVideo ? (
@@ -271,36 +259,6 @@ export default function Page() {
                 highly recommend Kayo for her professionalism and expertise.
               </p>
             </div>
-          </div>
-        </div>
-        <div className="flex w-full max-w-[1024px] flex-col items-start gap-12 shadow-sm">
-          <div className="flex w-full flex-col items-start gap-2">
-            <h2 className="text-heading-2 font-heading-2 text-[#2c2c2cff]">
-              Creative Outputs
-            </h2>
-          </div>
-          <div className="flex w-full flex-col items-start gap-4">
-            <Link
-              href="https://medium.com/@kayosamu1025/category-pages-vs-filters-in-e-commerce-seo-e5480b981b4b"
-              target="_blank"
-              rel="noreferrer"
-              className="w-full flex grow shrink-0 basis-0 flex-col items-start gap-6 rounded-lg bg-default-background px-6 py-6 shadow-sm transition-transform hover:-translate-y-1 hover:shadow-md"
-            >
-              <div className="flex h-12 w-12 flex-none items-center justify-center rounded-lg bg-[#e0f7f4ff] text-teal-700">
-                <FeatherFileText className="text-body font-body text-default-font" />
-              </div>
-              <div className="flex grow shrink-0 basis-0 flex-col items-start gap-1">
-                <h3 className="text-heading-3 font-heading-3 text-[#2c2c2cff]">
-                  Category Pages vs Filters in E-commerce SEO
-                </h3>
-                <p className="text-body font-body text-subtext-color">
-                  Why do dedicated category pages drive stronger organic traffic?
-                </p>
-              </div>
-              <div className="flex items-center gap-2">
-                <Badge variant="neutral">Medium</Badge>
-              </div>
-            </Link>
           </div>
         </div>
         <div className="flex w-full max-w-[1024px] flex-col items-start gap-12 shadow-sm">

@@ -2,8 +2,7 @@
 
 import { Footer as UiFooter } from "@/ui/components/Footer";
 import { Button } from "@/ui/components/Button";
-import { FeatherLinkedin } from "@subframe/core";
-import { FeatherGithub } from "@subframe/core";
+import { FeatherLinkedin, FeatherGithub, FeatherNotebookPen  } from "@subframe/core";
 import { FeatherMail } from "@subframe/core";
 import Link from "next/link";
 
@@ -46,6 +45,16 @@ export default function SiteFooter() {
             }
           >
             LinkedIn
+          </Button>
+          <Button
+            variant="neutral-secondary"
+            size="large"
+            icon={<FeatherNotebookPen />}
+            onClick={() =>
+              window.open("https://medium.com/@kayosamu1025", "_blank", "noreferrer")
+            }
+          >
+            Medium
           </Button>
         </>
       }
