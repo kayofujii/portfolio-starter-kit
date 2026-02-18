@@ -39,10 +39,133 @@ export type WorkDetailData = {
 
 export const workDetails: WorkDetailData[] = [
   {
+    slug: 'shopify-wholesale-theme',
+    title: 'Shopify Theme for Wholesale',
+    subtitle: 'Ongoing personal work for a coffee shop with wholesale customers',
+    order: 5,
+    publishedAt: '2026-02-18',
+    heroImage:
+      '/images/work/shopify_wholesale_theme.webp',
+    overview: {
+      background:
+        'Merchants for wholesale often rely on free Shopify themes that are hard to scale for complex product options and wholesale ordering behavior.',
+      challenge:
+        'Reduce decision friction for retail shoppers while making bulk ordering fast for wholesale buyers without forcing users through multiple product pages.',
+      solution:
+        'I am building a conversion-focused Shopify theme approach combining a React-based discovery quiz, metafield-driven comparison tools, and a wholesale quick-order grid powered by Shopify Ajax cart APIs.',
+    },
+    details: {
+      period: 'Ongoing (2026 - Present)',
+      techStack: [
+        'Shopify Liquid',
+        'HTML/CSS',
+        'JavaScript',
+        'React',
+        'Storefront API',
+        'Shopify Metafields',
+        'Ajax API',
+      ],
+      company: 'Personal Project',
+      role: 'Full-stack Shopify Developer',
+      roleDescription:
+        'Designing the data model and building theme components that improve product discovery, bulk purchasing, and local pickup clarity.',
+      outcome: [
+        '• In progress: wholesale quick-order grid with variant selectors and bulk add-to-cart',
+        "• In progress: React 'Find Your Bean' quiz for coffee preference-based recommendations",
+        '• In progress: metafield-driven comparison table for coffee technical specs',
+        '• Target impact: +15% add-to-cart rate and fewer support requests related to variant selection',
+      ],
+      team: '1 member',
+      teamDetails: 'Full-stack Shopify developer (me)',
+    },
+    features: [
+      {
+        images: [
+          '/images/work/wholesale_quick_order.webp',
+        ],
+        title: 'Wholesale Quick-Order Grid',
+        description:
+          'A list-view ordering experience that lets wholesale buyers select variants, set quantities, and add many SKUs in a single action using Shopify /cart/add.js.',
+      },
+      // {
+      //   images: [
+      //     'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=1200&h=700&fit=crop',
+      //   ],
+      //   title: "React 'Find Your Bean' Quiz",
+      //   description:
+      //     'A guided 3-step quiz that narrows coffee products by brew method, milk preference, and flavor profile, then fetches top recommendations from Storefront API data.',
+      // },
+      // {
+      //   images: [
+      //     'https://images.unsplash.com/photo-1455390582262-044cdead277a?w=1200&h=700&fit=crop',
+      //   ],
+      //   title: 'Metafield Comparison + local Pickup UI',
+      //   description:
+      //     'A dynamic comparison table for specs like roast level, bag size, and subscription, plus a custom local pickup section that clearly shows stock by local location.',
+      // },
+    ],
+  },
+  {
+    slug: 'wholesale-inquiry-data-bridge',
+    title: 'Wholesale Inquiry Data Bridge — Shopify Embedded Admin App',
+    subtitle:
+      'Convert wholesale inquiries into Shopify customers with a controlled approval workflow',
+    order: 6,
+    publishedAt: '2026-02-18',
+    heroImage: '/images/work/wholesale_inquiry_data_bridge.webp',
+    overview: {
+      background:
+        'Wholesale inquiries were collected outside Shopify, creating a manual and error-prone handoff into customer records.',
+      challenge:
+        'Build an embedded admin workflow that lets staff review inquiries, approve only valid requests, and sync clean customer data into Shopify.',
+      solution:
+        'I built a Shopify embedded app using React Router + Prisma that manages inquiry states, runs approve actions, and creates/updates Shopify customers via API.',
+    },
+    details: {
+      period: 'February 2026',
+      techStack: [
+        'TypeScript',
+        'React Router 7',
+        'Shopify App Bridge',
+        '@shopify/shopify-app-react-router',
+        'Prisma ORM',
+        'SQLite',
+        'Shopify Admin GraphQL API',
+        'Playwright',
+      ],
+      company: 'Personal Project',
+      role: 'Full-stack Engineer',
+      roleDescription:
+        'Owned app architecture, Prisma data model, Shopify customer sync logic, and E2E approval-flow testing.',
+      outcome: [
+        '• Replaced manual customer creation with a structured approval pipeline',
+        '• Prevented duplicate/invalid processing via status-based guardrails (PENDING -> APPROVED)',
+        '• Implemented create-or-update customer sync based on inquiry email lookup',
+        '• Added local E2E coverage for the core approval path with deterministic test mode',
+      ],
+      team: '1 full-stack engineer (me)',
+      teamDetails: 'Solo build: product planning, backend, frontend, and testing.',
+    },
+    features: [
+      {
+        images: ['/images/work/wholesale_inquiry_data_bridge.webp'],
+        title: 'Embedded Inquiry Approval Dashboard',
+        description:
+          'An in-admin interface to review wholesale inquiries and approve only pending records for downstream processing.',
+      },
+      {
+        images: ['/images/work/wholesale_inquiry_data_bridge_sync.webp'],
+        title: 'Smart Shopify Customer Sync',
+        description:
+          'On approval, the app finds existing customers by email and updates them, or creates new customer records when none exist.',
+      },
+    ],
+  },
+  {
     slug: 'ghost-product-finder',
     title: 'Ghost Product Finder — Shopify Admin Tool',
     subtitle: 'Identify and fix missing-image products fast with a realtime admin workflow',
-    order: 5,
+    order: 7,
     publishedAt: '2026-02-01',
     heroImage:
       '/images/work/ghost_product_finder.webp',
