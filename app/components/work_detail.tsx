@@ -15,6 +15,8 @@ type WorkDetailProps = {
   title: string;
   subtitle: string;
   heroImage: string;
+  githubUrl?: string;
+  liveUrl?: string;
   overview: {
     background: string;
     challenge: string;
@@ -44,6 +46,8 @@ export default function WorkDetail({
   title,
   subtitle,
   heroImage,
+  githubUrl,
+  liveUrl,
   overview,
   details,
   features,
@@ -101,7 +105,37 @@ export default function WorkDetail({
                   {overview.solution}
                 </span>
               </div>
-            </div>
+              {liveUrl?.trim() &&  (
+                <div className="flex w-full flex-col items-start gap-4">
+                  <span className="text-heading-2 font-heading-2 text-default-font">
+                    Live URL
+                  </span>
+                    <a
+                      href={liveUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-body font-body text-blue-600 hover:text-blue-700 underline"
+                    >
+                      Live URL
+                    </a>
+                </div>
+                )}
+              {githubUrl?.trim() &&  (
+                <div className="flex w-full flex-col items-start gap-4">
+                  <span className="text-heading-2 font-heading-2 text-default-font">
+                    Github URL
+                  </span>
+                    <a
+                      href={githubUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-body font-body text-blue-600 hover:text-blue-700 underline"
+                    >
+                      View GitHub Repository
+                    </a>
+                </div>
+                )}
+              </div>
 
             <div className="flex min-w-[320px] grow shrink-0 basis-0 flex-col items-start gap-6">
               <span className="text-heading-1 font-heading-1 text-default-font">

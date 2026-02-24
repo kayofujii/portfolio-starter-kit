@@ -12,6 +12,8 @@ export type WorkDetailData = {
   publishedAt?: string
   heroImage: string
   heroVideo?: string
+  githubUrl?: string
+  liveUrl?: string
   overview: {
     background: string
     challenge: string
@@ -46,6 +48,7 @@ export const workDetails: WorkDetailData[] = [
     publishedAt: '2026-02-18',
     heroImage:
       '/images/work/shopify_wholesale_theme.webp',
+    githubUrl: 'https://github.com/kayofujii/my-wholesale-store',
     overview: {
       background:
         'Merchants for wholesale often rely on free Shopify themes that are hard to scale for complex product options and wholesale ordering behavior.',
@@ -113,6 +116,7 @@ export const workDetails: WorkDetailData[] = [
     order: 6,
     publishedAt: '2026-02-18',
     heroImage: '/images/work/wholesale_inquiry_data_bridge.webp',
+    githubUrl: 'https://github.com/kayofujii/wholesale-inquiry-data-bridge',
     overview: {
       background:
         'Wholesale inquiries were collected outside Shopify, creating a manual and error-prone handoff into customer records.',
@@ -171,6 +175,7 @@ export const workDetails: WorkDetailData[] = [
       '/images/work/ghost_product_finder.webp',
     heroVideo:
       '/videos/work/ghost_product_finder.mp4',
+    githubUrl: 'https://github.com/kayofujii/ghost-products-finder',
     overview: {
       background:
         'Catalog managers were shipping new products without images, creating broken listings and manual follow-up.',
@@ -223,6 +228,7 @@ export const workDetails: WorkDetailData[] = [
       '/images/work/mattress_comparison.webp',
     heroVideo:
       'videos/work/mattress_comparison.mp4',
+    liveUrl: 'https://www.mintmattressreviews.ca/',
     overview: {
       background:
         'Plasmabed needed a mattress comparison website to increase organic traffic and drive sales for their main e-commerce store.',
@@ -337,6 +343,7 @@ export const workDetails: WorkDetailData[] = [
       '/images/work/beazu_growth_ops.webp',
     heroVideo:
       '/videos/work/beazu_growth_ops.mp4',
+    liveUrl: 'https://www.beazu.com/',
     overview: {
       background:
         'Key jewelry products were not ranking well in search results, while the e-commerce site also needed bug fixes and UX improvements to support growth.',
@@ -410,6 +417,7 @@ export const workDetails: WorkDetailData[] = [
       '/images/work/mind_spark.webp',
     heroVideo:
       '/videos/work/mind_spark.mp4',
+    liveUrl: 'https://mindsparkacademycanada.com/',
     overview: {
       background:
         'A new preschool in Burnaby, BC needed to launch quickly and differentiate from traditional daycares.',
