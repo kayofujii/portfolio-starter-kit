@@ -55,7 +55,7 @@ export const workDetails: WorkDetailData[] = [
       challenge:
         'Reduce decision friction for retail shoppers while making bulk ordering fast for wholesale buyers without forcing users through multiple product pages.',
       solution:
-        'I am building a conversion-focused Shopify theme approach combining a React-based discovery quiz, metafield-driven comparison tools, and a wholesale quick-order grid powered by Shopify Ajax cart APIs.',
+        'I am building a conversion-focused Shopify theme approach a wholesale quick-order modal powered by Shopify Ajax cart APIs.',
     },
     details: {
       period: 'Ongoing (2026 - Present)',
@@ -73,9 +73,7 @@ export const workDetails: WorkDetailData[] = [
       roleDescription:
         'Designing the data model and building theme components that improve product discovery, bulk purchasing, and local pickup clarity.',
       outcome: [
-        '• In progress: wholesale quick-order grid with variant selectors and bulk add-to-cart',
-        "• In progress: React 'Find Your Bean' quiz for coffee preference-based recommendations",
-        '• In progress: metafield-driven comparison table for coffee technical specs',
+        '• Built a wholesale quick-order modal with variant selectors and bulk add-to-cart',
         '• Target impact: +15% add-to-cart rate and fewer support requests related to variant selection',
       ],
       team: '1 member',
@@ -86,26 +84,10 @@ export const workDetails: WorkDetailData[] = [
         images: [
           '/images/work/wholesale_quick_order.webp',
         ],
-        title: 'Wholesale Quick-Order Grid',
+        title: 'Wholesale Quick-Order Modal',
         description:
-          'A list-view ordering experience that lets wholesale buyers select variants, set quantities, and add many SKUs in a single action using Shopify /cart/add.js.',
-      },
-      // {
-      //   images: [
-      //     'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=1200&h=700&fit=crop',
-      //   ],
-      //   title: "React 'Find Your Bean' Quiz",
-      //   description:
-      //     'A guided 3-step quiz that narrows coffee products by brew method, milk preference, and flavor profile, then fetches top recommendations from Storefront API data.',
-      // },
-      // {
-      //   images: [
-      //     'https://images.unsplash.com/photo-1455390582262-044cdead277a?w=1200&h=700&fit=crop',
-      //   ],
-      //   title: 'Metafield Comparison + local Pickup UI',
-      //   description:
-      //     'A dynamic comparison table for specs like roast level, bag size, and subscription, plus a custom local pickup section that clearly shows stock by local location.',
-      // },
+          'A lightweight add-to-cart modal that lets wholesale buyers select variants, set quantities, and add multiple SKUs in one action using Shopify /cart/add.js.',
+      }
     ],
   },
   {
