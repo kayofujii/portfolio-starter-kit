@@ -17,6 +17,7 @@ type WorkDetailProps = {
   heroImage: string;
   githubUrl?: string;
   liveUrl?: string;
+  liveUrlPassword?: string
   overview: {
     background: string;
     challenge: string;
@@ -48,6 +49,7 @@ export default function WorkDetail({
   heroImage,
   githubUrl,
   liveUrl,
+  liveUrlPassword,
   overview,
   details,
   features,
@@ -118,6 +120,14 @@ export default function WorkDetail({
                     >
                       Live URL
                     </a>
+                </div>
+                )}
+              {liveUrlPassword?.trim() &&  (
+                <div className="flex w-full flex-col items-start gap-4">
+                  <span className="text-heading-2 font-heading-2 text-default-font">
+                    Live URL Password
+                  </span>
+                  {liveUrlPassword}
                 </div>
                 )}
               {githubUrl?.trim() &&  (

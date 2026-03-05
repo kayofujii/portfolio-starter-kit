@@ -40,103 +40,6 @@ export default function Page() {
         </div>
         <div className="flex w-full max-w-[1024px] flex-col items-start gap-12">
           <div className="flex w-full flex-col items-start gap-2">
-            <h2 className="text-heading-2 font-heading-2 text-[#2c2c2cff]">
-              Technical Skills
-            </h2>
-          </div>
-          <div className="w-full items-start gap-12 grid grid-cols-1 md:grid-cols-2">
-            <div className="flex flex-col items-start gap-4 rounded-md bg-default-background px-6 py-6 shadow-sm">
-              <div className="flex items-center gap-2">
-                <div className="flex h-8 w-8 flex-none items-center justify-center rounded-md bg-[#f0fdfaff] text-teal-600">
-                  <FeatherLayout className="text-body font-body text-default-font" />
-                </div>
-                <h3 className="text-heading-3 font-heading-3 text-[#2c2c2cff]">
-                  Frontend
-                </h3>
-              </div>
-              <div className="flex flex-wrap items-start gap-2">
-                <Badge variant="neutral">React</Badge>
-                <Badge variant="neutral">Vue.js</Badge>
-                <Badge variant="neutral">TypeScript</Badge>
-                <Badge variant="neutral">Next.js</Badge>
-                <Badge variant="neutral">Tailwind CSS</Badge>
-                <Badge variant="neutral">HTML5/CSS3</Badge>
-              </div>
-            </div>
-            <div className="flex flex-col items-start gap-4 rounded-md bg-default-background px-6 py-6 shadow-sm">
-              <div className="flex items-center gap-2">
-                <div className="flex h-8 w-8 flex-none items-center justify-center rounded-md bg-[#f0fdfaff] text-teal-600">
-                  <FeatherServer className="text-body font-body text-default-font" />
-                </div>
-                <h3 className="text-heading-3 font-heading-3 text-[#2c2c2cff]">
-                  Backend
-                </h3>
-              </div>
-              <div className="flex flex-wrap items-start gap-2">
-                <Badge variant="neutral">Ruby (Ruby on Rails)</Badge>
-                <Badge variant="neutral">Python (Django)</Badge>
-                <Badge variant="neutral">PHP</Badge>
-                <Badge variant="neutral">SQL (MySQL, PostgreSQL)</Badge>
-              </div>
-            </div>
-            <div className="flex flex-col items-start gap-4 rounded-md bg-default-background px-6 py-6 shadow-sm">
-              <div className="flex items-center gap-2">
-                <div className="flex h-8 w-8 flex-none items-center justify-center rounded-md bg-[#f0fdfaff] text-teal-600">
-                  <FeatherFileText className="text-body font-body text-default-font" />
-                </div>
-                <h3 className="text-heading-3 font-heading-3 text-[#2c2c2cff]">
-                  QA Engineering
-                </h3>
-              </div>
-              <div className="flex flex-wrap items-start gap-2">
-                <Badge variant="neutral">Cypress</Badge>
-                <Badge variant="neutral">Playwright</Badge>
-                <Badge variant="neutral">RSpec</Badge>
-                <Badge variant="neutral">Postman</Badge>
-                <Badge variant="neutral">Regression Testing</Badge>
-                <Badge variant="neutral">E2E/API Testing</Badge>
-              </div>
-            </div>
-            <div className="flex flex-col items-start gap-4 rounded-md bg-default-background px-6 py-6 shadow-sm">
-              <div className="flex items-center gap-2">
-                <div className="flex h-8 w-8 flex-none items-center justify-center rounded-md bg-[#f0fdfaff] text-teal-600">
-                  <FeatherShoppingCart className="text-body font-body text-default-font" />
-                </div>
-                <h3 className="text-heading-3 font-heading-3 text-[#2c2c2cff]">
-                  CMS & E-commerce
-                </h3>
-              </div>
-              <div className="flex flex-wrap items-start gap-2">
-                <Badge variant="neutral">WordPress</Badge>
-                <Badge variant="neutral">WooCommerce</Badge>
-                <Badge variant="neutral">Elementor</Badge>
-                <Badge variant="neutral">Shopify</Badge>
-                <Badge variant="neutral">Headless CMS</Badge>
-              </div>
-            </div>
-            <div className="flex flex-col items-start gap-4 rounded-md bg-default-background px-6 py-6 shadow-sm">
-              <div className="flex items-center gap-2">
-                <div className="flex h-8 w-8 flex-none items-center justify-center rounded-md bg-[#f0fdfaff] text-teal-600">
-                  <FeatherPenTool className="text-body font-body text-default-font" />
-                </div>
-                <h3 className="text-heading-3 font-heading-3 text-[#2c2c2cff]">
-                  Design
-                </h3>
-              </div>
-              <div className="flex flex-wrap items-start gap-2">
-                <Badge variant="neutral">UI/UX design</Badge>
-                <Badge variant="neutral">Web design</Badge>
-                <Badge variant="neutral">Figma</Badge>
-                <Badge variant="neutral">Adobe XD</Badge>
-                <Badge variant="neutral">Prototyping</Badge>
-                <Badge variant="neutral">Design Systems</Badge>
-                <Badge variant="neutral">Accessibility (a11y)</Badge>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="flex w-full max-w-[1024px] flex-col items-start gap-12">
-          <div className="flex w-full flex-col items-start gap-2">
             <h2 className="text-heading-2 font-heading-2 text-[#2c2c2cff]" id="work">
               Work
             </h2>
@@ -145,14 +48,12 @@ export default function Page() {
             {workDetails
               .slice()
               .sort((a, b) => (a.order ?? 0) - (b.order ?? 0))
-              .slice(0, 3)
+              .slice(0, 4)
               .map((work, i) => (
               <Link
                 key={work.slug}
                 href={`/work/${work.slug}`}
-                className={`flex flex-col gap-6 rounded-lg bg-default-background px-6 py-6 shadow-sm transition-transform hover:-translate-y-1 hover:shadow-md ${
-                  i === 0 ? "md:col-span-2" : "md:col-span-1"
-                }`}
+                className="flex flex-col gap-6 rounded-lg bg-default-background px-6 py-6 shadow-sm transition-transform hover:-translate-y-1 hover:shadow-md md:col-span-1"
               >
                 <div className="w-full overflow-hidden rounded-md aspect-[12/7]">
                   {work.heroVideo ? (
@@ -210,6 +111,103 @@ export default function Page() {
           >
             View More Work
           </Button>
+        </div>
+        <div className="flex w-full max-w-[1024px] flex-col items-start gap-12">
+          <div className="flex w-full flex-col items-start gap-2">
+            <h2 className="text-heading-2 font-heading-2 text-[#2c2c2cff]">
+              Technical Skills
+            </h2>
+          </div>
+          <div className="w-full items-start gap-12 grid grid-cols-1 md:grid-cols-2">
+            <div className="flex flex-col items-start gap-4 rounded-md bg-default-background px-6 py-6 shadow-sm">
+              <div className="flex items-center gap-2">
+                <div className="flex h-8 w-8 flex-none items-center justify-center rounded-md bg-[#f0fdfaff] text-teal-600">
+                  <FeatherLayout className="text-body font-body text-default-font" />
+                </div>
+                <h3 className="text-heading-3 font-heading-3 text-[#2c2c2cff]">
+                  Frontend
+                </h3>
+              </div>
+              <div className="flex flex-wrap items-start gap-2">
+                <Badge variant="neutral">React</Badge>
+                <Badge variant="neutral">Vue.js</Badge>
+                <Badge variant="neutral">TypeScript</Badge>
+                <Badge variant="neutral">Next.js</Badge>
+                <Badge variant="neutral">Tailwind CSS</Badge>
+                <Badge variant="neutral">HTML5/CSS3</Badge>
+              </div>
+            </div>
+            <div className="flex flex-col items-start gap-4 rounded-md bg-default-background px-6 py-6 shadow-sm">
+              <div className="flex items-center gap-2">
+                <div className="flex h-8 w-8 flex-none items-center justify-center rounded-md bg-[#f0fdfaff] text-teal-600">
+                  <FeatherServer className="text-body font-body text-default-font" />
+                </div>
+                <h3 className="text-heading-3 font-heading-3 text-[#2c2c2cff]">
+                  Backend
+                </h3>
+              </div>
+              <div className="flex flex-wrap items-start gap-2">
+                <Badge variant="neutral">Ruby (Ruby on Rails)</Badge>
+                <Badge variant="neutral">Python (Django)</Badge>
+                <Badge variant="neutral">PHP</Badge>
+                <Badge variant="neutral">SQL (MySQL, PostgreSQL)</Badge>
+              </div>
+            </div>
+            <div className="flex flex-col items-start gap-4 rounded-md bg-default-background px-6 py-6 shadow-sm">
+              <div className="flex items-center gap-2">
+                <div className="flex h-8 w-8 flex-none items-center justify-center rounded-md bg-[#f0fdfaff] text-teal-600">
+                  <FeatherShoppingCart className="text-body font-body text-default-font" />
+                </div>
+                <h3 className="text-heading-3 font-heading-3 text-[#2c2c2cff]">
+                  CMS & E-commerce
+                </h3>
+              </div>
+              <div className="flex flex-wrap items-start gap-2">
+                <Badge variant="neutral">WordPress</Badge>
+                <Badge variant="neutral">WooCommerce</Badge>
+                <Badge variant="neutral">Elementor</Badge>
+                <Badge variant="neutral">Shopify</Badge>
+                <Badge variant="neutral">Headless CMS</Badge>
+              </div>
+            </div>
+            <div className="flex flex-col items-start gap-4 rounded-md bg-default-background px-6 py-6 shadow-sm">
+              <div className="flex items-center gap-2">
+                <div className="flex h-8 w-8 flex-none items-center justify-center rounded-md bg-[#f0fdfaff] text-teal-600">
+                  <FeatherPenTool className="text-body font-body text-default-font" />
+                </div>
+                <h3 className="text-heading-3 font-heading-3 text-[#2c2c2cff]">
+                  Design
+                </h3>
+              </div>
+              <div className="flex flex-wrap items-start gap-2">
+                <Badge variant="neutral">UI/UX design</Badge>
+                <Badge variant="neutral">Web design</Badge>
+                <Badge variant="neutral">Figma</Badge>
+                <Badge variant="neutral">Adobe XD</Badge>
+                <Badge variant="neutral">Prototyping</Badge>
+                <Badge variant="neutral">Design Systems</Badge>
+                <Badge variant="neutral">Accessibility (a11y)</Badge>
+              </div>
+            </div>
+            <div className="flex flex-col items-start gap-4 rounded-md bg-default-background px-6 py-6 shadow-sm">
+              <div className="flex items-center gap-2">
+                <div className="flex h-8 w-8 flex-none items-center justify-center rounded-md bg-[#f0fdfaff] text-teal-600">
+                  <FeatherFileText className="text-body font-body text-default-font" />
+                </div>
+                <h3 className="text-heading-3 font-heading-3 text-[#2c2c2cff]">
+                  QA Engineering
+                </h3>
+              </div>
+              <div className="flex flex-wrap items-start gap-2">
+                <Badge variant="neutral">Cypress</Badge>
+                <Badge variant="neutral">Playwright</Badge>
+                <Badge variant="neutral">RSpec</Badge>
+                <Badge variant="neutral">Postman</Badge>
+                <Badge variant="neutral">Regression Testing</Badge>
+                <Badge variant="neutral">E2E/API Testing</Badge>
+              </div>
+            </div>
+          </div>
         </div>
         <div className="flex w-full max-w-[1024px] flex-col items-start gap-12">
           <div className="flex w-full flex-col items-start gap-2">

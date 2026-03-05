@@ -14,6 +14,7 @@ export type WorkDetailData = {
   heroVideo?: string
   githubUrl?: string
   liveUrl?: string
+  liveUrlPassword?: string
   overview: {
     background: string
     challenge: string
@@ -116,10 +117,12 @@ export const workDetails: WorkDetailData[] = [
     slug: 'shopify-wholesale-theme',
     title: 'Shopify Theme for Wholesale',
     subtitle: 'Ongoing personal work for a coffee shop with wholesale customers',
-    order: 5,
+    order: 3,
     publishedAt: '2026-02-18',
     heroImage:
       '/images/work/shopify_wholesale_theme.webp',
+    liveUrl: 'https://development-20230885.myshopify.com/',
+    liveUrlPassword: 'yahtsa',
     githubUrl: 'https://github.com/kayofujii/my-wholesale-store',
     overview: {
       background:
@@ -335,7 +338,7 @@ export const workDetails: WorkDetailData[] = [
     slug: 'meeting-scheduling-app',
     title: 'Meeting Scheduling Feature for Doctors and Employees',
     subtitle: 'Secure scheduling built for occupational health consultations',
-    order: 2,
+    order: 5,
     publishedAt: '2025-10-01',
     heroImage:
       '/images/work/meeting_scheduling_app.webp',
@@ -391,7 +394,7 @@ export const workDetails: WorkDetailData[] = [
     slug: 'beazu-growth-ops',
     title: 'Beazu Wholesale E-commerce Growth & Maintenance',
     subtitle: 'SEO, UX, and site stability improvements for a jewelry wholesale store',
-    order: 3,
+    order: 2,
     publishedAt: '2025-11-30',
     heroImage:
       '/images/work/beazu_growth_ops.webp',
