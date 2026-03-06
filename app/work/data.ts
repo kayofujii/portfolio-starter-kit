@@ -121,6 +121,8 @@ export const workDetails: WorkDetailData[] = [
     publishedAt: '2026-02-18',
     heroImage:
       '/images/work/shopify_wholesale_theme.webp',
+    heroVideo:
+      '/videos/work/shopify_wholesale_theme.mp4',
     liveUrl: 'https://development-20230885.myshopify.com/',
     liveUrlPassword: 'yahtsa',
     githubUrl: 'https://github.com/kayofujii/my-wholesale-store',
