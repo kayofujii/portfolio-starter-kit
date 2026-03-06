@@ -16,29 +16,42 @@ import { workDetails } from 'app/work/data'
 export default function Page() {
   const router = useRouter();
   return (
-    <div className="flex w-full px-6 flex-col items-center bg-[#fafaf8ff] text-[#2C2C2C]">
-      <div className="flex w-full flex-col items-center gap-24 py-24 mobile:flex-col mobile:flex-nowrap mobile:gap-16 mobile:px-6 mobile:py-16">
-        <div className="flex w-full max-w-[1024px] items-center gap-16 mobile:flex-nowrap mobile:gap-16 mobile:flex-col-reverse">
-          <div className="">
-            <div className="mb-8">
-              <h1 className="w-full text-heading-2 text-default-font">
-                I’m Kayo Fujii, a full‑stack web developer with 5 years of experience based in Canada.<br></br> I contributed to a start-up’s growth and helped it reach break-even through end-to-end development and maintenance.
-              </h1>
+    <div className="flex w-full flex-col items-center bg-[#fafaf8ff] text-[#2C2C2C]">
+      <div className="flex w-full flex-col items-center gap-24 mobile:flex-col mobile:flex-nowrap mobile:gap-16 mobile:px-6 mobile:py-16">
+        <div className="flex w-full items-center gap-16 mobile:flex-nowrap mobile:gap-16 mobile:flex-col-reverse">
+          <section className="flex w-full relative overflow-hidden py-24">
+            <div
+              aria-hidden
+              className="absolute inset-0 z-0 bg-[linear-gradient(135deg,rgba(173,241,236,0.2)_0%,rgba(255,209,203,0.2)_61%,rgba(255,255,255,0.2)_100%),linear-gradient(0deg,rgba(242,250,248,1)_0%,rgba(242,250,248,1)_100%)]"
+            />
+            <div className="relative z-10 container px-6 flex mx-auto flex-col max-w-[1024px]">
+              <div className="mb-8 space-y-4 w-full">
+                <h2 className="w-full text-heading-2 text-brand-primary uppercase">
+                  Full-Stack Developer & Designer
+                </h2>
+                <h1 className="w-full text-heading-1 text-default-font">
+                  I grow businesses with conversion-driven web development.
+                </h1>
+                <p className="w-full text-default-font">
+                  Hi, I'm Kayo based in Vancouver with 5 years of experience <br />
+                  bridging UX design and web development. I helped a Canadian retail company grow eCommerce sales 1.5 times in 3 months.
+                </p>
+              </div>
+              <div className="flex flex-col gap-4 md:flex-row md:items-center">
+                <Button
+                  className="h-12 w-auto flex-none px-8"
+                  variant="brand-primary"
+                  size="large"
+                  iconRight={<FeatherArrowRight />}
+                  onClick={() => router.push("/work")}
+                >
+                  View Selected Work
+                </Button>
+              </div>
             </div>
-            <div className="flex flex-col gap-4 md:flex-row md:items-center">
-              <Button
-                className="h-12 w-auto flex-none px-8"
-                variant="brand-primary"
-                size="large"
-                iconRight={<FeatherArrowRight />}
-                onClick={() => router.push("/work")}
-              >
-                View Selected Work
-              </Button>
-            </div>
-          </div>
+          </section>
         </div>
-        <div className="flex w-full max-w-[1024px] flex-col items-start gap-12">
+        <div className="flex w-full max-w-[1024px] flex-col items-start gap-12 px-6">
           <div className="flex w-full flex-col items-start gap-2">
             <h2 className="text-heading-2 font-heading-2 text-[#2c2c2cff]" id="work">
               Work
@@ -112,7 +125,7 @@ export default function Page() {
             View More Work
           </Button>
         </div>
-        <div className="flex w-full max-w-[1024px] flex-col items-start gap-12">
+        <div className="flex w-full max-w-[1024px] flex-col items-start gap-12 px-6">
           <div className="flex w-full flex-col items-start gap-2">
             <h2 className="text-heading-2 font-heading-2 text-[#2c2c2cff]">
               Technical Skills
@@ -209,7 +222,7 @@ export default function Page() {
             </div>
           </div>
         </div>
-        <div className="flex w-full max-w-[1024px] flex-col items-start gap-12">
+        <div className="flex w-full max-w-[1024px] flex-col items-start gap-12 px-6">
           <div className="flex w-full flex-col items-start gap-2">
             <h2 className="text-heading-2 font-heading-2 text-[#2c2c2cff]">
               Recommendations
@@ -259,7 +272,7 @@ export default function Page() {
             </div>
           </div>
         </div>
-        <div className="flex w-full max-w-[1024px] flex-col items-start gap-12 shadow-sm">
+        <div className="flex w-full max-w-[1024px] flex-col items-start gap-12 shadow-sm px-6 pb-6">
           <div className="flex w-full flex-col items-start gap-2">
             <h2 className="text-heading-2 font-heading-2 text-[#2c2c2cff]">
               About me
