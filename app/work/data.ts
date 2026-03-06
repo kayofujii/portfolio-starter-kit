@@ -135,7 +135,7 @@ export const workDetails: WorkDetailData[] = [
         'I am building a conversion-focused Shopify theme approach a wholesale quick-order modal powered by Shopify Ajax cart APIs.',
     },
     details: {
-      period: 'Ongoing (2026 - Present)',
+      period: '3 days',
       techStack: [
         'Shopify Liquid',
         'HTML/CSS',
@@ -151,6 +151,7 @@ export const workDetails: WorkDetailData[] = [
         'Designing the data model and building theme components that improve product discovery, bulk purchasing, and local pickup clarity.',
       outcome: [
         '• Built a wholesale quick-order modal with variant selectors and bulk add-to-cart',
+        '• Created custom homepage, product cards, and a wholesale application page based on branding and research.',
         '• Target impact: +15% add-to-cart rate and fewer support requests related to variant selection',
       ],
       team: '1 member',
