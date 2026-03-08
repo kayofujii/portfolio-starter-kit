@@ -3,6 +3,8 @@ import type { Metadata } from 'next'
 import { baseUrl } from './sitemap'
 import Header from './components/site_header'
 import Footer from './components/site_footer'
+import { Analytics } from "@vercel/analytics/next"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
@@ -49,6 +51,8 @@ export default function RootLayout({
       <body suppressHydrationWarning>
         <Header />
           {children}
+          <Analytics />
+          <SpeedInsights />
         <Footer />
       </body>
     </html>
