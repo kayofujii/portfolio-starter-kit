@@ -341,7 +341,7 @@ export const workDetails: WorkDetailData[] = [
     slug: 'meeting-scheduling-app',
     title: 'Meeting Scheduling Feature for Doctors and Employees',
     subtitle: 'Secure scheduling built for occupational health consultations',
-    order: 5,
+    order: 4,
     publishedAt: '2025-10-01',
     heroImage:
       '/images/work/meeting_scheduling_app.webp',
@@ -471,7 +471,7 @@ export const workDetails: WorkDetailData[] = [
     slug: 'mind-spark-academy',
     title: 'Mind Spark Academy Preschool Website',
     subtitle: 'Education-first brand and WordPress site that launched a new preschool in Canada',
-    order: 4,
+    order: 5,
     publishedAt: '2025-08-15',
     heroImage:
       '/images/work/mind_spark.webp',
