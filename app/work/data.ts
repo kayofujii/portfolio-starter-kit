@@ -280,7 +280,7 @@ export const workDetails: WorkDetailData[] = [
   },
   {
     slug: 'mattress-comparison',
-    title: 'High-SEO Mattress Comparison Platform',
+    title: 'Mattress Comparison Website',
     subtitle: 'A comparison site that boosts traffic for a mattress e-commerce business',
     order: 1,
     publishedAt: '2026-01-15',
