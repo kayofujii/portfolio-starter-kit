@@ -17,13 +17,14 @@ export default function SiteHeader() {
     <>
       <UiHeader
         logo={
-          <Link
-            href="/"
-            className="font-heading-3 font-bold text-[#2c2c2cff] hover:text-teal-600"
-          >
-            K.F
+          <Link href="/" className="block">
+            <img
+              src="/images/logo.svg"
+              alt="K.F logo"
+              className="h-8 w-auto"
+            />
           </Link>
-        }          
+        }         
         navigationLinks={
           <>
             <Link

@@ -1,5 +1,17 @@
+export type WorkDetailMedia =
+  | {
+      type: 'image'
+      src: string
+      alt?: string
+    }
+  | {
+      type: 'video'
+      src: string
+      poster?: string
+    }
+
 export type WorkDetailFeature = {
-  images: string[]
+  media: WorkDetailMedia[]
   title: string
   description: string
 }
@@ -80,32 +92,32 @@ export const workDetails: WorkDetailData[] = [
     },
     features: [
       {
-        images: [
-          '/images/work/science_fair_event_poster.webp',
+        media: [
+          { type: 'image', src: '/images/work/science_fair_event_poster.webp' },
         ],
         title: 'Science Fair Event Poster',
         description:
           'Designed a science fair poster to promote logic puzzles, simple chemical experiments, and a free trial lesson for families exploring the academy.',
       },
       {
-        images: [
-          '/images/work/preschool_grand_opening%20_poster.webp',
+        media: [
+          { type: 'image', src: '/images/work/preschool_grand_opening%20_poster.webp' },
         ],
         title: 'Preschool Grand Opening Poster',
         description:
           'Created a grand opening poster with soft colors, playful imagery, and clear information to express a friendly yet academically focused preschool environment.',
       },
       {
-        images: [
-          '/images/work/instagram_feature_series.webp',
+        media: [
+          { type: 'image', src: '/images/work/instagram_feature_series.webp' },
         ],
         title: 'Instagram Feature Series',
         description:
           'Produced an Instagram set that highlights five core preschool features, using one signature color direction per topic to improve recognition and content scanning.',
       },
       {
-        images: [
-          '/images/work/cognitive_developmental_creening_post.webp',
+        media: [
+          { type: 'image', src: '/images/work/cognitive_developmental_creening_post.webp' },
         ],
         title: 'Cognitive & Developmental Screening Post',
         description:
@@ -117,7 +129,7 @@ export const workDetails: WorkDetailData[] = [
     slug: 'shopify-wholesale-theme',
     title: 'Shopify Theme for Wholesale',
     subtitle: 'Ongoing personal work for a coffee shop with wholesale customers',
-    order: 3,
+    order: 5,
     publishedAt: '2026-02-18',
     heroImage:
       '/images/work/shopify_wholesale_theme.webp',
@@ -159,8 +171,8 @@ export const workDetails: WorkDetailData[] = [
     },
     features: [
       {
-        images: [
-          '/images/work/wholesale_quick_order.webp',
+        media: [
+          { type: 'image', src: '/images/work/wholesale_quick_order.webp' },
         ],
         title: 'Wholesale Quick-Order Modal',
         description:
@@ -169,120 +181,10 @@ export const workDetails: WorkDetailData[] = [
     ],
   },
   {
-    slug: 'wholesale-inquiry-data-bridge',
-    title: 'Wholesale Inquiry Data Bridge — Shopify Embedded Admin App',
-    subtitle:
-      'Convert wholesale inquiries into Shopify customers with a controlled approval workflow',
-    order: 6,
-    publishedAt: '2026-02-18',
-    heroImage: '/images/work/wholesale_inquiry_data_bridge.webp',
-    githubUrl: 'https://github.com/kayofujii/wholesale-inquiry-data-bridge',
-    overview: {
-      background:
-        'Wholesale inquiries were collected outside Shopify, creating a manual and error-prone handoff into customer records.',
-      challenge:
-        'Build an embedded admin workflow that lets staff review inquiries, approve only valid requests, and sync clean customer data into Shopify.',
-      solution:
-        'I built a Shopify embedded app using React Router + Prisma that manages inquiry states, runs approve actions, and creates/updates Shopify customers via API.',
-    },
-    details: {
-      period: 'February 2026',
-      techStack: [
-        'TypeScript',
-        'React Router 7',
-        'Shopify App Bridge',
-        '@shopify/shopify-app-react-router',
-        'Prisma ORM',
-        'SQLite',
-        'Shopify Admin GraphQL API',
-        'Playwright',
-      ],
-      company: 'Personal Project',
-      role: 'Full-stack Engineer',
-      roleDescription:
-        'Owned app architecture, Prisma data model, Shopify customer sync logic, and E2E approval-flow testing.',
-      outcome: [
-        '• Replaced manual customer creation with a structured approval pipeline',
-        '• Prevented duplicate/invalid processing via status-based guardrails (PENDING -> APPROVED)',
-        '• Implemented create-or-update customer sync based on inquiry email lookup',
-        '• Added local E2E coverage for the core approval path with deterministic test mode',
-      ],
-      team: '1 full-stack engineer (me)',
-      teamDetails: 'Solo build: product planning, backend, frontend, and testing.',
-    },
-    features: [
-      {
-        images: ['/images/work/wholesale_inquiry_data_bridge.webp'],
-        title: 'Embedded Inquiry Approval Dashboard',
-        description:
-          'An in-admin interface to review wholesale inquiries and approve only pending records for downstream processing.',
-      },
-      {
-        images: ['/images/work/wholesale_inquiry_data_bridge_sync.webp'],
-        title: 'Smart Shopify Customer Sync',
-        description:
-          'On approval, the app finds existing customers by email and updates them, or creates new customer records when none exist.',
-      },
-    ],
-  },
-  {
-    slug: 'ghost-product-finder',
-    title: 'Ghost Product Finder — Shopify Admin Tool',
-    subtitle: 'Identify and fix missing-image products fast with a realtime admin workflow',
-    order: 7,
-    publishedAt: '2026-02-01',
-    heroImage:
-      '/images/work/ghost_product_finder.webp',
-    heroVideo:
-      '/videos/work/ghost_product_finder.mp4',
-    githubUrl: 'https://github.com/kayofujii/ghost-products-finder',
-    overview: {
-      background:
-        'Catalog managers were shipping new products without images, creating broken listings and manual follow-up.',
-      challenge:
-        'Build a fast, reliable admin tool that surfaces missing-image products and lets teams resolve them in bulk.',
-      solution:
-        'I built a Shopify Admin app with realtime updates, bulk image uploads, and webhook-driven alerts to keep the catalog clean.',
-    },
-    details: {
-      period: 'February 2026 (3person-day project)',
-      techStack: [
-        'Ruby on Rails',
-        'Shopify App gem',
-        'Shopify Admin API (GraphQL + REST)',
-        'React',
-        'Polaris UI',
-        'Webhooks',
-      ],
-      company: 'Personal Project',
-      role: 'Full-stack Engineer',
-      roleDescription:
-        'Owned the admin UX, Shopify Admin API integrations, and webhook automation for missing-image detection.',
-      outcome: [
-        '• Reduced time-to-fix for image-less products from days to minutes',
-        '• Enabled bulk image uploads with instant UI refresh',
-        '• Automated manager alerts when new ghost products are created',
-        '• Improved catalog quality and reduced admin overhead',
-      ],
-      team: '1 full-stack engineer (me)',
-      teamDetails:
-        'Product Manager, Front-end Engineer, Full-stack Engineer (me)',
-    },
-    features: [
-      {
-        images:
-          ['/images/work/ghost_product_finder.webp'],
-        title: 'Missing-Image Product Dashboard',
-        description:
-          'A focused admin dashboard that lists ghost products with filters for vendor, collection, and status to prioritize fixes.',
-      }
-    ],
-  },
-  {
     slug: 'mattress-comparison',
     title: 'Mattress Comparison Website',
-    subtitle: 'A comparison site that boosts traffic for a mattress e-commerce business',
-    order: 1,
+    subtitle: 'Led end-to-end design and development of a mattress comparison platform optimized for SEO, driving traffic and boosting sales for the company’s e-commerce business. Built with Ruby on Rails, JavaScript, Tailwind CSS, and Figma, delivering an MVP in just 3 weeks in collaboration with the founder and CTO.',
+    order: 3,
     publishedAt: '2026-01-15',
     heroImage:
       '/images/work/mattress_comparison.webp',
@@ -323,14 +225,13 @@ export const workDetails: WorkDetailData[] = [
     },
     features: [
       {
-        images:['/images/work/product_category.webp'],
+        media: [{ type: 'image', src: '/images/work/product_category.webp' }],
         title: 'Product Category Ranking Logic',
         description:
           'Built ranking logic for each category using customer reviews and admin-provided data to surface top products.',
       },
       {
-        images:
-          ['/images/work/product_comparison.webp'],
+        media: [{ type: 'image', src: '/images/work/product_comparison.webp' }],
         title: 'Product Comparison Pages',
         description:
           'Implemented a product comparison table using Rails many-to-many associations to enable side-by-side product comparisons and SEO-optimized pages using slug-based URLs instead of numeric IDs.',
@@ -340,8 +241,8 @@ export const workDetails: WorkDetailData[] = [
   {
     slug: 'meeting-scheduling-app',
     title: 'Meeting Scheduling Feature for Doctors and Employees',
-    subtitle: 'Secure scheduling built for occupational health consultations',
-    order: 4,
+    subtitle: 'Implemented a meeting-scheduling feature for occupational health professionals and employees with health issues, meeting user needs within a two-month deadline through detailed requirements gathering and collaboration.',
+    order: 2,
     publishedAt: '2025-10-01',
     heroImage:
       '/images/work/meeting_scheduling_app.webp',
@@ -378,15 +279,13 @@ export const workDetails: WorkDetailData[] = [
     },
     features: [
       {
-        images:
-          ['/images/work/real_time_availability.webp'],
+        media: [{ type: 'image', src: '/images/work/real_time_availability.webp' }],
         title: 'Real-Time Availability',
         description:
           'Users can view available time slots in real-time and book appointments instantly without page reloads. Built with Django REST API and Vue.js for a seamless, responsive booking experience.',
       },
       {
-        images:
-          ['/images/work/scheduling_system.webp'],
+        media: [{ type: 'image', src: '/images/work/scheduling_system.webp' }],
         title: 'Flexible Scheduling System',
         description:
           'HR teams can create customizable meeting schedules with support for both one-time appointments and recurring events (daily, weekly, monthly patterns). The intuitive interface eliminates scheduling complexity and reduces administrative overhead.',
@@ -394,10 +293,76 @@ export const workDetails: WorkDetailData[] = [
     ],
   },
   {
+    slug: 'occupational-health-consultation-tool',
+    title: 'Occupational Health Consultation Tool',
+    subtitle: 'This redesigned feature enabled occupational health professionals to conduct employee consultations more smoothly and without disruption, all in one place. It contributed to new contracts, resulting in a 4% increase in ARR.',
+    order: 1,
+    publishedAt: '2025-09-15',
+    heroImage:
+      '/images/work/occupational_health_consultation_tool.webp',
+    heroVideo:
+      '/videos/work/occupational_health_consultation_tool.mp4',
+    overview: {
+      background:
+        'In Japan, employees with health issues are required to consult with occupational health professionals. mediment provides a consultation tool to support communication between professionals and employees while sharing health information with HR managers.',
+      challenge:
+        'Occupational health professionals had to switch between three separate pages during consultations, making it difficult to review documents and take notes efficiently in real time.',
+      solution:
+        'I redesigned the experience into a single-screen workflow inspired by familiar electronic medical record interfaces, making it easier to review employee health data, write consultation notes, and prepare reports in one place.',
+    },
+    details: {
+      period: '1 person-month',
+      techStack: [
+        'Figma',
+        'UX Research',
+        'UX/UI Design',
+        'Wireframing',
+        'Prototyping',
+      ],
+      company: 'mediPhone, inc.',
+      role: 'UX/UI Designer, UX Researcher',
+      roleDescription:
+        'Led user research, interaction design, and interface redesign for the consultation workflow, aligning the solution with occupational health professionals and internal stakeholders.',
+      outcome: [
+        '• Simplified consultation work by consolidating key tasks into a single screen',
+        '• Received positive feedback from occupational health doctors and improved user satisfaction',
+        '• Contributed to new contracts, resulting in a 4% increase in ARR',
+      ],
+      team: '4 members',
+      teamDetails: 'Engineer x2, Project Owner x1, Product Designer (me)',
+    },
+    features: [
+      {
+        media: [
+          { type: 'video', src: '/videos/work/consultation_tool_introduction.mp4' },
+        ],
+        title: 'Single-Screen Consultation Workflow',
+        description:
+          'The redesigned interface brought together document review, consultation note-taking, and reporting in one place so professionals could complete interviews without jumping across multiple screens.',
+      },
+      {
+        media: [
+          { type: 'image', src: '/images/work/occupational_health_employee_data.webp' },
+        ],
+        title: 'Health Data Panel',
+        description:
+          'A dedicated health data area helped occupational health professionals review an employee’s current and historical condition at a glance while continuing to write notes during the session.',
+      },
+      {
+        media: [
+          { type: 'image', src: '/images/work/occupational_health_consultation_reports.webp' },
+        ],
+        title: 'Consultation Notes and Opinion Reports',
+        description:
+          'The new layout supported both consultation records and opinion reports in the same workspace, making it easier for other professionals and labor managers to review outcomes after the interview.',
+      },
+    ],
+  },
+  {
     slug: 'beazu-growth-ops',
     title: 'Beazu Wholesale E-commerce Growth & Maintenance',
     subtitle: 'SEO, UX, and site stability improvements for a jewelry wholesale store',
-    order: 2,
+    order: 4,
     publishedAt: '2025-11-30',
     heroImage:
       '/images/work/beazu_growth_ops.webp',
@@ -438,29 +403,33 @@ export const workDetails: WorkDetailData[] = [
     },
     features: [
       {
-        images:
-          ['/images/work/beazu_seo_categories.webp'],
+        media: [{ type: 'image', src: '/images/work/beazu_seo_categories.webp' }],
         title: 'SEO-Optimized Category Pages',
         description:
           'Developed dedicated jewelry category pages with optimized meta tags, structured data, and keyword-rich content, resulting in increased organic search traffic and improved SEO rankings.',
       },
       {
-        images:
-          ['https://images.unsplash.com/photo-1621361365424-06f0e1eb5c49?w=1200&h=700&fit=crop'],
+        media: [
+          {
+            type: 'image',
+            src: 'https://images.unsplash.com/photo-1621361365424-06f0e1eb5c49?w=1200&h=700&fit=crop',
+          },
+        ],
         title: 'Production Stability & Feature Development',
         description:
           'Successfully balanced bug resolution and feature delivery by fixing critical PHP issues while implementing stakeholder-requested functionality.',
       },
       {
-        images:
-          ['/images/work/beazu_flatsome_before.webp','/images/work/beazu_flatsome_after.webp'],
+        media: [
+          { type: 'image', src: '/images/work/beazu_flatsome_before.webp' },
+          { type: 'image', src: '/images/work/beazu_flatsome_after.webp' },
+        ],
         title: 'Flatsome Theme Enhancements',
         description:
           'Customized the Flatsome WordPress theme to boost conversions and UX by adding strategic CTA buttons, enhancing mobile navigation with category quick-links, and using CSS and UX Builder for maintainable updates.',
       },
       {
-        images:
-          ['/images/work/beazu_growth_ops.webp'],
+        media: [{ type: 'image', src: '/images/work/beazu_growth_ops.webp' }],
         title: 'Blocksy Theme Optimization for Wholesale',
         description:
           'Enhanced the Blocksy theme with a custom product variation interface and direct Add to Cart buttons, enabling wholesale customers to buy multiple products efficiently and reducing cart abandonment.',
@@ -511,8 +480,7 @@ export const workDetails: WorkDetailData[] = [
     },
     features: [
       {
-        images:
-          ['/images/work/mind_spark_responsive.webp'],
+        media: [{ type: 'image', src: '/images/work/mind_spark_responsive.webp' }],
         title: 'Responsive WordPress Build',
         description:
           'Designed and launched a mobile-first WordPress site with Elementor, clear IA, and conversion-focused CTAs.',

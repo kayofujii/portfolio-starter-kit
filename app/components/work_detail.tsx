@@ -4,12 +4,7 @@ import { Badge } from "@/ui/components/Badge";
 import { Button } from "@/ui/components/Button";
 import Link from "next/link";
 import { FeatherArrowRight } from "@subframe/core";
-
-type WorkDetailFeature = {
-  images: string[];
-  title: string;
-  description: string;
-};
+import type { WorkDetailFeature } from "@/app/work/data";
 
 type WorkDetailProps = {
   title: string;
@@ -45,7 +40,6 @@ type WorkDetailProps = {
 
 export default function WorkDetail({
   title,
-  subtitle,
   heroImage,
   githubUrl,
   liveUrl,
@@ -62,9 +56,6 @@ export default function WorkDetail({
           <div className="flex max-w-[1024px] flex-col items-start gap-4">
             <span className="text-heading-1 font-heading-1 text-default-font text-center -tracking-[0.04em]">
               {title}
-            </span>
-            <span className="text-heading-2 font-heading-2 text-default-font text-center">
-              {subtitle}
             </span>
           </div>
           <div className="w-full max-w-[1200px] overflow-hidden rounded-lg aspect-[12/7]">
@@ -234,9 +225,26 @@ export default function WorkDetail({
                   key={feature.title}
                   className="flex w-full flex-col items-start gap-4"
                 >
-                  {feature.images.map((img) => (
-                    <div key={img} className="w-full overflow-hidden rounded-lg shadow-md max-w-[1200px]">
-                      <img className="h-full w-full object-cover object-center" src={img} />
+                  {feature.media.map((item) => (
+                    <div
+                      key={item.src}
+                      className="w-full overflow-hidden rounded-lg shadow-md max-w-[1200px]"
+                    >
+                      {item.type === "image" ? (
+                        <img
+                          className="h-full w-full object-cover object-center"
+                          src={item.src}
+                          alt={item.alt ?? feature.title}
+                        />
+                      ) : (
+                        <video
+                          className="h-full w-full object-cover object-center"
+                          src={item.src}
+                          poster={item.poster}
+                          controls
+                          playsInline
+                        />
+                      )}
                     </div>
                   ))}
                   <span className="text-heading-3 font-heading-3 text-default-font">

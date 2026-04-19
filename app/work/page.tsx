@@ -16,7 +16,7 @@ export default function WorkIndexPage() {
             Work
           </span>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 w-full max-w-[1024px] flex-wrap items-start gap-8">
+        <div className="grid grid-cols-1 w-full max-w-[1024px] flex-wrap items-start gap-8">
           {workDetails
             .slice()
             .sort((a, b) => (a.order ?? 0) - (b.order ?? 0))

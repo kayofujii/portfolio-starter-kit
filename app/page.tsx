@@ -26,15 +26,15 @@ export default function Page() {
             />
             <div className="relative z-10 container px-6 flex mx-auto flex-col max-w-[1024px]">
               <div className="mb-8 space-y-4 w-full">
-                <h2 className="w-full text-heading-2 text-brand-primary uppercase">
-                  Full-Stack Developer & Designer
+                <h2 className="w-full text-heading-2 text-brand-primary">
+                  Product Designer & Full-Stack Developer
                 </h2>
                 <h1 className="w-full text-heading-1 text-default-font">
-                  I grow businesses with conversion-driven web development.
+                  I help businesses grow by connecting design and development to deliver real product outcomes.
                 </h1>
                 <p className="w-full text-default-font">
-                  Hi, I'm Kayo based in Vancouver with 5 years of experience <br />
-                  bridging UX design and web development. I helped a Canadian retail company grow eCommerce sales 1.5 times in 3 months.
+                  Hi, I’m Kayo, a Vancouver-based product designer with 5 years of experience.<br />
+                  As an early team member, I helped a SaaS startup reach break-even, and drove a 1.5× increase in eCommerce sales within 3 months for a Canadian retail company by streamlining product workflows and improving user experience.
                 </p>
               </div>
               <div className="flex flex-col gap-4 md:flex-row md:items-center">
@@ -57,17 +57,16 @@ export default function Page() {
               Work
             </h2>
           </div>
-          <div className="grid w-full grid-cols-1 md:grid-cols-2 gap-12">
+          <div className="grid w-full grid-cols-1 gap-12">
             {workDetails
               .slice()
               .sort((a, b) => (a.order ?? 0) - (b.order ?? 0))
-              .slice(0, 4)
+              .slice(0, 3)
               .map((work, i) => (
               <Link
                 key={work.slug}
                 href={`/work/${work.slug}`}
-                className="flex flex-col gap-6 rounded-lg bg-default-background px-6 py-6 shadow-sm transition-transform hover:-translate-y-1 hover:shadow-md md:col-span-1"
-              >
+                className="flex flex-col gap-6 rounded-lg bg-default-background px-6 py-6 shadow-sm transition-transform hover:-translate-y-1 hover:shadow-md">
                 <div className="w-full overflow-hidden rounded-md aspect-[12/7]">
                   {work.heroVideo ? (
                     <video
@@ -124,6 +123,61 @@ export default function Page() {
           >
             View More Work
           </Button>
+        </div>
+        <div className="flex w-full max-w-[1024px] flex-col items-start gap-12 px-6">
+          <div className="flex w-full flex-col items-start gap-2">
+            <h2 className="text-heading-2 font-heading-2 text-[#2c2c2cff]">
+              Outputs
+            </h2>
+          </div>
+
+          <div className="w-full grid grid-cols-1 md:grid-cols-2 items-start gap-6">
+
+            <a
+              href="https://medium.com/@kayosamu1025/create-rapid-professional-ui-for-web-development-fabef7e98d59"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex flex-col items-start rounded-2xl bg-white shadow-sm transition-transform hover:-translate-y-1 hover:shadow-md overflow-hidden"
+            >
+              <img
+                src="https://miro.medium.com/v2/resize:fit:700/1*YJ6GDIi7lp9yLQMHMY2uog.jpeg"
+                alt="Engineer-friendly UX/UI"
+                className="w-full h-64 object-cover"
+              />
+
+              <div className="px-8 py-6 flex flex-col gap-2">
+                <h3 className="text-heading-3 font-heading-3 text-[#2c2c2cff]">
+                  Engineer-friendly UX/UI
+                </h3>
+                <p className="text-caption font-caption text-subtext-color">
+                  medium
+                </p>
+              </div>
+            </a>
+
+            <a
+              href="https://medium.com/design-bootcamp/how-to-create-engineer-friendly-designs-8d00fc92b1b4"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex flex-col items-start rounded-2xl bg-white shadow-sm transition-transform hover:-translate-y-1 hover:shadow-md overflow-hidden"
+            >
+              <img
+                src="https://miro.medium.com/v2/resize:fit:700/1*yXI06RpZH4_BY0jpNjN4OQ.png"
+                alt="Engineer-friendly design article"
+                className="w-full h-64 object-cover"
+              />
+
+              <div className="px-8 py-6 flex flex-col gap-2">
+                <h3 className="text-heading-3 font-heading-3 text-[#2c2c2cff]">
+                  Create Rapid, Refined UI with Strong Brand Value Using Subframe Without Design Knowledge
+                </h3>
+                <p className="text-caption font-caption text-subtext-color">
+                  medium
+                </p>
+              </div>
+            </a>
+
+          </div>
         </div>
         <div className="flex w-full max-w-[1024px] flex-col items-start gap-12 px-6">
           <div className="flex w-full flex-col items-start gap-2">
