@@ -4,7 +4,7 @@ import { Badge } from "@/ui/components/Badge";
 import { Button } from "@/ui/components/Button";
 import Link from "next/link";
 import { FeatherArrowRight } from "@subframe/core";
-import type { WorkDetailFeature } from "@/app/work/data";
+import type { WorkDetailFeature } from "app/work/data";
 
 type WorkDetailProps = {
   title: string;
