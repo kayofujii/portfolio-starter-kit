@@ -334,7 +334,7 @@ export const workDetails: WorkDetailData[] = [
     features: [
       {
         media: [
-          { type: 'image', src: '/images/work/occupational_health_consultation_tool.webp' },
+          { type: 'video', src: '/videos/work/occupational_health_consultation_tool.mp4' },
         ],
         title: 'Single-Screen Consultation Workflow',
         description:
