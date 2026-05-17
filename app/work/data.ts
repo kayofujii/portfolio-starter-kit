@@ -53,78 +53,78 @@ export type WorkDetailData = {
 }
 
 export const workDetails: WorkDetailData[] = [
-  {
-    slug: 'shichida-kids-visual-assets',
-    title: 'Visual Assets for Early Childhood Education',
-    subtitle: 'Marketing materials that supported the launch of a new early childhood education service',
-    order: 7,
-    publishedAt: '2026-03-03',
-    heroImage:
-      '/images/work/visual_assets_for_early_childhood_education.webp',
-    overview: {
-      background:
-        'Shichida Kids Academy of Canada is an early childhood education service in Burnaby, focused on families with children aged 3 to 5.',
-      challenge:
-        'Communicate a right-brain and emotional-development learning approach in a way that feels trustworthy, warm, and easy for parents to understand across print and social channels.',
-      solution:
-        'I created a cohesive visual campaign including event posters and Instagram content, combining Canva and Adobe workflows with AI-assisted image generation using Gemini and ChatGPT.',
-    },
-    details: {
-      period: '1 person-day',
-      techStack: [
-        'Canva',
-        'Adobe Illustrator',
-        'Adobe Creative Cloud',
-        'Gemini',
-        'ChatGPT',
-      ],
-      company: 'Shichida Kids Academy of Canada',
-      role: 'Graphic Designer, Marketing Designer, Brand Designer',
-      roleDescription:
-        'Designed launch marketing assets and translated the service tone into a clear, parent-friendly visual system across posters and social posts.',
-      outcome: [
-        '• Supported launch communications with consistent, education-focused visual assets',
-        '• Received positive stakeholder feedback from the CEO and educators',
-        '• Contributed to over 30 participants during the initial launch phase',
-      ],
-      team: '3 members',
-      teamDetails: 'CEO, Educators, Designer (me)',
-    },
-    features: [
-      {
-        media: [
-          { type: 'image', src: '/images/work/science_fair_event_poster.webp' },
-        ],
-        title: 'Science Fair Event Poster',
-        description:
-          'Designed a science fair poster to promote logic puzzles, simple chemical experiments, and a free trial lesson for families exploring the academy.',
-      },
-      {
-        media: [
-          { type: 'image', src: '/images/work/preschool_grand_opening%20_poster.webp' },
-        ],
-        title: 'Preschool Grand Opening Poster',
-        description:
-          'Created a grand opening poster with soft colors, playful imagery, and clear information to express a friendly yet academically focused preschool environment.',
-      },
-      {
-        media: [
-          { type: 'image', src: '/images/work/instagram_feature_series.webp' },
-        ],
-        title: 'Instagram Feature Series',
-        description:
-          'Produced an Instagram set that highlights five core preschool features, using one signature color direction per topic to improve recognition and content scanning.',
-      },
-      {
-        media: [
-          { type: 'image', src: '/images/work/cognitive_developmental_creening_post.webp' },
-        ],
-        title: 'Cognitive & Developmental Screening Post',
-        description:
-          'Designed an informative and approachable post using the brand orange palette, clear icons, and concise copy to explain the value of early cognitive and developmental screening.',
-      },
-    ],
-  },
+  // {
+  //   slug: 'shichida-kids-visual-assets',
+  //   title: 'Visual Assets for Early Childhood Education',
+  //   subtitle: 'Marketing materials that supported the launch of a new early childhood education service',
+  //   order: 7,
+  //   publishedAt: '2026-03-03',
+  //   heroImage:
+  //     '/images/work/visual_assets_for_early_childhood_education.webp',
+  //   overview: {
+  //     background:
+  //       'Shichida Kids Academy of Canada is an early childhood education service in Burnaby, focused on families with children aged 3 to 5.',
+  //     challenge:
+  //       'Communicate a right-brain and emotional-development learning approach in a way that feels trustworthy, warm, and easy for parents to understand across print and social channels.',
+  //     solution:
+  //       'I created a cohesive visual campaign including event posters and Instagram content, combining Canva and Adobe workflows with AI-assisted image generation using Gemini and ChatGPT.',
+  //   },
+  //   details: {
+  //     period: '1 person-day',
+  //     techStack: [
+  //       'Canva',
+  //       'Adobe Illustrator',
+  //       'Adobe Creative Cloud',
+  //       'Gemini',
+  //       'ChatGPT',
+  //     ],
+  //     company: 'Shichida Kids Academy of Canada',
+  //     role: 'Graphic Designer, Marketing Designer, Brand Designer',
+  //     roleDescription:
+  //       'Designed launch marketing assets and translated the service tone into a clear, parent-friendly visual system across posters and social posts.',
+  //     outcome: [
+  //       '• Supported launch communications with consistent, education-focused visual assets',
+  //       '• Received positive stakeholder feedback from the CEO and educators',
+  //       '• Contributed to over 30 participants during the initial launch phase',
+  //     ],
+  //     team: '3 members',
+  //     teamDetails: 'CEO, Educators, Designer (me)',
+  //   },
+  //   features: [
+  //     {
+  //       media: [
+  //         { type: 'image', src: '/images/work/science_fair_event_poster.webp' },
+  //       ],
+  //       title: 'Science Fair Event Poster',
+  //       description:
+  //         'Designed a science fair poster to promote logic puzzles, simple chemical experiments, and a free trial lesson for families exploring the academy.',
+  //     },
+  //     {
+  //       media: [
+  //         { type: 'image', src: '/images/work/preschool_grand_opening%20_poster.webp' },
+  //       ],
+  //       title: 'Preschool Grand Opening Poster',
+  //       description:
+  //         'Created a grand opening poster with soft colors, playful imagery, and clear information to express a friendly yet academically focused preschool environment.',
+  //     },
+  //     {
+  //       media: [
+  //         { type: 'image', src: '/images/work/instagram_feature_series.webp' },
+  //       ],
+  //       title: 'Instagram Feature Series',
+  //       description:
+  //         'Produced an Instagram set that highlights five core preschool features, using one signature color direction per topic to improve recognition and content scanning.',
+  //     },
+  //     {
+  //       media: [
+  //         { type: 'image', src: '/images/work/cognitive_developmental_creening_post.webp' },
+  //       ],
+  //       title: 'Cognitive & Developmental Screening Post',
+  //       description:
+  //         'Designed an informative and approachable post using the brand orange palette, clear icons, and concise copy to explain the value of early cognitive and developmental screening.',
+  //     },
+  //   ],
+  // },
   {
     slug: 'shopify-wholesale-theme',
     title: 'Shopify Theme for Wholesale',
@@ -242,7 +242,7 @@ export const workDetails: WorkDetailData[] = [
     slug: 'meeting-scheduling-app',
     title: 'Meeting Scheduling Feature for Doctors and Employees',
     subtitle: 'Implemented a meeting-scheduling feature for occupational health professionals and employees with health issues, meeting user needs within a two-month deadline through detailed requirements gathering and collaboration.',
-    order: 2,
+    order: 1,
     publishedAt: '2025-10-01',
     heroImage:
       '/images/work/meeting_scheduling_app.webp',
@@ -296,7 +296,7 @@ export const workDetails: WorkDetailData[] = [
     slug: 'occupational-health-consultation-tool',
     title: 'Occupational Health Consultation Tool',
     subtitle: 'This redesigned feature enabled occupational health professionals to conduct employee consultations more smoothly and without disruption, all in one place. It contributed to new contracts, resulting in a 4% increase in ARR.',
-    order: 1,
+    order: 5,
     publishedAt: '2025-09-15',
     heroImage:
       '/images/work/occupational_health_consultation_tool.webp',
@@ -440,7 +440,7 @@ export const workDetails: WorkDetailData[] = [
     slug: 'mind-spark-academy',
     title: 'Mind Spark Academy Preschool Website',
     subtitle: 'Education-first brand and WordPress site that launched a new preschool in Canada',
-    order: 5,
+    order: 3,
     publishedAt: '2025-08-15',
     heroImage:
       '/images/work/mind_spark.webp',
