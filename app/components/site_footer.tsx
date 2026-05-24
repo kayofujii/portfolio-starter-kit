@@ -45,6 +45,10 @@ export default function SiteFooter() {
               label="LinkedIn"
             />
             <ContactPill
+              href="https://github.com/kayofujii"
+              label="GitHub"
+            />
+            <ContactPill
               href="https://drive.google.com/file/d/1S8YAI-QvWzMSxtb6_pej-KB_lnNSscsM/view?usp=sharing"
               label="Resume"
             />
