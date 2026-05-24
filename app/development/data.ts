@@ -457,59 +457,59 @@ export const workDetails: WorkDetailData[] = [
       },
     ],
   },
-  {
-    slug: 'shopify-wholesale-theme',
-    title: 'Shopify Theme for Wholesale',
-    subtitle: 'Ongoing personal work for a coffee shop with wholesale customers',
-    workTypes: ['development'],
-    order: 8,
-    publishedAt: '2026-02-18',
-    heroImage:
-      '/images/work/shopify_wholesale_theme.webp',
-    heroVideo:
-      '/videos/work/shopify_wholesale_theme.mp4',
-    liveUrl: 'https://development-20230885.myshopify.com/',
-    liveUrlPassword: 'yahtsa',
-    githubUrl: 'https://github.com/kayofujii/my-wholesale-store',
-    overview: {
-      background:
-        'Merchants for wholesale often rely on free Shopify themes that are hard to scale for complex product options and wholesale ordering behavior.',
-      challenge:
-        'Reduce decision friction for retail shoppers while making bulk ordering fast for wholesale buyers without forcing users through multiple product pages.',
-      solution:
-        'I am building a conversion-focused Shopify theme approach a wholesale quick-order modal powered by Shopify Ajax cart APIs.',
-    },
-    details: {
-      period: '3 days',
-      techStack: [
-        'Shopify Liquid',
-        'HTML/CSS',
-        'JavaScript',
-        'React',
-        'Storefront API',
-        'Shopify Metafields',
-        'Ajax API',
-      ],
-      company: 'Personal Project',
-      role: 'Full-stack Shopify Developer',
-      roleDescription:
-        'Designing the data model and building theme components that improve product discovery, bulk purchasing, and local pickup clarity.',
-      outcome:
-        'Built a wholesale quick-order modal with variant selectors and bulk add-to-cart, created custom homepage and product cards plus a wholesale application page based on branding and research, targeting a +15% add-to-cart rate and fewer support requests related to variant selection.',
-      team: '1 member',
-      teamDetails: 'Full-stack Shopify developer (me)',
-    },
-    features: [
-      {
-        media: [
-          { type: 'image', src: '/images/work/wholesale_quick_order.webp' },
-        ],
-        title: 'Wholesale Quick-Order Modal',
-        description:
-          'A lightweight add-to-cart modal that lets wholesale buyers select variants, set quantities, and add multiple SKUs in one action using Shopify /cart/add.js.',
-      }
-    ],
-  },
+  // {
+  //   slug: 'shopify-wholesale-theme',
+  //   title: 'Shopify Theme for Wholesale',
+  //   subtitle: 'Ongoing personal work for a coffee shop with wholesale customers',
+  //   workTypes: ['development'],
+  //   order: 8,
+  //   publishedAt: '2026-02-18',
+  //   heroImage:
+  //     '/images/work/shopify_wholesale_theme.webp',
+  //   heroVideo:
+  //     '/videos/work/shopify_wholesale_theme.mp4',
+  //   liveUrl: 'https://development-20230885.myshopify.com/',
+  //   liveUrlPassword: 'yahtsa',
+  //   githubUrl: 'https://github.com/kayofujii/my-wholesale-store',
+  //   overview: {
+  //     background:
+  //       'Merchants for wholesale often rely on free Shopify themes that are hard to scale for complex product options and wholesale ordering behavior.',
+  //     challenge:
+  //       'Reduce decision friction for retail shoppers while making bulk ordering fast for wholesale buyers without forcing users through multiple product pages.',
+  //     solution:
+  //       'I am building a conversion-focused Shopify theme approach a wholesale quick-order modal powered by Shopify Ajax cart APIs.',
+  //   },
+  //   details: {
+  //     period: '3 days',
+  //     techStack: [
+  //       'Shopify Liquid',
+  //       'HTML/CSS',
+  //       'JavaScript',
+  //       'React',
+  //       'Storefront API',
+  //       'Shopify Metafields',
+  //       'Ajax API',
+  //     ],
+  //     company: 'Personal Project',
+  //     role: 'Full-stack Shopify Developer',
+  //     roleDescription:
+  //       'Designing the data model and building theme components that improve product discovery, bulk purchasing, and local pickup clarity.',
+  //     outcome:
+  //       'Built a wholesale quick-order modal with variant selectors and bulk add-to-cart, created custom homepage and product cards plus a wholesale application page based on branding and research, targeting a +15% add-to-cart rate and fewer support requests related to variant selection.',
+  //     team: '1 member',
+  //     teamDetails: 'Full-stack Shopify developer (me)',
+  //   },
+  //   features: [
+  //     {
+  //       media: [
+  //         { type: 'image', src: '/images/work/wholesale_quick_order.webp' },
+  //       ],
+  //       title: 'Wholesale Quick-Order Modal',
+  //       description:
+  //         'A lightweight add-to-cart modal that lets wholesale buyers select variants, set quantities, and add multiple SKUs in one action using Shopify /cart/add.js.',
+  //     }
+  //   ],
+  // },
 ]
 
 export function getWorkDetailBySlug(slug: string) {
