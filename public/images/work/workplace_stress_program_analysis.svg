@@ -1,0 +1,23 @@
+<svg width="1200" height="700" viewBox="0 0 1200 700" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="700" rx="32" fill="#D8F3F7"/>
+  <rect x="118" y="102" width="964" height="496" rx="24" fill="#F9FEFF"/>
+  <rect x="162" y="152" width="210" height="398" rx="16" fill="#E8F6F8"/>
+  <rect x="194" y="188" width="90" height="18" rx="9" fill="#7DB6BD"/>
+  <rect x="194" y="232" width="146" height="12" rx="6" fill="#B7D8DC"/>
+  <rect x="194" y="260" width="132" height="12" rx="6" fill="#B7D8DC"/>
+  <rect x="194" y="328" width="146" height="146" rx="16" fill="#FFFFFF"/>
+  <rect x="414" y="152" width="624" height="108" rx="20" fill="#FFFFFF"/>
+  <rect x="450" y="188" width="296" height="16" rx="8" fill="#5E9CA4"/>
+  <rect x="450" y="224" width="230" height="12" rx="6" fill="#AACFD3"/>
+  <rect x="414" y="286" width="300" height="264" rx="20" fill="#FFFFFF"/>
+  <rect x="738" y="286" width="300" height="264" rx="20" fill="#FFFFFF"/>
+  <rect x="450" y="322" width="112" height="14" rx="7" fill="#5E9CA4"/>
+  <rect x="774" y="322" width="138" height="14" rx="7" fill="#5E9CA4"/>
+  <rect x="450" y="366" width="228" height="140" rx="18" fill="#E2F4F6"/>
+  <rect x="774" y="366" width="228" height="140" rx="18" fill="#E2F4F6"/>
+  <path d="M468 474C505.333 430.667 542.667 430.667 580 474C617.333 517.333 654.667 517.333 692 474" stroke="#3C858E" stroke-width="18" stroke-linecap="round"/>
+  <path d="M792 490L842 442L884 468L936 410L984 458" stroke="#3C858E" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="842" cy="442" r="12" fill="#FF9B73"/>
+  <circle cx="936" cy="410" r="12" fill="#FF9B73"/>
+  <text x="118" y="72" fill="#21484D" font-family="Arial, sans-serif" font-size="42" font-weight="700">Workplace Stress Program Analysis</text>
+</svg>

@@ -1,10 +1,5 @@
-"use client";
-
-import { Badge } from "@/ui/components/Badge";
-import { Button } from "@/ui/components/Button";
 import Link from "next/link";
-import { FeatherArrowRight } from "@subframe/core";
-import type { WorkDetailFeature } from "app/work/data";
+import type { WorkDetailFeature } from "app/development/data";
 
 type WorkDetailProps = {
   title: string;
@@ -12,7 +7,7 @@ type WorkDetailProps = {
   heroImage: string;
   githubUrl?: string;
   liveUrl?: string;
-  liveUrlPassword?: string
+  liveUrlPassword?: string;
   overview: {
     background: string;
     challenge: string;
@@ -24,7 +19,7 @@ type WorkDetailProps = {
     company: string;
     role: string;
     roleDescription: string;
-    outcome: string[];
+    outcome: string;
     team: string;
     teamDetails: string;
   };
@@ -38,6 +33,30 @@ type WorkDetailProps = {
   };
 };
 
+const sectionHeadingClass = "text-[1.75rem] font-bold text-[#006a68]";
+const subheadingClass =
+  "text-[1.25rem] font-bold tracking-normal text-[#161d1c]";
+const bodyLargeClass = "text-[1.125rem] leading-[1.55] text-[#333333]";
+const bodyClass = "text-[1rem] leading-7 text-[#333333]";
+const labelClass = "text-[1.125rem] font-bold text-[rgba(40,40,40,0.8)]";
+const contentSectionClass =
+  "mx-auto flex w-full max-w-[840px] flex-col gap-10 px-6 py-12 md:px-10 md:py-16";
+const mediaOuterClass = "overflow-hidden rounded-[20px] p-4 md:p-8";
+const mediaInnerClass =
+  "h-auto w-full rounded-[14px] bg-white shadow-[0_12px_30px_rgba(0,0,0,0.12)]";
+
+function MediaFrame({
+  backgroundClass,
+  children,
+}: {
+  backgroundClass: string;
+  children: React.ReactNode;
+}) {
+  return (
+    <div className={`${mediaOuterClass} ${backgroundClass}`}>{children}</div>
+  );
+}
+
 export default function WorkDetail({
   title,
   heroImage,
@@ -49,258 +68,231 @@ export default function WorkDetail({
   features,
   nextProject,
 }: WorkDetailProps) {
+  const overviewItems = [
+    { label: "Timeline", value: details.period },
+    { label: "Role", value: details.role },
+    { label: "Company", value: details.company },
+    { label: "Team", value: `${details.team} — ${details.teamDetails}` },
+    { label: "Tech Stack", value: details.techStack.join(", ") },
+    { label: "Impact", value: details.outcome },
+  ];
+
   return (
-    <div className="flex w-full px-6 flex-col items-center bg-[#fafaf8ff] text-[#2C2C2C]">
-      <div className="flex w-full flex-col items-center justify-center px-6 py-24">
-        <div className="flex w-full max-w-[1280px] flex-col items-center gap-12">
-          <div className="flex max-w-[1024px] flex-col items-start gap-4">
-            <span className="text-heading-1 font-heading-1 text-default-font text-center -tracking-[0.04em]">
-              {title}
-            </span>
-          </div>
-          <div className="w-full max-w-[1200px] overflow-hidden rounded-lg aspect-[12/7]">
-            <img
-              className="h-full w-full object-cover object-center"
-              src={heroImage}
-            />
-          </div>
+    <main className="w-full bg-white text-[#333333]">
+      <section className="mx-auto flex w-full max-w-[1440px] flex-col items-center px-6 pb-10 pt-10 md:px-10">
+        <div className="w-full max-w-[980px] text-center">
+          <h1 className="text-[2rem] font-bold leading-[1.4] tracking-normal text-[#333333] md:text-[2.5rem]">
+            {title}
+          </h1>
         </div>
-      </div>
+        <div className="mt-10 w-full overflow-hidden bg-[#d8efe2]">
+          <img
+            src={heroImage}
+            alt={title}
+            className="h-full w-full object-cover"
+          />
+        </div>
+      </section>
 
-      <div className="flex max-w-[1024px] flex-col items-center px-6 py-24">
-        <div className="flex w-full max-w-[1280px] flex-col items-start gap-24">
-          <div className="flex w-full flex-wrap items-start gap-12">
-            <div className="flex min-w-[320px] grow shrink-0 basis-0 flex-col items-start gap-6">
-              <span className="text-heading-1 font-heading-1 text-default-font">
-                Project Overview
-              </span>
-              <div className="flex w-full flex-col items-start gap-4">
-                <span className="text-heading-2 font-heading-2 text-default-font">
-                  Background
-                </span>
-                <span className="text-body font-body text-subtext-color">
-                  {overview.background}
-                </span>
-              </div>
-              <div className="flex w-full flex-col items-start gap-4">
-                <span className="text-heading-2 font-heading-2 text-default-font">
-                  The Challenge
-                </span>
-                <span className="text-body font-body text-subtext-color">
-                  {overview.challenge}
-                </span>
-              </div>
-              <div className="flex w-full flex-col items-start gap-4">
-                <span className="text-heading-2 font-heading-2 text-default-font">
-                  The Solution
-                </span>
-                <span className="text-body font-body text-subtext-color">
-                  {overview.solution}
-                </span>
-              </div>
-              {liveUrl?.trim() &&  (
-                <div className="flex w-full flex-col items-start gap-4">
-                  <span className="text-heading-2 font-heading-2 text-default-font">
-                    Live URL
-                  </span>
-                    <a
-                      href={liveUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-body font-body text-blue-600 hover:text-blue-700 underline"
-                    >
-                      Live URL
-                    </a>
-                </div>
-                )}
-              {liveUrlPassword?.trim() &&  (
-                <div className="flex w-full flex-col items-start gap-4">
-                  <span className="text-heading-2 font-heading-2 text-default-font">
-                    Live URL Password
-                  </span>
-                  {liveUrlPassword}
-                </div>
-                )}
-              {githubUrl?.trim() &&  (
-                <div className="flex w-full flex-col items-start gap-4">
-                  <span className="text-heading-2 font-heading-2 text-default-font">
-                    Github URL
-                  </span>
-                    <a
-                      href={githubUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-body font-body text-blue-600 hover:text-blue-700 underline"
-                    >
-                      View GitHub Repository
-                    </a>
-                </div>
-                )}
-              </div>
+      <section className={contentSectionClass}>
+        <div className="text-center">
+          <h2 className={sectionHeadingClass}>Project Overview</h2>
+        </div>
 
-            <div className="flex min-w-[320px] grow shrink-0 basis-0 flex-col items-start gap-6">
-              <span className="text-heading-1 font-heading-1 text-default-font">
-                Project Details
-              </span>
-              <div className="flex w-full flex-col items-start gap-8 rounded-lg bg-white px-8 py-8 shadow-sm">
-                <div className="flex w-full flex-col items-start gap-2">
-                  <span className="text-caption-bold font-caption-bold text-subtext-color">
-                    PERIOD
-                  </span>
-                  <span className="text-body-bold font-body-bold text-default-font">
-                    {details.period}
-                  </span>
-                </div>
-                <div className="flex h-px w-full flex-none flex-col items-center gap-2 bg-neutral-200" />
-                <div className="flex w-full flex-col items-start gap-2">
-                  <span className="text-caption-bold font-caption-bold text-subtext-color">
-                    TECH STACK
-                  </span>
-                  <div className="flex flex-wrap items-start gap-2">
-                    {details.techStack.map((tech) => (
-                      <Badge key={tech} variant="neutral">
-                        {tech}
-                      </Badge>
-                    ))}
-                  </div>
-                </div>
-                <div className="flex h-px w-full flex-none flex-col items-center gap-2 bg-neutral-200" />
-                <div className="flex w-full flex-col items-start gap-2">
-                  <span className="text-caption-bold font-caption-bold text-subtext-color">
-                    COMPANY
-                  </span>
-                  <span className="text-body-bold font-body-bold text-default-font">
-                    {details.company}
-                  </span>
-                </div>
-                <div className="flex h-px w-full flex-none flex-col items-center gap-2 bg-neutral-200" />
-                <div className="flex w-full flex-col items-start gap-2">
-                  <span className="text-caption-bold font-caption-bold text-subtext-color">
-                    MY ROLE
-                  </span>
-                  <span className="text-body-bold font-body-bold text-default-font">
-                    {details.role}
-                  </span>
-                  <span className="text-body font-body text-subtext-color">
-                    {details.roleDescription}
-                  </span>
-                </div>
-                <div className="flex h-px w-full flex-none flex-col items-center gap-2 bg-neutral-200" />
-                <div className="flex w-full flex-col items-start gap-2">
-                  <span className="text-caption-bold font-caption-bold text-subtext-color">
-                    OUTCOME
-                  </span>
-                  {details.outcome.map((item) => (
-                    <span
-                      key={item}
-                      className="text-body font-body text-subtext-color"
-                    >
-                      {item}
-                    </span>
-                  ))}
-                </div>
-                <div className="flex h-px w-full flex-none flex-col items-center gap-2 bg-neutral-200" />
-                <div className="flex w-full flex-col items-start gap-2">
-                  <span className="text-caption-bold font-caption-bold text-subtext-color">
-                    TEAM
-                  </span>
-                  <span className="text-body-bold font-body-bold text-default-font">
-                    {details.team}
-                  </span>
-                  <span className="text-body font-body text-subtext-color">
-                    {details.teamDetails}
-                  </span>
-                </div>
-              </div>
+        <div className="space-y-5 border-b border-[#f0eeee] pb-8 text-[1.125rem] leading-[1.55]">
+          <p>{overview.background}</p>
+          <p>{overview.solution}</p>
+        </div>
+
+        <div className="grid gap-x-6 gap-y-6 md:grid-cols-2">
+          {overviewItems.map((item) => (
+            <div key={item.label} className="space-y-1">
+              <p className={labelClass}>{item.label}</p>
+              <p className={bodyClass}>{item.value}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section className={contentSectionClass}>
+        <div className="text-center">
+          <h2 className={sectionHeadingClass}>The Situation</h2>
+        </div>
+
+        <div className="space-y-10">
+          <div className="space-y-3">
+            <h3 className={subheadingClass}>Background</h3>
+            <div className="space-y-3 pl-5 text-[1.125rem] leading-[1.55]">
+              <p>{overview.background}</p>
             </div>
           </div>
 
-          <div className="flex w-full flex-col items-start gap-12">
-            <span className="text-heading-1 font-heading-1 text-default-font">
-              Key Features &amp; Screenshots
-            </span>
-            <div className="flex w-full flex-col items-start gap-8">
-              {features.map((feature) => (
-                <div
-                  key={feature.title}
-                  className="flex w-full flex-col items-start gap-4"
-                >
-                  {feature.media.map((item) => (
-                    <div
-                      key={item.src}
-                      className="w-full overflow-hidden rounded-lg shadow-md max-w-[1200px]"
-                    >
-                      {item.type === "image" ? (
-                        <img
-                          className="h-full w-full object-cover object-center"
-                          src={item.src}
-                          alt={item.alt ?? feature.title}
-                        />
-                      ) : (
-                        <video
-                          className="h-full w-full object-cover object-center"
-                          src={item.src}
-                          poster={item.poster}
-                          controls
-                          playsInline
-                        />
-                      )}
-                    </div>
-                  ))}
-                  <span className="text-heading-3 font-heading-3 text-default-font">
-                    {feature.title}
-                  </span>
-                  <span className="text-body font-body text-subtext-color">
-                    {feature.description}
-                  </span>
-                </div>
-              ))}
+          <div className="space-y-3">
+            <h3 className={subheadingClass}>The Challenge</h3>
+            <div className="space-y-3 pl-5 text-[1.125rem] leading-[1.55]">
+              <p>{overview.challenge}</p>
             </div>
           </div>
 
-          {nextProject ? (
-            <div className="flex w-full flex-col items-center gap-8 rounded-lg bg-white px-12 py-12 shadow-sm">
-              <div className="flex w-full flex-col items-start gap-8">
-                <span className="text-heading-2 font-heading-2 text-subtext-color text-center">
-                  Up next
-                </span>
+          <div className="space-y-3">
+            <h3 className={subheadingClass}>The Solution</h3>
+            <div className="space-y-3 pl-5 text-[1.125rem] leading-[1.55]">
+              <p>{overview.solution}</p>
+            </div>
+          </div>
+
+          {details.roleDescription ? (
+            <div className="space-y-3">
+              <h3 className={subheadingClass}>My Role</h3>
+              <div className="space-y-3 pl-5 text-[1.125rem] leading-[1.55]">
+                <p>{details.roleDescription}</p>
               </div>
-              <div className="flex flex-col items-start gap-6">
-                <div className="w-full overflow-hidden rounded-md aspect-[12/7]">
-                  <img className="h-full w-full object-cover object-center" src={nextProject.image} />
-                </div>
-                <div className="flex flex-col items-start gap-2">
-                  <span className="text-heading-2 font-heading-2 text-default-font">
-                    {nextProject.title}
-                  </span>
-                  <span className="text-body font-body text-subtext-color">
-                    {nextProject.description}
-                  </span>
-                </div>
-              </div>
-              {nextProject.ctaHref ? (
-                <Link href={nextProject.ctaHref}>
-                  <Button
-                    variant="neutral-secondary"
-                    size="large"
-                    iconRight={<FeatherArrowRight />}
-                  >
-                    {nextProject.ctaLabel}
-                  </Button>
-                </Link>
-              ) : (
-                <Button
-                  variant="neutral-secondary"
-                  size="large"
-                  iconRight={<FeatherArrowRight />}
-                >
-                  {nextProject.ctaLabel}
-                </Button>
-              )}
             </div>
           ) : null}
         </div>
-      </div>
-    </div>
+      </section>
+
+      {features.length > 0 ? (
+        <section className={contentSectionClass}>
+          <div className="text-center">
+            <h2 className={sectionHeadingClass}>
+              Key Features &amp; Screenshots
+            </h2>
+          </div>
+
+          <div className="flex w-full flex-col items-start gap-12">
+            {features.map((feature) => (
+              <div
+                key={feature.title}
+                className="flex w-full flex-col items-start gap-4"
+              >
+                {feature.media.map((item) => (
+                  <div
+                    key={item.src}
+                    className="w-full max-w-[1200px] overflow-hidden rounded-lg shadow-md"
+                  >
+                    {item.type === "image" ? (
+                      <img
+                        className="h-full w-full object-cover object-center"
+                        src={item.src}
+                        alt={item.alt ?? feature.title}
+                      />
+                    ) : (
+                      <video
+                        className="h-full w-full object-cover object-center"
+                        src={item.src}
+                        poster={item.poster}
+                        controls
+                        playsInline
+                      />
+                    )}
+                  </div>
+                ))}
+                <h3 className={subheadingClass}>{feature.title}</h3>
+                <p className={bodyLargeClass}>{feature.description}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+      ) : null}
+
+      {liveUrl?.trim() || githubUrl?.trim() || liveUrlPassword?.trim() ? (
+        <section className={contentSectionClass}>
+          <div className="space-y-6">
+            {liveUrl?.trim() ? (
+              <div className="space-y-3">
+                <h3 className={subheadingClass}>Live URL</h3>
+                <a
+                  href={liveUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[1.125rem] text-[#007cff] underline underline-offset-4"
+                >
+                  Live URL
+                </a>
+              </div>
+            ) : null}
+            {liveUrlPassword?.trim() ? (
+              <div className="space-y-3">
+                <h3 className={subheadingClass}>Live URL Password</h3>
+                <p className={bodyLargeClass}>{liveUrlPassword}</p>
+              </div>
+            ) : null}
+            {githubUrl?.trim() ? (
+              <div className="space-y-3">
+                <h3 className={subheadingClass}>Github URL</h3>
+                <a
+                  href={githubUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[1.125rem] text-[#007cff] underline underline-offset-4"
+                >
+                  View GitHub Repository
+                </a>
+              </div>
+            ) : null}
+          </div>
+        </section>
+      ) : null}
+
+      {details.outcome.trim() ? (
+        <section className={contentSectionClass}>
+          <div className="text-center">
+            <h2 className={sectionHeadingClass}>Outcomes</h2>
+          </div>
+
+          <p className="text-[1.125rem] leading-[1.55] text-[#333333]">
+            {details.outcome}
+          </p>
+        </section>
+      ) : null}
+
+      {nextProject ? (
+        <section className={contentSectionClass}>
+          <div className="text-center">
+            <h2 className={sectionHeadingClass}>Up Next</h2>
+          </div>
+
+          <MediaFrame backgroundClass="bg-[#d8efe2]">
+            <img
+              src={nextProject.image}
+              alt={nextProject.title}
+              className={mediaInnerClass}
+            />
+          </MediaFrame>
+
+          <div className="space-y-3 text-center">
+            <h3 className={subheadingClass}>{nextProject.title}</h3>
+            <p className={bodyLargeClass}>{nextProject.description}</p>
+            {nextProject.ctaHref ? (
+              <Link
+                href={nextProject.ctaHref}
+                className="inline-block text-[1.25rem] text-[#005f5d] underline underline-offset-4"
+              >
+                {nextProject.ctaLabel} -&gt;
+              </Link>
+            ) : (
+              <span className="text-[1.25rem] text-[#005f5d]">
+                {nextProject.ctaLabel}
+              </span>
+            )}
+          </div>
+        </section>
+      ) : null}
+
+      <section className={`${contentSectionClass} pb-16`}>
+        <div className="space-y-3 pt-4 text-center">
+          <p className="text-[1.25rem] font-bold tracking-normal text-[#161d1c]">
+            Thank you for taking the time to read this
+          </p>
+          <Link
+            href="/development"
+            className="text-[1.25rem] text-[#005f5d] underline underline-offset-4"
+          >
+            Go Back To All Projects -&gt;
+          </Link>
+        </div>
+      </section>
+    </main>
   );
 }

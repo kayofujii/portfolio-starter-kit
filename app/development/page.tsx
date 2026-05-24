@@ -1,33 +1,34 @@
-import Link from "next/link";
-import { getWorkHref, isExternalCaseStudy, workDetails } from "app/development/data";
+import Link from 'next/link'
+import { getWorkHref, getWorksByType, isExternalCaseStudy } from 'app/development/data'
 
-const featuredWorks = workDetails
-  .filter((work) => work.featured)
-  .sort((a, b) => (a.order ?? 0) - (b.order ?? 0));
+export const metadata = {
+  title: 'Development',
+  description: 'Selected development work and engineering case studies.',
+}
 
-export default function Page() {
+export default function WorkIndexPage() {
+  const developmentWorks = getWorksByType('development')
+    .slice()
+    .sort((a, b) => (a.order ?? 0) - (b.order ?? 0))
+
   return (
     <main className="w-full bg-white text-[#282828]">
       <section className="w-full bg-white">
         <div className="mx-auto flex w-full max-w-[1440px] flex-col items-start px-6 py-16 md:px-12 md:py-24 lg:px-[120px]">
           <div className="max-w-[980px]">
             <h1 className="font-['Plus_Jakarta_Sans',sans-serif] text-[2.5rem] font-extrabold leading-[1.15] tracking-normal text-[#282828] md:text-[4rem] md:leading-[1.12]">
-              Driving product growth by bridging UX, development, and real user
-              insights.
+              Development
             </h1>
           </div>
-          <Link
-            href="/about"
-            className="mt-5 text-[1.05rem] text-[rgba(40,40,40,0.8)] underline-offset-4 hover:underline"
-          >
-            More about me
-          </Link>
+          <p className="mt-5 text-[1.05rem] text-[rgba(40,40,40,0.8)] max-w-[700px] leading-relaxed">
+            Engineering-focused projects including product development, platform improvements, and production maintenance.
+          </p>
         </div>
       </section>
 
       <section className="w-full bg-[#f9f9f9]">
         <div className="mx-auto flex w-full max-w-[1440px] flex-col gap-12 px-6 py-16 md:px-12 md:py-24 lg:gap-20 lg:px-[120px]">
-          {featuredWorks.map((work) => {
+          {developmentWorks.map((work) => {
             const href = getWorkHref(work);
             const media = (
               <div
@@ -54,6 +55,9 @@ export default function Page() {
               </div>
             );
 
+            // Construct properties with fallback logic for non-homepage-featured items
+            const meta = work.meta ?? `${work.details.company} - ${work.details.period}`;
+            const tags = work.tags ?? work.details.techStack;
             const paragraphs = [
               work.overview.background,
               work.overview.challenge,
@@ -70,23 +74,19 @@ export default function Page() {
                     <h2 className="font-['Plus_Jakarta_Sans',sans-serif] text-[1.8rem] font-bold leading-[1.35] tracking-normal text-[#282828] md:text-[2rem]">
                       {work.subtitle}
                     </h2>
-                    {work.meta ? (
-                      <p className="text-[1rem] text-[rgba(40,40,40,0.8)] md:text-[1.125rem]">
-                        {work.meta}
-                      </p>
-                    ) : null}
-                    {work.tags ? (
-                      <div className="flex flex-wrap gap-3">
-                        {work.tags.map((tag) => (
-                          <span
-                            key={tag}
-                            className="rounded-full border border-[#c0c0c0] px-[13px] py-[8px] text-[0.95rem] text-[#282828]"
-                          >
-                            {tag}
-                          </span>
-                        ))}
-                      </div>
-                    ) : null}
+                    <p className="text-[1rem] text-[rgba(40,40,40,0.8)] md:text-[1.125rem]">
+                      {meta}
+                    </p>
+                    <div className="flex flex-wrap gap-3">
+                      {tags.map((tag) => (
+                        <span
+                          key={tag}
+                          className="rounded-full border border-[#c0c0c0] px-[13px] py-[8px] text-[0.95rem] text-[#282828]"
+                        >
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
                     {work.metricValue ? (
                       <div className="flex flex-wrap items-end gap-x-4 gap-y-2">
                         {work.metricPrefix ? (
@@ -141,5 +141,5 @@ export default function Page() {
         </div>
       </section>
     </main>
-  );
+  )
 }

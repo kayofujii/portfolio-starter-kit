@@ -1,5 +1,5 @@
 import { baseUrl } from 'app/sitemap'
-import { workDetails } from 'app/work/data'
+import { workDetails } from 'app/development/data'
 
 export async function GET() {
   let allWorks = workDetails
@@ -17,7 +17,7 @@ export async function GET() {
       (work) =>
         `<item>
           <title>${work.title}</title>
-          <link>${baseUrl}/work/${work.slug}</link>
+          <link>${baseUrl}/development/${work.slug}</link>
           <description>${work.subtitle || ''}</description>
           <pubDate>${new Date(
             work.publishedAt ?? new Date().toISOString()

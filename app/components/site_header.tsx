@@ -7,11 +7,17 @@ import { Button } from "@/ui/components/Button";
 import { Drawer } from "@/ui/components/Drawer";
 import { IconButton } from "@/ui/components/IconButton";
 import { FeatherMenu } from "@subframe/core";
+import { usePathname } from "next/navigation";
 
 export default function SiteHeader() {
   const [menuOpen, setMenuOpen] = React.useState(false);
+  const pathname = usePathname();
 
   const closeMenu = () => setMenuOpen(false);
+  const linkClass = (href: string) =>
+    `text-body-bold font-body-bold transition-colors hover:text-teal-600 ${
+      pathname === href ? "text-[#2c2c2cff]" : "text-subtext-color"
+    }`;
 
   return (
     <>
@@ -29,27 +35,23 @@ export default function SiteHeader() {
           <>
             <Link
               href="/"
-              className="text-body-bold font-body-bold text-[#2c2c2cff] hover:text-teal-600"
+              className={linkClass("/")}
             >
-              Home
+              Design
             </Link>
             <Link
-              href="/work"
-              className="text-body-bold font-body-bold text-subtext-color hover:text-teal-600"
+              href="/development"
+              className={linkClass("/development")}
             >
-              Work
+              Dev
+            </Link>
+            <Link href="/about" className={linkClass("/about")}>
+              About
+            </Link>
+            <Link href="https://drive.google.com/file/d/1S8YAI-QvWzMSxtb6_pej-KB_lnNSscsM/view?usp=sharing" className="text-body-bold font-body-bold transition-colors hover:text-teal-600 text-subtext-color">
+              Resume
             </Link>
           </>
-        }
-        ctaButton={
-          <Link href="mailto:kayofujii1025@gmail.com">
-            <Button
-              className="bg-teal-600 hover:bg-teal-700"
-              variant="brand-primary"
-            >
-              Contact Me
-            </Button>
-          </Link>
         }
         mobileMenuButton={
           <IconButton icon={<FeatherMenu />} onClick={() => setMenuOpen(true)} />
@@ -67,11 +69,18 @@ export default function SiteHeader() {
               Home
             </Link>
             <Link
-              href="/work"
+              href="/development"
               onClick={closeMenu}
               className="text-heading-2 font-heading-2 text-default-font"
             >
-              Work
+              Dev
+            </Link>
+            <Link
+              href="/about"
+              onClick={closeMenu}
+              className="text-heading-2 font-heading-2 text-default-font"
+            >
+              About
             </Link>
             <Link href="mailto:kayofujii1025@gmail.com">
               <Button
