@@ -20,7 +20,7 @@ export default function WorkIndexPage() {
               Development
             </h1>
           </div>
-          <p className="mt-5 text-[1.05rem] text-[rgba(40,40,40,0.8)] max-w-[700px] leading-relaxed">
+          <p className="mt-5 text-[1.05rem] text-[rgba(40,40,40,0.8)] leading-relaxed">
             Engineering-focused projects including product development, platform improvements, and production maintenance.
           </p>
         </div>

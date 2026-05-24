@@ -258,18 +258,6 @@ export default function OccupationalHealthCaseStudy() {
             <li key={item}>{item}</li>
           ))}
         </ul>
-
-        <div className="space-y-3 pt-4 text-center">
-          <p className="text-[1.25rem] font-bold tracking-normal text-[#161d1c]">
-            Thank you for taking the time to read this
-          </p>
-          <Link
-            href="/development"
-            className="text-[1.25rem] text-[#005f5d] underline underline-offset-4"
-          >
-            Go Back To All Projects -&gt;
-          </Link>
-        </div>
       </section>
     </main>
   );

@@ -292,18 +292,6 @@ export default function WorkplaceStressCaseStudy() {
             ))}
           </ul>
         </div>
-
-        <div className="space-y-3 pt-4 text-center">
-          <p className="text-[1.25rem] font-bold tracking-[0.05em] text-[#161d1c]">
-            Thank you for taking the time to read this
-          </p>
-          <Link
-            href="/development"
-            className="text-[1.25rem] text-[#005f5d] underline underline-offset-4"
-          >
-            Go Back To All Projects -&gt;
-          </Link>
-        </div>
       </section>
     </main>
   );

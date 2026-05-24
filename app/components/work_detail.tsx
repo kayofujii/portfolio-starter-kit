@@ -46,14 +46,12 @@ const mediaInnerClass =
   "h-auto w-full rounded-[14px] bg-white shadow-[0_12px_30px_rgba(0,0,0,0.12)]";
 
 function MediaFrame({
-  backgroundClass,
   children,
 }: {
-  backgroundClass: string;
   children: React.ReactNode;
 }) {
   return (
-    <div className={`${mediaOuterClass} ${backgroundClass}`}>{children}</div>
+    <div className={`${mediaOuterClass}`}>{children}</div>
   );
 }
 
@@ -253,7 +251,7 @@ export default function WorkDetail({
             <h2 className={sectionHeadingClass}>Up Next</h2>
           </div>
 
-          <MediaFrame backgroundClass="bg-[#d8efe2]">
+          <MediaFrame>
             <img
               src={nextProject.image}
               alt={nextProject.title}
@@ -279,20 +277,6 @@ export default function WorkDetail({
           </div>
         </section>
       ) : null}
-
-      <section className={`${contentSectionClass} pb-16`}>
-        <div className="space-y-3 pt-4 text-center">
-          <p className="text-[1.25rem] font-bold tracking-normal text-[#161d1c]">
-            Thank you for taking the time to read this
-          </p>
-          <Link
-            href="/development"
-            className="text-[1.25rem] text-[#005f5d] underline underline-offset-4"
-          >
-            Go Back To All Projects -&gt;
-          </Link>
-        </div>
-      </section>
     </main>
   );
 }
