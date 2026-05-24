@@ -9,13 +9,13 @@ import { SpeedInsights } from "@vercel/speed-insights/next"
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: {
-    default: 'Kayo Fujii | Full-Stack Developer',
+    default: 'Kayo Fujii | Product Designer & Full-Stack Developer',
     template: '%s | Kayo Fujii',
   },
-  description: 'I’m Kayo Fujii, a full-stack web developer with 5 years of experience based in Canada. I connect design and development to build high-quality websites that help businesses grow.',
+  description: 'I’m Kayo Fujii, a product designer & full-stack web developer with 5 years of experience based in Canada. I connect design and development to build high-quality websites that help businesses grow.',
   openGraph: {
-    title: 'Kayo Fujii | Full-Stack Developer',
-    description: 'I’m Kayo Fujii, a full-stack web developer with 5 years of experience based in Canada. I connect design and development to build high-quality websites that help businesses grow.',
+    title: 'Kayo Fujii | Product Designer & Full-Stack Developer',
+    description: 'I’m Kayo Fujii, a product designer & full-stack web developer with 5 years of experience based in Canada. I connect design and development to build high-quality websites that help businesses grow.',
     url: baseUrl,
     siteName: 'Kayo Fujii Portfolio',
     locale: 'en_US',
