@@ -67,7 +67,7 @@ export const workDetails: WorkDetailData[] = [
     subtitle:
       'Leading UX and front-end for a new Shopify Plus store as Norsat expands beyond satellite products into robotics and drones',
     workTypes: ['design', 'development'],
-    order: 3,
+    order: 5,
     publishedAt: '2026-05-01',
     heroImage:
       '/images/work/robotics-e-commerce.webp',
