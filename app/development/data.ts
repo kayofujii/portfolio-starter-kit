@@ -66,7 +66,7 @@ export const workDetails: WorkDetailData[] = [
     title: 'B2B E-commerce for Robotics & Drone Solutions',
     subtitle:
       'Leading UX and front-end for a new Shopify Plus store as Norsat expands beyond satellite products into robotics and drones',
-    workTypes: ['design', 'development'],
+    workTypes: ['design'],
     order: 5,
     publishedAt: '2026-05-01',
     heroImage:
@@ -103,7 +103,7 @@ export const workDetails: WorkDetailData[] = [
         'Collaborating with product owners, and business stakeholders on MVP priorities and platform strategy',
     },
     features: [],
-    featured: true,
+    featured: false,
     tags: [
       'B2B',
       'Shopify Plus',
