@@ -62,6 +62,58 @@ export type WorkDetailData = {
 
 export const workDetails: WorkDetailData[] = [
   {
+    slug: 'robotics-b2b-commerce',
+    title: 'B2B E-commerce for Robotics & Drone Solutions',
+    subtitle:
+      'Leading UX and front-end for a new Shopify Plus store as Norsat expands beyond satellite products into robotics and drones',
+    workTypes: ['design', 'development'],
+    order: 3,
+    publishedAt: '2026-05-01',
+    heroImage:
+      '/images/work/robotics-e-commerce.webp',
+    heroVideo:
+      '/videos/work/robotics-e-commerce.mp4',
+    overview: {
+      background:
+        'Norsat International is expanding its product line to include robotics and drones alongside satellite products. Because satellites and robotics serve different industries and buyers, the company is building a dedicated B2B e-commerce experience rather than folding everything into one catalog.',
+      challenge:
+        'The new platform needs a scalable category architecture, a data model that can connect Shopify with Windchill product information, and a brand direction that speaks to robotics and drone buyers without diluting Norsat’s existing satellite business.',
+      solution:
+        'I am leading UX and front-end implementation in Liquid and JavaScript, designing a metafield-driven category system on Shopify Plus, and restructuring the data architecture with stakeholders to define MVP priorities, brand direction, and rollout strategy.',
+    },
+    details: {
+      period: '2026 — ongoing',
+      techStack: [
+        'Shopify Liquid',
+        'JavaScript',
+        'Shopify Plus',
+        'Shopify Metafields',
+        'Windchill',
+        'UX/UI Design',
+        'Information Architecture',
+      ],
+      company: 'Norsat International',
+      role: 'UX Lead & Front-end Developer',
+      roleDescription:
+        'Own UX direction and front-end implementation for the new B2B store, define the category and metafield model, align Shopify Plus data architecture with Windchill, and partner with stakeholders on MVP scope and brand strategy.',
+      outcome:
+        'In progress: establishing a scalable category system, Shopify Plus data architecture, and B2B brand direction for robotics and drone solutions ahead of MVP launch.',
+      team: 'Cross-functional',
+      teamDetails:
+        'Collaborating with product owners, and business stakeholders on MVP priorities and platform strategy',
+    },
+    features: [],
+    featured: true,
+    tags: [
+      'B2B',
+      'Shopify Plus',
+      'E-commerce',
+      'UX Leadership',
+      'Information Architecture',
+    ],
+    meta: 'Norsat International — ongoing',
+  },
+  {
     slug: 'occupational-health-consultation-tool',
     title: 'Occupational Health Consultation Tool',
     subtitle: 'Redesigned a consultation tool for time-constrained doctors, reducing workflow friction and improving usability',
@@ -518,6 +570,16 @@ export function getWorkDetailBySlug(slug: string) {
 
 export function getWorkHref(work: WorkDetailData) {
   return work.caseStudyUrl ?? `/development/${work.slug}`
+}
+
+/** Link to a project section on the homepage (hash anchor). */
+export function getHomeAnchorHref(work: WorkDetailData) {
+  return `/#${work.slug}`
+}
+
+/** Link to a project section on the /development index (hash anchor). */
+export function getWorkAnchorHref(work: WorkDetailData) {
+  return `/development#${work.slug}`
 }
 
 export function isExternalCaseStudy(work: WorkDetailData) {

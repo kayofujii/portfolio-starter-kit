@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import Link from "next/link";
 
 function ContactPill({
@@ -22,6 +23,12 @@ function ContactPill({
 }
 
 export default function SiteFooter() {
+  const [year, setYear] = useState<number | null>(null);
+
+  useEffect(() => {
+    setYear(new Date().getFullYear());
+  }, []);
+
   return (
     <footer className="w-full border-t border-[#efebe6] bg-white">
       <div className="mx-auto flex w-full max-w-[1440px] flex-col items-center px-6 py-20 text-center md:px-10">
@@ -69,7 +76,7 @@ export default function SiteFooter() {
           </Link>
           <div className="h-px w-full bg-[#e8e8e8]" />
           <p className="text-[0.95rem] text-[#333333]">
-            {new Date().getFullYear()} © Kayo Fujii All Rights Reserved.
+            {(year ?? "")} © Kayo Fujii All Rights Reserved.
           </p>
         </div>
       </div>

@@ -1,3 +1,4 @@
+import HashScroller from "app/components/hash_scroller";
 import Link from "next/link";
 import { getWorkHref, isExternalCaseStudy, workDetails } from "app/development/data";
 
@@ -8,6 +9,7 @@ const featuredWorks = workDetails
 export default function Page() {
   return (
     <main className="w-full bg-white text-[#282828]">
+      <HashScroller />
       <section className="w-full bg-white">
         <div className="mx-auto flex w-full max-w-[1440px] flex-col items-start px-6 py-16 md:px-12 md:py-24 lg:px-[120px]">
           <div className="max-w-[980px]">
@@ -63,7 +65,8 @@ export default function Page() {
             return (
               <article
                 key={work.slug}
-                className="rounded-[24px] bg-white p-5 shadow-[0px_1px_5px_3px_rgba(63,88,87,0.03)] md:p-10"
+                id={work.slug}
+                className="scroll-mt-28 rounded-[24px] bg-white p-5 shadow-[0px_1px_5px_3px_rgba(63,88,87,0.03)] md:p-10"
               >
                 <div className="flex flex-col gap-8">
                   <div className="max-w-[1120px] space-y-4">
