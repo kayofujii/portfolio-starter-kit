@@ -5,6 +5,7 @@ type WorkDetailProps = {
   title: string;
   subtitle: string;
   heroImage: string;
+  heroVideo?: string;
   githubUrl?: string;
   liveUrl?: string;
   liveUrlPassword?: string;
@@ -58,6 +59,7 @@ function MediaFrame({
 export default function WorkDetail({
   title,
   heroImage,
+  heroVideo,
   githubUrl,
   liveUrl,
   liveUrlPassword,
@@ -84,11 +86,24 @@ export default function WorkDetail({
           </h1>
         </div>
         <div className="mt-10 w-full overflow-hidden bg-[#d8efe2]">
-          <img
-            src={heroImage}
-            alt={title}
-            className="h-full w-full object-cover"
-          />
+          {heroVideo ? (
+            <video
+              className="h-full w-full object-cover"
+              src={heroVideo}
+              poster={heroImage}
+              autoPlay
+              muted
+              loop
+              playsInline
+              preload="metadata"
+            />
+          ) : (
+            <img
+              src={heroImage}
+              alt={title}
+              className="h-full w-full object-cover"
+            />
+          )}
         </div>
       </section>
 
