@@ -18,7 +18,7 @@ export default function WorkIndexPage() {
       <section className="w-full bg-white">
         <div className="mx-auto flex w-full max-w-[1440px] flex-col items-start px-6 py-16 md:px-12 md:py-24 lg:px-[120px]">
           <div className="max-w-[980px]">
-            <h1 className="font-['Plus_Jakarta_Sans',sans-serif] text-[2.5rem] font-extrabold leading-[1.15] tracking-normal text-[#282828] md:text-[4rem] md:leading-[1.12]">
+            <h1 className="font-['Plus_Jakarta_Sans',sans-serif] text-[2.25rem] md:text-[3rem] font-bold leading-[1.15] tracking-normal text-[#282828] md:leading-[1.12]">
               Development
             </h1>
           </div>
@@ -74,7 +74,7 @@ export default function WorkIndexPage() {
               >
                 <div className="flex flex-col gap-8">
                   <div className="max-w-[1120px] space-y-4">
-                    <h2 className="font-['Plus_Jakarta_Sans',sans-serif] text-[1.8rem] font-bold leading-[1.35] tracking-normal text-[#282828] md:text-[2rem]">
+                      <h2 className="font-['Plus_Jakarta_Sans',sans-serif] text-[1.25rem] font-bold leading-[1.35] tracking-normal text-[#282828] md:text-[2rem]">
                       {work.subtitle}
                     </h2>
                     <p className="text-[1rem] text-[rgba(40,40,40,0.8)] md:text-[1.125rem]">
@@ -93,15 +93,15 @@ export default function WorkIndexPage() {
                     {work.metricValue ? (
                       <div className="flex flex-wrap items-end gap-x-4 gap-y-2">
                         {work.metricPrefix ? (
-                          <p className="text-[1.2rem] font-medium leading-[1.4] text-[#282828] md:text-[1.5rem]">
+                          <p className="text-[1.25rem] font-medium leading-[1.4] text-[#282828] md:text-[1.5rem]">
                             {work.metricPrefix}
                           </p>
                         ) : null}
-                        <p className="font-['Plus_Jakarta_Sans',sans-serif] text-[1.75rem] font-bold leading-none text-[#005f5d] md:text-[2rem]">
+                        <p className="font-['Plus_Jakarta_Sans',sans-serif] text-[1.25rem] font-bold leading-[1.4] text-[#005f5d] md:text-[1.5rem]">
                           {work.metricValue}
                         </p>
                         {work.metricSuffix ? (
-                          <p className="text-[1.2rem] font-medium leading-[1.4] text-[#282828] md:text-[1.5rem]">
+                          <p className="text-[1.25rem] font-medium leading-[1.4] text-[#282828] md:text-[1.5rem]">
                             {work.metricSuffix}
                           </p>
                         ) : null}

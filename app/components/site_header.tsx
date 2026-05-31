@@ -58,38 +58,36 @@ export default function SiteHeader() {
         }
       />
 
-      <Drawer open={menuOpen} onOpenChange={setMenuOpen}>
+      <Drawer open={menuOpen} onOpenChange={setMenuOpen} className="z-[20]">
         <Drawer.Content className="w-[80vw] max-w-[360px] px-6 py-8">
           <div className="flex w-full flex-col gap-6">
             <Link
               href="/"
               onClick={closeMenu}
-              className="text-heading-2 font-heading-2 text-default-font"
+              className="text-[#2c2c2cff]"
             >
-              Home
+              Design
             </Link>
             <Link
               href="/development"
               onClick={closeMenu}
-              className="text-heading-2 font-heading-2 text-default-font"
+              className="text-[#2c2c2cff]"
             >
               Dev
             </Link>
             <Link
               href="/about"
               onClick={closeMenu}
-              className="text-heading-2 font-heading-2 text-default-font"
+              className="text-[#2c2c2cff]"
             >
               About
             </Link>
-            <Link href="mailto:kayofujii1025@gmail.com">
-              <Button
-                className="w-full bg-teal-600 hover:bg-teal-700"
-                variant="brand-primary"
-                onClick={closeMenu}
-              >
-                Contact Me
-              </Button>
+            <Link
+              href="https://drive.google.com/file/d/1S8YAI-QvWzMSxtb6_pej-KB_lnNSscsM/view?usp=sharing"
+              onClick={closeMenu}
+              className="text-[#2c2c2cff]"
+            >
+              Resume
             </Link>
           </div>
         </Drawer.Content>

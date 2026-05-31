@@ -50,12 +50,14 @@ export default async function AboutPage() {
     <main className="w-full bg-white text-[#161d1c]">
       <section className="w-full bg-white px-6 py-14 md:px-12 md:py-20 lg:px-[120px]">
         <div className="mx-auto max-w-[1200px] rounded-[28px] bg-[#f9f9f9] p-6 md:p-10">
-          <div className="grid gap-8 md:grid-cols-[280px_minmax(0,1fr)] md:gap-[80px]">
+          <div className="grid gap-6 md:grid-cols-[320px_minmax(0,1fr)] md:gap-[80px]">
             <div className="overflow-hidden rounded-[16px]">
-              <img
-                src="/images/about-kayo.webp"
-                alt="Portrait of Kayo Fujii"
-                className="h-[350px] w-full object-cover"
+              <iframe
+                src="https://www.youtube.com/embed/DX0i_9QtDGU"
+                title="About Kayo Fujii"
+                className="h-[350px] w-full"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
               />
             </div>
             <div className="flex max-w-[760px] flex-col gap-8">

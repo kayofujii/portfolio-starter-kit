@@ -30,7 +30,7 @@ const HeaderRoot = React.forwardRef<HTMLDivElement, HeaderRootProps>(
     return (
       <div
         className={SubframeUtils.twClassNames(
-          "flex w-full flex-col items-center justify-center border-b border-solid border-neutral-100 bg-white px-6 py-4 sticky top-0 z-50",
+          "flex w-full flex-col items-center justify-center border-b border-solid border-neutral-100 bg-white px-6 py-4 sticky top-0 z-10",
           className
         )}
         ref={ref}

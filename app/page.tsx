@@ -13,39 +13,39 @@ export default function Page() {
       <section className="w-full bg-white">
         <div className="mx-auto flex w-full max-w-[1440px] flex-col items-start px-6 py-16 md:px-12 md:py-24 lg:px-[120px]">
           <div className="max-w-[980px]">
-            <h1 className="font-['Plus_Jakarta_Sans',sans-serif] text-[2.5rem] font-extrabold leading-[1.15] tracking-normal text-[#282828] md:text-[4rem] md:leading-[1.12]">
+            <h1 className="font-['Plus_Jakarta_Sans',sans-serif] text-[2.25rem] md:text-[3rem] font-bold leading-[1.15] tracking-normal text-[#282828] md:leading-[1.12]">
               Driving product growth by bridging UX, development, and real user
               insights.
             </h1>
           </div>
-          <div className="mt-2 flex flex-wrap items-center justify-center gap-5">
+          <div className="mt-5 flex flex-wrap items-center justify-start  gap-5">
             <Link
               href="/about"
-              className="mt-5 text-[1.05rem] text-[rgba(40,40,40,0.8)] underline-offset-4 hover:underline"
+              className="text-[1.05rem] text-[rgba(40,40,40,0.8)] underline-offset-4 hover:underline"
             >
               More about me
             </Link>
               <Link
                 href="https://www.linkedin.com/in/kayo-fujii/"
-                className="mt-5 text-[1.05rem] text-[rgba(40,40,40,0.8)] underline-offset-4 hover:underline"
+                className="text-[1.05rem] text-[rgba(40,40,40,0.8)] underline-offset-4 hover:underline"
               >
                 LinkedIn
               </Link>
               <Link
                 href="https://github.com/kayofujii"
-                className="mt-5 text-[1.05rem] text-[rgba(40,40,40,0.8)] underline-offset-4 hover:underline"
+                className="text-[1.05rem] text-[rgba(40,40,40,0.8)] underline-offset-4 hover:underline"
               >
                 GitHub
               </Link>
               <Link
                 href="https://drive.google.com/file/d/1S8YAI-QvWzMSxtb6_pej-KB_lnNSscsM/view?usp=sharing"
-                className="mt-5 text-[1.05rem] text-[rgba(40,40,40,0.8)] underline-offset-4 hover:underline" 
+                className="text-[1.05rem] text-[rgba(40,40,40,0.8)] underline-offset-4 hover:underline" 
               >
                 Resume
               </Link>
               <Link
                 href="https://medium.com/@kayosamu1025"
-                className="mt-5 text-[1.05rem] text-[rgba(40,40,40,0.8)] underline-offset-4 hover:underline"
+                className="text-[1.05rem] text-[rgba(40,40,40,0.8)] underline-offset-4 hover:underline"
               >
                 Medium
               </Link>
@@ -96,7 +96,7 @@ export default function Page() {
               >
                 <div className="flex flex-col gap-8">
                   <div className="max-w-[1120px] space-y-4">
-                    <h2 className="font-['Plus_Jakarta_Sans',sans-serif] text-[1.8rem] font-bold leading-[1.35] tracking-normal text-[#282828] md:text-[2rem]">
+                    <h2 className="font-['Plus_Jakarta_Sans',sans-serif] text-[1.25rem] font-bold leading-[1.35] tracking-normal text-[#282828] md:text-[2rem]">
                       {work.subtitle}
                     </h2>
                     {work.meta ? (
@@ -119,15 +119,15 @@ export default function Page() {
                     {work.metricValue ? (
                       <div className="flex flex-wrap items-end gap-x-4 gap-y-2">
                         {work.metricPrefix ? (
-                          <p className="text-[1.2rem] font-medium leading-[1.4] text-[#282828] md:text-[1.5rem]">
+                          <p className="text-[1.25rem] font-medium leading-[1.4] text-[#282828] md:text-[1.5rem]">
                             {work.metricPrefix}
                           </p>
                         ) : null}
-                        <p className="font-['Plus_Jakarta_Sans',sans-serif] text-[1.75rem] font-bold leading-none text-[#005f5d] md:text-[2rem]">
+                        <p className="font-['Plus_Jakarta_Sans',sans-serif] text-[1.25rem] font-bold leading-[1.4] text-[#005f5d] md:text-[1.5rem]">
                           {work.metricValue}
                         </p>
                         {work.metricSuffix ? (
-                          <p className="text-[1.2rem] font-medium leading-[1.4] text-[#282828] md:text-[1.5rem]">
+                          <p className="text-[1.25rem] font-medium leading-[1.4] text-[#282828] md:text-[1.5rem]">
                             {work.metricSuffix}
                           </p>
                         ) : null}
