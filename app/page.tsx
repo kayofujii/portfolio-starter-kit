@@ -18,12 +18,38 @@ export default function Page() {
               insights.
             </h1>
           </div>
-          <Link
-            href="/about"
-            className="mt-5 text-[1.05rem] text-[rgba(40,40,40,0.8)] underline-offset-4 hover:underline"
-          >
-            More about me
-          </Link>
+          <div className="mt-2 flex flex-wrap items-center justify-center gap-5">
+            <Link
+              href="/about"
+              className="mt-5 text-[1.05rem] text-[rgba(40,40,40,0.8)] underline-offset-4 hover:underline"
+            >
+              More about me
+            </Link>
+              <Link
+                href="https://www.linkedin.com/in/kayo-fujii/"
+                className="mt-5 text-[1.05rem] text-[rgba(40,40,40,0.8)] underline-offset-4 hover:underline"
+              >
+                LinkedIn
+              </Link>
+              <Link
+                href="https://github.com/kayofujii"
+                className="mt-5 text-[1.05rem] text-[rgba(40,40,40,0.8)] underline-offset-4 hover:underline"
+              >
+                GitHub
+              </Link>
+              <Link
+                href="https://drive.google.com/file/d/1S8YAI-QvWzMSxtb6_pej-KB_lnNSscsM/view?usp=sharing"
+                className="mt-5 text-[1.05rem] text-[rgba(40,40,40,0.8)] underline-offset-4 hover:underline" 
+              >
+                Resume
+              </Link>
+              <Link
+                href="https://medium.com/@kayosamu1025"
+                className="mt-5 text-[1.05rem] text-[rgba(40,40,40,0.8)] underline-offset-4 hover:underline"
+              >
+                Medium
+              </Link>
+            </div>
         </div>
       </section>
 
