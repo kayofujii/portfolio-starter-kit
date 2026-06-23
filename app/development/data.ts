@@ -63,10 +63,10 @@ export type WorkDetailData = {
 export const workDetails: WorkDetailData[] = [
   {
     slug: 'robotics-b2b-commerce',
-    title: 'B2B E-commerce for Robotics & Drone Solutions',
+    title: 'B2B E-commerce & Branding for Robotics & Drone Solutions',
     subtitle:
-      'Leading UX and front-end for a new Shopify Plus store as Norsat expands beyond satellite products into robotics and drones',
-    workTypes: ['design'],
+      'Leading brand identity, UI/UX design, and front-end implementation for a new Shopify Plus store as Norsat expands into robotics and drones',
+    workTypes: ['design', 'development'],
     order: 5,
     publishedAt: '2026-05-01',
     heroImage:
@@ -75,29 +75,31 @@ export const workDetails: WorkDetailData[] = [
       '/videos/work/robotics-e-commerce.mp4',
     overview: {
       background:
-        'Norsat International is expanding its product line to include robotics and drones alongside satellite products. Because satellites and robotics serve different industries and buyers, the company is building a dedicated B2B e-commerce experience rather than folding everything into one catalog.',
+        'Norsat International is transforming its product line to include robotics and drones alongside satellite products. Because satellites and robotics serve different industries and buyers, the company is building a new branding and website.',
       challenge:
-        'The new platform needs a scalable category architecture, a data model that can connect Shopify with Windchill product information, and a brand direction that speaks to robotics and drone buyers without diluting Norsat’s existing satellite business.',
+        'The new brand needed to target government-level B2B customers, primarily in the agriculture industry, and differentiate itself by highlighting autonomous air and ground solutions officially supported by DJI, as well as specialized training from seasoned engineers. This required a cohesive visual identity that felt innovative and futuristic yet reliable, alongside a complex website that restructures Shopify data to seamlessly sync with product lifecycle systems like Windchill and Business Central ERP.',
       solution:
-        'I am leading UX and front-end implementation in Liquid and JavaScript, designing a metafield-driven category system on Shopify Plus, and restructuring the data architecture with stakeholders to define MVP priorities, brand direction, and rollout strategy.',
+        "I am leading the branding, UI/UX design, and front-end implementation using Shopify Liquid and JavaScript. I created a branding system with a muted green, gray, and white color palette tailored for B2B trust, and designed a custom logo based on the letter 'A' that suggests a robot's body with soft shapes. In addition, I restructured the Shopify data architecture to sync with Windchill and Business Central, creating an intuitive navigation flow that allows users to easily explore the advanced product lineup.",
     },
     details: {
       period: '2026 — ongoing',
       techStack: [
+        'Branding',
         'Shopify Liquid',
         'JavaScript',
         'Shopify Plus',
         'Shopify Metafields',
         'Windchill',
+        'Business Central',
         'UX/UI Design',
         'Information Architecture',
       ],
       company: 'Norsat International',
-      role: 'UX Lead & Front-end Developer',
+      role: 'Branding, UI/UX Lead & Front-end Developer, PDM',
       roleDescription:
-        'Own UX direction and front-end implementation for the new B2B store, define the category and metafield model, align Shopify Plus data architecture with Windchill, and partner with stakeholders on MVP scope and brand strategy.',
+        'Leading the brand identity, user experience, and Shopify Plus front-end development. Responsible for creating the B2B design system, structuring Shopify metafields to sync with Windchill and Business Central, and collaborating with cross-functional stakeholders on MVP priorities.',
       outcome:
-        'In progress: establishing a scalable category system, Shopify Plus data architecture, and B2B brand direction for robotics and drone solutions ahead of MVP launch.',
+        'In progress: establishing a scalable Shopify system and B2B brand direction for robotics and drone solutions ahead of MVP launch.',
       team: 'Cross-functional',
       teamDetails:
         'Collaborating with product owners, and business stakeholders on MVP priorities and platform strategy',
@@ -106,9 +108,10 @@ export const workDetails: WorkDetailData[] = [
     featured: false,
     tags: [
       'B2B',
+      'Branding',
       'Shopify Plus',
       'E-commerce',
-      'UX Leadership',
+      'UX/UI Design',
       'Information Architecture',
     ],
     meta: 'Norsat International — ongoing',
