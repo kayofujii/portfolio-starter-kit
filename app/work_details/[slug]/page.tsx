@@ -13,7 +13,7 @@ import { baseUrl } from 'app/sitemap'
 
 export async function generateStaticParams() {
   return workDetails
-    .filter((work) => !isExternalCaseStudy(work) && work.type === 'development')
+    .filter((work) => !isExternalCaseStudy(work))
     .map((work) => ({
       slug: work.slug,
     }))
@@ -22,7 +22,7 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }) {
   const { slug } = await params
   const work = getWorkDetailBySlug(slug)
-  if (!work || work.type !== 'development') {
+  if (!work || isExternalCaseStudy(work)) {
     return
   }
 
@@ -53,7 +53,7 @@ export default async function WorkCaseStudy({ params }) {
   const { slug } = await params
   const work = getWorkDetailBySlug(slug)
 
-  if (!work || work.type !== 'development') {
+  if (!work || isExternalCaseStudy(work)) {
     notFound()
   }
 
