@@ -520,13 +520,7 @@ export function getWorkDetailBySlug(slug: string) {
 
 export function getWorkHref(work: WorkDetailData) {
   if (work.caseStudyUrl) return work.caseStudyUrl
-  const prefix = work.type === 'design' ? 'design' : 'work_details'
-  return `/${prefix}/${work.slug}`
-}
-
-export function getWorkDetailHref(work: WorkDetailData) {
-  const prefix = work.type === 'design' ? 'design' : 'work_details'
-  return `/${prefix}/${work.slug}`
+  return `/work_details/${work.slug}`
 }
 
 /** Link to a project section on the homepage (hash anchor). */

@@ -77,10 +77,7 @@ export default async function WorkCaseStudy({ params }) {
           title: nextWork.title,
           description: nextWork.subtitle,
           ctaLabel: 'View Next Project',
-          ctaHref:
-            nextWork.type === 'design'
-              ? `/design/${nextWork.slug}`
-              : `/work_details/${nextWork.slug}`,
+          ctaHref: `/work_details/${nextWork.slug}`,
         }
       : work.nextProject
 
