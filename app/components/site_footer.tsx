@@ -33,10 +33,10 @@ export default function SiteFooter() {
     <footer className="w-full border-t border-[#efebe6] bg-white">
       <div className="mx-auto flex w-full max-w-[1440px] flex-col items-center px-6 py-20 text-center md:px-10">
         <div className="flex max-w-[960px] flex-col items-center gap-5">
-          <h2 className="font-['Plus_Jakarta_Sans',sans-serif] text-[1.75rem] font-bold tracking-normal text-[#2d2d2d] md:text-[2.3rem]">
-            Contact
+          <h2 className="font-['Plus_Jakarta_Sans',sans-serif] text-[28px] font-bold leading-[39.2px] text-[#2d2d2d]">
+              Contact
           </h2>
-          <p className="text-[1.35rem] leading-[1.5] text-[#202020] md:text-[1.5rem]">
+          <p className="text-[20px] leading-[28px] text-[#3f4948]">
             Feel free to reach out to me at{" "}
             <a
               href="mailto:kayofujii1025@gmail.com"
