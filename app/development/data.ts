@@ -20,7 +20,7 @@ export type WorkDetailData = {
   slug: string
   title: string
   subtitle: string
-  workTypes: Array<'design' | 'development'>
+  type: 'design' | 'development'
   order?: number
   publishedAt?: string
   heroImage: string
@@ -66,7 +66,7 @@ export const workDetails: WorkDetailData[] = [
     title: 'B2B E-commerce & Branding for Robotics & Drone Solutions',
     subtitle:
       'Leading brand identity, UI/UX design, and front-end implementation for a new Shopify Plus store as Norsat expands into robotics and drones',
-    workTypes: ['design', 'development'],
+    type: 'design',
     order: 5,
     publishedAt: '2026-05-01',
     heroImage:
@@ -120,7 +120,7 @@ export const workDetails: WorkDetailData[] = [
     slug: 'occupational-health-consultation-tool',
     title: 'Occupational Health Consultation Tool',
     subtitle: 'Redesigned a consultation tool for time-constrained doctors, reducing workflow friction and improving usability',
-    workTypes: ['design'],
+    type: 'design',
     order: 1,
     publishedAt: '2025-09-15',
     heroImage:
@@ -191,7 +191,7 @@ export const workDetails: WorkDetailData[] = [
     slug: 'workplace-stress-program-analysis',
     title: 'Analytics Tool for a Workplace Stress Screening Program',
     subtitle: 'Redesigned a workplace stress analysis tool to improve clarity and prevent client churn',
-    workTypes: ['design'],
+    type: 'design',
     order: 2,
     publishedAt: '2025-09-01',
     heroImage: '/images/work/workplace_stress_hero.webp',
@@ -230,7 +230,7 @@ export const workDetails: WorkDetailData[] = [
     slug: 'health-e-learning',
     title: 'Employee Health E-Learning Feature',
     subtitle: 'Designed and launched an e-learning feature to enable scalable employee health education and drive upsell growth',
-    workTypes: ['design'],
+    type: 'design',
     order: 3,
     publishedAt: '2025-08-20',
     heroImage: '/images/work/health_e_learning.webp',
@@ -266,7 +266,7 @@ export const workDetails: WorkDetailData[] = [
     slug: 'mind-spark-academy',
     title: 'Mind Spark Academy Preschool Website',
     subtitle: 'Launched a preschool website from scratch, translating a complex educational philosophy into a clear brand and driving early registrations',
-    workTypes: ['design'],
+    type: 'design',
     order: 4,
     publishedAt: '2025-08-15',
     heroImage:
@@ -329,7 +329,7 @@ export const workDetails: WorkDetailData[] = [
     slug: 'mattress-comparison',
     title: 'Mattress Comparison Website',
     subtitle: 'Increased eCommerce sales by simplifying mattress comparison and highlighting product quality',
-    workTypes: ['development'],
+    type: 'development',
     order: 6,
     publishedAt: '2026-01-15',
     heroImage:
@@ -379,7 +379,7 @@ export const workDetails: WorkDetailData[] = [
           'Implemented a product comparison table using Rails many-to-many associations to enable side-by-side product comparisons and SEO-optimized pages using slug-based URLs instead of numeric IDs.',
       },
     ],
-    featured: true,
+    featured: false,
     tags: ["B2C", "User Research", "Zero to One", "Web Design & Development"],
     meta: "Plasmabed - 3 weeks",
     metricPrefix: "Designed and developed an MVP in just",
@@ -389,7 +389,7 @@ export const workDetails: WorkDetailData[] = [
     slug: 'meeting-scheduling-app',
     title: 'Meeting Scheduling Feature for Doctors and Employees',
     subtitle: 'Implemented a meeting-scheduling feature for occupational health professionals and employees with health issues, meeting user needs within a two-month deadline through detailed requirements gathering and collaboration.',
-    workTypes: ['development'],
+    type: 'development',
     order: 5,
     publishedAt: '2025-10-01',
     heroImage:
@@ -441,7 +441,7 @@ export const workDetails: WorkDetailData[] = [
     slug: 'beazu-growth-ops',
     title: 'Beazu Wholesale E-commerce Growth & Maintenance',
     subtitle: 'SEO, UX, and site stability improvements for a jewelry wholesale store',
-    workTypes: ['development'],
+    type: 'development',
     order: 7,
     publishedAt: '2025-11-30',
     heroImage:
@@ -519,7 +519,14 @@ export function getWorkDetailBySlug(slug: string) {
 }
 
 export function getWorkHref(work: WorkDetailData) {
-  return work.caseStudyUrl ?? `/development/${work.slug}`
+  if (work.caseStudyUrl) return work.caseStudyUrl
+  const prefix = work.type === 'design' ? 'design' : 'work_details'
+  return `/${prefix}/${work.slug}`
+}
+
+export function getWorkDetailHref(work: WorkDetailData) {
+  const prefix = work.type === 'design' ? 'design' : 'work_details'
+  return `/${prefix}/${work.slug}`
 }
 
 /** Link to a project section on the homepage (hash anchor). */
@@ -537,7 +544,7 @@ export function isExternalCaseStudy(work: WorkDetailData) {
 }
 
 export function getWorksByType(type: 'design' | 'development') {
-  return workDetails.filter((work) => work.workTypes.includes(type))
+  return workDetails.filter((work) => work.type === type)
 }
 
 export function getNextWorkByOrder(slug: string) {

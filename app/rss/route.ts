@@ -1,5 +1,5 @@
 import { baseUrl } from 'app/sitemap'
-import { workDetails } from 'app/development/data'
+import { getWorkHref, workDetails } from 'app/development/data'
 
 export async function GET() {
   let allWorks = workDetails
@@ -13,17 +13,17 @@ export async function GET() {
       }
       return 1
     })
-    .map(
-      (work) =>
-        `<item>
+    .map((work) => {
+      const href = getWorkHref(work)
+      return `<item>
           <title>${work.title}</title>
-          <link>${baseUrl}/development/${work.slug}</link>
+          <link>${href.startsWith('http') ? href : `${baseUrl}${href}`}</link>
           <description>${work.subtitle || ''}</description>
           <pubDate>${new Date(
             work.publishedAt ?? new Date().toISOString()
           ).toUTCString()}</pubDate>
         </item>`
-    )
+    })
     .join('\n')
 
   const rssFeed = `<?xml version="1.0" encoding="UTF-8" ?>
