@@ -5,7 +5,7 @@ const navItems = {
     name: 'home',
   },
   '/work': {
-    name: 'work',
+    name: 'Other Works',
   },
   'https://vercel.com/templates/next.js/portfolio-starter-kit': {
     name: 'deploy',

@@ -520,7 +520,7 @@ export function getWorkDetailBySlug(slug: string) {
 
 export function getWorkHref(work: WorkDetailData) {
   if (work.caseStudyUrl) return work.caseStudyUrl
-  return `/work_details/${work.slug}`
+  return `/work/${work.slug}`
 }
 
 /** Link to a project section on the homepage (hash anchor). */

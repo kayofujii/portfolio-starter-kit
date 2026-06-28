@@ -6,5 +6,5 @@ export default async function DevelpmentDetailRedirectPage({
   params: Promise<{ slug: string }>
 }) {
   const { slug } = await params
-  redirect(`/work_details/${slug}`)
+  redirect(`/work/${slug}`)
 }
