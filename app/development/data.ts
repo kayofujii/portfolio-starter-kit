@@ -117,6 +117,43 @@ export const workDetails: WorkDetailData[] = [
     meta: 'Norsat International — ongoing',
   },
   {
+    slug: 'sauna-booking-application',
+    title: 'Sauna Booking Application',
+    subtitle: 'Effortless booking and rewards motivate users',
+    type: 'design',
+    order: 6,
+    publishedAt: '2026-07-01',
+    heroImage: '/images/work/sauna_booking_application.webp',
+    caseStudyUrl: 'https://kayofujii.studio.site/sauna_booking_application',
+    overview: {
+      background:
+        'Designed a mobile-first, responsive sauna booking app featuring a smooth reservation flow and a gamified rewards system to encourage repeat bookings.',
+      challenge:
+        'The client wanted to remove the friction of phone-based reservations and manual payments while making the rewards program more visible and motivating across devices.',
+      solution:
+        'I focused on a simple booking flow, clear login and rescheduling support, and a more prominent rewards experience on the home page. I also collaborated closely with the client to keep the interface responsive across mobile, tablet, and desktop.',
+    },
+    details: {
+      period: '1 person-month',
+      techStack: ['Figma', 'Illustrator', 'UX/UI Design', 'Graphic Design', 'UX Research'],
+      company: 'Moncho-KG',
+      role: 'UX/UI Designer, Graphic Designer, UX Researcher',
+      roleDescription:
+        'Led the booking flow, rewards placement, and responsive design direction for a sauna reservation app built to reduce friction and encourage repeat use.',
+      outcome:
+        'The client gave positive feedback on the improved user flow, and the project received a 5/5 rating for quality, communication, and collaboration on the freelancing platform.',
+      team: '2 members',
+      teamDetails: 'Engineer x1, Product Designer (me)',
+    },
+    features: [],
+    featured: true,
+    tags: ['Mobile App', 'BtoC', 'Branding', 'UX/UI Design'],
+    meta: 'Moncho-KG - 1 month',
+    metricPrefix: 'Received',
+    metricValue: '5/5 rating',
+    metricSuffix: 'for quality, communication, and collaboration',
+  },
+  {
     slug: 'occupational-health-consultation-tool',
     title: 'Occupational Health Consultation Tool',
     subtitle: 'Redesigned a consultation tool for time-constrained doctors, reducing workflow friction and improving usability',
