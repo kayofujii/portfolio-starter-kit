@@ -75,11 +75,11 @@ export const workDetails: WorkDetailData[] = [
       '/videos/work/robotics-e-commerce.mp4',
     overview: {
       background:
-        'Norsat International is transforming its product line to include robotics and drones alongside satellite products. Because satellites and robotics serve different industries and buyers, the company is building a new branding and website.',
+        'Norsat International was expanding beyond satellite communication products into robotics and drone solutions, requiring a new brand identity and digital experience tailored for government-level B2B customers in the agriculture industry.',
       challenge:
-        'The new brand needed to target government-level B2B customers, primarily in the agriculture industry, and differentiate itself by highlighting autonomous air and ground solutions officially supported by DJI, as well as specialized training from seasoned engineers. This required a cohesive visual identity that felt innovative and futuristic yet reliable, alongside a complex website that restructures Shopify data to seamlessly sync with product lifecycle systems like Windchill and Business Central ERP.',
+        'The challenge was to differentiate the new robotics division from its existing satellite business while establishing trust in a highly technical market. The brand needed to communicate innovation and future-focused autonomous solutions while reinforcing credibility through official partnerships with major technology providers such as DJI and specialized training from experienced engineers.',
       solution:
-        "I am leading the branding, UI/UX design, and front-end implementation using Shopify Liquid and JavaScript. I created a branding system with a muted green, gray, and white color palette tailored for B2B trust, and designed a custom logo based on the letter 'A' that suggests a robot's body with soft shapes. In addition, I restructured the Shopify data architecture to sync with Windchill and Business Central, creating an intuitive navigation flow that allows users to easily explore the advanced product lineup.",
+        "I led branding, UX/UI design, and Shopify front-end development using Liquid and JavaScript. I created a B2B-focused visual identity and custom logo that balanced futuristic robotics with trust and reliability.\nI also restructured Shopify data architecture, improved product navigation, and supported integrations with Windchill and Business Central to create a scalable platform for managing and exploring complex robotics products.",
     },
     details: {
       period: '2026 — ongoing',

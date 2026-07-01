@@ -58,6 +58,7 @@ function MediaFrame({
 
 export default function WorkDetail({
   title,
+  subtitle,
   heroImage,
   heroVideo,
   githubUrl,
@@ -112,9 +113,8 @@ export default function WorkDetail({
           <h2 className={sectionHeadingClass}>Project Overview</h2>
         </div>
 
-        <div className="space-y-5 border-b border-[#f0eeee] pb-8 text-[1.125rem] leading-[1.55]">
-          <p>{overview.background}</p>
-          <p>{overview.solution}</p>
+        <div className="border-b border-[#f0eeee] pb-8 text-[1.125rem] leading-[1.65]">
+          <p>{subtitle}</p>
         </div>
 
         <div className="grid gap-x-6 gap-y-6 md:grid-cols-2">
@@ -150,7 +150,7 @@ export default function WorkDetail({
           <div className="space-y-3">
             <h3 className={subheadingClass}>The Solution</h3>
             <div className="space-y-3 pl-5 text-[1.125rem] leading-[1.55]">
-              <p>{overview.solution}</p>
+              <p className="whitespace-pre-line">{overview.solution}</p>
             </div>
           </div>
 
