@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { WorkDetailFeature } from "app/development/data";
+import MediaCarousel from "./media_carousel";
 
 type WorkDetailProps = {
   title: string;
@@ -44,7 +45,7 @@ const contentSectionClass =
   "mx-auto flex w-full max-w-[840px] flex-col gap-10 px-6 py-12 md:px-10 md:py-16";
 const mediaOuterClass = "overflow-hidden rounded-[20px] p-4 md:p-8";
 const mediaInnerClass =
-  "h-auto w-full rounded-[14px] bg-white shadow-[0_12px_30px_rgba(0,0,0,0.12)]";
+  "h-auto w-full rounded-[14px] bg-white";
 
 function MediaFrame({
   children,
@@ -74,7 +75,7 @@ export default function WorkDetail({
     { label: "Role", value: details.role },
     { label: "Company", value: details.company },
     { label: "Team", value: `${details.team} — ${details.teamDetails}` },
-    { label: "Tech Stack", value: details.techStack.join(", ") },
+    { label: "Tech Stack/ Tool", value: details.techStack.join(", ") },
     { label: "Impact", value: details.outcome },
   ];
 
@@ -127,6 +128,45 @@ export default function WorkDetail({
         </div>
       </section>
 
+      {liveUrl?.trim() || githubUrl?.trim() || liveUrlPassword?.trim() ? (
+        <section className={contentSectionClass}>
+          <div className="space-y-6">
+            {liveUrl?.trim() ? (
+              <div className="space-y-3">
+                <h3 className={subheadingClass}>Live URL</h3>
+                <a
+                  href={liveUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[1.125rem] text-[#007cff] underline underline-offset-4"
+                >
+                  Live URL
+                </a>
+              </div>
+            ) : null}
+            {liveUrlPassword?.trim() ? (
+              <div className="space-y-3">
+                <h3 className={subheadingClass}>Live URL Password</h3>
+                <p className={bodyLargeClass}>{liveUrlPassword}</p>
+              </div>
+            ) : null}
+            {githubUrl?.trim() ? (
+              <div className="space-y-3">
+                <h3 className={subheadingClass}>Github URL</h3>
+                <a
+                  href={githubUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[1.125rem] text-[#007cff] underline underline-offset-4"
+                >
+                  View GitHub Repository
+                </a>
+              </div>
+            ) : null}
+          </div>
+        </section>
+      ) : null}
+
       <section className={contentSectionClass}>
         <div className="text-center">
           <h2 className={sectionHeadingClass}>The Situation</h2>
@@ -166,87 +206,57 @@ export default function WorkDetail({
       </section>
 
       {features.length > 0 ? (
-        <section className={contentSectionClass}>
-          <div className="text-center">
+        <section className="mx-auto flex w-full max-w-[1080px] flex-col gap-10 px-6 py-12 md:px-10 md:py-16">
+          <div className="mx-auto w-full max-w-[840px] text-center">
             <h2 className={sectionHeadingClass}>
               Key Features &amp; Screenshots
             </h2>
           </div>
 
-          <div className="flex w-full flex-col items-start gap-12">
+          <div className="flex w-full flex-col items-center gap-16">
             {features.map((feature) => (
               <div
                 key={feature.title}
-                className="flex w-full flex-col items-start gap-4"
+                className="flex w-full flex-col items-center gap-6"
               >
-                {feature.media.map((item) => (
-                  <div
-                    key={item.src}
-                    className="w-full max-w-[1200px] overflow-hidden rounded-lg shadow-md"
-                  >
-                    {item.type === "image" ? (
-                      <img
-                        className="h-full w-full object-cover object-center"
-                        src={item.src}
-                        alt={item.alt ?? feature.title}
-                      />
-                    ) : (
-                      <video
-                        className="h-full w-full object-cover object-center"
-                        src={item.src}
-                        poster={item.poster}
-                        controls
-                        playsInline
-                      />
-                    )}
-                  </div>
-                ))}
-                <h3 className={subheadingClass}>{feature.title}</h3>
-                <p className={bodyLargeClass}>{feature.description}</p>
+                <div className="w-full max-w-[1000px] overflow-hidden">
+                  {feature.media.length > 1 ? (
+                    <MediaCarousel media={feature.media} title={feature.title} />
+                  ) : (
+                    feature.media.map((item) => (
+                      <div
+                        key={item.src}
+                        className="w-full overflow-hidden rounded-lg shadow-md bg-neutral-100"
+                      >
+                        {item.type === "image" ? (
+                          <img
+                            className="h-auto w-full object-contain mx-auto"
+                            src={item.src}
+                            alt={item.alt ?? feature.title}
+                          />
+                        ) : (
+                          <video
+                            className="h-auto w-full object-contain mx-auto"
+                            src={item.src}
+                            poster={item.poster}
+                            controls
+                            playsInline
+                          />
+                        )}
+                      </div>
+                    ))
+                  )}
+                </div>
+                <div className="w-full max-w-[840px] space-y-2 px-4 md:px-0">
+                  <h3 className={subheadingClass}>{feature.title}</h3>
+                  <p className={`${bodyLargeClass} whitespace-pre-line`}>{feature.description}</p>
+                </div>
               </div>
             ))}
           </div>
         </section>
       ) : null}
 
-      {liveUrl?.trim() || githubUrl?.trim() || liveUrlPassword?.trim() ? (
-        <section className={contentSectionClass}>
-          <div className="space-y-6">
-            {liveUrl?.trim() ? (
-              <div className="space-y-3">
-                <h3 className={subheadingClass}>Live URL</h3>
-                <a
-                  href={liveUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-[1.125rem] text-[#007cff] underline underline-offset-4"
-                >
-                  Live URL
-                </a>
-              </div>
-            ) : null}
-            {liveUrlPassword?.trim() ? (
-              <div className="space-y-3">
-                <h3 className={subheadingClass}>Live URL Password</h3>
-                <p className={bodyLargeClass}>{liveUrlPassword}</p>
-              </div>
-            ) : null}
-            {githubUrl?.trim() ? (
-              <div className="space-y-3">
-                <h3 className={subheadingClass}>Github URL</h3>
-                <a
-                  href={githubUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-[1.125rem] text-[#007cff] underline underline-offset-4"
-                >
-                  View GitHub Repository
-                </a>
-              </div>
-            ) : null}
-          </div>
-        </section>
-      ) : null}
 
       {details.outcome.trim() ? (
         <section className={contentSectionClass}>

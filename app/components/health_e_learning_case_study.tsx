@@ -55,7 +55,7 @@ function MockupPanel({
 }) {
   return (
     <div className="overflow-hidden rounded-[20px] bg-[#d8efe2] p-4 md:p-8">
-      <div className="rounded-[14px] bg-white p-5 shadow-[0_12px_30px_rgba(0,0,0,0.12)]">
+      <div className="rounded-[14px] bg-white p-5">
         <p className="mb-4 font-['Plus_Jakarta_Sans',sans-serif] text-[1rem] font-bold text-[#005f5d]">
           {title}
         </p>

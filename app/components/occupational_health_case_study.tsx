@@ -105,7 +105,7 @@ export default function OccupationalHealthCaseStudy() {
       <section className="mx-auto w-full max-w-[1440px] px-6 py-10 md:px-10">
         <div className="overflow-hidden rounded-[20px] bg-[#f4dfbc] p-4 md:p-8">
           <video
-            className="h-auto w-full rounded-[14px] bg-white shadow-[0_12px_30px_rgba(0,0,0,0.12)]"
+            className="h-auto w-full rounded-[14px] bg-white"
             src="/videos/work/occupational_health_consultation_tool.mp4"
             poster="/images/work/occupational_health_consultation_tool.webp"
             controls
@@ -212,14 +212,14 @@ export default function OccupationalHealthCaseStudy() {
             <img
               src="/images/work/occupational_health_employee_data.webp"
               alt="Employee health data panel"
-              className="h-auto w-full rounded-[14px] bg-white shadow-[0_12px_30px_rgba(0,0,0,0.12)]"
+              className="h-auto w-full rounded-[14px] bg-white"
             />
           </div>
           <div className="overflow-hidden rounded-[20px] bg-[#d8efe2] p-4 md:p-8">
             <img
               src="/images/work/occupational_health_consultation_reports.webp"
               alt="Consultation reports and opinion report workflow"
-              className="h-auto w-full rounded-[14px] bg-white shadow-[0_12px_30px_rgba(0,0,0,0.12)]"
+              className="h-auto w-full rounded-[14px] bg-white"
             />
           </div>
         </div>

@@ -73,38 +73,91 @@ export const workDetails: WorkDetailData[] = [
       '/images/work/robotics-e-commerce.webp',
     heroVideo:
       '/videos/work/robotics-e-commerce.mp4',
+    liveUrl: 'https://aero-bot.com/',
     overview: {
       background:
         'Norsat International was expanding beyond satellite communication products into robotics and drone solutions, requiring a new brand identity and digital experience tailored for government-level B2B customers in the agriculture industry.',
       challenge:
-        'The challenge was to differentiate the new robotics division from its existing satellite business while establishing trust in a highly technical market. The brand needed to communicate innovation and future-focused autonomous solutions while reinforcing credibility through official partnerships with major technology providers such as DJI and specialized training from experienced engineers.',
+        'The challenge was to differentiate the new robotics division from Norsat\'s existing satellite business while establishing trust in a highly technical B2B market serving government and enterprise customers.',
       solution:
-        "I led branding, UX/UI design, and Shopify front-end development using Liquid and JavaScript. I created a B2B-focused visual identity and custom logo that balanced futuristic robotics with trust and reliability.\nI also restructured Shopify data architecture, improved product navigation, and supported integrations with Windchill and Business Central to create a scalable platform for managing and exploring complex robotics products.",
+        'I led branding, brand strategy, UX/UI design, and Shopify front-end development using Liquid and JavaScript. I created a B2B-focused visual identity, defined go-to-market positioning, restructured Shopify data architecture for complex product navigation, and supported integrations with Windchill and Business Central to create a scalable platform for managing and exploring robotics products.',
     },
     details: {
       period: '2026 — ongoing',
       techStack: [
-        'Branding',
+        'Figma',
+        'Illustrator',
         'Shopify Liquid',
         'JavaScript',
         'Shopify Plus',
         'Shopify Metafields',
         'Windchill',
         'Business Central',
-        'UX/UI Design',
-        'Information Architecture',
       ],
       company: 'Norsat International',
       role: 'Branding, UI/UX Lead & Front-end Developer, PDM',
       roleDescription:
         'Leading the brand identity, user experience, and Shopify Plus front-end development. Responsible for creating the B2B design system, structuring Shopify metafields to sync with Windchill and Business Central, and collaborating with cross-functional stakeholders on MVP priorities.',
       outcome:
-        'In progress: establishing a scalable Shopify system and B2B brand direction for robotics and drone solutions ahead of MVP launch.',
+        'In progress: Completed the branding and strategy foundation (logo, tagline, brand voice, marketing materials, and UI components) and the e-commerce website MVP. Currently working on website content strategy and expanding sales through digital marketing with the marketing and engineering teams.',
       team: 'Cross-functional',
       teamDetails:
         'Collaborating with product owners, and business stakeholders on MVP priorities and platform strategy',
     },
-    features: [],
+    features: [
+      {
+        media: [],
+        title: 'Branding',
+        description:
+          'The brand needed to communicate innovation and future-focused autonomous solutions while reinforcing credibility through official partnerships with major technology providers such as DJI and specialized training from experienced engineers.\n\nFor the colour palette, we used unsaturated green as the primary color. Instead of black—the default for many robotics and drone companies—we differentiated the brand from competitors. This palette maintains reliability for B2B customers, especially in government roles, while conveying a clean, innovative feel. We also validated colour choices for accessibility to support users with low vision.\n\nWhile building and syncing components in the design system, I created UI components quickly and expanded the system for the software development team and graphic designers to apply across product and marketing materials.\n\nFor the logo, we chose Michroma and Montserrat as our typeface pairing. Michroma introduces a futuristic feel without being overly flashy or technical, which fit our brand identity well. The symbol incorporates an "A" shape from the brand name and motifs inspired by robot and drone airframes.',
+      },
+      {
+        media: [
+          {
+            type: 'image',
+            src: '/images/work/strategy-1-robot.webp',
+            alt: 'Strategy Foundation and Research',
+          },
+        ],
+        title: 'Strategy',
+        description:
+          'I began with competitive analysis during the early brand strategy phase. To generate ideas, I interviewed the product owner, CEO, and product development team, and researched competitors and the existing Norsat website.\n\nThrough this work, I defined three strategic strengths:\n\n1. Air and ground capability — Competitors often offer only UAVs (drones) or ground robots, which limits clients tackling complex enterprise problems. We provide both air and ground products.\n\n2. Trusted global brand and stability — Norsat has 40 years of history with engineers who customize products for clients. We are an official DJI distributor, offering competitive pricing plus specialized service and training for DJI products.\n\n3. A solution company, not just a product seller — We help customers solve problems using robotics technology. For example, we organize the client\'s challenge, define goals, select products and accessories to match, deploy drones, analyze data, and transform raw data into structured insights.',
+      },
+      {
+        media: [
+          {
+            type: 'image',
+            src: '/images/work/ux-navigation-1-robot.webp',
+            alt: 'UX Navigation Concept - Product Catalog & Mega Menu',
+          },
+          {
+            type: 'image',
+            src: '/images/work/ux-navigation-2-robot.webp',
+            alt: 'UX Navigation Concept - Mobile Navigation & Filters',
+          },
+          {
+            type: 'image',
+            src: '/images/work/ux-navigation-3-robot.webp',
+            alt: 'UX Navigation Concept - Accessory compatibility check',
+          },
+        ],
+        title: 'UX Navigation',
+        description:
+          'I created a custom hierarchy for categories and product models on the website. This structure appears on collection pages, product pages (via a compatible products section showing accessories for a specific product), and filters on accessory product lists.\n\nThis helps users find products easily—especially when searching for a specific brand or compatible items. For example, I built a hierarchy of Drone > DJI Products > DJI product lines—a structure Shopify Plus did not support out of the box. I organized the structure, translated it into Shopify metafields, implemented it on the front end, and guided the product management team on populating and syncing data. This reduced friction for users and expanded e-commerce sales.',
+      },
+      {
+        media: [
+          {
+            type: 'image',
+            src: '/images/work/information-architecture-1.webp',
+            alt: 'Information Architecture Map',
+          },
+        ],
+        title: 'Information Architecture',
+        description:
+          'We decided to focus on product and service content because it directly connects to revenue. Initially, the PO and CEO wanted a single services page covering training and rental. However, competitive research showed that separating services, rental, and training was easier to navigate.\n\nWe also created resource pages (case studies, news), solution pages, and industry pages as lower-priority items for the first release. On the homepage, I included links to all major sections while keeping the layout clear and uncluttered.',
+      },
+    ],
     featured: false,
     tags: [
       'B2B',
