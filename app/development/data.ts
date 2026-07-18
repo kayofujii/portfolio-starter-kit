@@ -67,7 +67,7 @@ export const workDetails: WorkDetailData[] = [
     subtitle:
       'Leading brand identity, UI/UX design, and front-end implementation for a new Shopify Plus store as Norsat expands into robotics and drones',
     type: 'design',
-    order: 5,
+    order: 3,
     publishedAt: '2026-05-01',
     heroImage:
       '/images/work/robotics-e-commerce.webp',
@@ -158,7 +158,7 @@ export const workDetails: WorkDetailData[] = [
           'We decided to focus on product and service content because it directly connects to revenue. Initially, the PO and CEO wanted a single services page covering training and rental. However, competitive research showed that separating services, rental, and training was easier to navigate.\n\nWe also created resource pages (case studies, news), solution pages, and industry pages as lower-priority items for the first release. On the homepage, I included links to all major sections while keeping the layout clear and uncluttered.',
       },
     ],
-    featured: false,
+    featured: true,
     tags: [
       'B2B',
       'Branding',
