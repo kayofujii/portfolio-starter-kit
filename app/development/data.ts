@@ -95,7 +95,7 @@ export const workDetails: WorkDetailData[] = [
         'Windchill',
         'Business Central',
       ],
-      company: 'Norsat International',
+      company: 'Norsat International, inc.',
       role: 'Branding, UI/UX Lead & Front-end Developer, PDM',
       roleDescription:
         'Leading the brand identity, user experience, and Shopify Plus front-end development. Responsible for creating the B2B design system, structuring Shopify metafields to sync with Windchill and Business Central, and collaborating with cross-functional stakeholders on MVP priorities.',
