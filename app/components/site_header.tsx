@@ -37,13 +37,13 @@ export default function SiteHeader() {
               href="/"
               className={linkClass("/")}
             >
-              Home
+              Design
             </Link>
             <Link
               href="/work"
               className={linkClass("/work")}
             >
-              Other Works
+              Dev
             </Link>
             <Link href="/about" className={linkClass("/about")}>
               About
@@ -66,14 +66,14 @@ export default function SiteHeader() {
               onClick={closeMenu}
               className="text-[#2c2c2cff]"
             >
-              Home
+              Design
             </Link>
             <Link
               href="/work"
               onClick={closeMenu}
               className="text-[#2c2c2cff]"
             >
-              Other Works
+              Dev
             </Link>
             <Link
               href="/about"

@@ -16,11 +16,12 @@ export type WorkDetailFeature = {
   description: string
 }
 
+export type WorkCategory = 'design' | 'development'
 export type WorkDetailData = {
   slug: string
   title: string
   subtitle: string
-  type: 'design' | 'development'
+  type: WorkCategory | WorkCategory[]
   order?: number
   publishedAt?: string
   heroImage: string
@@ -66,7 +67,7 @@ export const workDetails: WorkDetailData[] = [
     title: 'B2B E-commerce & Branding for Robotics & Drone Solutions',
     subtitle:
       'Leading brand identity, UI/UX design, and front-end implementation for a new Shopify Plus store as Norsat expands into robotics and drones',
-    type: 'design',
+    type: ['design', 'development'],
     order: 3,
     publishedAt: '2026-05-01',
     heroImage:
@@ -604,6 +605,7 @@ export const workDetails: WorkDetailData[] = [
   },
 ]
 
+
 export function getWorkDetailBySlug(slug: string) {
   return workDetails.find((work) => work.slug === slug)
 }
@@ -627,8 +629,10 @@ export function isExternalCaseStudy(work: WorkDetailData) {
   return Boolean(work.caseStudyUrl)
 }
 
-export function getWorksByType(type: 'design' | 'development') {
-  return workDetails.filter((work) => work.type === type)
+export function getWorksByType(type: WorkCategory) {
+  return workDetails.filter((work) =>
+    Array.isArray(work.type) ? work.type.includes(type) : work.type === type,
+  )
 }
 
 export function getNextWorkByOrder(slug: string) {
