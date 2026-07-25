@@ -107,7 +107,13 @@ export const workDetails: WorkDetailData[] = [
     },
     features: [
       {
-        media: [],
+        media: [
+          {
+            type: 'image',
+            src: '/images/work/aerobot-brand-guidelines.webp',
+            alt: 'Aerobot Intelligence brand guidelines overview',
+          },
+        ],
         title: 'Branding',
         description:
           'The brand needed to communicate innovation and future-focused autonomous solutions while reinforcing credibility through official partnerships with major technology providers such as DJI and specialized training from experienced engineers.\n\nFor the colour palette, we used unsaturated green as the primary color. Instead of black—the default for many robotics and drone companies—we differentiated the brand from competitors. This palette maintains reliability for B2B customers, especially in government roles, while conveying a clean, innovative feel. We also validated colour choices for accessibility to support users with low vision.\n\nWhile building and syncing components in the design system, I created UI components quickly and expanded the system for the software development team and graphic designers to apply across product and marketing materials.\n\nFor the logo, we chose Michroma and Montserrat as our typeface pairing. Michroma introduces a futuristic feel without being overly flashy or technical, which fit our brand identity well. The symbol incorporates an "A" shape from the brand name and motifs inspired by robot and drone airframes.',
@@ -167,6 +173,8 @@ export const workDetails: WorkDetailData[] = [
       'E-commerce',
       'UX/UI Design',
       'Information Architecture',
+      'JavaScript',
+      'HTML/CSS',
     ],
     meta: 'Norsat International — ongoing',
   },

@@ -1,4 +1,3 @@
-import Link from "next/link";
 import type { WorkDetailFeature } from "app/development/data";
 import MediaCarousel from "./media_carousel";
 
@@ -43,19 +42,6 @@ const bodyClass = "text-[1rem] leading-7 text-[#333333]";
 const labelClass = "text-[1.125rem] font-bold text-[rgba(40,40,40,0.8)]";
 const contentSectionClass =
   "mx-auto flex w-full max-w-[840px] flex-col gap-10 px-6 py-12 md:px-10 md:py-16";
-const mediaOuterClass = "overflow-hidden rounded-[20px] p-4 md:p-8";
-const mediaInnerClass =
-  "h-auto w-full rounded-[14px] bg-white";
-
-function MediaFrame({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
-  return (
-    <div className={`${mediaOuterClass}`}>{children}</div>
-  );
-}
 
 export default function WorkDetail({
   title,
@@ -68,7 +54,6 @@ export default function WorkDetail({
   overview,
   details,
   features,
-  nextProject,
 }: WorkDetailProps) {
   const overviewItems = [
     { label: "Timeline", value: details.period },
@@ -270,38 +255,6 @@ export default function WorkDetail({
         </section>
       ) : null}
 
-      {nextProject ? (
-        <section className={contentSectionClass}>
-          <div className="text-center">
-            <h2 className={sectionHeadingClass}>Up Next</h2>
-          </div>
-
-          <MediaFrame>
-            <img
-              src={nextProject.image}
-              alt={nextProject.title}
-              className={mediaInnerClass}
-            />
-          </MediaFrame>
-
-          <div className="space-y-3 text-center">
-            <h3 className={subheadingClass}>{nextProject.title}</h3>
-            <p className={bodyLargeClass}>{nextProject.description}</p>
-            {nextProject.ctaHref ? (
-              <Link
-                href={nextProject.ctaHref}
-                className="inline-block text-[1.25rem] text-[#005f5d] underline underline-offset-4"
-              >
-                {nextProject.ctaLabel} -&gt;
-              </Link>
-            ) : (
-              <span className="text-[1.25rem] text-[#005f5d]">
-                {nextProject.ctaLabel}
-              </span>
-            )}
-          </div>
-        </section>
-      ) : null}
     </main>
   );
 }
