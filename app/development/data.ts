@@ -148,9 +148,15 @@ export const workDetails: WorkDetailData[] = [
             alt: 'UX Navigation Concept - Accessory compatibility check',
           },
         ],
-        title: 'UX Navigation',
+        title: 'UX Navigation Through Custom Feature Development',
         description:
-          'I created a custom hierarchy for categories and product models on the website. This structure appears on collection pages, product pages (via a compatible products section showing accessories for a specific product), and filters on accessory product lists.\n\nThis helps users find products easily—especially when searching for a specific brand or compatible items. For example, I built a hierarchy of Drone > DJI Products > DJI product lines—a structure Shopify Plus did not support out of the box. I organized the structure, translated it into Shopify metafields, implemented it on the front end, and guided the product management team on populating and syncing data. This reduced friction for users and expanded e-commerce sales.',
+          'I created a custom product hierarchy for categories and product models across the website. This structure was implemented on collection pages, product pages through a compatible products section that recommends accessories for specific products, and accessory product filters.\n\nThis improved product discoverability and reduced friction when users searched for specific brands or compatible items. For example, I developed a hierarchy such as Drone → DJI Products → DJI Product Lines, a structure that Shopify Plus did not support out of the box. I designed the information architecture, translated it into Shopify metafields, implemented the experience on the frontend, and collaborated with the product management team to establish data population and synchronization workflows. This improved the browsing experience and supported e-commerce growth.',
+      },
+      {
+        media: [],
+        title: 'Custom Shopify UI Components and Design System Development',
+        description:
+          'I developed custom Shopify UI components, including color themes and product card components, to improve content creation efficiency and maintain brand consistency.\n\nI created two variations of color schemes and card components, enabling designers and developers to build new content through Shopify’s editor without requiring extensive design knowledge. These components reduced repetitive development work and followed Shopify’s latest theme folder structure and architecture.\n\nAdditionally, I created a design system using AI-assisted design workflows with Claude, enabling both software and hardware teams at AeroBot Intelligence to adopt consistent frontend patterns and branding across products and digital experiences.',
       },
       {
         media: [
