@@ -669,7 +669,7 @@ export const workDetails: WorkDetailData[] = [
     ],
     featured: true,
     tags: ['Design System', 'Vue.js', 'Storybook', 'Figma', 'SaaS', 'UX/UI Design'],
-    meta: 'SaaS Startup — 2026',
+    meta: 'mediment, inc. — 2024',
   },
 ]
 
