@@ -636,9 +636,9 @@ export const workDetails: WorkDetailData[] = [
         "As both Product Designer and Software Engineer, I collaborated with designers and engineers to bridge Figma and Vue.js/Storybook. We established standard layout and workflow patterns, shifting the team's mindset from raw component creation to scalable pattern reuse, which dramatically reduced redundant work.",
     },
     details: {
-      period: '2026',
+      period: '2024',
       techStack: ['Vue.js', 'Storybook', 'Figma', 'JavaScript', 'CSS', 'Design Systems'],
-      company: 'SaaS Startup',
+      company: 'mediment, inc.',
       role: 'Product Designer & Software Engineer',
       roleDescription:
         'Developed and maintained reusable Vue.js components and Storybook documentation while establishing scalable UI patterns. Led the evolution of the design system by introducing layout and workflow patterns in Figma to align designer and developer workflows.',
