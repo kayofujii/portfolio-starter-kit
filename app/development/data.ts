@@ -638,7 +638,7 @@ export const workDetails: WorkDetailData[] = [
     details: {
       period: '2024',
       techStack: ['Vue.js', 'Storybook', 'Figma', 'JavaScript', 'CSS', 'Design Systems'],
-      company: 'mediment, inc.',
+      company: 'mediphone, inc.',
       role: 'Product Designer & Software Engineer',
       roleDescription:
         'Developed and maintained reusable Vue.js components and Storybook documentation while establishing scalable UI patterns. Led the evolution of the design system by introducing layout and workflow patterns in Figma to align designer and developer workflows.',
@@ -669,7 +669,7 @@ export const workDetails: WorkDetailData[] = [
     ],
     featured: true,
     tags: ['Design System', 'Vue.js', 'Storybook', 'Figma', 'SaaS', 'UX/UI Design'],
-    meta: 'mediment, inc. — 2024',
+    meta: 'mediphone — 2024',
   },
 ]
 
