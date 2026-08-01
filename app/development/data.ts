@@ -297,7 +297,7 @@ export const workDetails: WorkDetailData[] = [
     title: 'Analytics Tool for a Workplace Stress Screening Program',
     subtitle: 'Redesigned a workplace stress analysis tool to improve clarity and prevent client churn',
     type: 'design',
-    order: 4,
+    order: 3,
     publishedAt: '2025-09-01',
     heroImage: '/images/work/workplace_stress_hero.webp',
     heroVideo:
@@ -622,7 +622,7 @@ export const workDetails: WorkDetailData[] = [
     title: 'Enterprise Design System',
     subtitle: 'Evolving a component library into a functional design system with Figma, Vue.js, and Storybook to streamline workflows and team collaboration',
     type: ['design', 'development'],
-    order: 3,
+    order: 4,
     publishedAt: '2026-05-17',
     heroImage: '/images/work/enterprise-design-system.webp',
     caseStudyUrl:
