@@ -68,7 +68,7 @@ export const workDetails: WorkDetailData[] = [
     subtitle:
       'Leading brand identity, UI/UX design, and front-end implementation for a new Shopify Plus store as Norsat expands into robotics and drones',
     type: ['design', 'development'],
-    order: 3,
+    order: 2,
     publishedAt: '2026-05-01',
     heroImage:
       '/images/work/robotics-e-commerce.webp',
@@ -297,7 +297,7 @@ export const workDetails: WorkDetailData[] = [
     title: 'Analytics Tool for a Workplace Stress Screening Program',
     subtitle: 'Redesigned a workplace stress analysis tool to improve clarity and prevent client churn',
     type: 'design',
-    order: 2,
+    order: 4,
     publishedAt: '2025-09-01',
     heroImage: '/images/work/workplace_stress_hero.webp',
     heroVideo:
@@ -336,7 +336,7 @@ export const workDetails: WorkDetailData[] = [
     title: 'Employee Health E-Learning Feature',
     subtitle: 'Designed and launched an e-learning feature to enable scalable employee health education and drive upsell growth',
     type: 'design',
-    order: 3,
+    order: 5,
     publishedAt: '2025-08-20',
     heroImage: '/images/work/health_e_learning.webp',
     caseStudyUrl: 'https://kayofujii.studio.site/health_e_learning',
@@ -372,7 +372,7 @@ export const workDetails: WorkDetailData[] = [
     title: 'Mind Spark Academy Preschool Website',
     subtitle: 'Launched a preschool website from scratch, translating a complex educational philosophy into a clear brand and driving early registrations',
     type: 'design',
-    order: 4,
+    order: 5,
     publishedAt: '2025-08-15',
     heroImage:
       '/images/work/mind_spark.webp',
@@ -616,6 +616,60 @@ export const workDetails: WorkDetailData[] = [
           'Enhanced the Blocksy theme with a custom product variation interface and direct Add to Cart buttons, enabling wholesale customers to buy multiple products efficiently and reducing cart abandonment.',
       },
     ],
+  },
+  {
+    slug: 'enterprise-design-system',
+    title: 'Enterprise Design System',
+    subtitle: 'Evolving a component library into a functional design system with Figma, Vue.js, and Storybook to streamline workflows and team collaboration',
+    type: ['design', 'development'],
+    order: 3,
+    publishedAt: '2026-05-17',
+    heroImage: '/images/work/enterprise-design-system.webp',
+    caseStudyUrl:
+      'https://www.designsystemscollective.com/how-we-built-a-functional-design-system-in-an-early-stage-product-team-78552b67d71a',
+    overview: {
+      background:
+        'At an early-stage SaaS startup, the product team set out to establish a design system. Initially, frontend engineers built a component library using Storybook, but Figma components remained disconnected, developers struggled to understand when to reuse elements, and duplicate interfaces continued to appear across the platform.',
+      challenge:
+        'As the product scaled, simply having a component library proved insufficient. The team faced UI inconsistencies, redundant components, and excessive decision-making in repetitive workflows, highlighting the need to move beyond isolated elements and align team thinking around flexible patterns.',
+      solution:
+        "As both Product Designer and Software Engineer, I collaborated with designers and engineers to bridge Figma and Vue.js/Storybook. We established standard layout and workflow patterns, shifting the team's mindset from raw component creation to scalable pattern reuse, which dramatically reduced redundant work.",
+    },
+    details: {
+      period: '2026',
+      techStack: ['Vue.js', 'Storybook', 'Figma', 'JavaScript', 'CSS', 'Design Systems'],
+      company: 'SaaS Startup',
+      role: 'Product Designer & Software Engineer',
+      roleDescription:
+        'Developed and maintained reusable Vue.js components and Storybook documentation while establishing scalable UI patterns. Led the evolution of the design system by introducing layout and workflow patterns in Figma to align designer and developer workflows.',
+      outcome:
+        'Successfully bridged Figma and Vue.js components, establishing layout and workflow patterns that reduced UI inconsistency, minimized duplicated development effort, and aligned team decision-making.',
+      team: 'Cross-functional',
+      teamDetails: 'Product Designer (me), Frontend Engineers, Designers',
+    },
+    features: [
+      {
+        media: [],
+        title: 'Stage 1 — Creating the First Design System',
+        description:
+          'Built a foundational component library shared between design and engineering, replacing duplicated UI elements with reusable Figma and Vue.js components (forms, buttons, inputs, modals).',
+      },
+      {
+        media: [],
+        title: 'Stage 2 — Flexible Component Evolution',
+        description:
+          'Established a collaborative review workflow to discuss component flexibility and reuse before writing code, shifting team focus from multiplying patterns to improving and extending existing components.',
+      },
+      {
+        media: [],
+        title: 'Stage 3 — Layout & Workflow Patterns',
+        description:
+          'Moved beyond isolated component libraries to define Layout Patterns (spacing, headings, card structures) and Workflow Patterns (multi-step user behaviors like HR emailing flows), streamlining operational decision-making.',
+      },
+    ],
+    featured: true,
+    tags: ['Design System', 'Vue.js', 'Storybook', 'Figma', 'SaaS', 'UX/UI Design'],
+    meta: 'SaaS Startup — 2026',
   },
 ]
 
