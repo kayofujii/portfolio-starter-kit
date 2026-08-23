@@ -2,5 +2,5 @@ import { redirect } from 'next/navigation'
 
 export default async function WorkCaseStudy({ params }) {
   const { slug } = await params
-  redirect(`/work/${slug}`)
+  redirect(`/en/work/${slug}`)
 }

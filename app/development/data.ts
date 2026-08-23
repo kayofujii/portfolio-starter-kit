@@ -84,7 +84,7 @@ export const workDetails: WorkDetailData[] = [
         'I led branding, brand strategy, UX/UI design, and Shopify front-end development using Liquid and JavaScript. I created a B2B-focused visual identity, defined go-to-market positioning, restructured Shopify data architecture for complex product navigation, and supported integrations with Windchill and Business Central to create a scalable platform for managing and exploring robotics products.',
     },
     details: {
-      period: '2026 — ongoing',
+      period: '2026 — 2 months',
       techStack: [
         'Figma',
         'Illustrator',
@@ -100,7 +100,7 @@ export const workDetails: WorkDetailData[] = [
       roleDescription:
         'Leading the brand identity, user experience, and Shopify Plus front-end development. Responsible for creating the B2B design system, structuring Shopify metafields to sync with Windchill and Business Central, and collaborating with cross-functional stakeholders on MVP priorities.',
       outcome:
-        'In progress: Completed the branding and strategy foundation (logo, tagline, brand voice, marketing materials, and UI components) and the e-commerce website MVP. Currently working on website content strategy and expanding sales through digital marketing with the marketing and engineering teams.',
+        'Reached 300 unique users and shipped products for a B2B company within the first month of launch.',
       team: 'Cross-functional',
       teamDetails:
         'Collaborating with product owners, and business stakeholders on MVP priorities and platform strategy',
@@ -182,7 +182,7 @@ export const workDetails: WorkDetailData[] = [
       'JavaScript',
       'HTML/CSS',
     ],
-    meta: 'Norsat International — ongoing',
+    meta: 'Norsat International — 2 months',
   },
   {
     slug: 'sauna-booking-application',

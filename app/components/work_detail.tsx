@@ -1,5 +1,6 @@
 import type { WorkDetailFeature } from "app/development/data";
 import MediaCarousel from "./media_carousel";
+import type { Locale } from 'app/lib/i18n';
 
 type WorkDetailProps = {
   title: string;
@@ -32,6 +33,7 @@ type WorkDetailProps = {
     ctaLabel: string;
     ctaHref?: string;
   };
+  locale?: Locale;
 };
 
 const sectionHeadingClass = "text-[1.75rem] font-bold text-[#006a68]";
@@ -54,14 +56,18 @@ export default function WorkDetail({
   overview,
   details,
   features,
+  locale = 'en',
 }: WorkDetailProps) {
+  const labels = locale === 'ja'
+    ? { overview: 'プロジェクト概要', timeline: '期間', role: '担当', company: '会社', team: 'チーム', stack: '技術スタック／ツール', impact: '成果', situation: '背景と課題', background: '背景', challenge: '課題', solution: '解決策', myRole: '私の役割', features: '主な取り組み・画面', outcomes: '成果', live: '公開URL', password: '公開URLのパスワード', github: 'GitHub URL', repository: 'GitHubリポジトリを見る' }
+    : { overview: 'Project Overview', timeline: 'Timeline', role: 'Role', company: 'Company', team: 'Team', stack: 'Tech Stack/ Tool', impact: 'Impact', situation: 'The Situation', background: 'Background', challenge: 'The Challenge', solution: 'The Solution', myRole: 'My Role', features: 'Key Features & Screenshots', outcomes: 'Outcomes', live: 'Live URL', password: 'Live URL Password', github: 'Github URL', repository: 'View GitHub Repository' };
   const overviewItems = [
-    { label: "Timeline", value: details.period },
-    { label: "Role", value: details.role },
-    { label: "Company", value: details.company },
-    { label: "Team", value: `${details.team} — ${details.teamDetails}` },
-    { label: "Tech Stack/ Tool", value: details.techStack.join(", ") },
-    { label: "Impact", value: details.outcome },
+    { label: labels.timeline, value: details.period },
+    { label: labels.role, value: details.role },
+    { label: labels.company, value: details.company },
+    { label: labels.team, value: `${details.team} — ${details.teamDetails}` },
+    { label: labels.stack, value: details.techStack.join(", ") },
+    { label: labels.impact, value: details.outcome },
   ];
 
   return (
@@ -96,7 +102,7 @@ export default function WorkDetail({
 
       <section className={contentSectionClass}>
         <div className="text-center">
-          <h2 className={sectionHeadingClass}>Project Overview</h2>
+          <h2 className={sectionHeadingClass}>{labels.overview}</h2>
         </div>
 
         <div className="border-b border-[#f0eeee] pb-8 text-[1.125rem] leading-[1.65]">
@@ -118,33 +124,33 @@ export default function WorkDetail({
           <div className="space-y-6">
             {liveUrl?.trim() ? (
               <div className="space-y-3">
-                <h3 className={subheadingClass}>Live URL</h3>
+                <h3 className={subheadingClass}>{labels.live}</h3>
                 <a
                   href={liveUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-[1.125rem] text-[#007cff] underline underline-offset-4"
                 >
-                  Live URL
+                  {labels.live}
                 </a>
               </div>
             ) : null}
             {liveUrlPassword?.trim() ? (
               <div className="space-y-3">
-                <h3 className={subheadingClass}>Live URL Password</h3>
+                <h3 className={subheadingClass}>{labels.password}</h3>
                 <p className={bodyLargeClass}>{liveUrlPassword}</p>
               </div>
             ) : null}
             {githubUrl?.trim() ? (
               <div className="space-y-3">
-                <h3 className={subheadingClass}>Github URL</h3>
+                <h3 className={subheadingClass}>{labels.github}</h3>
                 <a
                   href={githubUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-[1.125rem] text-[#007cff] underline underline-offset-4"
                 >
-                  View GitHub Repository
+                  {labels.repository}
                 </a>
               </div>
             ) : null}
@@ -154,26 +160,26 @@ export default function WorkDetail({
 
       <section className={contentSectionClass}>
         <div className="text-center">
-          <h2 className={sectionHeadingClass}>The Situation</h2>
+          <h2 className={sectionHeadingClass}>{labels.situation}</h2>
         </div>
 
         <div className="space-y-10">
           <div className="space-y-3">
-            <h3 className={subheadingClass}>Background</h3>
+            <h3 className={subheadingClass}>{labels.background}</h3>
             <div className="space-y-3 pl-5 text-[1.125rem] leading-[1.55]">
               <p>{overview.background}</p>
             </div>
           </div>
 
           <div className="space-y-3">
-            <h3 className={subheadingClass}>The Challenge</h3>
+            <h3 className={subheadingClass}>{labels.challenge}</h3>
             <div className="space-y-3 pl-5 text-[1.125rem] leading-[1.55]">
               <p>{overview.challenge}</p>
             </div>
           </div>
 
           <div className="space-y-3">
-            <h3 className={subheadingClass}>The Solution</h3>
+            <h3 className={subheadingClass}>{labels.solution}</h3>
             <div className="space-y-3 pl-5 text-[1.125rem] leading-[1.55]">
               <p className="whitespace-pre-line">{overview.solution}</p>
             </div>
@@ -181,7 +187,7 @@ export default function WorkDetail({
 
           {details.roleDescription ? (
             <div className="space-y-3">
-              <h3 className={subheadingClass}>My Role</h3>
+              <h3 className={subheadingClass}>{labels.myRole}</h3>
               <div className="space-y-3 pl-5 text-[1.125rem] leading-[1.55]">
                 <p>{details.roleDescription}</p>
               </div>
@@ -194,7 +200,7 @@ export default function WorkDetail({
         <section className="mx-auto flex w-full max-w-[1080px] flex-col gap-10 px-6 py-12 md:px-10 md:py-16">
           <div className="mx-auto w-full max-w-[840px] text-center">
             <h2 className={sectionHeadingClass}>
-              Key Features &amp; Screenshots
+              {labels.features}
             </h2>
           </div>
 
@@ -246,7 +252,7 @@ export default function WorkDetail({
       {details.outcome.trim() ? (
         <section className={contentSectionClass}>
           <div className="text-center">
-            <h2 className={sectionHeadingClass}>Outcomes</h2>
+            <h2 className={sectionHeadingClass}>{labels.outcomes}</h2>
           </div>
 
           <p className="text-[1.125rem] leading-[1.55] text-[#333333]">

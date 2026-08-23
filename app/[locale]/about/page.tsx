@@ -1,0 +1,16 @@
+import { getLatestMediumArticles } from 'app/lib/medium'
+import { isLocale, type Locale } from 'app/lib/i18n'
+import { notFound } from 'next/navigation'
+
+const content = {
+  en: { title: 'About me', intro: ["Hi, I'm Kayo Fujii, a Product Designer who began my career as a software engineer.", 'As an early member at mediPhone, I helped grow a health-management SaaS from MVP to break-even in two years. I led work across user research, information architecture, prototyping, usability testing, and post-launch improvements—while partnering with other teams to improve release flows, domain knowledge, and sales materials.', 'After studying UX/UI design in Vancouver, I worked as a Product Designer and Engineer for Canadian companies. I bring design, business, and engineering together to build products that create value for users across markets.'], outputs: 'Outputs' },
+  ja: { title: '自己紹介', intro: ['プロダクトデザイナーの藤井佳世です。ソフトウェアエンジニアとしてキャリアをスタートし、UX/UIデザインへの関心をきっかけにプロダクトデザイナーへ転向しました。', 'メディフォンでは初期メンバーとして、健康管理SaaSのUXリサーチ、情報設計、プロトタイプ、ユーザビリティテスト、リリース後の改善までを担当。部門横断でプロダクトを改善し、2年間でMVPの立ち上げから損益分岐点の達成に貢献しました。', 'その後バンクーバーでUX/UIデザインを学び、現地企業でプロダクトデザイナー兼エンジニアとして勤務。デザイン・ビジネス・エンジニアリングの経験を活かし、国内外のユーザーに価値を届けるプロダクトづくりに取り組んでいます。'], outputs: 'アウトプット' },
+} as const
+
+export default async function LocaleAbout({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params
+  if (!isLocale(locale)) notFound()
+  const copy = content[locale as Locale]
+  const articles = await getLatestMediumArticles(3)
+  return <main lang={locale} className="w-full bg-white text-[#161d1c]"><section className="w-full bg-white px-6 py-14 md:px-12 md:py-20 lg:px-[120px]"><div className="mx-auto max-w-[1200px] rounded-[28px] bg-[#f9f9f9] p-6 md:p-10"><div className="grid gap-6 md:grid-cols-[320px_minmax(0,1fr)] md:gap-[80px]"><div className="overflow-hidden rounded-[16px]"><iframe src="https://www.youtube.com/embed/DX0i_9QtDGU" title="About Kayo Fujii" className="h-[350px] w-full" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen /></div><div className="flex max-w-[760px] flex-col gap-8"><h1 className="font-['Plus_Jakarta_Sans',sans-serif] text-[28px] font-bold leading-[39.2px] text-[#333333]">{copy.title}</h1><div className="space-y-6 text-[18px] leading-[25.2px] text-[#333333]">{copy.intro.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}</div></div></div></div></section><section className="w-full bg-[#f9f9f9] px-6 py-14 md:px-12 md:py-20 lg:px-[120px]"><div className="mx-auto flex max-w-[1200px] flex-col gap-10"><h2 className="font-['Plus_Jakarta_Sans',sans-serif] text-[28px] font-bold leading-[39.2px] text-[#2d2d2d]">{copy.outputs}</h2><div className="grid gap-10 md:grid-cols-2">{articles.map((article) => <a key={article.link} href={article.link} target="_blank" rel="noreferrer" className="overflow-hidden rounded-[16px] bg-white shadow-[0px_1px_5px_3px_rgba(63,88,87,0.03)]"><div className="p-6"><h3 className="font-['Plus_Jakarta_Sans',sans-serif] text-[18px] font-bold leading-[25.2px] text-[#0e0e2c]">{article.title}</h3><p className="mt-1 text-[16px] text-[rgba(40,40,40,0.8)]">Medium</p></div></a>)}</div></div></section></main>
+}

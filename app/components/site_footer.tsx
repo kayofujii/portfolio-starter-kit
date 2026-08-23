@@ -2,6 +2,8 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { localePath, type Locale, ui } from "app/lib/i18n";
 
 function ContactPill({
   href,
@@ -28,16 +30,19 @@ export default function SiteFooter() {
   useEffect(() => {
     setYear(new Date().getFullYear());
   }, []);
+  const pathname = usePathname();
+  const locale: Locale = pathname.startsWith('/ja') ? 'ja' : 'en';
+  const copy = ui[locale];
 
   return (
     <footer className="w-full border-t border-[#efebe6] bg-white">
       <div className="mx-auto flex w-full max-w-[1440px] flex-col items-center px-6 py-20 text-center md:px-10">
         <div className="flex max-w-[960px] flex-col items-center gap-5">
           <h2 className="font-['Plus_Jakarta_Sans',sans-serif] text-[28px] font-bold leading-[39.2px] text-[#2d2d2d]">
-              Contact
+              {copy.contact}
           </h2>
           <p className="text-[20px] leading-[28px] text-[#3f4948]">
-            Feel free to reach out to me at{" "}
+            {copy.contactText}{" "}
             <a
               href="mailto:kayofujii1025@gmail.com"
               className="text-[#1677ff] underline underline-offset-4"
@@ -67,7 +72,7 @@ export default function SiteFooter() {
         </div>
 
         <div className="mt-20 flex w-full max-w-[960px] flex-col items-center gap-8">
-          <Link href="/" className="block">
+          <Link href={localePath(locale)} className="block">
             <img
               src="/images/logo.svg"
               alt="Kayo Fujii"

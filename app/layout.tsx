@@ -1,8 +1,6 @@
 import './global.css'
 import type { Metadata } from 'next'
 import { baseUrl } from './sitemap'
-import Header from './components/site_header'
-import Footer from './components/site_footer'
 import { Analytics } from "@vercel/analytics/next"
 import { SpeedInsights } from "@vercel/speed-insights/next"
 
@@ -49,11 +47,9 @@ export default function RootLayout({
         <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet"/>
       </head>
       <body suppressHydrationWarning>
-        <Header />
-          {children}
+        {children}
           <Analytics />
           <SpeedInsights />
-        <Footer />
       </body>
     </html>
   )
