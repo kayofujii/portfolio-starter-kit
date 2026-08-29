@@ -68,7 +68,7 @@ export const workDetails: WorkDetailData[] = [
     subtitle:
       'Leading brand identity, UI/UX design, and front-end implementation for a new Shopify Plus store as Norsat expands into robotics and drones',
     type: ['design', 'development'],
-    order: 2,
+    order: 4,
     publishedAt: '2026-05-01',
     heroImage:
       '/images/work/robotics-e-commerce.webp',
@@ -100,7 +100,7 @@ export const workDetails: WorkDetailData[] = [
       roleDescription:
         'Leading the brand identity, user experience, and Shopify Plus front-end development. Responsible for creating the B2B design system, structuring Shopify metafields to sync with Windchill and Business Central, and collaborating with cross-functional stakeholders on MVP priorities.',
       outcome:
-        'Reached 300 unique users and shipped products for a B2B company within the first month of launch.',
+        'Reached 546 unique users and shipped products for a B2B company within the first month of launch.',
       team: 'Cross-functional',
       teamDetails:
         'Collaborating with product owners, and business stakeholders on MVP priorities and platform strategy',
@@ -297,7 +297,7 @@ export const workDetails: WorkDetailData[] = [
     title: 'Analytics Tool for a Workplace Stress Screening Program',
     subtitle: 'Redesigned a workplace stress analysis tool to improve clarity and prevent client churn',
     type: 'design',
-    order: 3,
+    order: 2,
     publishedAt: '2025-09-01',
     heroImage: '/images/work/workplace_stress_hero.webp',
     heroVideo:
@@ -495,7 +495,7 @@ export const workDetails: WorkDetailData[] = [
     title: 'Meeting Scheduling Feature for Doctors and Employees',
     subtitle: 'Implemented a meeting-scheduling feature for occupational health professionals and employees with health issues, meeting user needs within a two-month deadline through detailed requirements gathering and collaboration.',
     type: 'development',
-    order: 5,
+    order: 1,
     publishedAt: '2025-10-01',
     heroImage:
       '/images/work/meeting_scheduling_app.webp',
@@ -622,7 +622,7 @@ export const workDetails: WorkDetailData[] = [
     title: 'Enterprise Design System',
     subtitle: 'Evolving a component library into a functional design system with Figma, Vue.js, and Storybook to streamline workflows and team collaboration',
     type: ['design', 'development'],
-    order: 4,
+    order: 3,
     publishedAt: '2026-05-17',
     heroImage: '/images/work/enterprise-design-system.webp',
     caseStudyUrl:

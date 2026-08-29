@@ -26,7 +26,7 @@ const japaneseWorkCopy: Record<string, JapaneseWorkCopy> = {
       period: '2026年 — 継続中',
       role: 'ブランディング、UI/UXリード、フロントエンド開発者、PDM',
       roleDescription: 'ブランドアイデンティティ、ユーザー体験、Shopify Plusのフロントエンド開発をリード。B2Bデザインシステムの構築、Windchill・Business Centralと連携するShopifyメタフィールド設計、MVPの優先順位に関する部門横断の協働を担当しています。',
-      outcome: '公開から最初の1か月でユニークユーザー300人に到達し、B2B企業向けに製品を出荷しました。',
+      outcome: '公開から最初の1か月でユニークユーザー546人に到達し、B2B企業向けに製品を出荷しました。',
       team: '部門横断チーム',
       teamDetails: 'プロダクトオーナーおよび事業関係者と、MVPの優先順位とプラットフォーム戦略を協働で検討',
     },
