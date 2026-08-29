@@ -32,6 +32,6 @@ export const ui = {
     viewCaseStudy: 'ケーススタディを見る',
     contact: 'お問い合わせ',
     contactText: 'お気軽にご連絡ください：',
-    homeHeading: 'ユーザーのニーズ、ビジネスゴール、開発をつなぎ、プロダクトの成長を推進します。',
+    homeHeading: 'ユーザーのニーズ、ビジネスゴール、開発を繋ぎ、プロダクトの成長に貢献します。',
   },
 } as const
