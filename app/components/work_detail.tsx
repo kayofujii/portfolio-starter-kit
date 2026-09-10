@@ -1,5 +1,6 @@
 import type { WorkDetailFeature } from "app/development/data";
 import MediaCarousel from "./media_carousel";
+import Reveal from "./reveal";
 import type { Locale } from 'app/lib/i18n';
 
 type WorkDetailProps = {
@@ -101,22 +102,22 @@ export default function WorkDetail({
       </section>
 
       <section className={contentSectionClass}>
-        <div className="text-center">
+        <Reveal className="text-center">
           <h2 className={sectionHeadingClass}>{labels.overview}</h2>
-        </div>
+        </Reveal>
 
         <div className="border-b border-[#f0eeee] pb-8 text-[1.125rem] leading-[1.65]">
           <p>{subtitle}</p>
         </div>
 
-        <div className="grid gap-x-6 gap-y-6 md:grid-cols-2">
+        <Reveal delay={100} className="grid gap-x-6 gap-y-6 md:grid-cols-2">
           {overviewItems.map((item) => (
             <div key={item.label} className="space-y-1">
               <p className={labelClass}>{item.label}</p>
               <p className={bodyClass}>{item.value}</p>
             </div>
           ))}
-        </div>
+        </Reveal>
       </section>
 
       {liveUrl?.trim() || githubUrl?.trim() || liveUrlPassword?.trim() ? (
@@ -159,55 +160,56 @@ export default function WorkDetail({
       ) : null}
 
       <section className={contentSectionClass}>
-        <div className="text-center">
+        <Reveal className="text-center">
           <h2 className={sectionHeadingClass}>{labels.situation}</h2>
-        </div>
+        </Reveal>
 
         <div className="space-y-10">
-          <div className="space-y-3">
+          <Reveal className="space-y-3">
             <h3 className={subheadingClass}>{labels.background}</h3>
             <div className="space-y-3 pl-5 text-[1.125rem] leading-[1.55]">
               <p>{overview.background}</p>
             </div>
-          </div>
+          </Reveal>
 
-          <div className="space-y-3">
+          <Reveal delay={80} className="space-y-3">
             <h3 className={subheadingClass}>{labels.challenge}</h3>
             <div className="space-y-3 pl-5 text-[1.125rem] leading-[1.55]">
               <p>{overview.challenge}</p>
             </div>
-          </div>
+          </Reveal>
 
-          <div className="space-y-3">
+          <Reveal delay={160} className="space-y-3">
             <h3 className={subheadingClass}>{labels.solution}</h3>
             <div className="space-y-3 pl-5 text-[1.125rem] leading-[1.55]">
               <p className="whitespace-pre-line">{overview.solution}</p>
             </div>
-          </div>
+          </Reveal>
 
           {details.roleDescription ? (
-            <div className="space-y-3">
+            <Reveal delay={240} className="space-y-3">
               <h3 className={subheadingClass}>{labels.myRole}</h3>
               <div className="space-y-3 pl-5 text-[1.125rem] leading-[1.55]">
                 <p>{details.roleDescription}</p>
               </div>
-            </div>
+            </Reveal>
           ) : null}
         </div>
       </section>
 
       {features.length > 0 ? (
         <section className="mx-auto flex w-full max-w-[1080px] flex-col gap-10 px-6 py-12 md:px-10 md:py-16">
-          <div className="mx-auto w-full max-w-[840px] text-center">
+          <Reveal className="mx-auto w-full max-w-[840px] text-center">
             <h2 className={sectionHeadingClass}>
               {labels.features}
             </h2>
-          </div>
+          </Reveal>
 
           <div className="flex w-full flex-col items-center gap-16">
-            {features.map((feature) => (
-              <div
+            {features.map((feature, index) => (
+              <Reveal
                 key={feature.title}
+                delay={Math.min(index * 80, 240)}
                 className="flex w-full flex-col items-center gap-6"
               >
                 <div className="w-full max-w-[1000px] overflow-hidden">
@@ -242,7 +244,7 @@ export default function WorkDetail({
                   <h3 className={subheadingClass}>{feature.title}</h3>
                   <p className={`${bodyLargeClass} whitespace-pre-line`}>{feature.description}</p>
                 </div>
-              </div>
+              </Reveal>
             ))}
           </div>
         </section>
@@ -251,13 +253,13 @@ export default function WorkDetail({
 
       {details.outcome.trim() ? (
         <section className={contentSectionClass}>
-          <div className="text-center">
+          <Reveal className="text-center">
             <h2 className={sectionHeadingClass}>{labels.outcomes}</h2>
-          </div>
+          </Reveal>
 
-          <p className="text-[1.125rem] leading-[1.55] text-[#333333]">
-            {details.outcome}
-          </p>
+          <Reveal delay={100} className="text-[1.125rem] leading-[1.55] text-[#333333]">
+            <p>{details.outcome}</p>
+          </Reveal>
         </section>
       ) : null}
 
