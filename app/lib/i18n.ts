@@ -22,6 +22,7 @@ export const ui = {
     contact: 'Contact',
     contactText: 'Feel free to reach out to me at',
     homeHeading: 'Driving product growth by bridging UX, development, and real user insights.',
+    homeHeadingWords: ['UX', 'development', 'real user insights', 'cat🐈', 'singing🎵', 'black joke😎'],
   },
   ja: {
     design: 'デザイン',
@@ -33,5 +34,6 @@ export const ui = {
     contact: 'お問い合わせ',
     contactText: 'お気軽にご連絡ください：',
     homeHeading: 'ユーザーのニーズ、ビジネスゴール、開発を繋ぎ、プロダクトの成長に貢献します。',
+    homeHeadingWords: ['UX', 'ビジネスゴール', '開発', '猫🐈', '歌🎵', 'ブラックジョーク😎'],
   },
 } as const

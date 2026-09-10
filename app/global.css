@@ -5,6 +5,11 @@ html, body {
   font-family: "Plus Jakarta Sans", sans-serif;
 }
 
+@keyframes cursor-blink {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
+
 /* Subframe text and font utilities (ensure text-heading-* classes work) */
 .text-heading-1 {
   font-size: var(--text-heading-1);

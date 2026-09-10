@@ -3,6 +3,7 @@ import { isExternalCaseStudy } from 'app/development/data'
 import { getLocalizedWorks, localizeTag } from 'app/lib/localized-work'
 import { localePath, type Locale, ui } from 'app/lib/i18n'
 import Reveal from './reveal'
+import TypingLine from './typing_heading'
 
 export default function PortfolioIndex({ locale, type }: { locale: Locale; type: 'design' | 'development' | 'all' }) {
   const copy = ui[locale]
@@ -12,7 +13,10 @@ export default function PortfolioIndex({ locale, type }: { locale: Locale; type:
 
   return <main lang={locale} className="w-full bg-white text-[#282828]">
     <section className="w-full bg-white"><div className="mx-auto flex w-full max-w-[1440px] flex-col items-start px-6 py-16 md:px-12 md:py-24 lg:px-[120px]">
-      <Reveal className="max-w-[980px]"><h1 className="font-['Plus_Jakarta_Sans',sans-serif] text-[2.25rem] font-bold leading-[1.15] text-[#282828] md:text-[3rem] md:leading-[1.12]">{copy.homeHeading}</h1></Reveal>
+      <Reveal className="max-w-[980px]">
+        <h1 className="font-['Plus_Jakarta_Sans',sans-serif] text-[2.25rem] font-bold leading-[1.15] text-[#282828] md:text-[3rem] md:leading-[1.12]">{copy.homeHeading}</h1>
+        <TypingLine words={copy.homeHeadingWords} className="mt-2 block text-[1.15rem] font-normal leading-[1.3] text-[rgba(40,40,40,0.65)] md:text-[1.5rem]" />
+      </Reveal>
       <Reveal delay={150} className="mt-5 flex flex-wrap items-center gap-5"><Link href={localePath(locale, '/about')} className="text-[1.05rem] text-[rgba(40,40,40,0.8)] underline-offset-4 hover:underline">{copy.moreAbout}</Link><a href="https://www.linkedin.com/in/kayo-fujii/" className="text-[1.05rem] text-[rgba(40,40,40,0.8)] hover:underline">LinkedIn</a><a href="https://github.com/kayofujii" className="text-[1.05rem] text-[rgba(40,40,40,0.8)] hover:underline">GitHub</a></Reveal>
     </div></section>
     <section className="w-full bg-[#f9f9f9]"><div className="mx-auto flex w-full max-w-[1440px] flex-col gap-12 px-6 py-16 md:px-12 md:py-24 lg:gap-20 lg:px-[120px]">
