@@ -10,6 +10,31 @@ html, body {
   50%, 100% { opacity: 0; }
 }
 
+@keyframes hero-visual-in {
+  from { opacity: 0; transform: translateY(24px) scale(0.94); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@keyframes hero-visual-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes hero-visual-halo {
+  0%, 100% { opacity: 0.5; transform: scale(1); }
+  50% { opacity: 0.85; transform: scale(1.06); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-visual-in,
+  .hero-visual-float,
+  .hero-visual-halo {
+    animation: none !important;
+    opacity: 1;
+    transform: none;
+  }
+}
+
 /* Subframe text and font utilities (ensure text-heading-* classes work) */
 .text-heading-1 {
   font-size: var(--text-heading-1);
