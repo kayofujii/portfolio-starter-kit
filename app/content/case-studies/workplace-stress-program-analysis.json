@@ -1,0 +1,691 @@
+{
+  "title": {
+    "en": "Analytics Tool for a Workplace Stress Screening Program",
+    "ja": "職場ストレスチェック分析ツール"
+  },
+  "hero": {
+    "type": "image",
+    "src": "/images/work/workplace-stress-program-analysis/01-analytics-tool-for-a-workplace-stress-screening-program.webp",
+    "alt": {
+      "en": "Analytics Tool for a Workplace Stress Screening Program — design visual",
+      "ja": "職場ストレスチェック分析ツールの図版"
+    },
+    "width": 4801,
+    "height": 2000
+  },
+  "sections": [
+    {
+      "title": {
+        "en": "Project Overview",
+        "ja": "プロジェクト概要"
+      },
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "The Workplace Stress Screening Analysis Tool allowed HR managers to assess group-level stress but risked losing three clients due to poor usability.",
+            "ja": "職場ストレスチェック分析ツールは、人事担当者が集団単位のストレスを評価する機能でしたが、使いづらさから3社の解約リスクが生じていました。"
+          }
+        },
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "Through user research and interviews with specialists and stakeholders, I identified three key improvements and enhanced the design. This addressed client concerns and resulted in retaining all clients.",
+            "ja": "専門家や関係者へのインタビューとユーザーリサーチから、3つの主要な改善点を特定し、デザインを改善しました。クライアントの懸念を解消し、3社すべての継続利用につながりました。"
+          }
+        },
+        {
+          "type": "details",
+          "items": [
+            {
+              "label": {
+                "en": "Timeline",
+                "ja": "期間"
+              },
+              "value": {
+                "en": "2 person-months",
+                "ja": "2人月"
+              }
+            },
+            {
+              "label": {
+                "en": "Role",
+                "ja": "担当"
+              },
+              "value": {
+                "en": "UX/UI Design, UX Research",
+                "ja": "UX/UIデザイン、UXリサーチ"
+              }
+            },
+            {
+              "label": {
+                "en": "Tool",
+                "ja": "ツール"
+              },
+              "value": {
+                "en": "Figma",
+                "ja": "Figma"
+              }
+            },
+            {
+              "label": {
+                "en": "Company",
+                "ja": "会社"
+              },
+              "value": {
+                "en": "mediPhone, inc.",
+                "ja": "mediPhone, inc."
+              }
+            },
+            {
+              "label": {
+                "en": "Team",
+                "ja": "チーム"
+              },
+              "value": {
+                "en": "Engineer 1x, Project Owner 1x, Outside Domain Specialist 1x, Customer Success Representative 1x, Product designer (myself)",
+                "ja": "エンジニア1名、プロジェクトオーナー1名、社外の専門家1名、カスタマーサクセス担当1名、プロダクトデザイナー（私）"
+              }
+            },
+            {
+              "label": {
+                "en": "Impacts",
+                "ja": "成果"
+              },
+              "value": {
+                "en": "The redesign improved usability, addressed key client concerns, and helped prevent the cancellation of 3 major clients.",
+                "ja": "使いやすさを改善して主要な懸念を解消し、主要クライアント3社の解約を防止しました。"
+              }
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "*This project was originally created in Japanese for a Japanese audience. The text has been translated into English for this portfolio.",
+            "ja": "このプロジェクトは日本のユーザー向けに日本語で制作されました。図版には英語ポートフォリオ向けに翻訳した内容が含まれます。"
+          }
+        },
+        {
+          "type": "image",
+          "src": "/images/work/workplace-stress-program-analysis/02-project-overview.webp",
+          "alt": {
+            "en": "Project Overview — design visual",
+            "ja": "プロジェクト概要の図版"
+          },
+          "width": 2306,
+          "height": 1575
+        }
+      ]
+    },
+    {
+      "title": {
+        "en": "The Situation",
+        "ja": "背景と課題"
+      },
+      "blocks": [
+        {
+          "type": "heading",
+          "text": {
+            "en": "The Product",
+            "ja": "プロダクト"
+          }
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "en": "In Japan, companies must conduct workplace stress checks for employees.",
+              "ja": "日本では、企業が従業員向けの職場ストレスチェックを実施します。"
+            },
+            {
+              "en": "mediment provides a feature that helps HR managers conduct stress screenings and analyze group-level results.",
+              "ja": "medimentは、人事担当者がストレスチェックを実施し、集団単位で結果を分析できる機能を提供しています。"
+            },
+            {
+              "en": "It supports workplace improvement based on mental health insights.",
+              "ja": "メンタルヘルスの知見に基づく職場改善を支援します。"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "src": "/images/work/workplace-stress-program-analysis/03-the-product.webp",
+          "alt": {
+            "en": "The Product — design visual",
+            "ja": "プロダクトの図版"
+          },
+          "width": 7122,
+          "height": 2094
+        },
+        {
+          "type": "heading",
+          "text": {
+            "en": "Problems",
+            "ja": "課題"
+          }
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "en": "The current analysis feature is difficult for HR managers and department heads to interpret.",
+              "ja": "既存の分析機能は、人事担当者や部門責任者にとって結果を読み取りづらいものでした。"
+            },
+            {
+              "en": "As a result, they struggle to take effective action based on the data.",
+              "ja": "そのため、データに基づく効果的な改善行動につなげられませんでした。"
+            },
+            {
+              "en": "3 clients considered canceling their contracts due to this usability issue.",
+              "ja": "この使いづらさを理由に、3社が契約の解約を検討していました。"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "src": "/images/work/workplace-stress-program-analysis/04-problems.webp",
+          "alt": {
+            "en": "Problems — design visual",
+            "ja": "課題の図版"
+          },
+          "width": 5698,
+          "height": 2522
+        },
+        {
+          "type": "heading",
+          "text": {
+            "en": "Goals",
+            "ja": "目標"
+          }
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "en": "Enable users to quickly grasp group-level stress analysis at a glance.",
+              "ja": "集団単位のストレス分析をひと目で素早く理解できるようにすること。"
+            },
+            {
+              "en": "Help HR managers and department heads use insights to improve workplace mental health.",
+              "ja": "人事担当者や部門責任者が分析結果を職場のメンタルヘルス改善に活かせるようにすること。"
+            },
+            {
+              "en": "Retain the 3 clients and attract new ones by enhancing the feature's usability and value.",
+              "ja": "機能の使いやすさと価値を高め、3社の継続利用と新規顧客の獲得につなげること。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": {
+            "en": "Constraints",
+            "ja": "設計上の制約"
+          }
+        },
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "To prevent overwhelming users with excessive results and reduce tasks for HR by ensuring the analysis could be printed on fewer pages, I made sure the department reports were concise, fitting on a single page and focusing on the most essential information.",
+            "ja": "結果が多すぎてユーザーを圧倒しないよう、必要な情報に絞った簡潔な部門レポートを目指しました。少ないページ数で印刷できるようにし、人事担当者の作業負担を減らすことも重視しました。"
+          }
+        },
+        {
+          "type": "heading",
+          "text": {
+            "en": "Solutions",
+            "ja": "解決策"
+          }
+        },
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "I developed three main solutions:",
+            "ja": "主に3つの解決策を考えました。"
+          }
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "en": "Department-Level Insights: In addition to company-wide results, department leaders can now view detailed analysis at the department level, enabling more targeted interventions.",
+              "ja": "部門単位の分析：全社の結果に加えて各部門の詳細な分析を提供し、部門責任者が対象を絞った改善に取り組めるようにしました。"
+            },
+            {
+              "en": "Clear Visualization with Graphs and Icons: The use of intuitive graphs and icons allows users to quickly understand stress levels and identify key patterns at a glance.",
+              "ja": "グラフとアイコンによる可視化：直感的なグラフやアイコンを使い、ストレスの状況や重要な傾向をひと目で理解できるようにしました。"
+            },
+            {
+              "en": "Year-over-Year Comparison: This feature helps users track subtle trends and changes in stress levels over time, offering valuable insights for long-term health management.",
+              "ja": "前年比較：ストレスの小さな変化や傾向を経年で確認し、長期的な健康管理に役立てられるようにしました。"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "src": "/images/work/workplace-stress-program-analysis/05-solutions.webp",
+          "alt": {
+            "en": "Solutions — design visual",
+            "ja": "解決策の図版"
+          },
+          "width": 5698,
+          "height": 2522
+        },
+        {
+          "type": "heading",
+          "text": {
+            "en": "Design Process",
+            "ja": "デザインプロセス"
+          }
+        },
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "I followed a process based on design thinking.",
+            "ja": "デザイン思考に基づくプロセスで進めました。"
+          }
+        },
+        {
+          "type": "image",
+          "src": "/images/work/workplace-stress-program-analysis/06-design-process.webp",
+          "alt": {
+            "en": "Design Process — design visual",
+            "ja": "デザインプロセスの図版"
+          },
+          "width": 2560,
+          "height": 378
+        }
+      ]
+    },
+    {
+      "title": {
+        "en": "Research",
+        "ja": "リサーチ"
+      },
+      "blocks": [
+        {
+          "type": "heading",
+          "text": {
+            "en": "User Interviews",
+            "ja": "ユーザーインタビュー"
+          }
+        },
+        {
+          "type": "heading",
+          "text": {
+            "en": "Interviews with Internal Stakeholders",
+            "ja": "社内関係者へのインタビュー"
+          }
+        },
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "I interviewed the project owner and an internal expert to gather feedback on improvements for mediment's Workplace Stress Screening Features. I organized the feedback into a spreadsheet, prioritizing it based on urgency. A key focus was the group analysis report, which we decided to redesign with the following improvements:",
+            "ja": "プロジェクトオーナーと社内の専門家に、medimentのストレスチェック機能の改善点を聞きました。意見をスプレッドシートに整理し、緊急度に応じて優先順位を付けました。特に集団分析レポートを重視し、以下の改善を決めました。"
+          }
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "en": "Making the report clearer using colors, emoticons, and graphs",
+              "ja": "色、表情アイコン、グラフを使ってレポートを分かりやすくする。"
+            },
+            {
+              "en": "Creating two types of reports (company-wide and group breakdown)",
+              "ja": "全社向けと部門別の2種類のレポートを用意する。"
+            },
+            {
+              "en": "Enabling comparisons with previous results",
+              "ja": "過去の結果と比較できるようにする。"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "src": "/images/work/workplace-stress-program-analysis/07-interviews-with-internal-stakeholders.webp",
+          "alt": {
+            "en": "Interviews with Internal Stakeholders — design visual",
+            "ja": "社内関係者へのインタビューの図版"
+          },
+          "width": 2400,
+          "height": 1502
+        },
+        {
+          "type": "heading",
+          "text": {
+            "en": "Interviews with External Experts on the Workplace Stress Screening Program",
+            "ja": "ストレスチェックに関する社外の専門家へのインタビュー"
+          }
+        },
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "In addition to the internal interviews, I also interviewed external experts on the Workplace Stress Screening Program. They advised that including the high-stress rate and a health risk portfolio chart in the report would make the overall risks easier for HR Managers and department heads to understand. As a result, I decided to incorporate these elements into the new report design.",
+            "ja": "社内だけでなく、ストレスチェックに関する社外の専門家にもインタビューしました。高ストレス者率と健康リスクのポートフォリオ図を含めると、人事担当者や部門責任者が全体のリスクを理解しやすくなるという助言を受け、新しいレポートに取り入れました。"
+          }
+        },
+        {
+          "type": "image",
+          "src": "/images/work/workplace-stress-program-analysis/08-interviews-with-external-experts-on-the-workplace-stress-scr.webp",
+          "alt": {
+            "en": "Interviews with External Experts on the Workplace Stress Screening Program — design visual",
+            "ja": "ストレスチェックに関する社外の専門家へのインタビューの図版"
+          },
+          "width": 2400,
+          "height": 1476
+        },
+        {
+          "type": "heading",
+          "text": {
+            "en": "Competitive Audit",
+            "ja": "競合調査"
+          }
+        },
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "I researched both direct competitors that offer group analysis features for workplace stress screening programs and indirect competitors that provide stress reporting features using different methods.",
+            "ja": "職場ストレスチェックの集団分析機能を提供する直接の競合と、異なる方法でストレスをレポートする間接的な競合を調査しました。"
+          }
+        },
+        {
+          "type": "table",
+          "headers": [
+            {
+              "en": "Service",
+              "ja": "サービス"
+            },
+            {
+              "en": "Feature",
+              "ja": "機能"
+            },
+            {
+              "en": "Strengths",
+              "ja": "強み"
+            },
+            {
+              "en": "Weaknesses",
+              "ja": "弱み"
+            }
+          ],
+          "rows": [
+            [
+              {
+                "en": "Dr. Trust",
+                "ja": "Dr. Trust"
+              },
+              {
+                "en": "This company offers health management services for employees, including  the Workplace Stress Screening Program and group analysis reports.",
+                "ja": "ストレスチェックと集団分析レポートを含む、従業員向けの健康管理サービス。"
+              },
+              {
+                "en": "Reports use colors and graphs for easy understanding and provide a unique score that reflects workplace satisfaction, compared to national results.",
+                "ja": "色やグラフで結果を分かりやすく示し、全国の結果と比較した職場満足度の独自スコアも提供します。"
+              },
+              {
+                "en": "The reports are over 20 pages, which may be too long for some companies.",
+                "ja": "レポートが20ページ以上あり、企業によっては長すぎる場合があります。"
+              }
+            ],
+            [
+              {
+                "en": "Kidsly",
+                "ja": "Kidsly"
+              },
+              {
+                "en": "Kidsly is a management tool for nurseries and kindergartens that visualizes childcare workers' stress levels.",
+                "ja": "保育士のストレスを可視化する、保育園・幼稚園向けの管理ツール。"
+              },
+              {
+                "en": "Stress is summarized in a single-page report, with results from current and previous checks shown through graphs and emoticons.",
+                "ja": "ストレスを1ページで要約し、今回と前回の結果をグラフや表情アイコンで示します。"
+              },
+              {
+                "en": "The simple features may not meet the needs of childcare facilities requiring advanced analysis or customization.",
+                "ja": "高度な分析やカスタマイズが必要な施設には、シンプルな機能だけでは不十分な場合があります。"
+              }
+            ],
+            [
+              {
+                "en": "Lafool Survey",
+                "ja": "ラフールサーベイ"
+              },
+              {
+                "en": "This survey tool improves organizations by measuring employee engagement and mental health, generating detailed reports.",
+                "ja": "従業員エンゲージメントとメンタルヘルスを測定し、詳細なレポートで組織改善を支援するツール。"
+              },
+              {
+                "en": "Survey results are visualized with illustrations and colors for easy understanding.",
+                "ja": "イラストと色で調査結果を分かりやすく可視化します。"
+              },
+              {
+                "en": "Results cannot be broken down into individual items, limiting detailed data.",
+                "ja": "結果を個別の項目に分解できず、詳細なデータ確認に制限があります。"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "title": {
+        "en": "Ideation",
+        "ja": "アイデア検討"
+      },
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "Based on the interview results and competitive research, we brainstormed design ideas. We repeated the process of brainstorming and reviewing the ideas eight times, involving both internal stakeholders and external experts in each round, until we arrived at a design we were satisfied with.",
+            "ja": "インタビューと競合調査をもとにアイデアを検討しました。社内関係者と社外の専門家を毎回交え、アイデア出しとレビューを8回繰り返して、納得できるデザインに到達しました。"
+          }
+        },
+        {
+          "type": "image",
+          "src": "/images/work/workplace-stress-program-analysis/09-ideation.webp",
+          "alt": {
+            "en": "Ideation — design visual",
+            "ja": "アイデア検討の図版"
+          },
+          "width": 2400,
+          "height": 880
+        }
+      ]
+    },
+    {
+      "title": {
+        "en": "Design",
+        "ja": "デザイン"
+      },
+      "blocks": [
+        {
+          "type": "heading",
+          "text": {
+            "en": "Hi-Fidelity Designs",
+            "ja": "高精度のデザイン"
+          }
+        },
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "Based on the ideas, I created Hi-Fi designs. I received advice from internal designers to ensure that even with a large amount of information on the page, it remains easy to read. In addition to the newly designed report, I also made significant improvements to the design of the screen used to generate the group analysis reports.",
+            "ja": "アイデアをもとに高精度のデザインを作成しました。情報量が多くても読みやすい画面にするため、社内デザイナーから助言を受けました。新しいレポートに加え、集団分析レポートを生成する画面も大きく改善しました。"
+          }
+        },
+        {
+          "type": "heading",
+          "text": {
+            "en": "Group Analysis Report by Department (for Department Heads)",
+            "ja": "部門別の集団分析レポート（部門責任者向け）"
+          }
+        },
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "On the first page, department heads can easily see how their department's stress levels compare to the overall company, using graphs and emoticons. On the second page, they can review detailed data for each question.",
+            "ja": "1ページ目では、グラフと表情アイコンで部門のストレス状態を全社と比較できます。2ページ目では、設問ごとの詳細なデータを確認できます。"
+          }
+        },
+        {
+          "type": "image",
+          "src": "/images/work/workplace-stress-program-analysis/10-group-analysis-report-by-department-for-department-heads.webp",
+          "alt": {
+            "en": "Group Analysis Report by Department (for Department Heads) — design visual",
+            "ja": "部門別の集団分析レポート（部門責任者向け）の図版"
+          },
+          "width": 1552,
+          "height": 2400
+        },
+        {
+          "type": "heading",
+          "text": {
+            "en": "Company-Wide Group Analysis Report (for Executives)",
+            "ja": "全社の集団分析レポート（経営層向け）"
+          }
+        },
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "This report includes the results of multiple departments along with the overall company results. The content is mostly the same as the department-level report. However, a key difference is that the second page includes a high-stress rate and health risk portfolio chart, based on feedback from the Workplace Stress Screening Program experts. This addition makes it easier to identify which departments need focused stress management efforts.",
+            "ja": "複数部門と全社の結果をまとめたレポートです。基本内容は部門別レポートと同じですが、専門家の助言を反映し、2ページ目に高ストレス者率と健康リスクのポートフォリオ図を追加しました。重点的な対策が必要な部門を把握しやすくなりました。"
+          }
+        },
+        {
+          "type": "image",
+          "src": "/images/work/workplace-stress-program-analysis/11-company-wide-group-analysis-report-for-executives.webp",
+          "alt": {
+            "en": "Company-Wide Group Analysis Report (for Executives) — design visual",
+            "ja": "全社の集団分析レポート（経営層向け）の図版"
+          },
+          "width": 1583,
+          "height": 2400
+        },
+        {
+          "type": "image",
+          "src": "/images/work/workplace-stress-program-analysis/12-company-wide-group-analysis-report-for-executives.webp",
+          "alt": {
+            "en": "Company-Wide Group Analysis Report (for Executives) — design visual",
+            "ja": "全社の集団分析レポート（経営層向け）の図版"
+          },
+          "width": 1077,
+          "height": 2400
+        },
+        {
+          "type": "heading",
+          "text": {
+            "en": "Group Analysis Report Creation Screen",
+            "ja": "集団分析レポート作成画面"
+          }
+        },
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "In designing the new report, I also created a new design for the screen where labor manager can generate group analysis reports. The key points are as follows:",
+            "ja": "レポートとともに、労務担当者が集団分析レポートを生成する画面も設計しました。主なポイントは以下の通りです。"
+          }
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "en": "Users can select the groups they want to include in the report while viewing a preview of the report.",
+              "ja": "レポートのプレビューを見ながら、対象に含めるグループを選択できる。"
+            },
+            {
+              "en": "Comments can be entered for each group in the report.",
+              "ja": "各グループのレポートにコメントを入力できる。"
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "src": "/images/work/workplace-stress-program-analysis/13-group-analysis-report-creation-screen.webp",
+          "alt": {
+            "en": "Group Analysis Report Creation Screen — design visual",
+            "ja": "集団分析レポート作成画面の図版"
+          },
+          "width": 1280,
+          "height": 1846
+        },
+        {
+          "type": "heading",
+          "text": {
+            "en": "Hi-Fidelity Prototype",
+            "ja": "高精度のプロトタイプ"
+          }
+        },
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "I created a Hi-Fi design based on the digital wireframe.",
+            "ja": "デジタルワイヤーフレームをもとに、高精度のプロトタイプを作成しました。"
+          }
+        },
+        {
+          "type": "link",
+          "text": {
+            "en": "Prototype Link",
+            "ja": "プロトタイプを見る"
+          },
+          "href": "https://www.figma.com/proto/nzZtCMRXCt5HxOycAqWPll/Group-Analysis-prototype?page-id=0%3A1&node-id=1-1006&viewport=460%2C383%2C0.07&t=eOgO9wlpYlwwf5Rl-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=1%3A1006"
+        }
+      ]
+    },
+    {
+      "title": {
+        "en": "Going Forward",
+        "ja": "成果と今後の改善"
+      },
+      "blocks": [
+        {
+          "type": "heading",
+          "text": {
+            "en": "Takeaways",
+            "ja": "振り返り"
+          }
+        },
+        {
+          "type": "heading",
+          "text": {
+            "en": "Impact",
+            "ja": "成果"
+          }
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "en": "The redesign improved usability, addressed key client concerns, and helped prevent the cancellation of 3 major clients.",
+              "ja": "使いやすさを改善してクライアントの主要な懸念を解消し、主要クライアント3社の解約を防ぎました。"
+            },
+            {
+              "en": "Prospective clients expressed interest in switching to our service after reviewing the new design, citing its clear presentation of essential analytical data.",
+              "ja": "見込み顧客からも、重要な分析データを分かりやすく提示する新デザインを見て、サービスへの乗り換えに関心を示していただきました。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": {
+            "en": "What I learned",
+            "ja": "学んだこと"
+          }
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "en": "I learned data visualization methods and the roles of different types of graphs through this project.",
+              "ja": "データの可視化手法と、さまざまなグラフの役割を学びました。"
+            },
+            {
+              "en": "It is essential to identify the most important information and prioritize it through collaboration with stakeholders, including domain specialists and the project owner.",
+              "ja": "専門家やプロジェクトオーナーなどの関係者と協働し、最も重要な情報を見極めて優先順位を付けることの大切さを学びました。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

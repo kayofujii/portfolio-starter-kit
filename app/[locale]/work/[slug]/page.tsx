@@ -1,4 +1,7 @@
 import WorkDetail from 'app/components/work_detail'
+import OccupationalHealthCaseStudy from 'app/components/occupational_health_case_study'
+import StudioCaseStudy from 'app/components/studio_case_study'
+import { getCaseStudyContent } from 'app/lib/case-study-content'
 import { getLocalizedWork } from 'app/lib/localized-work'
 import { isLocale, localePath } from 'app/lib/i18n'
 import { isExternalCaseStudy, workDetails } from 'app/development/data'
@@ -13,5 +16,8 @@ export default async function LocalizedWorkDetail({ params }: { params: Promise<
   if (!isLocale(locale)) notFound()
   const work = getLocalizedWork(slug, locale)
   if (!work || isExternalCaseStudy(work)) notFound()
+  if (slug === 'occupational-health-consultation-tool') return <OccupationalHealthCaseStudy locale={locale} />
+  const caseStudy = getCaseStudyContent(slug)
+  if (caseStudy) return <StudioCaseStudy content={caseStudy} locale={locale} />
   return <WorkDetail {...work} locale={locale} nextProject={work.nextProject ? { ...work.nextProject, ctaHref: localePath(locale, work.nextProject.ctaHref) } : undefined} />
 }

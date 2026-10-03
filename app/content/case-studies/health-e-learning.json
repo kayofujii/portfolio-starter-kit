@@ -1,0 +1,853 @@
+{
+  "title": {
+    "en": "Health E-Learning for Employees",
+    "ja": "従業員向け健康Eラーニング機能"
+  },
+  "hero": {
+    "type": "image",
+    "src": "/images/work/health-e-learning/01-health-e-learning-for-employees.webp",
+    "alt": {
+      "en": "Health E-Learning for Employees — design visual",
+      "ja": "従業員向け健康Eラーニング機能の図版"
+    },
+    "width": 4801,
+    "height": 2000
+  },
+  "sections": [
+    {
+      "title": {
+        "en": "Project Overview",
+        "ja": "プロジェクト概要"
+      },
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "I designed a minimal yet user-friendly e-learning feature for the health management system within a two-month deadline.",
+            "ja": "2か月の期限内に、健康管理システム向けのシンプルで使いやすいEラーニング機能を設計しました。"
+          }
+        },
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "By creating multiple design proposals early on and collaborating with the PM and developers to define key features for the first release, I ensured timely completion.",
+            "ja": "初期段階で複数のデザイン案を作成し、PMや開発者と初回リリースに必要な機能を整理することで、期限内の完成につなげました。"
+          }
+        },
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "As a result, we completed the design and implementation in just two months by prioritizing essential elements and functionality, which led to a 2% increase in ARR from upsells.",
+            "ja": "必要な要素と機能を優先し、2か月で設計と実装を完了。アップセルによるARRの2%増加に貢献しました。"
+          }
+        },
+        {
+          "type": "details",
+          "items": [
+            {
+              "label": {
+                "en": "Timeline",
+                "ja": "期間"
+              },
+              "value": {
+                "en": "1 person-month",
+                "ja": "1人月（設計・実装全体は2か月）"
+              }
+            },
+            {
+              "label": {
+                "en": "Role",
+                "ja": "担当"
+              },
+              "value": {
+                "en": "UX/UI Design, Graphic Design, UX Research, User Testing",
+                "ja": "UX/UIデザイン、グラフィックデザイン、UXリサーチ、ユーザーテスト"
+              }
+            },
+            {
+              "label": {
+                "en": "Tool",
+                "ja": "ツール"
+              },
+              "value": {
+                "en": "Figma, Illustrator",
+                "ja": "Figma, Illustrator"
+              }
+            },
+            {
+              "label": {
+                "en": "Company",
+                "ja": "会社"
+              },
+              "value": {
+                "en": "mediPhone, inc.",
+                "ja": "mediPhone, inc."
+              }
+            },
+            {
+              "label": {
+                "en": "Team",
+                "ja": "チーム"
+              },
+              "value": {
+                "en": "Engineer 1x, Project Owner 1x, Product designer (myself)",
+                "ja": "エンジニア1名、プロジェクトオーナー1名、プロダクトデザイナー（私）"
+              }
+            },
+            {
+              "label": {
+                "en": "Impacts",
+                "ja": "成果"
+              },
+              "value": {
+                "en": "We delivered the design and implementation in two months, boosting ARR by 2% through upsells.",
+                "ja": "2か月で設計と実装を完了し、アップセルによるARRの2%増加に貢献しました。"
+              }
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "src": "/images/work/health-e-learning/02-project-overview.webp",
+          "alt": {
+            "en": "Project Overview — design visual",
+            "ja": "プロジェクト概要の図版"
+          },
+          "width": 2306,
+          "height": 2394
+        }
+      ]
+    },
+    {
+      "title": {
+        "en": "The Situation",
+        "ja": "背景と課題"
+      },
+      "blocks": [
+        {
+          "type": "heading",
+          "text": {
+            "en": "The Product",
+            "ja": "プロダクト"
+          }
+        },
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "\"mediment,\" a cloud-based health management system, enables HR managers to manage and analyze employee health data to support their well-being.",
+            "ja": "クラウド型健康管理システムmedimentは、人事担当者が従業員の健康データを管理・分析し、健康を支援できるサービスです。"
+          }
+        },
+        {
+          "type": "heading",
+          "text": {
+            "en": "Problem",
+            "ja": "課題"
+          }
+        },
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "HR managers want to educate employees on health but often lack the time to create educational resources, and \"mediment\" doesn’t currently offer this feature.",
+            "ja": "人事担当者は従業員への健康教育を望んでいますが、教材作成に充てる時間が不足しており、当時のmedimentには健康教育の機能がありませんでした。"
+          }
+        },
+        {
+          "type": "heading",
+          "text": {
+            "en": "Goal",
+            "ja": "目標"
+          }
+        },
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "The goal is to empower HR managers to educate employees about health and reduce the number of employees facing health issues, all without added complexity.",
+            "ja": "人事担当者が複雑な作業を増やさずに健康教育を提供し、健康上の問題を抱える従業員を減らすことを目指しました。"
+          }
+        },
+        {
+          "type": "heading",
+          "text": {
+            "en": "Constraints",
+            "ja": "設計上の制約"
+          }
+        },
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "I had to complete and hand off the design for a new e-learning feature within two months. To ensure alignment with the team, I created multiple proposals early on and collaborated with the project owner to prioritize key features for the first release.",
+            "ja": "新しいEラーニング機能のデザインを2か月以内に完成させ、開発へ引き渡す必要がありました。早い段階で複数の案を作成し、プロジェクトオーナーと初回リリースの優先機能を決めました。"
+          }
+        },
+        {
+          "type": "heading",
+          "text": {
+            "en": "Solution",
+            "ja": "解決策"
+          }
+        },
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "By offering an e-learning feature through mediment, HR managers can effortlessly provide health education to employees, ensuring a hassle-free process that promotes better health awareness and reduces health-related challenges.",
+            "ja": "mediment上でEラーニングを提供し、人事担当者が手間をかけず従業員へ健康教育を届けられるようにしました。健康への理解を促し、健康上の課題の軽減を支援する機能です。"
+          }
+        },
+        {
+          "type": "image",
+          "src": "/images/work/health-e-learning/03-solution.webp",
+          "alt": {
+            "en": "Solution — design visual",
+            "ja": "解決策の図版"
+          },
+          "width": 4158,
+          "height": 2060
+        },
+        {
+          "type": "heading",
+          "text": {
+            "en": "Design Process",
+            "ja": "デザインプロセス"
+          }
+        },
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "After consulting among the designers, I followed a process based on design thinking.",
+            "ja": "デザイナー同士で相談し、デザイン思考に基づくプロセスで進めました。"
+          }
+        },
+        {
+          "type": "image",
+          "src": "/images/work/health-e-learning/04-design-process.webp",
+          "alt": {
+            "en": "Design Process — design visual",
+            "ja": "デザインプロセスの図版"
+          },
+          "width": 2560,
+          "height": 378
+        }
+      ]
+    },
+    {
+      "title": {
+        "en": "Research",
+        "ja": "リサーチ"
+      },
+      "blocks": [
+        {
+          "type": "heading",
+          "text": {
+            "en": "Competitive Audit",
+            "ja": "競合調査"
+          }
+        },
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "I researched three learning platforms to understand which UX/UI features help users learn more easily.",
+            "ja": "学習を進めやすくするUX/UIの特徴を把握するため、3つの学習プラットフォームを調査しました。"
+          }
+        },
+        {
+          "type": "table",
+          "headers": [
+            {
+              "en": "Service",
+              "ja": "サービス"
+            },
+            {
+              "en": "Feature",
+              "ja": "機能"
+            },
+            {
+              "en": "Strengths",
+              "ja": "強み"
+            },
+            {
+              "en": "Weaknesses",
+              "ja": "弱み"
+            }
+          ],
+          "rows": [
+            [
+              {
+                "en": "Udemy",
+                "ja": "Udemy"
+              },
+              {
+                "en": "Offers a wide variety of courses from global instructors.",
+                "ja": "世界中の講師による幅広い講座を提供します。"
+              },
+              {
+                "en": "Many features to support learners.",
+                "ja": "学習者を支援する機能が豊富です。"
+              },
+              {
+                "en": "Lacks practice exercises in most courses; users may find it hard to focus on learning due to the abundance of features.",
+                "ja": "多くの講座に練習問題がなく、機能の多さから学習に集中しづらい場合があります。"
+              }
+            ],
+            [
+              {
+                "en": "Coursera",
+                "ja": "Coursera"
+              },
+              {
+                "en": "Provides high-quality courses in partnership with universities and companies, offering certificates and qualifications.",
+                "ja": "大学や企業と連携した質の高い講座を提供し、修了証や資格を取得できます。"
+              },
+              {
+                "en": "Easy-to-track progress; includes exercises to reinforce learning.",
+                "ja": "進捗を追いやすく、練習問題で学習内容を定着させられます。"
+              },
+              {
+                "en": "Some transitions and behaviors on the platform feel awkward",
+                "ja": "一部の画面遷移や挙動に使いづらさがあります。"
+              }
+            ],
+            [
+              {
+                "en": "Schoo",
+                "ja": "Schoo"
+              },
+              {
+                "en": "Japanese-based online learning platform with a focus on IT and business, offering live classes.",
+                "ja": "ITとビジネスを中心に、ライブ授業を提供する日本のオンライン学習サービス。"
+              },
+              {
+                "en": "Simple and user-friendly interface; companies can combine various materials to create custom courses for employees.",
+                "ja": "シンプルで使いやすいUI。企業が複数の教材を組み合わせ、従業員向けのコースを作れます。"
+              },
+              {
+                "en": "Lacks features like progress tracking and exercises, resulting in fewer overall functions.",
+                "ja": "進捗管理や練習問題などの機能がなく、全体として機能が少なめです。"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": {
+            "en": "User Story",
+            "ja": "ユーザーストーリー"
+          }
+        },
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "I summarized user stories to demonstrate how HR Manager and employees would use the E-Learning feature.",
+            "ja": "人事担当者と従業員がEラーニングをどのように利用するか、ユーザーストーリーに整理しました。"
+          }
+        },
+        {
+          "type": "story",
+          "role": {
+            "en": "HR Manager",
+            "ja": "人事担当者"
+          },
+          "goal": {
+            "en": "Ensure employees complete the E-Learning courses.",
+            "ja": "従業員がEラーニングコースを修了できるようにする。"
+          },
+          "tasks": [
+            {
+              "title": {
+                "en": "Create a Course",
+                "ja": "コースを作成する"
+              },
+              "items": [
+                {
+                  "en": "Enter the course name",
+                  "ja": "コース名を入力する。"
+                },
+                {
+                  "en": "Select the learning materials",
+                  "ja": "教材を選択する。"
+                },
+                {
+                  "en": "Choose the participants",
+                  "ja": "受講者を選択する。"
+                },
+                {
+                  "en": "Set the course duration",
+                  "ja": "受講期間を設定する。"
+                }
+              ]
+            },
+            {
+              "title": {
+                "en": "Encourage Employees to Enroll",
+                "ja": "従業員に受講を案内する"
+              },
+              "items": [
+                {
+                  "en": "Select the Employees to Send the Email Encouraging Enrollment in the E-Learning Course",
+                  "ja": "受講案内メールを送る従業員を選択する。"
+                },
+                {
+                  "en": "Write and Send the Email Content",
+                  "ja": "メール本文を作成して送信する。"
+                }
+              ]
+            },
+            {
+              "title": {
+                "en": "Remind Non-Participants",
+                "ja": "未受講者にリマインドする"
+              },
+              "items": [
+                {
+                  "en": "Check the enrollment status of participants",
+                  "ja": "受講者の受講状況を確認する。"
+                },
+                {
+                  "en": "Review the progress of employees",
+                  "ja": "従業員の進捗を確認する。"
+                },
+                {
+                  "en": "Select non-participants to send a reminder email",
+                  "ja": "未受講者を選び、リマインドメールの対象にする。"
+                },
+                {
+                  "en": "Write and send the email content",
+                  "ja": "メール本文を作成して送信する。"
+                }
+              ]
+            },
+            {
+              "title": {
+                "en": "Confirm Test Results",
+                "ja": "テスト結果を確認する"
+              },
+              "items": [
+                {
+                  "en": "Navigate to the \"Test Results\" tab in the course details",
+                  "ja": "コース詳細の「テスト結果」タブを開く。"
+                },
+                {
+                  "en": "Click on a specific employee's test result from the list",
+                  "ja": "一覧から対象の従業員のテスト結果を選択する。"
+                },
+                {
+                  "en": "View the detailed test result",
+                  "ja": "詳細なテスト結果を確認する。"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "story",
+          "role": {
+            "en": "Employee",
+            "ja": "従業員"
+          },
+          "goal": {
+            "en": "Complete the E-Learning course created by HR Manager.",
+            "ja": "人事担当者が作成したEラーニングコースを修了する。"
+          },
+          "tasks": [
+            {
+              "title": {
+                "en": "Access the course",
+                "ja": "コースへアクセスする"
+              },
+              "items": [
+                {
+                  "en": "Receive an email from the HR Manager about the course",
+                  "ja": "人事担当者から受講案内メールを受け取る。"
+                },
+                {
+                  "en": "Access the course from the email",
+                  "ja": "メールからコースへアクセスする。"
+                }
+              ]
+            },
+            {
+              "title": {
+                "en": "Complete the E-Learning course",
+                "ja": "Eラーニングコースを修了する"
+              },
+              "items": [
+                {
+                  "en": "Review the course materials",
+                  "ja": "教材を確認する。"
+                },
+                {
+                  "en": "Take the Test",
+                  "ja": "テストを受ける。"
+                },
+                {
+                  "en": "Read the test results and explanations",
+                  "ja": "テスト結果と解説を読む。"
+                },
+                {
+                  "en": "Complete the course after finishing the final material",
+                  "ja": "最後の教材を終え、コースを修了する。"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": {
+        "en": "Design",
+        "ja": "デザイン"
+      },
+      "blocks": [
+        {
+          "type": "heading",
+          "text": {
+            "en": "Digital Wireframes",
+            "ja": "デジタルワイヤーフレーム"
+          }
+        },
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "I created detailed designs based on the ideas, balancing development time with user satisfaction for the first release. Specifically, I removed the display of video chapters from the screen and simplified it to just the video and its description.",
+            "ja": "アイデアをもとに、初回リリースの開発時間とユーザー満足度のバランスを考えた詳細設計を行いました。動画のチャプター表示を省き、動画と説明だけのシンプルな画面にしました。"
+          }
+        },
+        {
+          "type": "heading",
+          "text": {
+            "en": "Balancing Development Time with User Satisfaction",
+            "ja": "初回リリースの開発時間とユーザー満足度のバランス"
+          }
+        },
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "I removed the display of video chapters from the screen and simplified it to just the video and its description.",
+            "ja": "動画のチャプター表示を省き、動画と説明だけのシンプルな画面にしました。"
+          }
+        },
+        {
+          "type": "image",
+          "src": "/images/work/health-e-learning/05-balancing-development-time-with-user-satisfaction.webp",
+          "alt": {
+            "en": "Balancing Development Time with User Satisfaction — design visual",
+            "ja": "初回リリースの開発時間とユーザー満足度のバランスの図版"
+          },
+          "width": 2400,
+          "height": 2037
+        }
+      ]
+    },
+    {
+      "title": {
+        "en": "Refining The Design",
+        "ja": "デザインの改善"
+      },
+      "blocks": [
+        {
+          "type": "heading",
+          "text": {
+            "en": "Hi-Fidelity Designs",
+            "ja": "高精度のデザイン"
+          }
+        },
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "I created high-fidelity designs based on the wireframes and made adjustments after discussing implementation considerations with engineers to ensure practical usability.",
+            "ja": "ワイヤーフレームをもとに高精度のデザインを作成しました。エンジニアと実装上の条件を相談し、実際の使いやすさを確保するために調整しました。"
+          }
+        },
+        {
+          "type": "heading",
+          "text": {
+            "en": "Course Management and Creation Screen (HR Manager Screen)",
+            "ja": "コース管理・作成画面（人事担当者向け）"
+          }
+        },
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "The HR Manager can input the study materials, participants, and period to create E-Learning courses. It is also possible to edit or delete the created courses.",
+            "ja": "教材、受講者、期間を入力してコースを作成できます。作成済みコースの編集や削除も可能です。"
+          }
+        },
+        {
+          "type": "image",
+          "src": "/images/work/health-e-learning/06-course-management-and-creation-screen-hr-manager-screen.webp",
+          "alt": {
+            "en": "Course Management and Creation Screen (HR Manager Screen) — design visual",
+            "ja": "コース管理・作成画面（人事担当者向け）の図版"
+          },
+          "width": 1452,
+          "height": 2400
+        },
+        {
+          "type": "heading",
+          "text": {
+            "en": "Participant Progress Management Screen (HR Manager Screen)",
+            "ja": "受講者の進捗管理画面（人事担当者向け）"
+          }
+        },
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "The HR Manager can check the progress and test results of participants in the created courses. Recommendations for course enrollment can also be sent in bulk from the screen.",
+            "ja": "受講者の進捗とテスト結果を確認できます。画面から受講案内を一括送信することもできます。"
+          }
+        },
+        {
+          "type": "image",
+          "src": "/images/work/health-e-learning/07-participant-progress-management-screen-hr-manager-screen.webp",
+          "alt": {
+            "en": "Participant Progress Management Screen (HR Manager Screen) — design visual",
+            "ja": "受講者の進捗管理画面（人事担当者向け）の図版"
+          },
+          "width": 1443,
+          "height": 2400
+        },
+        {
+          "type": "heading",
+          "text": {
+            "en": "E-Learning Home Screen (Employee Screen)",
+            "ja": "Eラーニングホーム画面（従業員向け）"
+          }
+        },
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "Courses are categorized as either \"To Be Taken\" or \"Completed/Expired.\" For \"Completed/Expired\" courses, employees can still access and review the study materials.",
+            "ja": "コースを「受講予定」と「修了・期限切れ」に分類しました。修了済みや期限切れのコースも教材を開いて復習できます。"
+          }
+        },
+        {
+          "type": "image",
+          "src": "/images/work/health-e-learning/08-e-learning-home-screen-employee-screen.webp",
+          "alt": {
+            "en": "E-Learning Home Screen (Employee Screen) — design visual",
+            "ja": "Eラーニングホーム画面（従業員向け）の図版"
+          },
+          "width": 2400,
+          "height": 1296
+        },
+        {
+          "type": "heading",
+          "text": {
+            "en": "Study Material Viewing Screen (Employee Screen)",
+            "ja": "教材閲覧画面（従業員向け）"
+          }
+        },
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "Employees can view the study materials set by the HR Manager and gain knowledge related to health.",
+            "ja": "人事担当者が設定した教材を閲覧し、健康に関する知識を学べます。"
+          }
+        },
+        {
+          "type": "image",
+          "src": "/images/work/health-e-learning/09-study-material-viewing-screen-employee-screen.webp",
+          "alt": {
+            "en": "Study Material Viewing Screen (Employee Screen) — design visual",
+            "ja": "教材閲覧画面（従業員向け）の図版"
+          },
+          "width": 2400,
+          "height": 1369
+        },
+        {
+          "type": "heading",
+          "text": {
+            "en": "Test Screen (Employee Screen)",
+            "ja": "テスト画面（従業員向け）"
+          }
+        },
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "Employees can take tests, review their results, and check the explanations.",
+            "ja": "テストを受け、結果と解説を確認できます。"
+          }
+        },
+        {
+          "type": "image",
+          "src": "/images/work/health-e-learning/10-test-screen-employee-screen.webp",
+          "alt": {
+            "en": "Test Screen (Employee Screen) — design visual",
+            "ja": "テスト画面（従業員向け）の図版"
+          },
+          "width": 2400,
+          "height": 1425
+        },
+        {
+          "type": "heading",
+          "text": {
+            "en": "Hi-Fidelity Prototype",
+            "ja": "高精度のプロトタイプ"
+          }
+        },
+        {
+          "type": "link",
+          "text": {
+            "en": "Prototype Link",
+            "ja": "プロトタイプを見る"
+          },
+          "href": "https://www.figma.com/proto/2C6kAspOoPMGRyRGMmqiRR/e-learning-prototype?page-id=0%3A1&node-id=16-7942&viewport=3357%2C-4449%2C0.36&t=uNkjjgMmvRDJEAMb-9&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=16%3A7942&show-proto-sidebar=1"
+        },
+        {
+          "type": "heading",
+          "text": {
+            "en": "Style Guide",
+            "ja": "スタイルガイド"
+          }
+        },
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "I developed a style guide for the rich text editor used to create E-Learning materials, ensuring consistency across the content.",
+            "ja": "Eラーニング教材を作成するリッチテキストエディターのスタイルガイドを整備し、コンテンツの一貫性を確保しました。"
+          }
+        },
+        {
+          "type": "image",
+          "src": "/images/work/health-e-learning/11-style-guide.webp",
+          "alt": {
+            "en": "Style Guide — design visual",
+            "ja": "スタイルガイドの図版"
+          },
+          "width": 1933,
+          "height": 2400
+        },
+        {
+          "type": "heading",
+          "text": {
+            "en": "Video Design for Learning Materials",
+            "ja": "学習教材の動画デザイン"
+          }
+        },
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "Using Illustrator, I created designs for three educational videos for HR managers creating courses. I collaborated with in-house nurses to draft the scripts and worked with external motion designers for music and animation. These illustrations and a video are part of the design work I contributed.",
+            "ja": "Illustratorを使い、人事担当者がコースで使う3本の教育動画をデザインしました。社内の看護師と台本を作成し、社外のモーションデザイナーと音楽・アニメーションを制作しました。掲載したイラストと動画は、担当した制作物の一部です。"
+          }
+        },
+        {
+          "type": "link",
+          "text": {
+            "en": "Video Link",
+            "ja": "教材動画を見る"
+          },
+          "href": "https://drive.google.com/file/d/1Ttv5RbjRQIY6_3r4u7VwaHh7uCBMJzke/view?usp=sharing"
+        },
+        {
+          "type": "image",
+          "src": "/images/work/health-e-learning/12-video-design-for-learning-materials.webp",
+          "alt": {
+            "en": "Video Design for Learning Materials — design visual",
+            "ja": "学習教材の動画デザインの図版"
+          },
+          "width": 1347,
+          "height": 2400
+        }
+      ]
+    },
+    {
+      "title": {
+        "en": "Usability Testing",
+        "ja": "ユーザビリティテスト"
+      },
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "After implementation, I conducted usability tests with internal designers. The results showed no significant usability issues, but some text was unclear, so I worked with engineers to make improvements.",
+            "ja": "実装後、社内デザイナーとユーザビリティテストを実施しました。重大な操作上の問題はありませんでしたが、一部の文言が分かりづらかったため、エンジニアと改善しました。"
+          }
+        }
+      ]
+    },
+    {
+      "title": {
+        "en": "Going Forward",
+        "ja": "成果と今後の改善"
+      },
+      "blocks": [
+        {
+          "type": "heading",
+          "text": {
+            "en": "Takeaways",
+            "ja": "振り返り"
+          }
+        },
+        {
+          "type": "heading",
+          "text": {
+            "en": "Impact",
+            "ja": "成果"
+          }
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "en": "Despite a new feature, we completed design and implementation in just two months by collaborating closely with the PM and engineers to identify and focus on the essential design elements and functionality.",
+              "ja": "新規機能でしたが、PMやエンジニアと密に協働して必要な要素と機能に集中し、2か月で設計と実装を完了しました。"
+            },
+            {
+              "en": "This new feature contributed to a 2% increase in ARR through upselling.",
+              "ja": "この機能はアップセルによるARRの2%増加に貢献しました。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": {
+            "en": "What I learned",
+            "ja": "学んだこと"
+          }
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "en": "From a UX perspective, I learned the importance of designing features that cater to both HR managers creating courses and employees taking them, focusing on what is essential for a seamless experience.",
+              "ja": "コースを作る人事担当者と、受講する従業員の両方に合わせて設計し、スムーズな体験に必要な要素へ集中することの重要性を学びました。"
+            },
+            {
+              "en": "From a design perspective, I worked on responsive design for the first time in a professional setting, ensuring usability on both mobile and desktop.",
+              "ja": "業務で初めてレスポンシブデザインに取り組み、モバイルとデスクトップの両方で使いやすい画面を設計しました。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": {
+            "en": "Next Steps",
+            "ja": "次のステップ"
+          }
+        },
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "After the release, I received feedback from users requesting the following improvements, which I plan to design in the future:",
+            "ja": "リリース後、以下の改善要望が寄せられ、今後の設計対象としました。"
+          }
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "en": "The ability to select course participants based on employee symptoms.",
+              "ja": "従業員の症状に基づいて受講者を選べるようにする。"
+            },
+            {
+              "en": "The ability for HR Managers to create custom educational materials.",
+              "ja": "人事担当者が独自の教材を作成できるようにする。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

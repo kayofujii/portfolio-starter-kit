@@ -1,6 +1,6 @@
 import { workDetails } from 'app/development/data'
 
-export const baseUrl = 'https://portfolio-blog-starter.vercel.app'
+export const baseUrl = 'https://kayofujii.vercel.app'
 
 export default async function sitemap() {
   const locales = ['en', 'ja']

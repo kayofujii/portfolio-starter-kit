@@ -1,0 +1,367 @@
+{
+  "title": {
+    "en": "New Education-Focused Preschool Website in Canada",
+    "ja": "カナダの教育重視型プレスクールの新規サイト"
+  },
+  "hero": {
+    "type": "image",
+    "src": "/images/work/mind-spark-academy/01-new-education-focused-preschool-website-in-canada.png",
+    "alt": {
+      "en": "New Education-Focused Preschool Website in Canada — design visual",
+      "ja": "カナダの教育重視型プレスクールの新規サイトの図版"
+    },
+    "width": 2400,
+    "height": 1000
+  },
+  "sections": [
+    {
+      "title": {
+        "en": "Project Overview",
+        "ja": "プロジェクト概要"
+      },
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "A new preschool needed to launch in a competitive market and attract its first families quickly.",
+            "ja": "競争の激しい市場で、新しいプレスクールを立ち上げ、最初の入園希望家庭を早期に集める必要がありました。"
+          }
+        },
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "I was responsible for creating their website from scratch, translating their unique educational philosophy into a clear brand identity, and building a responsive WordPress site.",
+            "ja": "サイトをゼロから制作し、独自の教育理念を明確なブランドに落とし込み、レスポンシブなWordPressサイトを構築しました。"
+          }
+        },
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "The project was an immediate success, generating 10 family registrations for the first information session within one week of launch.",
+            "ja": "公開から1週間で、初回説明会への10家庭の申し込みを獲得しました。"
+          }
+        },
+        {
+          "type": "details",
+          "items": [
+            {
+              "label": {
+                "en": "Timeline",
+                "ja": "期間"
+              },
+              "value": {
+                "en": "1 person-week",
+                "ja": "1人週"
+              }
+            },
+            {
+              "label": {
+                "en": "Role",
+                "ja": "担当"
+              },
+              "value": {
+                "en": "UX/UI Designer, Brand Strategist, WordPress Developer",
+                "ja": "UX/UIデザイナー、ブランドストラテジスト、WordPress開発者"
+              }
+            },
+            {
+              "label": {
+                "en": "Tool",
+                "ja": "ツール"
+              },
+              "value": {
+                "en": "Figma, WordPress, Elementor, HTML/CSS",
+                "ja": "Figma, WordPress, Elementor, HTML/CSS"
+              }
+            },
+            {
+              "label": {
+                "en": "Company",
+                "ja": "会社"
+              },
+              "value": {
+                "en": "Mind Spark Academy, Burnaby, BC, Canada",
+                "ja": "Mind Spark Academy（カナダ・BC州バーナビー）"
+              }
+            },
+            {
+              "label": {
+                "en": "Team",
+                "ja": "チーム"
+              },
+              "value": {
+                "en": "CEO, Designer & Developer (myself)",
+                "ja": "CEO、デザイナー兼開発者（私）"
+              }
+            },
+            {
+              "label": {
+                "en": "Impacts",
+                "ja": "成果"
+              },
+              "value": {
+                "en": "The website successfully attracted families, generating 10 registrations for the first information session within one week of launch.",
+                "ja": "公開から1週間で初回説明会への10件の申し込みを獲得し、関心を持つ家庭を集めました。"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": {
+        "en": "Final Design",
+        "ja": "完成したデザイン"
+      },
+      "blocks": [
+        {
+          "type": "link",
+          "text": {
+            "en": "Website link: https://mindsparkacademycanada.com/",
+            "ja": "公開サイトを見る"
+          },
+          "href": "https://mindsparkacademycanada.com/"
+        },
+        {
+          "type": "image",
+          "src": "/images/work/mind-spark-academy/02-final-design.webp",
+          "alt": {
+            "en": "Final Design — design visual",
+            "ja": "完成したデザインの図版"
+          },
+          "width": 2306,
+          "height": 3259
+        }
+      ]
+    },
+    {
+      "title": {
+        "en": "The Situation",
+        "ja": "背景と課題"
+      },
+      "blocks": [
+        {
+          "type": "heading",
+          "text": {
+            "en": "The Challenge",
+            "ja": "課題"
+          }
+        },
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "The founder of Mind Spark Academy had a powerful and unique vision. The challenge was to translate her complex educational philosophy—a blend of brain science, Japanese values, and global learning—into a brand and website that could:",
+            "ja": "Mind Spark Academyの創業者には、力強く独自のビジョンがありました。脳科学、日本の価値観、グローバルな学びを組み合わせた複雑な教育理念を、以下を満たすブランドとサイトに変換することが課題でした。"
+          }
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "en": "Clear Value Proposition: Clearly differentiate the academy from traditional daycares and preschools in a competitive local market.",
+              "ja": "明確な価値提案：競争の激しい地域市場で、従来の保育園やプレスクールとの違いを分かりやすく示す。"
+            },
+            {
+              "en": "Build Trust: As a brand-new entity, the website needed to feel professional, trustworthy, and welcoming to encourage parents to register for an information session.",
+              "ja": "信頼の構築：新しい施設として、専門性、信頼感、親しみやすさを伝え、保護者の説明会申し込みを促す。"
+            },
+            {
+              "en": "Prioritize a Complex Message: The founder’s passion resulted in many ideas. The core challenge was to structure this vision into a clear, compelling message without losing its unique essence.",
+              "ja": "メッセージの優先順位：創業者の豊富なアイデアを、独自性を損なわず、明快で魅力的なメッセージに整理する。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": {
+            "en": "Goal",
+            "ja": "目標"
+          }
+        },
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "Our primary goal was a successful launch, defined by three key objectives:",
+            "ja": "立ち上げの成功を、3つの目標で定義しました。"
+          }
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "en": "Brand Goal: Establish Mind Spark as a premium, education-first institution.",
+              "ja": "ブランドの目標：教育を重視する質の高い施設としてMind Sparkを位置付ける。"
+            },
+            {
+              "en": "Business Goal: Promote registrations for the first information session to build an initial student base.",
+              "ja": "ビジネスの目標：初回説明会への申し込みを促し、最初の入園児童の獲得につなげる。"
+            },
+            {
+              "en": "User Goal: Ensure parents can easily understand the academy's unique value, find necessary information, and feel confident enough to take the next step.",
+              "ja": "ユーザーの目標：保護者が独自の価値を理解し、必要な情報を見つけ、安心して次の行動を取れるようにする。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": {
+            "en": "Constraints",
+            "ja": "制約"
+          }
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "en": "Undefined Brand: We started with zero existing identity or assets.",
+              "ja": "未定義のブランド：既存のブランドや素材がない状態からのスタートでした。"
+            },
+            {
+              "en": "Founder’s Vision: The client had many creative ideas that needed focus and strategic direction to appeal to users.",
+              "ja": "創業者のビジョン：豊富なアイデアを、ユーザーに届く焦点と戦略へ整理する必要がありました。"
+            },
+            {
+              "en": "Launch Deadline: As a new business, we needed to work efficiently to launch the site and start marketing as soon as possible.",
+              "ja": "公開期限：新規事業として、効率よくサイトを公開し、早期にマーケティングを始める必要がありました。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": {
+            "en": "Solution",
+            "ja": "解決策"
+          }
+        },
+        {
+          "type": "heading",
+          "text": {
+            "en": "Discovery & Brand Strategy",
+            "ja": "ディスカバリーとブランド戦略"
+          }
+        },
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "I began with in-depth discovery sessions with the founder. Recognizing her passion and numerous ideas, I facilitated discussions to prioritize her message. Together, we focused her philosophy into four core values: Brain Science, Japanese Values, STEM & Early Academics, and Communication & Leadership.",
+            "ja": "創業者との深い対話から始め、メッセージの優先順位を整理しました。教育理念を「脳科学」「日本の価値観」「STEMと早期学習」「コミュニケーションとリーダーシップ」の4つの軸にまとめました。"
+          }
+        },
+        {
+          "type": "heading",
+          "text": {
+            "en": "Brand Identity Design",
+            "ja": "ブランドアイデンティティの設計"
+          }
+        },
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "With the core message defined, I designed a visual identity that felt professional yet playful",
+            "ja": "核となるメッセージを定め、専門性と遊び心を両立したビジュアルを設計しました。"
+          }
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "en": "Color Palette: Bright, energetic orange represented creativity and the “spark” of learning. This was balanced with ample white space for a calm, premium feel. Accent colors, such as red, yellow, blue, and green, added a child-friendly touch.",
+              "ja": "配色：明るく活力のあるオレンジで創造性と学びのひらめきを表現。十分な余白で落ち着きと質の高さを伝え、赤、黄、青、緑のアクセントで子どもらしい親しみやすさを加えました。"
+            },
+            {
+              "en": "Typography: I chose Raleway for headers and Nunito Sans for body text to balance a premium look with playfulness.",
+              "ja": "タイポグラフィ：見出しにRaleway、本文にNunito Sansを選び、質の高い印象と遊び心のバランスを取りました。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": {
+            "en": "Website Design & Development",
+            "ja": "サイトのデザインと開発"
+          }
+        },
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "Using Figma mockups, I built a fully responsive WordPress website:",
+            "ja": "Figmaのモックアップをもとに、レスポンシブなWordPressサイトを構築しました。"
+          }
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "en": "Information Architecture: Designed a clear, intuitive structure for sections like Curriculum, Programs & Schedule, Admissions, Contact, and FAQ.",
+              "ja": "情報設計：カリキュラム、プログラムと時間割、入園案内、お問い合わせ、FAQを分かりやすく配置しました。"
+            },
+            {
+              "en": "SEO: Configured SEO and marketing tools using Yoast SEO and Google Analytics.",
+              "ja": "SEO：Yoast SEOとGoogle Analyticsで、SEOとマーケティングの計測環境を整えました。"
+            },
+            {
+              "en": "Accessibility: Considered accessibility through color contrast, alt text for images, and larger text sizes.",
+              "ja": "アクセシビリティ：色のコントラスト、画像の代替テキスト、大きめの文字サイズを考慮しました。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": {
+        "en": "Going Forward",
+        "ja": "成果と今後の改善"
+      },
+      "blocks": [
+        {
+          "type": "heading",
+          "text": {
+            "en": "Takeaways",
+            "ja": "振り返り"
+          }
+        },
+        {
+          "type": "heading",
+          "text": {
+            "en": "Impact",
+            "ja": "成果"
+          }
+        },
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "The project was a significant success. The client was extremely satisfied with how the brand and website captured her vision.",
+            "ja": "ブランドとサイトが創業者のビジョンを表現したことに、クライアントから高い満足度を得ました。"
+          }
+        },
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "Within just one week of launch, 10 families registered for the information session, showing strong interest in our unique educational approach.",
+            "ja": "公開からわずか1週間で10家庭が説明会に申し込み、独自の教育方針への強い関心を確認できました。"
+          }
+        },
+        {
+          "type": "heading",
+          "text": {
+            "en": "What I learned",
+            "ja": "学んだこと"
+          }
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "en": "I learned to focus on the core values of the service and how it differs from similar offerings.",
+              "ja": "サービスの核となる価値と、類似サービスとの違いに焦点を当てることを学びました。"
+            },
+            {
+              "en": "I gained experience designing and developing a new website from start to finish. Using new tools like Elementor, GA4, and SEO tools was a bit challenging, but it was a valuable experience to complete the entire project on my own.",
+              "ja": "新規サイトの設計から開発まで、一貫して担当する経験を得ました。Elementor、GA4、SEOツールなど新しいツールへの対応は難しさもありましたが、プロジェクト全体を自分で完了できたことは貴重な経験でした。"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

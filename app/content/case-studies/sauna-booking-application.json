@@ -1,0 +1,833 @@
+{
+  "title": {
+    "en": "Sauna Booking Application",
+    "ja": "サウナ予約アプリケーション"
+  },
+  "hero": {
+    "type": "image",
+    "src": "/images/work/sauna-booking-application/01-sauna-booking-application.webp",
+    "alt": {
+      "en": "Sauna Booking Application — design visual",
+      "ja": "サウナ予約アプリケーションの図版"
+    },
+    "width": 2000,
+    "height": 1280
+  },
+  "sections": [
+    {
+      "title": {
+        "en": "Project Overview",
+        "ja": "プロジェクト概要"
+      },
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "Designed a mobile-first, responsive sauna booking app featuring a smooth reservation flow and a gamified rewards system to encourage repeat bookings.",
+            "ja": "スムーズな予約フローとゲーム性のあるリワードで継続利用を促す、モバイルファーストのレスポンシブなサウナ予約アプリを設計しました。"
+          }
+        },
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "I focused on three key areas:",
+            "ja": "3つの点に注力しました。"
+          }
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "en": "Identified and proposed essential features like rescheduling and login to improve usability.",
+              "ja": "予約変更やログインなど、使いやすさに必要な機能を特定し、提案しました。"
+            },
+            {
+              "en": "Recommended moving the rewards system to the home page for greater visibility and user motivation.",
+              "ja": "リワードをホーム画面へ移し、見つけやすさと利用意欲を高めることを提案しました。"
+            },
+            {
+              "en": "Collaborated closely with the client throughout the design process to ensure responsiveness across devices.",
+              "ja": "クライアントと密に協働し、さまざまなデバイスに対応するデザインを進めました。"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "The client gave positive feedback on the improved user flow, and the project received a 5/5 rating for quality, communication, and collaboration on the freelancing platform.",
+            "ja": "改善したユーザーフローはクライアントから好評で、フリーランスプラットフォームでは品質、コミュニケーション、協働に5点満点の評価を得ました。"
+          }
+        },
+        {
+          "type": "details",
+          "items": [
+            {
+              "label": {
+                "en": "Timeline",
+                "ja": "期間"
+              },
+              "value": {
+                "en": "1 person-month",
+                "ja": "1人月"
+              }
+            },
+            {
+              "label": {
+                "en": "Role",
+                "ja": "担当"
+              },
+              "value": {
+                "en": "UX/UI Design, Graphic Design, UX Research",
+                "ja": "UX/UIデザイン、グラフィックデザイン、UXリサーチ"
+              }
+            },
+            {
+              "label": {
+                "en": "Tool",
+                "ja": "ツール"
+              },
+              "value": {
+                "en": "Figma, Illustrator",
+                "ja": "Figma, Illustrator"
+              }
+            },
+            {
+              "label": {
+                "en": "Client",
+                "ja": "クライアント"
+              },
+              "value": {
+                "en": "Moncho-KG",
+                "ja": "Moncho-KG"
+              }
+            },
+            {
+              "label": {
+                "en": "Team",
+                "ja": "チーム"
+              },
+              "value": {
+                "en": "Engineer 1x, Product designer (myself)",
+                "ja": "エンジニア1名、プロダクトデザイナー（私）"
+              }
+            },
+            {
+              "label": {
+                "en": "Impacts",
+                "ja": "成果"
+              },
+              "value": {
+                "en": "I designed a responsive sauna booking app, earning a 5/5 rating for quality, communication, and collaboration on the freelancing platform.",
+                "ja": "レスポンシブなサウナ予約アプリを設計し、品質、コミュニケーション、協働で5点満点の評価を得ました。"
+              }
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "src": "/images/work/sauna-booking-application/02-project-overview.webp",
+          "alt": {
+            "en": "Project Overview — design visual",
+            "ja": "プロジェクト概要の図版"
+          },
+          "width": 2306,
+          "height": 2695
+        }
+      ]
+    },
+    {
+      "title": {
+        "en": "The Situation",
+        "ja": "背景と課題"
+      },
+      "blocks": [
+        {
+          "type": "heading",
+          "text": {
+            "en": "The Product",
+            "ja": "プロダクト"
+          }
+        },
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "The client wanted to create a Russian sauna booking web application that allows users to easily book a sauna via mobile, desktop, or tablet—anytime, anywhere. The app eliminates manual processes like phone calls and payments, enabling users to reserve sessions effortlessly in one place.",
+            "ja": "ロシア式サウナを、モバイル、デスクトップ、タブレットからいつでも予約できるWebアプリを求められました。電話や手作業の決済をなくし、一か所で簡単に予約を完了できるサービスです。"
+          }
+        },
+        {
+          "type": "heading",
+          "text": {
+            "en": "Problem",
+            "ja": "課題"
+          }
+        },
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "In a typical sauna booking process, users need to call the studio to check availability, have a conversation, and make a manual payment. If they want to reschedule, they must call again, making the process inconvenient and time-consuming.",
+            "ja": "一般的なサウナ予約では、電話で空き状況を確認し、やり取りをして手作業で支払います。予約変更にも再び電話が必要で、不便さと時間の負担がありました。"
+          }
+        },
+        {
+          "type": "heading",
+          "text": {
+            "en": "Goal",
+            "ja": "目標"
+          }
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "en": "Eliminate the need for phone calls, manual availability checks, and payments by integrating everything into a single app.",
+              "ja": "電話、手作業の空き確認、決済を1つのアプリに統合する。"
+            },
+            {
+              "en": "Provide a simple and seamless booking experience.",
+              "ja": "シンプルでスムーズな予約体験を提供する。"
+            },
+            {
+              "en": "Enhance user motivation through a reward system that encourages repeat visits.",
+              "ja": "リワードで利用意欲を高め、再来訪を促す。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": {
+            "en": "Solutions",
+            "ja": "解決策"
+          }
+        },
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "I developed a solution for the sauna booking application that includes a seamless and straightforward booking system, a reward system to motivate users, and attractive branding that aligns with user needs and enhances the overall experience.",
+            "ja": "分かりやすい予約システム、利用意欲を高めるリワード、ユーザーのニーズに合う魅力的なブランドを組み合わせ、全体の体験を改善しました。"
+          }
+        },
+        {
+          "type": "heading",
+          "text": {
+            "en": "Design Process",
+            "ja": "デザインプロセス"
+          }
+        },
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "I followed a process based on design thinking.",
+            "ja": "デザイン思考に基づくプロセスで進めました。"
+          }
+        },
+        {
+          "type": "image",
+          "src": "/images/work/sauna-booking-application/03-design-process.webp",
+          "alt": {
+            "en": "Design Process — design visual",
+            "ja": "デザインプロセスの図版"
+          },
+          "width": 1600,
+          "height": 391
+        }
+      ]
+    },
+    {
+      "title": {
+        "en": "Research",
+        "ja": "リサーチ"
+      },
+      "blocks": [
+        {
+          "type": "heading",
+          "text": {
+            "en": "Client Interview",
+            "ja": "クライアントへのインタビュー"
+          }
+        },
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "I interviewed the client about the application they want to create. Their requirements are:",
+            "ja": "作りたいアプリについてクライアントに聞き、以下の要件を整理しました。"
+          }
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "en": "An indoor Russian sauna booking application.",
+              "ja": "屋内のロシア式サウナを予約できるアプリ。"
+            },
+            {
+              "en": "Users should be able to make group reservations, including for indoor dining rooms or gaming/relaxation areas.",
+              "ja": "食事スペースやゲーム・リラクゼーションエリアも含め、グループで予約できること。"
+            },
+            {
+              "en": "A reward system that motivates users to visit repeatedly.",
+              "ja": "繰り返し訪れる動機になるリワード。"
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "text": {
+            "en": "Persona",
+            "ja": "ペルソナ"
+          }
+        },
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "I created a persona based on the application the client wants to make, as well as research on Russian origin and sauna users.",
+            "ja": "クライアントの構想と、ロシア式サウナや利用者に関するリサーチをもとにペルソナを作成しました。"
+          }
+        },
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "Russian saunas tend to offer a more communal experience, often being livelier and more social than Finnish saunas. It’s common for groups of friends or families to visit the Russian sauna together.",
+            "ja": "調査では、ロシア式サウナは友人や家族などのグループで訪れ、にぎやかに交流する体験が特徴だと捉えました。"
+          }
+        },
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "Therefore, I realized that Russian sauna users often go to the sauna with friends and family. I want to incorporate these warm and lively vibes into the design.",
+            "ja": "友人や家族との利用を想定し、温かく活気のある雰囲気をデザインに取り入れようと考えました。"
+          }
+        },
+        {
+          "type": "image",
+          "src": "/images/work/sauna-booking-application/04-persona.webp",
+          "alt": {
+            "en": "Persona — design visual",
+            "ja": "ペルソナの図版"
+          },
+          "width": 2400,
+          "height": 1688
+        },
+        {
+          "type": "heading",
+          "text": {
+            "en": "Competitive Audit",
+            "ja": "競合調査"
+          }
+        },
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "I researched three sauna booking platforms to understand which UX/UI features make it easier for users to book and motivate them to visit more frequently.",
+            "ja": "予約のしやすさと継続利用を促すUX/UIの特徴を把握するため、3つの予約プラットフォームを調査しました。"
+          }
+        },
+        {
+          "type": "table",
+          "headers": [
+            {
+              "en": "Service",
+              "ja": "サービス"
+            },
+            {
+              "en": "Feature",
+              "ja": "機能"
+            },
+            {
+              "en": "Strengths",
+              "ja": "強み"
+            },
+            {
+              "en": "Weaknesses",
+              "ja": "弱み"
+            }
+          ],
+          "rows": [
+            [
+              {
+                "en": "ClassPass",
+                "ja": "ClassPass"
+              },
+              {
+                "en": "It offers a subscription model where users purchase credits to redeem for various fitness and wellness services, including saunas, at participating locations.",
+                "ja": "クレジットを購入し、サウナを含むフィットネスやウェルネスのサービスに交換するサブスクリプション。"
+              },
+              {
+                "en": "Users can explore different activities and make reservations on a single platform.",
+                "ja": "さまざまな活動を探し、1つのプラットフォームから予約できます。"
+              },
+              {
+                "en": "Users need to buy credits a month in advance, which could lead to unused credits.",
+                "ja": "月ごとにクレジットを先に購入するため、使い切れない可能性があります。"
+              }
+            ],
+            [
+              {
+                "en": "Airbnb",
+                "ja": "Airbnb"
+              },
+              {
+                "en": "A platform connecting hosts offering accommodations and experiences with travelers seeking unique lodging and activities worldwide.​",
+                "ja": "宿泊施設や体験を提供するホストと、旅行者を世界中でつなぐプラットフォーム。"
+              },
+              {
+                "en": "Simplifies the booking process, allowing reservations for multiple people.",
+                "ja": "予約手順がシンプルで、複数人の予約にも対応します。"
+              },
+              {
+                "en": "Inconsistent listing quality can lead to varying guest experiences.",
+                "ja": "掲載情報の質が一定でなく、利用者の体験に差が出ることがあります。"
+              }
+            ],
+            [
+              {
+                "en": "Local sauna booking system",
+                "ja": "地域のサウナ予約システム"
+              },
+              {
+                "en": "A platform providing detailed information on sauna types, locations, and services.",
+                "ja": "サウナの種類、場所、サービスについて詳しい情報を提供します。"
+              },
+              {
+                "en": "Specialized expertise on saunas, with features like reward systems to encourage repeat visits.",
+                "ja": "サウナに特化した知識と、継続利用を促すリワードなどの機能があります。"
+              },
+              {
+                "en": "May have a smaller user base compared to larger platforms, which could impact availability and pricing competitiveness.",
+                "ja": "大規模なサービスより利用者が少なく、空き状況や価格競争力に影響する場合があります。"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "title": {
+        "en": "Ideation",
+        "ja": "アイデア検討"
+      },
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "I create user flows to visualize how users interact with the app and ensure no specifications are missing while consulting with the client.",
+            "ja": "ユーザーフローで操作の流れを可視化し、クライアントと相談しながら仕様の抜け漏れを確認しました。"
+          }
+        },
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "Through this process, I noticed the specifications lacked details on rescheduling and login. By refining the user flow, I was able to align specifications with the client and fill any gaps.",
+            "ja": "予約変更とログインに関する仕様が不足していることに気付きました。フローを改善してクライアントと認識を合わせ、仕様の不足を補いました。"
+          }
+        },
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "I also realized that allowing users to view sauna slots without logging in could increase bookings. The client agreed, and I was able to design a more effective flow.",
+            "ja": "ログイン前でも空き枠を閲覧できれば予約につながりやすいと考えました。クライアントの合意を得て、より効果的なフローにしました。"
+          }
+        },
+        {
+          "type": "image",
+          "src": "/images/work/sauna-booking-application/05-ideation.webp",
+          "alt": {
+            "en": "Ideation — design visual",
+            "ja": "アイデア検討の図版"
+          },
+          "width": 2400,
+          "height": 2170
+        }
+      ]
+    },
+    {
+      "title": {
+        "en": "Design",
+        "ja": "デザイン"
+      },
+      "blocks": [
+        {
+          "type": "heading",
+          "text": {
+            "en": "Wireframe Review Presentation",
+            "ja": "ワイヤーフレームのレビュー資料"
+          }
+        },
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "I created a presentation and provided an opportunity to discuss and review it with the client. During this session, I noticed differences in perception between the client and me regarding the onboarding page. It was a valuable session because I was able to identify the points that needed to be changed early on, and ensure that the client and I were on the same page.",
+            "ja": "クライアントと資料を見ながらレビューを行い、オンボーディング画面の認識に違いがあることを発見しました。早期に変更点を見つけ、共通理解を作るための有意義な機会になりました。"
+          }
+        },
+        {
+          "type": "heading",
+          "text": {
+            "en": "Hi-Fidelity Designs",
+            "ja": "高精度のデザイン"
+          }
+        },
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "I created a Hi-Fi design based on the digital wireframe.",
+            "ja": "デジタルワイヤーフレームをもとに高精度のデザインを作成しました。"
+          }
+        },
+        {
+          "type": "heading",
+          "text": {
+            "en": "Onboarding Page",
+            "ja": "オンボーディング画面"
+          }
+        },
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "I designed the onboarding page to highlight the application's key features. I also added a skip button for users who want to quickly schedule.",
+            "ja": "アプリの主な機能を紹介し、すぐに予約したいユーザー向けにはスキップボタンを用意しました。"
+          }
+        },
+        {
+          "type": "image",
+          "src": "/images/work/sauna-booking-application/06-onboarding-page.webp",
+          "alt": {
+            "en": "Onboarding Page — design visual",
+            "ja": "オンボーディング画面の図版"
+          },
+          "width": 2400,
+          "height": 1368
+        },
+        {
+          "type": "heading",
+          "text": {
+            "en": "Log In Page",
+            "ja": "ログイン画面"
+          }
+        },
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "I designed the login page with a progress bar to encourage users to complete the login process.",
+            "ja": "ログインの完了を促すため、進捗バーを設けました。"
+          }
+        },
+        {
+          "type": "image",
+          "src": "/images/work/sauna-booking-application/07-log-in-page.webp",
+          "alt": {
+            "en": "Log In Page — design visual",
+            "ja": "ログイン画面の図版"
+          },
+          "width": 2400,
+          "height": 1368
+        },
+        {
+          "type": "heading",
+          "text": {
+            "en": "Booking Page",
+            "ja": "予約画面"
+          }
+        },
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "Users can easily see available slots at a glance. They can also browse for open slots by tapping the arrow or tab.",
+            "ja": "空き枠をひと目で確認でき、矢印やタブで別の枠を探せます。"
+          }
+        },
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "On the laptop version, I adjusted the slot layout to a two-column format for better readability.",
+            "ja": "ノートPC版では、読みやすさを高めるために空き枠を2列に配置しました。"
+          }
+        },
+        {
+          "type": "image",
+          "src": "/images/work/sauna-booking-application/08-booking-page.webp",
+          "alt": {
+            "en": "Booking Page — design visual",
+            "ja": "予約画面の図版"
+          },
+          "width": 2400,
+          "height": 1368
+        },
+        {
+          "type": "heading",
+          "text": {
+            "en": "Booking Confirmation Page",
+            "ja": "予約確認画面"
+          }
+        },
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "Users can confirm the date and time of the slot they want to book and add people who will join them in the sauna.",
+            "ja": "予約する日時を確認し、一緒にサウナを利用する人を追加できます。"
+          }
+        },
+        {
+          "type": "image",
+          "src": "/images/work/sauna-booking-application/09-booking-confirmation-page.webp",
+          "alt": {
+            "en": "Booking Confirmation Page — design visual",
+            "ja": "予約確認画面の図版"
+          },
+          "width": 2400,
+          "height": 1369
+        },
+        {
+          "type": "heading",
+          "text": {
+            "en": "Home Page",
+            "ja": "ホーム画面"
+          }
+        },
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "Users can see their upcoming sauna bookings and a rewards graph that motivates them to visit the sauna again.",
+            "ja": "今後の予約と、次回の利用意欲を高めるリワードのグラフを確認できます。"
+          }
+        },
+        {
+          "type": "image",
+          "src": "/images/work/sauna-booking-application/10-home-page.webp",
+          "alt": {
+            "en": "Home Page — design visual",
+            "ja": "ホーム画面の図版"
+          },
+          "width": 2560,
+          "height": 1459
+        },
+        {
+          "type": "heading",
+          "text": {
+            "en": "QR Code Page",
+            "ja": "QRコード画面"
+          }
+        },
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "When users tap the floating action button on the homepage, a QR code will appear for entry into the sauna facility.",
+            "ja": "ホーム画面のフローティングアクションボタンを押すと、施設への入場に使うQRコードを表示します。"
+          }
+        },
+        {
+          "type": "image",
+          "src": "/images/work/sauna-booking-application/11-qr-code-page.webp",
+          "alt": {
+            "en": "QR Code Page — design visual",
+            "ja": "QRコード画面の図版"
+          },
+          "width": 2560,
+          "height": 1460
+        },
+        {
+          "type": "heading",
+          "text": {
+            "en": "Dark Mode",
+            "ja": "ダークモード"
+          }
+        },
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "I created pages for both light and dark modes. Regardless of whether users choose light mode or dark mode, I designed the color scheme to provide a consistent experience.",
+            "ja": "ライトとダークの両方のモードを作成し、どちらでも一貫した体験になる配色を設計しました。"
+          }
+        },
+        {
+          "type": "image",
+          "src": "/images/work/sauna-booking-application/12-dark-mode.webp",
+          "alt": {
+            "en": "Dark Mode — design visual",
+            "ja": "ダークモードの図版"
+          },
+          "width": 2400,
+          "height": 1114
+        },
+        {
+          "type": "heading",
+          "text": {
+            "en": "Hi-Fidelity Prototype",
+            "ja": "高精度のプロトタイプ"
+          }
+        },
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "I created a Hi-Fi design based on the digital wireframe.",
+            "ja": "デジタルワイヤーフレームをもとに高精度のプロトタイプを作成しました。"
+          }
+        },
+        {
+          "type": "embed",
+          "src": "https://www.youtube.com/embed/zU_naEURvqc",
+          "title": {
+            "en": "Sauna booking prototype demonstration",
+            "ja": "サウナ予約プロトタイプのデモ動画"
+          }
+        }
+      ]
+    },
+    {
+      "title": {
+        "en": "Branding",
+        "ja": "ブランディング"
+      },
+      "blocks": [
+        {
+          "type": "heading",
+          "text": {
+            "en": "Creating Visual Identity",
+            "ja": "ビジュアルアイデンティティの制作"
+          }
+        },
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "I developed visual identity ideas for the sauna application, including the logo, typography, and color scheme. I created two concepts and consulted with the client. The client preferred a mix of Concept 1 and Concept 2, as the app needed the warmth of Concept 1 and the modern feel of Concept 2 for a Russian sauna application. As a result, I created a new Concept 3 and finalized the design.",
+            "ja": "ロゴ、書体、配色を含む2つのコンセプトを提案しました。クライアントは案1の温かさと案2の現代的な印象の組み合わせを望みました。それを反映した案3を制作し、デザインを確定しました。"
+          }
+        },
+        {
+          "type": "image",
+          "src": "/images/work/sauna-booking-application/13-creating-visual-identity.webp",
+          "alt": {
+            "en": "Creating Visual Identity — design visual",
+            "ja": "ビジュアルアイデンティティの制作の図版"
+          },
+          "width": 2400,
+          "height": 1368
+        },
+        {
+          "type": "image",
+          "src": "/images/work/sauna-booking-application/14-creating-visual-identity.webp",
+          "alt": {
+            "en": "Creating Visual Identity — design visual",
+            "ja": "ビジュアルアイデンティティの制作の図版"
+          },
+          "width": 960,
+          "height": 540
+        },
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "I confirmed the client's vision for the logo, including whether they preferred a symbol or letter-based design. Since the client liked a symbol logo, I chose that direction and incorporated elements of steam, a human figure, and a sauna bucket into the design.",
+            "ja": "シンボル型と文字型のどちらのロゴを好むか、クライアントのビジョンを確認しました。シンボル型の希望を受け、蒸気、人、サウナの桶を組み合わせたロゴにしました。"
+          }
+        },
+        {
+          "type": "image",
+          "src": "/images/work/sauna-booking-application/15-creating-visual-identity.webp",
+          "alt": {
+            "en": "Creating Visual Identity — design visual",
+            "ja": "ビジュアルアイデンティティの制作の図版"
+          },
+          "width": 1028,
+          "height": 478
+        },
+        {
+          "type": "heading",
+          "text": {
+            "en": "Creating a UI Kit",
+            "ja": "UIキットの制作"
+          }
+        },
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "I created a UI kit for the sauna booking application. Since the app is planned to be implemented using the shadCN UI component library, I researched the library and designed the UI kit to match its standards while aligning with the brand identity of the sauna booking application.",
+            "ja": "shadcn/uiを使った実装を想定し、ライブラリを調査しました。その仕様とサウナアプリのブランドに合わせたUIキットを設計しました。"
+          }
+        },
+        {
+          "type": "image",
+          "src": "/images/work/sauna-booking-application/16-creating-a-ui-kit.webp",
+          "alt": {
+            "en": "Creating a UI Kit — design visual",
+            "ja": "UIキットの制作の図版"
+          },
+          "width": 2400,
+          "height": 2292
+        },
+        {
+          "type": "image",
+          "src": "/images/work/sauna-booking-application/17-creating-a-ui-kit.webp",
+          "alt": {
+            "en": "Creating a UI Kit — design visual",
+            "ja": "UIキットの制作の図版"
+          },
+          "width": 2400,
+          "height": 2308
+        },
+        {
+          "type": "image",
+          "src": "/images/work/sauna-booking-application/18-creating-a-ui-kit.webp",
+          "alt": {
+            "en": "Creating a UI Kit — design visual",
+            "ja": "UIキットの制作の図版"
+          },
+          "width": 2400,
+          "height": 1692
+        }
+      ]
+    },
+    {
+      "title": {
+        "en": "Going Forward",
+        "ja": "成果と今後の改善"
+      },
+      "blocks": [
+        {
+          "type": "heading",
+          "text": {
+            "en": "Takeaways",
+            "ja": "振り返り"
+          }
+        },
+        {
+          "type": "heading",
+          "text": {
+            "en": "Impact",
+            "ja": "成果"
+          }
+        },
+        {
+          "type": "paragraph",
+          "text": {
+            "en": "I completed the design of a responsive sauna booking app through three consultations to align the system with the client's needs, earning a 5/5 performance rating for quality, communication, and cooperation on the freelancing platform.",
+            "ja": "3回の打ち合わせでクライアントの要望と認識を合わせ、レスポンシブなサウナ予約アプリのデザインを完成させました。品質、コミュニケーション、協働について5点満点の評価を得ました。"
+          }
+        },
+        {
+          "type": "heading",
+          "text": {
+            "en": "What I learned",
+            "ja": "学んだこと"
+          }
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "en": "I learned how to create a brand identity and present it effectively to clients. By creating two pattern brand identities, I was able to smoothly reach a consensus with my client.",
+              "ja": "ブランドアイデンティティを作り、クライアントへ効果的に提示する方法を学びました。2案を用意したことで、スムーズに合意に到達できました。"
+            },
+            {
+              "en": "I learned that aligning our goals is important. By making opportunities to communicate with the client, we were able to stay on the same page.",
+              "ja": "目標をそろえることの重要性を学びました。対話の機会を設け、クライアントと共通理解を維持できました。"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "subtitle": {
+    "en": "Effortless booking and the use of rewards motivate users",
+    "ja": "スムーズな予約とリワードで、継続利用を促進"
+  }
+}

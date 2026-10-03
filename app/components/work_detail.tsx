@@ -2,6 +2,7 @@ import type { WorkDetailFeature } from "app/development/data";
 import MediaCarousel from "./media_carousel";
 import Reveal from "./reveal";
 import type { Locale } from 'app/lib/i18n';
+import CaseStudyClosing from './case_study_closing';
 
 type WorkDetailProps = {
   title: string;
@@ -263,6 +264,7 @@ export default function WorkDetail({
         </section>
       ) : null}
 
+      <CaseStudyClosing locale={locale} />
     </main>
   );
 }

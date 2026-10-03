@@ -192,7 +192,6 @@ export const workDetails: WorkDetailData[] = [
     order: 6,
     publishedAt: '2026-07-01',
     heroImage: '/images/work/sauna_booking_application.webp',
-    caseStudyUrl: 'https://kayofujii.studio.site/sauna_booking_application',
     overview: {
       background:
         'Designed a mobile-first, responsive sauna booking app featuring a smooth reservation flow and a gamified rewards system to encourage repeat bookings.',
@@ -232,8 +231,6 @@ export const workDetails: WorkDetailData[] = [
       '/images/work/occupational_health_consultation_tool.webp',
     heroVideo:
       '/videos/work/occupational_health_consultation_tool.mp4',
-    caseStudyUrl:
-      'https://kayofujii.studio.site/occupational_health_consultation_tool',
     overview: {
       background:
         'The occupational health consultation tool was a core feature of mediment, used by doctors to conduct employee consultations and collaborate with HR. However, users reported frustration because they had to navigate multiple pages during short 15-minute sessions.',
@@ -302,8 +299,6 @@ export const workDetails: WorkDetailData[] = [
     heroImage: '/images/work/workplace_stress_hero.webp',
     heroVideo:
       '/videos/work/workplace_stress.mp4',
-    caseStudyUrl:
-      'https://kayofujii.studio.site/workplace_stress_program_analysis',
     overview: {
       background:
         'The Workplace Stress Screening Analysis Tool allowed HR managers to assess group-level stress, but poor usability created enough concern that three major clients were considering cancellation.',
@@ -339,7 +334,6 @@ export const workDetails: WorkDetailData[] = [
     order: 5,
     publishedAt: '2025-08-20',
     heroImage: '/images/work/health_e_learning.webp',
-    caseStudyUrl: 'https://kayofujii.studio.site/health_e_learning',
     overview: {
       background:
         'The product needed a scalable way to help companies educate employees about health topics without relying only on one-to-one support.',
@@ -356,7 +350,7 @@ export const workDetails: WorkDetailData[] = [
       roleDescription:
         'Owned feature UX and interface direction for an e-learning experience built to scale employee education across client organizations.',
       outcome:
-        'Enabled scalable employee health education, created a clearer learning workflow for users, and helped position the feature for upsell growth.',
+        'Completed design and implementation in two months, enabled scalable employee health education, and contributed to a 2% increase in ARR through upsells.',
       team: 'Cross-functional product team',
       teamDetails: 'Product owner, engineers, designer (me)',
     },
@@ -364,8 +358,8 @@ export const workDetails: WorkDetailData[] = [
     featured: true,
     tags: ["SaaS", "Feature Design", "Health Tech", "Growth"],
     meta: "mediPhone, inc. - 2 months",
-    metricValue: "2x",
-    metricSuffix: "increase in feature interest",
+    metricValue: "2%",
+    metricSuffix: "increase in ARR through upsells",
   },
   {
     slug: 'mind-spark-academy',
@@ -378,7 +372,6 @@ export const workDetails: WorkDetailData[] = [
       '/images/work/mind_spark.webp',
     heroVideo:
       '/videos/work/mind_spark.mp4',
-    caseStudyUrl: 'https://kayofujii.studio.site/new-preschool-website',
     liveUrl: 'https://mindsparkacademycanada.com/',
     overview: {
       background:
