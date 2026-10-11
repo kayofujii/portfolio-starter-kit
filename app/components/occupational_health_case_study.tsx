@@ -120,7 +120,6 @@ export default function OccupationalHealthCaseStudy({ locale = 'en' }: { locale?
         <li>{t('Occupational health doctors reported that the feature was easier to use and allowed for quicker consultations.', '産業医から、面談機能が使いやすくなり、より短時間で面談を行えるようになったという評価を得ました。')}</li>
         <li>{t('After release, the feature contributed to new contracts, resulting in a 4% increase in ARR.', 'リリース後、新規契約につながり、ARRの4%増加に貢献しました。')}</li>
       </ul></Topic>
-      <Figure name="impact" alt={t('Released consultation tool', 'リリースされた面談ツール')} />
       <Topic title={t('What I Learned', '学んだこと')}><ul className="list-disc space-y-3 pl-6">
         <li>{t('Fitting all the information compactly and clearly on one screen was challenging.', 'すべての情報を1画面にコンパクトかつ分かりやすく配置することの難しさを学びました。')}</li>
         <li>{t('Working with occupational health professionals and incorporating their reviews helped refine the design.', '産業保健スタッフと協働し、繰り返しレビューを反映することでデザインを磨くことができました。')}</li>

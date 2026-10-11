@@ -342,16 +342,6 @@
           ]
         },
         {
-          "type": "image",
-          "src": "/images/work/workplace-stress-program-analysis/07-interviews-with-internal-stakeholders.webp",
-          "alt": {
-            "en": "Interviews with Internal Stakeholders — design visual",
-            "ja": "社内関係者へのインタビューの図版"
-          },
-          "width": 2400,
-          "height": 1502
-        },
-        {
           "type": "heading",
           "text": {
             "en": "Interviews with External Experts on the Workplace Stress Screening Program",
@@ -364,16 +354,6 @@
             "en": "In addition to the internal interviews, I also interviewed external experts on the Workplace Stress Screening Program. They advised that including the high-stress rate and a health risk portfolio chart in the report would make the overall risks easier for HR Managers and department heads to understand. As a result, I decided to incorporate these elements into the new report design.",
             "ja": "社内だけでなく、ストレスチェックに関する社外の専門家にもインタビューしました。高ストレス者率と健康リスクのポートフォリオ図を含めると、人事担当者や部門責任者が全体のリスクを理解しやすくなるという助言を受け、新しいレポートに取り入れました。"
           }
-        },
-        {
-          "type": "image",
-          "src": "/images/work/workplace-stress-program-analysis/08-interviews-with-external-experts-on-the-workplace-stress-scr.webp",
-          "alt": {
-            "en": "Interviews with External Experts on the Workplace Stress Screening Program — design visual",
-            "ja": "ストレスチェックに関する社外の専門家へのインタビューの図版"
-          },
-          "width": 2400,
-          "height": 1476
         },
         {
           "type": "heading",
