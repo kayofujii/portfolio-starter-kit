@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="1280" viewBox="0 0 1280 1280"><g id="Background"><defs><radialGradient id="wall"><stop stop-color="#C9F0E9" /><stop offset="1" stop-color="#B6E6E2" /></radialGradient><linearGradient id="trim" x2="0" y2="1"><stop stop-color="#FFF7E8" /><stop offset="1" stop-color="#E8D8C1" /></linearGradient><linearGradient id="glass" x2="0" y2="1"><stop stop-color="#446E79" /><stop offset="1" stop-color="#658F9B" /></linearGradient><pattern id="blinds" width="20" height="27" patternUnits="userSpaceOnUse"><rect width="20" height="27" fill="none" /><path d="M0 4H20" stroke="#8FB5BC" stroke-width="8" opacity=".75" /><path d="M0 12H20" stroke="#426B79" stroke-width="4" opacity=".55" /></pattern></defs>
+<rect width="1280" height="1280" fill="url(#wall)" />
+
+<path d="M243 130 L259 114 H985 V163 L966 182 V199 H949 V1027 H988 V1070 H964 V1105 L950 1124 H261 V1089 H237 V1031 L258 1016 V198 H260 V164 H242Z" fill="#5A9D9B" opacity=".58" />
+
+<rect x="277" y="174" width="685" height="854" fill="#F3E8D5" />
+<rect x="294" y="195" width="639" height="822" fill="#FBF2E2" />
+<path d="M295 195H326V1019H295Z" fill="#D8C7AE" opacity=".7" />
+
+<rect x="326" y="800" width="588" height="216" fill="url(#glass)" />
+<rect x="358" y="235" width="530" height="525" fill="#4B7884" />
+<rect x="365" y="245" width="522" height="514" fill="url(#blinds)" />
+<path d="M358 235H888V246H365V759H358Z" fill="#335D69" opacity=".65" />
+
+<rect x="326" y="761" width="588" height="40" fill="#FBF1E1" />
+<rect x="326" y="795" width="588" height="7" fill="#C6B9A8" opacity=".8" />
+<rect x="326" y="200" width="32" height="599" fill="#F6E9D5" />
+<rect x="888" y="200" width="26" height="599" fill="#F6E9D5" />
+
+<rect x="258" y="115" width="728" height="48" fill="url(#trim)" />
+<path d="M258 159H986V165H258Z" fill="#BBAA96" />
+<rect x="278" y="165" width="686" height="32" fill="#F0E4D0" />
+<path d="M278 194H964V201H278Z" fill="#BFB09D" />
+
+<rect x="258" y="1023" width="729" height="47" fill="#FFF3E0" />
+<path d="M258 1067H987V1074H258Z" fill="#B8A792" />
+<rect x="279" y="1074" width="686" height="31" fill="#F1E6D4" />
+<path d="M279 1103H965V1110H279Z" fill="#C1B29E" />
+
+<path d="M805 959H902L891 1024H816Z" fill="#B85D46" />
+<path d="M803 943H907V967H803Z" fill="#D17A5B" />
+<path d="M806 966H902V974H806Z" fill="#9F5545" opacity=".55" />
+
+<g stroke="#517C55" stroke-width="5" fill="none" stroke-linecap="round"><path d="M856 943Q838 882 797 839" /><path d="M856 943Q864 873 877 846" /><path d="M856 944Q893 894 932 871" /><path d="M851 945Q815 906 790 908" /><path d="M862 945Q898 919 915 932" /></g>
+
+<g fill="#6F8F5A"><path d="M802 839Q775 833 768 863Q777 886 812 883Q832 854 802 839Z" /><path d="M799 882Q760 862 748 918Q756 942 790 933Q822 903 799 882Z" /><path d="M872 850Q858 825 838 841Q824 860 851 894Q881 886 872 850Z" /></g>
+<g fill="#89A964"><path d="M880 842Q897 825 910 846Q918 870 886 894Q861 874 880 842Z" /><path d="M926 858Q962 855 963 899Q951 920 922 904Q898 874 926 858Z" /><path d="M811 894Q835 887 839 913Q838 940 778 962Q770 924 811 894Z" /><path d="M919 909Q947 909 942 960Q914 956 891 928Q892 905 919 909Z" /></g>
+</g><g id="CatTail"><path d="M468 985 Q437 992 402 993 Q368 991 342 995 Q311 996 280 1006 Q267 1010 265 1019 Q265 1029 284 1030 Q318 1031 347 1024 Q384 1017 414 1023 Q449 1026 480 1013 Q493 1007 500 996 Q489 982 468 985Z" fill="#FBF3E6" />
+<path d="M265 1019Q308 1016 341 1018Q382 1012 412 1018Q457 1027 484 1008Q466 1027 428 1028Q387 1022 348 1028Q305 1034 281 1030Q266 1028 265 1019Z" fill="#E8CFAD" />
+</g><g id="CatBody"><path id="Body silhouette" d="M 361 996 C 386.333 994 411.333 990.334 436 985 C 456 978.334 481.167 977.5 498.5 967.5 C 520.5 954.833 537.667 942 563 944 C 589 942.667 612 947 632 957 C 642 956.334 650.333 950.667 657 940 C 665 930.667 675 925.667 687 925 C 697 917 714.333 914 739 916 L 737 944 C 746.333 954 750.333 965 749 977 C 757 987 763.333 1000.33 768 1017 C 760 1023 748.333 1025.67 733 1025 C 720.333 1028.33 707.667 1028.67 695 1026 C 685 1032.67 674 1032.33 662 1025 C 648.667 1025.67 637 1025.33 627 1024 C 603.667 1024 582.667 1023.67 564 1023 C 546 1019.67 528.333 1019.33 511 1022 C 489.667 1026.67 470 1028 452 1026 C 426.667 1026.67 401.667 1027.33 377 1028 L 319 1029 C 307.667 1028.33 302.667 1024 304 1016 C 308 1006.67 327 1000 361 996 Z" fill="#FBF3E6" />
+<path id="Soft underside" d="M305 1016 C343 1010 382 1014 416 1013 C451 1014 480 1011 507 1005 C531 999 549 996 568 1002 C592 1011 614 1017 639 1018 C650 1017 660 1018 667 1024 C643 1029 616 1030 581 1028 C554 1026 530 1026 509 1027 C480 1029 455 1029 432 1027 C386 1030 340 1032 305 1028 C303 1024 303 1020 305 1016Z" fill="#E8CFAD" opacity="0.95" />
+<path id="Sleeping head and folded paws" d="M641 958 C650 946 659 940 670 938 C667 933 663 925 663 920 C671 921 679 929 683 935 C697 924 718 916 739 914 C739 924 736 935 733 944 C742 953 748 965 748 977 C751 975 753 971 754 970 C755 976 754 983 752 987 C756 985 759 981 760 980 C761 986 758 992 757 995 C766 1003 774 1011 777 1019 C770 1024 756 1023 744 1018 C736 1017 730 1013 725 1009 C718 1021 709 1027 699 1029 C687 1031 677 1027 670 1021 C660 1023 654 1019 650 1012 C653 1004 656 997 654 989 C653 978 646 966 641 958Z" fill="#FFF8EA" />
+<path id="Warm inner ear" d="M714 933 C720 928 729 921 736 919 L732 942 C725 940 720 937 714 933Z" fill="#EFBCA8" />
+<path id="Chin and paw shadow" d="M654 1013 C660 1018 664 1018 669 1016 C676 1023 686 1028 696 1025 C708 1023 716 1016 725 1007 C729 1013 736 1018 744 1019 C756 1023 769 1024 777 1019 C773 1026 755 1026 743 1022 C735 1022 729 1019 725 1016 C717 1024 709 1030 699 1032 C687 1034 676 1029 669 1024 C662 1025 655 1021 654 1013Z" fill="#E9D1B0" />
+<path id="Sweeping whiskers" d="M655 942 C648 933 640 928 630 928 M665 936 C659 926 653 918 647 915 M674 933 C670 922 665 913 661 910" stroke="#FFF8EA" stroke-width="2.4" stroke-linecap="round" />
+</g></svg>

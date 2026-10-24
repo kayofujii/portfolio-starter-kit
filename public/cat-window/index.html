@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sleeping cat — Rive</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="./style.css">
+  <main>
+    <figure class="cat-scene" role="img" aria-label="A cream-white cat sleeping on a windowsill beside a potted plant, gently curling its tail.">
+      <img class="cat-poster" src="./poster.svg" alt="" width="1280" height="1280">
+      <canvas id="cat-canvas" width="1280" height="1280" aria-hidden="true"></canvas>
+    </figure>
+    <button id="motion-toggle" type="button" hidden>Pause animation</button>
+    <p id="status" role="status"></p>
+  </main>
+  <script defer src="./vendor/rive.js"></script>
+  <script defer src="./cat-window.js"></script>
+</html>

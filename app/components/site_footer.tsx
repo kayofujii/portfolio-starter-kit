@@ -72,7 +72,7 @@ export default function SiteFooter() {
               />
             </div>
           </div>
-          <HeroVisual alt="" className="shrink-0" />
+          <HeroVisual alt="" className="shrink-0" locale={locale} />
         </div>
 
         <div className="mt-20 flex w-full max-w-[960px] flex-col items-center gap-8">

@@ -1,96 +1,164 @@
 'use client'
 
 import { useEffect, useRef, useState } from 'react'
+import type { Rive } from '@rive-app/webgl2'
 
-const GIF_SRC = '/gif/Kitten_emerging_from_houseplants_20260911142010.gif'
-const FINAL_FRAME_SRC = '/gif/kitten-final-frame.png'
-// The source file's 128 frames total 8000ms. From frame 118 (7380ms) through
-// the last frame (ending at 8000ms) the cat's face is already fully
-// revealed and the image barely changes, so swapping to the static final
-// frame anywhere in that ~620ms window looks seamless. We time this from
-// the <img>'s load event (not component mount) since fetching/decoding the
-// ~7MB file can itself take a while, and target the middle of that window
-// for slack in both directions.
-const SWAP_DELAY_AFTER_LOAD_MS = 7700
-
+const ASSET_ROOT = '/cat-window'
 const CAPTION = 'My dream workspace: a cat and a jungle of plants.'
 
-export default function HeroVisual({ alt, className = '' }: { alt: string; className?: string }) {
-  const imgRef = useRef<HTMLImageElement>(null)
-  const [phase, setPhase] = useState<'playing' | 'frozen'>('playing')
-  const reduceMotionRef = useRef(false)
+export default function HeroVisual({ alt, className = '', locale = 'en' }: {
+  alt: string
+  className?: string
+  locale?: 'en' | 'ja'
+}) {
+  const sceneRef = useRef<HTMLDivElement>(null)
+  const canvasRef = useRef<HTMLCanvasElement>(null)
+  const pausedRef = useRef(false)
+  const syncRef = useRef<(() => void) | null>(null)
+  const [ready, setReady] = useState(false)
+  const [reducedMotion, setReducedMotion] = useState(true)
+  const [paused, setPaused] = useState(false)
 
   useEffect(() => {
-    reduceMotionRef.current = window.matchMedia('(prefers-reduced-motion: reduce)').matches
-    // Reduced-motion users get the final frame straight away instead of
-    // watching (or waiting out) the gif — there's no way to seek a gif to
-    // a specific frame without playing it.
-    if (reduceMotionRef.current) {
-      setPhase('frozen')
-      return
-    }
-    if (phase !== 'playing') return
+    const canvas = canvasRef.current
+    const scene = sceneRef.current
+    if (!canvas || !scene) return
 
-    let timer: ReturnType<typeof setTimeout> | undefined
-    const startTimer = () => {
-      timer = setTimeout(() => setPhase('frozen'), SWAP_DELAY_AFTER_LOAD_MS)
-    }
+    const media = window.matchMedia('(prefers-reduced-motion: reduce)')
+    let player: Rive | undefined
+    let disposed = false
+    let loading = false
+    let loaded = false
+    let failed = false
+    let visible = false
 
-    const img = imgRef.current
-    if (img?.complete) {
-      startTimer()
-    } else {
-      img?.addEventListener('load', startTimer, { once: true })
+    const resize = () => {
+      if (loaded) player?.resizeDrawingSurfaceToCanvas(Math.min(window.devicePixelRatio || 1, 2))
     }
+    const sync = () => {
+      if (disposed) return
+      const playing = visible && !document.hidden && !media.matches && !pausedRef.current
+      if (playing && !player && !loading && !failed) void load()
+      if (!loaded) return
+      if (playing) {
+        player?.play('CatStateMachine')
+        player?.startRendering()
+      } else {
+        player?.pause('CatStateMachine')
+        player?.stopRendering()
+      }
+    }
+    async function load() {
+      loading = true
+      try {
+        // Keep the runtime out of the initial page bundle and load only near the footer.
+        const { Rive, RuntimeLoader, Layout, Fit, Alignment } = await import('@rive-app/webgl2')
+        if (disposed) return
+        RuntimeLoader.setWasmUrl(`${ASSET_ROOT}/vendor/rive.wasm`)
+        RuntimeLoader.setWasmFallbackUrl(`${ASSET_ROOT}/vendor/rive_fallback.wasm`)
+        player = new Rive({
+          src: `${ASSET_ROOT}/cat-window.riv`,
+          canvas: canvas!,
+          artboard: 'CatWindow',
+          stateMachine: 'CatStateMachine',
+          autoplay: false,
+          shouldDisableRiveListeners: true,
+          layout: new Layout({ fit: Fit.Contain, alignment: Alignment.Center }),
+          onLoad: () => {
+            if (disposed) return
+            loaded = true
+            resize()
+            setReady(true)
+            sync()
+          },
+          onLoadError: () => {
+            if (disposed) return
+            failed = true
+            loaded = false
+            setReady(false)
+            player?.cleanup()
+          },
+        })
+      } catch {
+        // Retain the original still illustration if loading or WebGL fails.
+        failed = true
+        if (!disposed) setReady(false)
+      }
+    }
+    const onMotionChange = () => {
+      setReducedMotion(media.matches)
+      sync()
+    }
+    syncRef.current = sync
+    onMotionChange()
+
+    const intersection = new IntersectionObserver(([entry]) => {
+      visible = entry.isIntersecting
+      sync()
+    })
+    intersection.observe(scene)
+    const size = new ResizeObserver(resize)
+    size.observe(scene)
+    media.addEventListener('change', onMotionChange)
+    document.addEventListener('visibilitychange', sync)
+    window.addEventListener('resize', resize, { passive: true })
 
     return () => {
-      img?.removeEventListener('load', startTimer)
-      if (timer) clearTimeout(timer)
+      disposed = true
+      syncRef.current = null
+      intersection.disconnect()
+      size.disconnect()
+      media.removeEventListener('change', onMotionChange)
+      document.removeEventListener('visibilitychange', sync)
+      window.removeEventListener('resize', resize)
+      player?.cleanup()
     }
-    // Re-runs whenever playback restarts (phase flips back to 'playing').
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [phase])
+  }, [])
 
-  const replay = () => {
-    if (reduceMotionRef.current || phase === 'playing') return
-    setPhase('playing')
-  }
+  useEffect(() => {
+    pausedRef.current = paused
+    syncRef.current?.()
+  }, [paused])
+
+  const showAnimation = ready && !reducedMotion
+  const motionLabel = locale === 'ja'
+    ? (paused ? 'アニメーションを再生' : 'アニメーションを一時停止')
+    : (paused ? 'Play animation' : 'Pause animation')
 
   return (
-    <div
-      className={`hero-visual-in group mx-auto flex w-[140px] shrink-0 flex-col items-center gap-2 opacity-0 sm:w-[170px] lg:mx-0 lg:w-[210px] xl:w-[240px] ${className}`}
-      style={{ animation: 'hero-visual-in 1s cubic-bezier(0.22, 1, 0.36, 1) 0.25s forwards' }}
-    >
-      <div
-        aria-hidden={alt ? undefined : 'true'}
-        onMouseEnter={replay}
-        onClick={replay}
-        className="relative aspect-square w-full cursor-pointer"
-      >
-        {/* soft halo behind the circle so it sits on the white page */}
-        <div
-          className="pointer-events-none absolute -inset-[12%] rounded-full opacity-70 blur-2xl"
-          style={{
-            background:
-              'radial-gradient(circle at 50% 45%, rgba(150, 230, 161, 0.55) 0%, rgba(212, 252, 121, 0.32) 45%, rgba(255, 255, 255, 0) 72%)',
-          }}
+    <div className={`group mx-auto flex w-[140px] shrink-0 flex-col items-center gap-2 sm:w-[170px] lg:mx-0 lg:w-[210px] xl:w-[240px] ${className}`}>
+      <div ref={sceneRef} className="relative aspect-square w-full overflow-hidden rounded-xl" data-cat-animation={showAnimation ? 'ready' : 'still'}>
+        <img
+          src={`${ASSET_ROOT}/poster.svg`}
+          alt={alt}
+          width={1280}
+          height={1280}
+          loading="lazy"
+          decoding="async"
+          className="absolute inset-0 h-full w-full object-contain"
         />
-        <div className="relative h-full w-full overflow-hidden rounded-full shadow-[0_18px_48px_-18px_rgba(40,40,40,0.35)]">
-          {/* the source gif is a circle on a black plate — scale up so only the circle's interior shows */}
-          <img
-            ref={imgRef}
-            src={phase === 'frozen' ? FINAL_FRAME_SRC : GIF_SRC}
-            alt={alt}
-            loading="eager"
-            decoding="async"
-            className="h-full w-full scale-[1.2] object-cover"
-          />
-        </div>
+        <canvas
+          ref={canvasRef}
+          width={1280}
+          height={1280}
+          aria-hidden="true"
+          className={`absolute inset-0 h-full w-full motion-reduce:invisible ${showAnimation ? 'visible' : 'invisible'}`}
+        />
+        {showAnimation && (
+          <button
+            type="button"
+            onClick={() => setPaused(value => !value)}
+            aria-label={motionLabel}
+            title={motionLabel}
+            className="absolute bottom-2 right-2 flex h-8 w-8 items-center justify-center rounded-full bg-white/90 text-[#335d69] opacity-70 transition-opacity hover:opacity-100 focus-visible:opacity-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
+          >
+            <svg aria-hidden="true" viewBox="0 0 16 16" className="h-3 w-3" fill="currentColor">
+              {paused ? <path d="M4 2l10 6-10 6z" /> : <path d="M4 2h3v12H4zm5 0h3v12H9z" />}
+            </svg>
+          </button>
+        )}
       </div>
-      {/* Dim by default (visible on touch devices with no hover), brightens on hover/focus. */}
-      <p
-        className="max-w-[220px] text-center text-[length:var(--text-caption)] leading-[var(--text-caption--line-height)] text-[color:var(--color-neutral-500)] opacity-40 transition-opacity duration-300 ease-out group-hover:opacity-100 group-focus-within:opacity-100"
-      >
+      <p className="max-w-[220px] text-center text-[length:var(--text-caption)] leading-[var(--text-caption--line-height)] text-[color:var(--color-neutral-500)] opacity-40 transition-opacity duration-300 ease-out group-hover:opacity-100 group-focus-within:opacity-100">
         {CAPTION}
       </p>
     </div>

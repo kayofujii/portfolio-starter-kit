@@ -6,6 +6,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@rive-app/webgl2": "2.46.0",
     "@subframe/core": "1.154.0",
     "@tailwindcss/postcss": "4.0.0-alpha.13",
     "@types/node": "20.11.17",

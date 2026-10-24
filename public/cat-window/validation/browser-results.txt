@@ -1,0 +1,21 @@
+desktop { playing: 'cat-scene is-playing', canvas: [ 720, 720 ], status: '' }
+pause button Play animation
+reduced { poster: 'visible', canvas: '0', button: true }
+mobile { width: 351, height: 351, overflow: false }
+runtime {
+  animations: [ 'Idle' ],
+  stateMachines: [ 'CatStateMachine' ],
+  bounds: { minX: 0, minY: 0, maxX: 1280, maxY: 1280 }
+}
+pixel validation {
+  loopSeamDifferingChannels: 0,
+  loopSeamMaxChannelError: 0,
+  motionPixels: 2826,
+  motionBounds: [ 262, 978, 452, 1031 ],
+  motionOutsideTail: 0,
+  originalMeanChannelError: 0.11217681884765625,
+  originalChannelsDiffOver8: 2726,
+  originalMaxChannelError: 165
+}
+initial reduced motion asset requests []
+errors []

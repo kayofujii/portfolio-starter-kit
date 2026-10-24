@@ -1,0 +1,1069 @@
+<Rive version="1" kind="fragment">
+  <Artboard id="0:2" name="CatWindow" width="1280" height="1280" styleId="0:5" defaultStateMachineId="0:7">
+    <LayoutComponentStyle id="0:5" name="Artboard Style" />
+    <Node name="CatBody" id="0:101">
+      <Shape name="Sweeping whiskers" opacity="1" id="0:184">
+        <PointsPath name="Editable contour" isClosed="false" isClockwise="true" id="0:185">
+          <CubicDetachedVertex x="655.0" y="942.0" inRotation="0.0" inDistance="0.0" outRotation="-2.2318394956455836" outDistance="11.40175425099138" id="0:186" />
+          <CubicDetachedVertex x="630.0" y="928.0" inRotation="0.0" inDistance="10.0" outRotation="0.0" outDistance="0.0" id="0:187" />
+        </PointsPath>
+        <PointsPath name="Editable contour" isClosed="false" isClockwise="true" id="0:188">
+          <CubicDetachedVertex x="665.0" y="936.0" inRotation="0.0" inDistance="0.0" outRotation="-2.1112158270654806" outDistance="11.661903789690601" id="0:189" />
+          <CubicDetachedVertex x="647.0" y="915.0" inRotation="0.4636476090008061" inDistance="6.708203932499369" outRotation="0.0" outDistance="0.0" id="0:190" />
+        </PointsPath>
+        <PointsPath name="Editable contour" isClosed="false" isClockwise="true" id="0:191">
+          <CubicDetachedVertex x="674.0" y="933.0" inRotation="0.0" inDistance="0.0" outRotation="-1.9195673303788037" outDistance="11.704699910719626" id="0:192" />
+          <CubicDetachedVertex x="661.0" y="910.0" inRotation="0.6435011087932844" inDistance="5.0" outRotation="0.0" outDistance="0.0" id="0:193" />
+        </PointsPath>
+        <Stroke name="Stroke" thickness="2.4" cap="round" join="miter" id="0:194">
+          <SolidColor colorValue="FFFFF8EA" name="Original SVG color" id="0:195" />
+        </Stroke>
+      </Shape>
+      <Shape name="Chin and paw shadow" opacity="1" id="0:170">
+        <PointsPath name="Editable contour" isClosed="true" isClockwise="true" id="0:171">
+          <CubicDetachedVertex x="654.0" y="1013.0" inRotation="1.446441332248135" inDistance="8.06225774829855" outRotation="0.6947382761967031" outDistance="7.810249675906654" id="0:172" />
+          <CubicDetachedVertex x="669.0" y="1016.0" inRotation="2.761086276477428" inDistance="5.385164807134504" outRotation="0.7853981633974483" outDistance="9.899494936611665" id="0:173" />
+          <CubicDetachedVertex x="696.0" y="1025.0" inRotation="2.8501358591119264" inDistance="10.44030650891055" outRotation="-0.16514867741462683" outDistance="12.165525060596439" id="0:174" />
+          <CubicDetachedVertex x="725.0" y="1007.0" inRotation="2.356194490192345" inDistance="12.727922061357855" outRotation="0.982793723247329" outDistance="7.211102550927978" id="0:175" />
+          <CubicDetachedVertex x="744.0" y="1019.0" inRotation="-3.017237659043032" inDistance="8.06225774829855" outRotation="0.3217505543966422" outDistance="12.649110640673518" id="0:176" />
+          <CubicDetachedVertex x="777.0" y="1019.0" inRotation="2.5829933382462307" inDistance="9.433981132056603" outRotation="2.0899424410414196" outDistance="8.06225774829855" id="0:177" />
+          <CubicDetachedVertex x="743.0" y="1022.0" inRotation="0.3217505543966422" inDistance="12.649110640673518" outRotation="3.141592653589793" outDistance="8.0" id="0:178" />
+          <CubicDetachedVertex x="725.0" y="1016.0" inRotation="0.6435011087932844" inDistance="5.0" outRotation="2.356194490192345" outDistance="11.313708498984761" id="0:179" />
+          <CubicDetachedVertex x="699.0" y="1032.0" inRotation="-0.19739555984988075" inDistance="10.198039027185569" outRotation="2.976443976175166" outDistance="12.165525060596439" id="0:180" />
+          <CubicDetachedVertex x="669.0" y="1024.0" inRotation="0.6202494859828215" inDistance="8.602325267042627" outRotation="2.999695598985629" outDistance="7.0710678118654755" id="0:181" />
+        </PointsPath>
+        <Fill name="Fill" id="0:182">
+          <SolidColor colorValue="FFE9D1B0" name="Original SVG color" id="0:183" />
+        </Fill>
+      </Shape>
+      <Shape name="Warm inner ear" opacity="1" id="0:163">
+        <PointsPath name="Editable contour" isClosed="true" isClockwise="true" id="0:164">
+          <CubicDetachedVertex x="714.0" y="933.0" inRotation="0.5880026035475675" inDistance="7.211102550927978" outRotation="-0.6947382761967031" outDistance="7.810249675906654" id="0:165" />
+          <CubicDetachedVertex x="736.0" y="919.0" inRotation="2.8632929945846817" inDistance="7.280109889280518" outRotation="0.0" outDistance="0.0" id="0:166" />
+          <CubicDetachedVertex x="732.0" y="942.0" inRotation="0.0" inDistance="0.0" outRotation="-2.8632929945846817" outDistance="7.280109889280518" id="0:167" />
+        </PointsPath>
+        <Fill name="Fill" id="0:168">
+          <SolidColor colorValue="FFEFBCA8" name="Original SVG color" id="0:169" />
+        </Fill>
+      </Shape>
+      <Shape name="Sleeping head and folded paws" opacity="1" id="0:141">
+        <PointsPath name="Editable contour" isClosed="true" isClockwise="true" id="0:142">
+          <CubicDetachedVertex x="641.0" y="958.0" inRotation="1.0121970114513341" inDistance="9.433981132056603" outRotation="-0.9272952180016122" outDistance="15.0" id="0:143" />
+          <CubicDetachedVertex x="670.0" y="938.0" inRotation="2.961739153797315" inDistance="11.180339887498949" outRotation="-2.1112158270654806" outDistance="5.830951894845301" id="0:144" />
+          <CubicDetachedVertex x="663.0" y="920.0" inRotation="1.5707963267948966" inDistance="5.0" outRotation="0.12435499454676144" outDistance="8.06225774829855" id="0:145" />
+          <CubicDetachedVertex x="683.0" y="935.0" inRotation="-2.158798930342464" inDistance="7.211102550927978" outRotation="-0.6659692373791098" outDistance="17.804493814764857" id="0:146" />
+          <CubicDetachedVertex x="739.0" y="914.0" inRotation="3.046640947247037" inDistance="21.095023109728988" outRotation="1.5707963267948966" outDistance="10.0" id="0:147" />
+          <CubicDetachedVertex x="733.0" y="944.0" inRotation="-1.2490457723982544" inDistance="9.486832980505138" outRotation="0.7853981633974483" outDistance="12.727922061357855" id="0:148" />
+          <CubicDetachedVertex x="748.0" y="977.0" inRotation="-1.5707963267948966" inDistance="12.0" outRotation="-0.5880026035475675" outDistance="3.605551275463989" id="0:149" />
+          <CubicDetachedVertex x="754.0" y="970.0" inRotation="2.356194490192345" inDistance="1.4142135623730951" outRotation="1.4056476493802699" outDistance="6.082762530298219" id="0:150" />
+          <CubicDetachedVertex x="752.0" y="987.0" inRotation="-1.1071487177940904" inDistance="4.47213595499958" outRotation="-0.4636476090008061" outDistance="4.47213595499958" id="0:151" />
+          <CubicDetachedVertex x="760.0" y="980.0" inRotation="2.356194490192345" inDistance="1.4142135623730951" outRotation="1.4056476493802699" outDistance="6.082762530298219" id="0:152" />
+          <CubicDetachedVertex x="757.0" y="995.0" inRotation="-1.2490457723982544" inDistance="3.1622776601683795" outRotation="0.7266423406817256" outDistance="12.041594578792296" id="0:153" />
+          <CubicDetachedVertex x="777.0" y="1019.0" inRotation="-1.9295669970654687" inDistance="8.54400374531753" outRotation="2.5213431676069717" outDistance="8.602325267042627" id="0:154" />
+          <CubicDetachedVertex x="744.0" y="1018.0" inRotation="0.3947911196997615" inDistance="13.0" outRotation="-3.017237659043032" outDistance="8.06225774829855" id="0:155" />
+          <CubicDetachedVertex x="725.0" y="1009.0" inRotation="0.6747409422235526" inDistance="6.4031242374328485" outRotation="2.0988707752212563" outDistance="13.892443989449804" id="0:156" />
+          <CubicDetachedVertex x="699.0" y="1029.0" inRotation="-0.19739555984988075" inDistance="10.198039027185569" outRotation="2.976443976175166" outDistance="12.165525060596439" id="0:157" />
+          <CubicDetachedVertex x="670.0" y="1021.0" inRotation="0.7086262721276703" inDistance="9.219544457292887" outRotation="2.9441970937399127" outDistance="10.198039027185569" id="0:158" />
+          <CubicDetachedVertex x="650.0" y="1012.0" inRotation="1.0516502125483738" inDistance="8.06225774829855" outRotation="-1.2120256565243244" outDistance="8.54400374531753" id="0:159" />
+          <CubicDetachedVertex x="654.0" y="989.0" inRotation="1.3258176636680326" inDistance="8.246211251235321" outRotation="-1.6614562139956417" outDistance="11.045361017187261" id="0:160" />
+        </PointsPath>
+        <Fill name="Fill" id="0:161">
+          <SolidColor colorValue="FFFFF8EA" name="Original SVG color" id="0:162" />
+        </Fill>
+      </Shape>
+      <Shape name="Soft underside" opacity="0.95" id="0:127">
+        <PointsPath name="Editable contour" isClosed="true" isClockwise="true" id="0:128">
+          <CubicDetachedVertex x="305.0" y="1016.0" inRotation="2.0344439357957027" inDistance="4.47213595499958" outRotation="-0.15660187698201536" outDistance="38.47076812334269" id="0:129" />
+          <CubicDetachedVertex x="416.0" y="1013.0" inRotation="3.112189365385788" inDistance="34.0147027033899" outRotation="0.028563657838759995" outDistance="35.014282800023196" id="0:130" />
+          <CubicDetachedVertex x="507.0" y="1005.0" inRotation="2.922923707715851" inDistance="27.65863337187866" outRotation="-0.24497866312686414" outDistance="24.73863375370596" id="0:131" />
+          <CubicDetachedVertex x="568.0" y="1002.0" inRotation="-2.835713782184941" inDistance="19.924858845171276" outRotation="0.35877067027057225" outDistance="25.632011235952593" id="0:132" />
+          <CubicDetachedVertex x="639.0" y="1018.0" inRotation="-3.1016139664665032" inDistance="25.019992006393608" outRotation="-0.09065988720074511" outDistance="11.045361017187261" id="0:133" />
+          <CubicDetachedVertex x="667.0" y="1024.0" inRotation="-2.432966381462123" inDistance="9.219544457292887" outRotation="2.936197264400026" outDistance="24.515301344262525" id="0:134" />
+          <CubicDetachedVertex x="581.0" y="1028.0" inRotation="0.0570807824062646" inDistance="35.05709628591621" outRotation="-3.067653615931853" outDistance="27.073972741361768" id="0:135" />
+          <CubicDetachedVertex x="509.0" y="1027.0" inRotation="-0.047583103276983396" inDistance="21.02379604162864" outRotation="3.0727361642887487" outDistance="29.068883707497267" id="0:136" />
+          <CubicDetachedVertex x="432.0" y="1027.0" inRotation="0.08673833867598511" inDistance="23.08679276123039" outRotation="3.0764674902554074" outDistance="46.09772228646444" id="0:137" />
+          <CubicDetachedVertex x="305.0" y="1028.0" inRotation="0.11379200714370806" inDistance="35.22782990761707" outRotation="-2.0344439357957027" outDistance="4.47213595499958" id="0:138" />
+        </PointsPath>
+        <Fill name="Fill" id="0:139">
+          <SolidColor colorValue="FFE8CFAD" name="Original SVG color" id="0:140" />
+        </Fill>
+      </Shape>
+      <Shape name="Body silhouette" opacity="1" id="0:102">
+        <PointsPath name="Editable contour" isClosed="true" isClockwise="true" id="0:103">
+          <CubicDetachedVertex x="361.0" y="996.0" inRotation="3.024483909022929" inDistance="34.23448553724738" outRotation="-0.07878499334951182" outDistance="25.41182577069191" id="0:104" />
+          <CubicDetachedVertex x="436.0" y="985.0" inRotation="2.9286312758249498" inDistance="25.23712434093865" outRotation="-0.3217205540966506" outDistance="21.08164025876546" id="0:105" />
+          <CubicDetachedVertex x="498.5" y="967.5" inRotation="2.618306007253363" inDistance="20.010819298569483" outRotation="-0.5224148109523206" outDistance="25.386076676004915" id="0:106" />
+          <CubicDetachedVertex x="563.0" y="944.0" inRotation="-3.0628076602402814" inDistance="25.411825770691852" outRotation="-0.05122438050978761" outDistance="26.034148516899876" id="0:107" />
+          <CubicDetachedVertex x="632.0" y="957.0" inRotation="-2.677945044588987" inDistance="22.360679774997898" outRotation="-0.06650179180082938" outDistance="10.022153261649917" id="0:108" />
+          <CubicDetachedVertex x="657.0" y="940.0" inRotation="2.1294040687970366" inDistance="12.579100842270128" outRotation="-0.8621524072450738" outDistance="12.29247285943717" id="0:109" />
+          <CubicDetachedVertex x="687.0" y="925.0" inRotation="3.086066456078992" inDistance="12.018522746161445" outRotation="-0.6747409422235526" outDistance="12.806248474865697" id="0:110" />
+          <CubicDetachedVertex x="739.0" y="916.0" inRotation="-3.0606896429540567" inDistance="24.74794716739151" outRotation="0.0" outDistance="0.0" id="0:111" />
+          <CubicDetachedVertex x="737.0" y="944.0" inRotation="0.0" inDistance="0.0" outRotation="0.8198850794200087" outDistance="13.67862891520928" id="0:112" />
+          <CubicDetachedVertex x="749.0" y="977.0" inRotation="-1.4601665447290426" inDistance="12.073810044886407" outRotation="0.8960553845713439" outDistance="12.806248474865697" id="0:113" />
+          <CubicDetachedVertex x="768.0" y="1017.0" inRotation="-1.8437716534556141" inDistance="17.310973080679172" outRotation="2.498091544796509" outDistance="10.0" id="0:114" />
+          <CubicDetachedVertex x="733.0" y="1025.0" inRotation="0.043668822589079684" inDistance="15.347631380770101" outRotation="2.88452153943021" outDistance="13.09739626796106" id="0:115" />
+          <CubicDetachedVertex x="695.0" y="1026.0" inRotation="0.20774289147896116" inDistance="12.945338504651053" outRotation="2.5533593163130432" outDistance="12.020353572170869" id="0:116" />
+          <CubicDetachedVertex x="662.0" y="1025.0" inRotation="0.5483471302623373" inDistance="14.061610860779746" outRotation="3.0913836313066763" outDistance="13.34982355688641" id="0:117" />
+          <CubicDetachedVertex x="627.0" y="1024.0" inRotation="0.13222400708893647" inDistance="10.08805729563427" outRotation="3.141592653589793" outDistance="23.33299999999997" id="0:118" />
+          <CubicDetachedVertex x="564.0" y="1023.0" inRotation="0.03587681538273605" inDistance="18.67902002247444" outRotation="-2.9586608873549367" outDistance="18.305433619556798" id="0:119" />
+          <CubicDetachedVertex x="511.0" y="1022.0" inRotation="-0.1528400779084892" inDistance="17.53743963638931" outRotation="2.9260825800769243" outDistance="21.838172748652802" id="0:120" />
+          <CubicDetachedVertex x="452.0" y="1026.0" inRotation="0.11065722117389565" inDistance="18.110770276274835" outRotation="3.1151511011503015" outDistance="25.341858436192116" id="0:121" />
+          <CubicDetachedVertex x="377.0" y="1028.0" inRotation="-0.027155118409280855" inDistance="24.676097523717132" outRotation="0.0" outDistance="0.0" id="0:122" />
+          <CubicDetachedVertex x="319.0" y="1029.0" inRotation="0.0" inDistance="0.0" outRotation="-3.082541999738093" outDistance="11.35278771932254" id="0:123" />
+          <CubicDetachedVertex x="304.0" y="1016.0" inRotation="1.735904463395084" inDistance="8.110295247400064" outRotation="-1.1657751911378806" outDistance="10.151300409307211" id="0:124" />
+        </PointsPath>
+        <Fill name="Fill" id="0:125">
+          <SolidColor colorValue="FFFBF3E6" name="Original SVG color" id="0:126" />
+        </Fill>
+      </Shape>
+    </Node>
+    <Node name="CatTail" id="0:196">
+      <Shape name="CatTail 02" opacity="1" id="0:225">
+        <PointsPath name="Editable contour" isClosed="true" isClockwise="true" id="0:226">
+          <CubicDetachedVertex x="265.0" y="1019.0" inRotation="1.4601391056209978" inDistance="6.036923425424947" outRotation="-0.06965457372856816" outDistance="28.736349416336427" id="0:227">
+            <CubicWeight values="255" indices="3" inValues="255" inIndices="3" outValues="255" outIndices="3" id="0:228" />
+          </CubicDetachedVertex>
+          <CubicDetachedVertex x="341.0" y="1018.0" inRotation="-3.0810606338076845" inDistance="22.040367006422056" outRotation="-0.14531001063570223" outDistance="27.624465806800863" id="0:229">
+            <CubicWeight values="48195" indices="770" inValues="255" inIndices="3" outValues="26010" outIndices="770" id="0:230" />
+          </CubicDetachedVertex>
+          <CubicDetachedVertex x="412.0" y="1018.0" inRotation="-2.9441970937399127" inDistance="20.396078054371138" outRotation="0.19739555984988075" outDistance="30.59411708155671" id="0:231">
+            <CubicWeight values="55590" indices="513" inValues="6885" inIndices="770" outValues="31110" outIndices="513" id="0:232" />
+          </CubicDetachedVertex>
+          <CubicDetachedVertex x="484.0" y="1008.0" inRotation="2.5283853047152856" inDistance="22.010098692292214" outRotation="2.3291740410050816" outDistance="17.448336437736508" id="0:233">
+            <CubicWeight values="255" indices="1" inValues="11730" inIndices="513" outValues="6630" outIndices="513" id="0:234" />
+          </CubicDetachedVertex>
+          <CubicDetachedVertex x="428.0" y="1028.0" inRotation="-0.0263097172529252" inDistance="25.3421037449976" outRotation="-2.996282642954091" outDistance="27.624465806800863" id="0:235">
+            <CubicWeight values="42585" indices="513" inValues="21930" inIndices="513" outValues="64770" outIndices="513" id="0:236" />
+          </CubicDetachedVertex>
+          <CubicDetachedVertex x="348.0" y="1028.0" inRotation="-0.15264932839526515" inDistance="26.30589287593181" outRotation="3.0029529164556354" outDistance="28.944391128123232" id="0:237">
+            <CubicWeight values="42585" indices="770" inValues="21420" inIndices="770" outValues="255" outIndices="3" id="0:238" />
+          </CubicDetachedVertex>
+          <CubicDetachedVertex x="281.0" y="1030.0" inRotation="0.16514867741463143" inDistance="16.220700080795265" outRotation="-3.0090411212931265" outDistance="10.088497300281027" id="0:239">
+            <CubicWeight values="255" indices="3" inValues="255" inIndices="3" outValues="255" outIndices="3" id="0:240" />
+          </CubicDetachedVertex>
+          <Skin name="Tail vector skin" id="0:241">
+            <Tendon boneId="0:40" xx="-1" xy="0" yx="0" yy="-1" tx="480" ty="1000" name="Root" id="0:242" />
+            <Tendon boneId="0:41" xx="-1" xy="0" yx="0" yy="-1" tx="400" ty="1000" name="Middle" id="0:243" />
+            <Tendon boneId="0:42" xx="-1" xy="0" yx="0" yy="-1" tx="320" ty="1000" name="Tip" id="0:244" />
+          </Skin>
+        </PointsPath>
+        <Fill name="Fill" id="0:245">
+          <SolidColor colorValue="FFE8CFAD" name="Original SVG color" id="0:246" />
+        </Fill>
+      </Shape>
+      <Shape name="CatTail 01" opacity="1" id="0:197">
+        <PointsPath name="Editable contour" isClosed="true" isClockwise="false" id="0:198">
+          <CubicDetachedVertex x="468.0" y="985.0" inRotation="-0.14189705460416394" inDistance="14.142135623730951" outRotation="2.919510751684315" outDistance="21.186998109427616" id="0:199">
+            <CubicWeight values="9945" indices="513" inValues="255" inIndices="1" outValues="26775" outIndices="513" id="0:200" />
+          </CubicDetachedVertex>
+          <CubicDetachedVertex x="402.0" y="993.0" inRotation="-0.028563657838758395" inDistance="23.342855200015443" outRotation="-3.082836830874069" outDistance="22.70584848790189" id="0:201">
+            <CubicWeight values="63750" indices="513" inValues="44625" inIndices="513" outValues="17085" outIndices="770" id="0:202" />
+          </CubicDetachedVertex>
+          <CubicDetachedVertex x="342.0" y="995.0" inRotation="-0.15264932839526318" inDistance="17.53726191728785" outRotation="3.1093457711545414" outDistance="20.67741655902778" id="0:203">
+            <CubicWeight values="47430" indices="770" inValues="33405" inIndices="770" outValues="64260" outIndices="770" id="0:204" />
+          </CubicDetachedVertex>
+          <CubicDetachedVertex x="280.0" y="1006.0" inRotation="-0.31204212156253136" inDistance="21.715329966536448" outRotation="2.8430937220036188" outDistance="9.067647005823636" id="0:205">
+            <CubicWeight values="255" indices="3" inValues="255" inIndices="3" outValues="255" outIndices="3" id="0:206" />
+          </CubicDetachedVertex>
+          <CubicDetachedVertex x="265.0" y="1019.0" inRotation="-1.3521273809209577" inDistance="6.146362971528587" outRotation="1.5707963267948966" outDistance="6.6666666666667425" id="0:207">
+            <CubicWeight values="255" indices="3" inValues="255" inIndices="3" outValues="255" outIndices="3" id="0:208" />
+          </CubicDetachedVertex>
+          <CubicDetachedVertex x="284.0" y="1030.0" inRotation="-3.089009591978846" inDistance="12.684198393626989" outRotation="0.02940328820400843" outDistance="22.67646846892662" id="0:209">
+            <CubicWeight values="255" indices="3" inValues="255" inIndices="3" outValues="255" outIndices="3" id="0:210" />
+          </CubicDetachedVertex>
+          <CubicDetachedVertex x="347.0" y="1024.0" inRotation="2.9047438926428693" inDistance="19.888578520235065" outRotation="-0.18697926991890948" outDistance="25.104227178350317" id="0:211">
+            <CubicWeight values="43350" indices="770" inValues="59160" inIndices="770" outValues="23205" outIndices="770" id="0:212" />
+          </CubicDetachedVertex>
+          <CubicDetachedVertex x="414.0" y="1023.0" inRotation="-2.9441970937399127" inDistance="20.396078054371138" outRotation="0.08550529367820471" outDistance="23.41889076033371" id="0:213">
+            <CubicWeight values="53805" indices="513" inValues="5100" inIndices="770" outValues="34935" outIndices="513" id="0:214" />
+          </CubicDetachedVertex>
+          <CubicDetachedVertex x="480.0" y="1013.0" inRotation="2.744513208364813" inDistance="22.410315085295483" outRotation="-0.432407775570537" outDistance="9.545214042184252" id="0:215">
+            <CubicWeight values="255" indices="1" inValues="17085" inIndices="513" outValues="255" outIndices="1" id="0:216" />
+          </CubicDetachedVertex>
+          <CubicDetachedVertex x="500.0" y="996.0" inRotation="2.1375255443184025" inDistance="8.692269873603573" outRotation="-2.236765564174003" outDistance="11.869662543176588" id="0:217">
+            <CubicWeight values="255" indices="1" inValues="255" inIndices="1" outValues="255" outIndices="1" id="0:218" />
+          </CubicDetachedVertex>
+          <Skin name="Tail vector skin" id="0:219">
+            <Tendon boneId="0:40" xx="-1" xy="0" yx="0" yy="-1" tx="480" ty="1000" name="Root" id="0:220" />
+            <Tendon boneId="0:41" xx="-1" xy="0" yx="0" yy="-1" tx="400" ty="1000" name="Middle" id="0:221" />
+            <Tendon boneId="0:42" xx="-1" xy="0" yx="0" yy="-1" tx="320" ty="1000" name="Tip" id="0:222" />
+          </Skin>
+        </PointsPath>
+        <Fill name="Fill" id="0:223">
+          <SolidColor colorValue="FFFBF3E6" name="Original SVG color" id="0:224" />
+        </Fill>
+      </Shape>
+    </Node>
+    <Node name="Background" id="0:247">
+      <Shape name="Background 74" opacity="1" id="0:842">
+        <PointsPath name="Editable contour" isClosed="true" isClockwise="true" id="0:843">
+          <CubicDetachedVertex x="919.0" y="909.0" inRotation="-2.9945142982013926" inDistance="18.19645875194157" outRotation="0.0" outDistance="18.66666666666663" id="0:844" />
+          <CubicDetachedVertex x="942.0" y="960.0" inRotation="-1.4730694194361769" inDistance="34.16300793418389" outRotation="-2.999695598985631" outDistance="18.856180831641225" id="0:845" />
+          <CubicDetachedVertex x="891.0" y="928.0" inRotation="0.8831250707561649" inDistance="24.156894575991245" outRotation="-1.5273454314033683" outDistance="15.347819244295154" id="0:846" />
+        </PointsPath>
+        <Fill name="Fill" id="0:847">
+          <SolidColor colorValue="FF89A964" name="Original SVG color" id="0:848" />
+        </Fill>
+      </Shape>
+      <Shape name="Background 73" opacity="1" id="0:835">
+        <PointsPath name="Editable contour" isClosed="true" isClockwise="true" id="0:836">
+          <CubicDetachedVertex x="811.0" y="894.0" inRotation="2.509902019250825" inDistance="33.8690287890148" outRotation="-0.28379410920832565" outDistance="16.666666666666657" id="0:837" />
+          <CubicDetachedVertex x="839.0" y="913.0" inRotation="-1.7234456551901594" inDistance="17.537261917287907" outRotation="1.6078164426688246" outDistance="18.012341448141726" id="0:838" />
+          <CubicDetachedVertex x="778.0" y="962.0" inRotation="-0.3514447940035509" inDistance="42.60412082312121" outRotation="-1.7782925532301004" outDistance="25.888650451930175" id="0:839" />
+        </PointsPath>
+        <Fill name="Fill" id="0:840">
+          <SolidColor colorValue="FF89A964" name="Original SVG color" id="0:841" />
+        </Fill>
+      </Shape>
+      <Shape name="Background 72" opacity="1" id="0:828">
+        <PointsPath name="Editable contour" isClosed="true" isClockwise="true" id="0:829">
+          <CubicDetachedVertex x="926.0" y="858.0" inRotation="2.622446539343271" inDistance="21.499353995462748" outRotation="-0.08314123188844123" outDistance="24.08318915758459" id="0:830" />
+          <CubicDetachedVertex x="963.0" y="899.0" inRotation="-1.5935196876365363" inDistance="29.34090811288722" outRotation="2.0899424410414196" outDistance="16.1245154965971" id="0:831" />
+          <CubicDetachedVertex x="922.0" y="904.0" inRotation="0.5041659614791507" inDistance="22.080660215572273" outRotation="-2.2455372690184494" outDistance="25.612496949731394" id="0:832" />
+        </PointsPath>
+        <Fill name="Fill" id="0:833">
+          <SolidColor colorValue="FF89A964" name="Original SVG color" id="0:834" />
+        </Fill>
+      </Shape>
+      <Shape name="Background 71" opacity="1" id="0:821">
+        <PointsPath name="Editable contour" isClosed="true" isClockwise="true" id="0:822">
+          <CubicDetachedVertex x="880.0" y="842.0" inRotation="2.1066075647553584" inDistance="24.81039208790454" outRotation="-0.7853981633974483" outDistance="16.02775370689513" id="0:823" />
+          <CubicDetachedVertex x="910.0" y="846.0" inRotation="-2.125103822996446" inDistance="16.465452046971272" outRotation="1.2490457723982522" outDistance="16.865480854231368" id="0:824" />
+          <CubicDetachedVertex x="886.0" y="894.0" inRotation="-0.6435011087932835" inDistance="26.666666666666696" outRotation="-2.466851711366238" outDistance="21.34374745810949" id="0:825" />
+        </PointsPath>
+        <Fill name="Fill" id="0:826">
+          <SolidColor colorValue="FF89A964" name="Original SVG color" id="0:827" />
+        </Fill>
+      </Shape>
+      <Shape name="Background 70" opacity="1" id="0:814">
+        <PointsPath name="Editable contour" isClosed="true" isClockwise="false" id="0:815">
+          <CubicDetachedVertex x="872.0" y="850.0" inRotation="1.3258176636680326" inDistance="24.73863375370596" outRotation="-2.081284648711675" outDistance="19.102065042525854" id="0:816" />
+          <CubicDetachedVertex x="838.0" y="841.0" inRotation="-0.6747409422235495" inDistance="17.0749979664876" outRotation="2.205823062185214" outDistance="15.733898294941254" id="0:817" />
+          <CubicDetachedVertex x="851.0" y="894.0" inRotation="-2.241940162230906" inDistance="28.944391128123183" outRotation="-0.26060239174734273" outDistance="20.698899595013376" id="0:818" />
+        </PointsPath>
+        <Fill name="Fill" id="0:819">
+          <SolidColor colorValue="FF6F8F5A" name="Original SVG color" id="0:820" />
+        </Fill>
+      </Shape>
+      <Shape name="Background 69" opacity="1" id="0:807">
+        <PointsPath name="Editable contour" isClosed="true" isClockwise="false" id="0:808">
+          <CubicDetachedVertex x="799.0" y="882.0" inRotation="0.7399748839758701" inDistance="20.763215336529942" outRotation="-2.667741317095032" outDistance="29.219476001081517" id="0:809" />
+          <CubicDetachedVertex x="748.0" y="918.0" inRotation="-1.3597029935721503" inDistance="38.18085616873698" outRotation="1.2490457723982522" outDistance="16.865480854231368" id="0:810" />
+          <CubicDetachedVertex x="790.0" y="933.0" inRotation="2.8828217616260954" inDistance="23.447340526758595" outRotation="-0.7531512809621935" outDistance="29.242282932615105" id="0:811" />
+        </PointsPath>
+        <Fill name="Fill" id="0:812">
+          <SolidColor colorValue="FF6F8F5A" name="Original SVG color" id="0:813" />
+        </Fill>
+      </Shape>
+      <Shape name="Background 68" opacity="1" id="0:800">
+        <PointsPath name="Editable contour" isClosed="true" isClockwise="false" id="0:801">
+          <CubicDetachedVertex x="802.0" y="839.0" inRotation="0.4636476090008061" inDistance="22.360679774997898" outRotation="-2.922923707715851" outDistance="18.439088914585774" id="0:802" />
+          <CubicDetachedVertex x="768.0" y="863.0" inRotation="-1.3415643935179031" inDistance="20.53722906766581" outRotation="1.1978086049948364" outDistance="16.46545204697133" id="0:803" />
+          <CubicDetachedVertex x="812.0" y="883.0" inRotation="3.0560873599115888" inDistance="23.418890760333767" outRotation="-0.9670469933974598" outDistance="23.485219938411436" id="0:804" />
+        </PointsPath>
+        <Fill name="Fill" id="0:805">
+          <SolidColor colorValue="FF6F8F5A" name="Original SVG color" id="0:806" />
+        </Fill>
+      </Shape>
+      <Shape name="Background 67" opacity="1" id="0:794">
+        <PointsPath name="Editable contour" isClosed="false" isClockwise="true" id="0:795">
+          <CubicDetachedVertex x="862.0" y="945.0" inRotation="0.0" inDistance="0.0" outRotation="-0.6254850402392301" outDistance="29.60480441489938" id="0:796" />
+          <CubicDetachedVertex x="915.0" y="932.0" inRotation="-2.4887460224890225" inDistance="14.267289706021804" outRotation="0.0" outDistance="0.0" id="0:797" />
+        </PointsPath>
+        <Stroke name="Stroke" thickness="5" cap="round" join="miter" id="0:798">
+          <SolidColor colorValue="FF517C55" name="Original SVG color" id="0:799" />
+        </Stroke>
+      </Shape>
+      <Shape name="Background 66" opacity="1" id="0:788">
+        <PointsPath name="Editable contour" isClosed="false" isClockwise="true" id="0:789">
+          <CubicDetachedVertex x="851.0" y="945.0" inRotation="0.0" inDistance="0.0" outRotation="-2.316215803069055" outDistance="35.38361202590826" id="0:790" />
+          <CubicDetachedVertex x="790.0" y="908.0" inRotation="-0.07982998571223976" inDistance="16.719914938645903" outRotation="0.0" outDistance="0.0" id="0:791" />
+        </PointsPath>
+        <Stroke name="Stroke" thickness="5" cap="round" join="miter" id="0:792">
+          <SolidColor colorValue="FF517C55" name="Original SVG color" id="0:793" />
+        </Stroke>
+      </Shape>
+      <Shape name="Background 65" opacity="1" id="0:782">
+        <PointsPath name="Editable contour" isClosed="false" isClockwise="true" id="0:783">
+          <CubicDetachedVertex x="856.0" y="944.0" inRotation="0.0" inDistance="0.0" outRotation="-0.9337259975192144" outDistance="41.467524106890636" id="0:784" />
+          <CubicDetachedVertex x="932.0" y="871.0" inRotation="2.6087487659704034" inDistance="30.184617127124742" outRotation="0.0" outDistance="0.0" id="0:785" />
+        </PointsPath>
+        <Stroke name="Stroke" thickness="5" cap="round" join="miter" id="0:786">
+          <SolidColor colorValue="FF517C55" name="Original SVG color" id="0:787" />
+        </Stroke>
+      </Shape>
+      <Shape name="Background 64" opacity="1" id="0:776">
+        <PointsPath name="Editable contour" isClosed="false" isClockwise="true" id="0:777">
+          <CubicDetachedVertex x="856.0" y="943.0" inRotation="0.0" inDistance="0.0" outRotation="-1.4570043196511877" outDistance="46.97043987682273" id="0:778" />
+          <CubicDetachedVertex x="877.0" y="846.0" inRotation="2.0195196708056162" inDistance="19.977765418362246" outRotation="0.0" outDistance="0.0" id="0:779" />
+        </PointsPath>
+        <Stroke name="Stroke" thickness="5" cap="round" join="miter" id="0:780">
+          <SolidColor colorValue="FF517C55" name="Original SVG color" id="0:781" />
+        </Stroke>
+      </Shape>
+      <Shape name="Background 63" opacity="1" id="0:770">
+        <PointsPath name="Editable contour" isClosed="false" isClockwise="true" id="0:771">
+          <CubicDetachedVertex x="856.0" y="943.0" inRotation="0.0" inDistance="0.0" outRotation="-1.8577350797256664" outDistance="42.40020964308755" id="0:772" />
+          <CubicDetachedVertex x="797.0" y="839.0" inRotation="0.8092031895825169" inDistance="39.60920207336786" outRotation="0.0" outDistance="0.0" id="0:773" />
+        </PointsPath>
+        <Stroke name="Stroke" thickness="5" cap="round" join="miter" id="0:774">
+          <SolidColor colorValue="FF517C55" name="Original SVG color" id="0:775" />
+        </Stroke>
+      </Shape>
+      <Shape name="Background 62" opacity=".55" id="0:762">
+        <PointsPath name="Editable contour" isClosed="true" isClockwise="true" id="0:763">
+          <CubicDetachedVertex x="806.0" y="966.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:764" />
+          <CubicDetachedVertex x="902.0" y="966.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:765" />
+          <CubicDetachedVertex x="902.0" y="974.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:766" />
+          <CubicDetachedVertex x="806.0" y="974.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:767" />
+        </PointsPath>
+        <Fill name="Fill" id="0:768">
+          <SolidColor colorValue="FF9F5545" name="Original SVG color" id="0:769" />
+        </Fill>
+      </Shape>
+      <Shape name="Background 61" opacity="1" id="0:754">
+        <PointsPath name="Editable contour" isClosed="true" isClockwise="true" id="0:755">
+          <CubicDetachedVertex x="803.0" y="943.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:756" />
+          <CubicDetachedVertex x="907.0" y="943.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:757" />
+          <CubicDetachedVertex x="907.0" y="967.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:758" />
+          <CubicDetachedVertex x="803.0" y="967.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:759" />
+        </PointsPath>
+        <Fill name="Fill" id="0:760">
+          <SolidColor colorValue="FFD17A5B" name="Original SVG color" id="0:761" />
+        </Fill>
+      </Shape>
+      <Shape name="Background 60" opacity="1" id="0:746">
+        <PointsPath name="Editable contour" isClosed="true" isClockwise="true" id="0:747">
+          <CubicDetachedVertex x="805.0" y="959.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:748" />
+          <CubicDetachedVertex x="902.0" y="959.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:749" />
+          <CubicDetachedVertex x="891.0" y="1024.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:750" />
+          <CubicDetachedVertex x="816.0" y="1024.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:751" />
+        </PointsPath>
+        <Fill name="Fill" id="0:752">
+          <SolidColor colorValue="FFB85D46" name="Original SVG color" id="0:753" />
+        </Fill>
+      </Shape>
+      <Shape name="Background 59" opacity="1" id="0:738">
+        <PointsPath name="Editable contour" isClosed="true" isClockwise="true" id="0:739">
+          <CubicDetachedVertex x="279.0" y="1103.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:740" />
+          <CubicDetachedVertex x="965.0" y="1103.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:741" />
+          <CubicDetachedVertex x="965.0" y="1110.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:742" />
+          <CubicDetachedVertex x="279.0" y="1110.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:743" />
+        </PointsPath>
+        <Fill name="Fill" id="0:744">
+          <SolidColor colorValue="FFC1B29E" name="Original SVG color" id="0:745" />
+        </Fill>
+      </Shape>
+      <Shape name="Background 58" opacity="1" id="0:730">
+        <PointsPath name="Editable contour" isClosed="true" isClockwise="true" id="0:731">
+          <CubicDetachedVertex x="279.0" y="1074.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:732" />
+          <CubicDetachedVertex x="965.0" y="1074.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:733" />
+          <CubicDetachedVertex x="965.0" y="1105.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:734" />
+          <CubicDetachedVertex x="279.0" y="1105.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:735" />
+        </PointsPath>
+        <Fill name="Fill" id="0:736">
+          <SolidColor colorValue="FFF1E6D4" name="Original SVG color" id="0:737" />
+        </Fill>
+      </Shape>
+      <Shape name="Background 57" opacity="1" id="0:722">
+        <PointsPath name="Editable contour" isClosed="true" isClockwise="true" id="0:723">
+          <CubicDetachedVertex x="258.0" y="1067.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:724" />
+          <CubicDetachedVertex x="987.0" y="1067.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:725" />
+          <CubicDetachedVertex x="987.0" y="1074.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:726" />
+          <CubicDetachedVertex x="258.0" y="1074.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:727" />
+        </PointsPath>
+        <Fill name="Fill" id="0:728">
+          <SolidColor colorValue="FFB8A792" name="Original SVG color" id="0:729" />
+        </Fill>
+      </Shape>
+      <Shape name="Background 56" opacity="1" id="0:714">
+        <PointsPath name="Editable contour" isClosed="true" isClockwise="true" id="0:715">
+          <CubicDetachedVertex x="258.0" y="1023.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:716" />
+          <CubicDetachedVertex x="987.0" y="1023.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:717" />
+          <CubicDetachedVertex x="987.0" y="1070.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:718" />
+          <CubicDetachedVertex x="258.0" y="1070.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:719" />
+        </PointsPath>
+        <Fill name="Fill" id="0:720">
+          <SolidColor colorValue="FFFFF3E0" name="Original SVG color" id="0:721" />
+        </Fill>
+      </Shape>
+      <Shape name="Background 55" opacity="1" id="0:706">
+        <PointsPath name="Editable contour" isClosed="true" isClockwise="true" id="0:707">
+          <CubicDetachedVertex x="278.0" y="194.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:708" />
+          <CubicDetachedVertex x="964.0" y="194.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:709" />
+          <CubicDetachedVertex x="964.0" y="201.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:710" />
+          <CubicDetachedVertex x="278.0" y="201.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:711" />
+        </PointsPath>
+        <Fill name="Fill" id="0:712">
+          <SolidColor colorValue="FFBFB09D" name="Original SVG color" id="0:713" />
+        </Fill>
+      </Shape>
+      <Shape name="Background 54" opacity="1" id="0:698">
+        <PointsPath name="Editable contour" isClosed="true" isClockwise="true" id="0:699">
+          <CubicDetachedVertex x="278.0" y="165.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:700" />
+          <CubicDetachedVertex x="964.0" y="165.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:701" />
+          <CubicDetachedVertex x="964.0" y="197.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:702" />
+          <CubicDetachedVertex x="278.0" y="197.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:703" />
+        </PointsPath>
+        <Fill name="Fill" id="0:704">
+          <SolidColor colorValue="FFF0E4D0" name="Original SVG color" id="0:705" />
+        </Fill>
+      </Shape>
+      <Shape name="Background 53" opacity="1" id="0:690">
+        <PointsPath name="Editable contour" isClosed="true" isClockwise="true" id="0:691">
+          <CubicDetachedVertex x="258.0" y="159.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:692" />
+          <CubicDetachedVertex x="986.0" y="159.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:693" />
+          <CubicDetachedVertex x="986.0" y="165.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:694" />
+          <CubicDetachedVertex x="258.0" y="165.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:695" />
+        </PointsPath>
+        <Fill name="Fill" id="0:696">
+          <SolidColor colorValue="FFBBAA96" name="Original SVG color" id="0:697" />
+        </Fill>
+      </Shape>
+      <Shape name="Background 52" opacity="1" id="0:680">
+        <PointsPath name="Editable contour" isClosed="true" isClockwise="true" id="0:681">
+          <CubicDetachedVertex x="258.0" y="115.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:682" />
+          <CubicDetachedVertex x="986.0" y="115.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:683" />
+          <CubicDetachedVertex x="986.0" y="163.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:684" />
+          <CubicDetachedVertex x="258.0" y="163.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:685" />
+        </PointsPath>
+        <Fill name="Fill" id="0:686">
+          <LinearGradient name="trim" startX="258.0" startY="115.0" endX="258.0" endY="163.0" id="0:687">
+            <GradientStop colorValue="FFFFF7E8" position="0" id="0:688" />
+            <GradientStop colorValue="FFE8D8C1" position="1" id="0:689" />
+          </LinearGradient>
+        </Fill>
+      </Shape>
+      <Shape name="Background 51" opacity="1" id="0:672">
+        <PointsPath name="Editable contour" isClosed="true" isClockwise="true" id="0:673">
+          <CubicDetachedVertex x="888.0" y="200.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:674" />
+          <CubicDetachedVertex x="914.0" y="200.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:675" />
+          <CubicDetachedVertex x="914.0" y="799.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:676" />
+          <CubicDetachedVertex x="888.0" y="799.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:677" />
+        </PointsPath>
+        <Fill name="Fill" id="0:678">
+          <SolidColor colorValue="FFF6E9D5" name="Original SVG color" id="0:679" />
+        </Fill>
+      </Shape>
+      <Shape name="Background 50" opacity="1" id="0:664">
+        <PointsPath name="Editable contour" isClosed="true" isClockwise="true" id="0:665">
+          <CubicDetachedVertex x="326.0" y="200.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:666" />
+          <CubicDetachedVertex x="358.0" y="200.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:667" />
+          <CubicDetachedVertex x="358.0" y="799.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:668" />
+          <CubicDetachedVertex x="326.0" y="799.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:669" />
+        </PointsPath>
+        <Fill name="Fill" id="0:670">
+          <SolidColor colorValue="FFF6E9D5" name="Original SVG color" id="0:671" />
+        </Fill>
+      </Shape>
+      <Shape name="Background 49" opacity=".8" id="0:656">
+        <PointsPath name="Editable contour" isClosed="true" isClockwise="true" id="0:657">
+          <CubicDetachedVertex x="326.0" y="795.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:658" />
+          <CubicDetachedVertex x="914.0" y="795.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:659" />
+          <CubicDetachedVertex x="914.0" y="802.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:660" />
+          <CubicDetachedVertex x="326.0" y="802.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:661" />
+        </PointsPath>
+        <Fill name="Fill" id="0:662">
+          <SolidColor colorValue="FFC6B9A8" name="Original SVG color" id="0:663" />
+        </Fill>
+      </Shape>
+      <Shape name="Background 48" opacity="1" id="0:648">
+        <PointsPath name="Editable contour" isClosed="true" isClockwise="true" id="0:649">
+          <CubicDetachedVertex x="326.0" y="761.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:650" />
+          <CubicDetachedVertex x="914.0" y="761.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:651" />
+          <CubicDetachedVertex x="914.0" y="801.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:652" />
+          <CubicDetachedVertex x="326.0" y="801.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:653" />
+        </PointsPath>
+        <Fill name="Fill" id="0:654">
+          <SolidColor colorValue="FFFBF1E1" name="Original SVG color" id="0:655" />
+        </Fill>
+      </Shape>
+      <Shape name="Background 47" opacity=".65" id="0:638">
+        <PointsPath name="Editable contour" isClosed="true" isClockwise="true" id="0:639">
+          <CubicDetachedVertex x="358.0" y="235.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:640" />
+          <CubicDetachedVertex x="888.0" y="235.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:641" />
+          <CubicDetachedVertex x="888.0" y="246.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:642" />
+          <CubicDetachedVertex x="365.0" y="246.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:643" />
+          <CubicDetachedVertex x="365.0" y="759.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:644" />
+          <CubicDetachedVertex x="358.0" y="759.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:645" />
+        </PointsPath>
+        <Fill name="Fill" id="0:646">
+          <SolidColor colorValue="FF335D69" name="Original SVG color" id="0:647" />
+        </Fill>
+      </Shape>
+      <Shape name="Background 46" opacity="0.55" id="0:630">
+        <PointsPath name="Editable contour" isClosed="true" isClockwise="true" id="0:631">
+          <CubicDetachedVertex x="365.0" y="739.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:632" />
+          <CubicDetachedVertex x="887.0" y="739.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:633" />
+          <CubicDetachedVertex x="887.0" y="743.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:634" />
+          <CubicDetachedVertex x="365.0" y="743.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:635" />
+        </PointsPath>
+        <Fill name="Fill" id="0:636">
+          <SolidColor colorValue="FF426B79" name="Original SVG color" id="0:637" />
+        </Fill>
+      </Shape>
+      <Shape name="Background 45" opacity="0.55" id="0:622">
+        <PointsPath name="Editable contour" isClosed="true" isClockwise="true" id="0:623">
+          <CubicDetachedVertex x="365.0" y="712.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:624" />
+          <CubicDetachedVertex x="887.0" y="712.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:625" />
+          <CubicDetachedVertex x="887.0" y="716.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:626" />
+          <CubicDetachedVertex x="365.0" y="716.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:627" />
+        </PointsPath>
+        <Fill name="Fill" id="0:628">
+          <SolidColor colorValue="FF426B79" name="Original SVG color" id="0:629" />
+        </Fill>
+      </Shape>
+      <Shape name="Background 44" opacity="0.55" id="0:614">
+        <PointsPath name="Editable contour" isClosed="true" isClockwise="true" id="0:615">
+          <CubicDetachedVertex x="365.0" y="685.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:616" />
+          <CubicDetachedVertex x="887.0" y="685.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:617" />
+          <CubicDetachedVertex x="887.0" y="689.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:618" />
+          <CubicDetachedVertex x="365.0" y="689.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:619" />
+        </PointsPath>
+        <Fill name="Fill" id="0:620">
+          <SolidColor colorValue="FF426B79" name="Original SVG color" id="0:621" />
+        </Fill>
+      </Shape>
+      <Shape name="Background 43" opacity="0.55" id="0:606">
+        <PointsPath name="Editable contour" isClosed="true" isClockwise="true" id="0:607">
+          <CubicDetachedVertex x="365.0" y="658.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:608" />
+          <CubicDetachedVertex x="887.0" y="658.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:609" />
+          <CubicDetachedVertex x="887.0" y="662.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:610" />
+          <CubicDetachedVertex x="365.0" y="662.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:611" />
+        </PointsPath>
+        <Fill name="Fill" id="0:612">
+          <SolidColor colorValue="FF426B79" name="Original SVG color" id="0:613" />
+        </Fill>
+      </Shape>
+      <Shape name="Background 42" opacity="0.55" id="0:598">
+        <PointsPath name="Editable contour" isClosed="true" isClockwise="true" id="0:599">
+          <CubicDetachedVertex x="365.0" y="631.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:600" />
+          <CubicDetachedVertex x="887.0" y="631.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:601" />
+          <CubicDetachedVertex x="887.0" y="635.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:602" />
+          <CubicDetachedVertex x="365.0" y="635.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:603" />
+        </PointsPath>
+        <Fill name="Fill" id="0:604">
+          <SolidColor colorValue="FF426B79" name="Original SVG color" id="0:605" />
+        </Fill>
+      </Shape>
+      <Shape name="Background 41" opacity="0.55" id="0:590">
+        <PointsPath name="Editable contour" isClosed="true" isClockwise="true" id="0:591">
+          <CubicDetachedVertex x="365.0" y="604.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:592" />
+          <CubicDetachedVertex x="887.0" y="604.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:593" />
+          <CubicDetachedVertex x="887.0" y="608.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:594" />
+          <CubicDetachedVertex x="365.0" y="608.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:595" />
+        </PointsPath>
+        <Fill name="Fill" id="0:596">
+          <SolidColor colorValue="FF426B79" name="Original SVG color" id="0:597" />
+        </Fill>
+      </Shape>
+      <Shape name="Background 40" opacity="0.55" id="0:582">
+        <PointsPath name="Editable contour" isClosed="true" isClockwise="true" id="0:583">
+          <CubicDetachedVertex x="365.0" y="577.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:584" />
+          <CubicDetachedVertex x="887.0" y="577.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:585" />
+          <CubicDetachedVertex x="887.0" y="581.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:586" />
+          <CubicDetachedVertex x="365.0" y="581.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:587" />
+        </PointsPath>
+        <Fill name="Fill" id="0:588">
+          <SolidColor colorValue="FF426B79" name="Original SVG color" id="0:589" />
+        </Fill>
+      </Shape>
+      <Shape name="Background 39" opacity="0.55" id="0:574">
+        <PointsPath name="Editable contour" isClosed="true" isClockwise="true" id="0:575">
+          <CubicDetachedVertex x="365.0" y="550.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:576" />
+          <CubicDetachedVertex x="887.0" y="550.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:577" />
+          <CubicDetachedVertex x="887.0" y="554.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:578" />
+          <CubicDetachedVertex x="365.0" y="554.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:579" />
+        </PointsPath>
+        <Fill name="Fill" id="0:580">
+          <SolidColor colorValue="FF426B79" name="Original SVG color" id="0:581" />
+        </Fill>
+      </Shape>
+      <Shape name="Background 38" opacity="0.55" id="0:566">
+        <PointsPath name="Editable contour" isClosed="true" isClockwise="true" id="0:567">
+          <CubicDetachedVertex x="365.0" y="523.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:568" />
+          <CubicDetachedVertex x="887.0" y="523.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:569" />
+          <CubicDetachedVertex x="887.0" y="527.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:570" />
+          <CubicDetachedVertex x="365.0" y="527.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:571" />
+        </PointsPath>
+        <Fill name="Fill" id="0:572">
+          <SolidColor colorValue="FF426B79" name="Original SVG color" id="0:573" />
+        </Fill>
+      </Shape>
+      <Shape name="Background 37" opacity="0.55" id="0:558">
+        <PointsPath name="Editable contour" isClosed="true" isClockwise="true" id="0:559">
+          <CubicDetachedVertex x="365.0" y="496.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:560" />
+          <CubicDetachedVertex x="887.0" y="496.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:561" />
+          <CubicDetachedVertex x="887.0" y="500.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:562" />
+          <CubicDetachedVertex x="365.0" y="500.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:563" />
+        </PointsPath>
+        <Fill name="Fill" id="0:564">
+          <SolidColor colorValue="FF426B79" name="Original SVG color" id="0:565" />
+        </Fill>
+      </Shape>
+      <Shape name="Background 36" opacity="0.55" id="0:550">
+        <PointsPath name="Editable contour" isClosed="true" isClockwise="true" id="0:551">
+          <CubicDetachedVertex x="365.0" y="469.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:552" />
+          <CubicDetachedVertex x="887.0" y="469.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:553" />
+          <CubicDetachedVertex x="887.0" y="473.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:554" />
+          <CubicDetachedVertex x="365.0" y="473.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:555" />
+        </PointsPath>
+        <Fill name="Fill" id="0:556">
+          <SolidColor colorValue="FF426B79" name="Original SVG color" id="0:557" />
+        </Fill>
+      </Shape>
+      <Shape name="Background 35" opacity="0.55" id="0:542">
+        <PointsPath name="Editable contour" isClosed="true" isClockwise="true" id="0:543">
+          <CubicDetachedVertex x="365.0" y="442.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:544" />
+          <CubicDetachedVertex x="887.0" y="442.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:545" />
+          <CubicDetachedVertex x="887.0" y="446.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:546" />
+          <CubicDetachedVertex x="365.0" y="446.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:547" />
+        </PointsPath>
+        <Fill name="Fill" id="0:548">
+          <SolidColor colorValue="FF426B79" name="Original SVG color" id="0:549" />
+        </Fill>
+      </Shape>
+      <Shape name="Background 34" opacity="0.55" id="0:534">
+        <PointsPath name="Editable contour" isClosed="true" isClockwise="true" id="0:535">
+          <CubicDetachedVertex x="365.0" y="415.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:536" />
+          <CubicDetachedVertex x="887.0" y="415.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:537" />
+          <CubicDetachedVertex x="887.0" y="419.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:538" />
+          <CubicDetachedVertex x="365.0" y="419.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:539" />
+        </PointsPath>
+        <Fill name="Fill" id="0:540">
+          <SolidColor colorValue="FF426B79" name="Original SVG color" id="0:541" />
+        </Fill>
+      </Shape>
+      <Shape name="Background 33" opacity="0.55" id="0:526">
+        <PointsPath name="Editable contour" isClosed="true" isClockwise="true" id="0:527">
+          <CubicDetachedVertex x="365.0" y="388.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:528" />
+          <CubicDetachedVertex x="887.0" y="388.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:529" />
+          <CubicDetachedVertex x="887.0" y="392.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:530" />
+          <CubicDetachedVertex x="365.0" y="392.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:531" />
+        </PointsPath>
+        <Fill name="Fill" id="0:532">
+          <SolidColor colorValue="FF426B79" name="Original SVG color" id="0:533" />
+        </Fill>
+      </Shape>
+      <Shape name="Background 32" opacity="0.55" id="0:518">
+        <PointsPath name="Editable contour" isClosed="true" isClockwise="true" id="0:519">
+          <CubicDetachedVertex x="365.0" y="361.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:520" />
+          <CubicDetachedVertex x="887.0" y="361.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:521" />
+          <CubicDetachedVertex x="887.0" y="365.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:522" />
+          <CubicDetachedVertex x="365.0" y="365.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:523" />
+        </PointsPath>
+        <Fill name="Fill" id="0:524">
+          <SolidColor colorValue="FF426B79" name="Original SVG color" id="0:525" />
+        </Fill>
+      </Shape>
+      <Shape name="Background 31" opacity="0.55" id="0:510">
+        <PointsPath name="Editable contour" isClosed="true" isClockwise="true" id="0:511">
+          <CubicDetachedVertex x="365.0" y="334.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:512" />
+          <CubicDetachedVertex x="887.0" y="334.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:513" />
+          <CubicDetachedVertex x="887.0" y="338.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:514" />
+          <CubicDetachedVertex x="365.0" y="338.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:515" />
+        </PointsPath>
+        <Fill name="Fill" id="0:516">
+          <SolidColor colorValue="FF426B79" name="Original SVG color" id="0:517" />
+        </Fill>
+      </Shape>
+      <Shape name="Background 30" opacity="0.55" id="0:502">
+        <PointsPath name="Editable contour" isClosed="true" isClockwise="true" id="0:503">
+          <CubicDetachedVertex x="365.0" y="307.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:504" />
+          <CubicDetachedVertex x="887.0" y="307.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:505" />
+          <CubicDetachedVertex x="887.0" y="311.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:506" />
+          <CubicDetachedVertex x="365.0" y="311.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:507" />
+        </PointsPath>
+        <Fill name="Fill" id="0:508">
+          <SolidColor colorValue="FF426B79" name="Original SVG color" id="0:509" />
+        </Fill>
+      </Shape>
+      <Shape name="Background 29" opacity="0.55" id="0:494">
+        <PointsPath name="Editable contour" isClosed="true" isClockwise="true" id="0:495">
+          <CubicDetachedVertex x="365.0" y="280.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:496" />
+          <CubicDetachedVertex x="887.0" y="280.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:497" />
+          <CubicDetachedVertex x="887.0" y="284.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:498" />
+          <CubicDetachedVertex x="365.0" y="284.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:499" />
+        </PointsPath>
+        <Fill name="Fill" id="0:500">
+          <SolidColor colorValue="FF426B79" name="Original SVG color" id="0:501" />
+        </Fill>
+      </Shape>
+      <Shape name="Background 28" opacity="0.55" id="0:486">
+        <PointsPath name="Editable contour" isClosed="true" isClockwise="true" id="0:487">
+          <CubicDetachedVertex x="365.0" y="253.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:488" />
+          <CubicDetachedVertex x="887.0" y="253.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:489" />
+          <CubicDetachedVertex x="887.0" y="257.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:490" />
+          <CubicDetachedVertex x="365.0" y="257.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:491" />
+        </PointsPath>
+        <Fill name="Fill" id="0:492">
+          <SolidColor colorValue="FF426B79" name="Original SVG color" id="0:493" />
+        </Fill>
+      </Shape>
+      <Shape name="Background 27" opacity="0.75" id="0:478">
+        <PointsPath name="Editable contour" isClosed="true" isClockwise="true" id="0:479">
+          <CubicDetachedVertex x="365.0" y="756.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:480" />
+          <CubicDetachedVertex x="887.0" y="756.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:481" />
+          <CubicDetachedVertex x="887.0" y="759.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:482" />
+          <CubicDetachedVertex x="365.0" y="759.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:483" />
+        </PointsPath>
+        <Fill name="Fill" id="0:484">
+          <SolidColor colorValue="FF8FB5BC" name="Original SVG color" id="0:485" />
+        </Fill>
+      </Shape>
+      <Shape name="Background 26" opacity="0.75" id="0:470">
+        <PointsPath name="Editable contour" isClosed="true" isClockwise="true" id="0:471">
+          <CubicDetachedVertex x="365.0" y="729.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:472" />
+          <CubicDetachedVertex x="887.0" y="729.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:473" />
+          <CubicDetachedVertex x="887.0" y="737.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:474" />
+          <CubicDetachedVertex x="365.0" y="737.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:475" />
+        </PointsPath>
+        <Fill name="Fill" id="0:476">
+          <SolidColor colorValue="FF8FB5BC" name="Original SVG color" id="0:477" />
+        </Fill>
+      </Shape>
+      <Shape name="Background 25" opacity="0.75" id="0:462">
+        <PointsPath name="Editable contour" isClosed="true" isClockwise="true" id="0:463">
+          <CubicDetachedVertex x="365.0" y="702.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:464" />
+          <CubicDetachedVertex x="887.0" y="702.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:465" />
+          <CubicDetachedVertex x="887.0" y="710.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:466" />
+          <CubicDetachedVertex x="365.0" y="710.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:467" />
+        </PointsPath>
+        <Fill name="Fill" id="0:468">
+          <SolidColor colorValue="FF8FB5BC" name="Original SVG color" id="0:469" />
+        </Fill>
+      </Shape>
+      <Shape name="Background 24" opacity="0.75" id="0:454">
+        <PointsPath name="Editable contour" isClosed="true" isClockwise="true" id="0:455">
+          <CubicDetachedVertex x="365.0" y="675.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:456" />
+          <CubicDetachedVertex x="887.0" y="675.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:457" />
+          <CubicDetachedVertex x="887.0" y="683.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:458" />
+          <CubicDetachedVertex x="365.0" y="683.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:459" />
+        </PointsPath>
+        <Fill name="Fill" id="0:460">
+          <SolidColor colorValue="FF8FB5BC" name="Original SVG color" id="0:461" />
+        </Fill>
+      </Shape>
+      <Shape name="Background 23" opacity="0.75" id="0:446">
+        <PointsPath name="Editable contour" isClosed="true" isClockwise="true" id="0:447">
+          <CubicDetachedVertex x="365.0" y="648.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:448" />
+          <CubicDetachedVertex x="887.0" y="648.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:449" />
+          <CubicDetachedVertex x="887.0" y="656.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:450" />
+          <CubicDetachedVertex x="365.0" y="656.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:451" />
+        </PointsPath>
+        <Fill name="Fill" id="0:452">
+          <SolidColor colorValue="FF8FB5BC" name="Original SVG color" id="0:453" />
+        </Fill>
+      </Shape>
+      <Shape name="Background 22" opacity="0.75" id="0:438">
+        <PointsPath name="Editable contour" isClosed="true" isClockwise="true" id="0:439">
+          <CubicDetachedVertex x="365.0" y="621.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:440" />
+          <CubicDetachedVertex x="887.0" y="621.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:441" />
+          <CubicDetachedVertex x="887.0" y="629.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:442" />
+          <CubicDetachedVertex x="365.0" y="629.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:443" />
+        </PointsPath>
+        <Fill name="Fill" id="0:444">
+          <SolidColor colorValue="FF8FB5BC" name="Original SVG color" id="0:445" />
+        </Fill>
+      </Shape>
+      <Shape name="Background 21" opacity="0.75" id="0:430">
+        <PointsPath name="Editable contour" isClosed="true" isClockwise="true" id="0:431">
+          <CubicDetachedVertex x="365.0" y="594.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:432" />
+          <CubicDetachedVertex x="887.0" y="594.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:433" />
+          <CubicDetachedVertex x="887.0" y="602.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:434" />
+          <CubicDetachedVertex x="365.0" y="602.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:435" />
+        </PointsPath>
+        <Fill name="Fill" id="0:436">
+          <SolidColor colorValue="FF8FB5BC" name="Original SVG color" id="0:437" />
+        </Fill>
+      </Shape>
+      <Shape name="Background 20" opacity="0.75" id="0:422">
+        <PointsPath name="Editable contour" isClosed="true" isClockwise="true" id="0:423">
+          <CubicDetachedVertex x="365.0" y="567.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:424" />
+          <CubicDetachedVertex x="887.0" y="567.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:425" />
+          <CubicDetachedVertex x="887.0" y="575.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:426" />
+          <CubicDetachedVertex x="365.0" y="575.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:427" />
+        </PointsPath>
+        <Fill name="Fill" id="0:428">
+          <SolidColor colorValue="FF8FB5BC" name="Original SVG color" id="0:429" />
+        </Fill>
+      </Shape>
+      <Shape name="Background 19" opacity="0.75" id="0:414">
+        <PointsPath name="Editable contour" isClosed="true" isClockwise="true" id="0:415">
+          <CubicDetachedVertex x="365.0" y="540.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:416" />
+          <CubicDetachedVertex x="887.0" y="540.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:417" />
+          <CubicDetachedVertex x="887.0" y="548.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:418" />
+          <CubicDetachedVertex x="365.0" y="548.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:419" />
+        </PointsPath>
+        <Fill name="Fill" id="0:420">
+          <SolidColor colorValue="FF8FB5BC" name="Original SVG color" id="0:421" />
+        </Fill>
+      </Shape>
+      <Shape name="Background 18" opacity="0.75" id="0:406">
+        <PointsPath name="Editable contour" isClosed="true" isClockwise="true" id="0:407">
+          <CubicDetachedVertex x="365.0" y="513.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:408" />
+          <CubicDetachedVertex x="887.0" y="513.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:409" />
+          <CubicDetachedVertex x="887.0" y="521.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:410" />
+          <CubicDetachedVertex x="365.0" y="521.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:411" />
+        </PointsPath>
+        <Fill name="Fill" id="0:412">
+          <SolidColor colorValue="FF8FB5BC" name="Original SVG color" id="0:413" />
+        </Fill>
+      </Shape>
+      <Shape name="Background 17" opacity="0.75" id="0:398">
+        <PointsPath name="Editable contour" isClosed="true" isClockwise="true" id="0:399">
+          <CubicDetachedVertex x="365.0" y="486.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:400" />
+          <CubicDetachedVertex x="887.0" y="486.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:401" />
+          <CubicDetachedVertex x="887.0" y="494.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:402" />
+          <CubicDetachedVertex x="365.0" y="494.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:403" />
+        </PointsPath>
+        <Fill name="Fill" id="0:404">
+          <SolidColor colorValue="FF8FB5BC" name="Original SVG color" id="0:405" />
+        </Fill>
+      </Shape>
+      <Shape name="Background 16" opacity="0.75" id="0:390">
+        <PointsPath name="Editable contour" isClosed="true" isClockwise="true" id="0:391">
+          <CubicDetachedVertex x="365.0" y="459.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:392" />
+          <CubicDetachedVertex x="887.0" y="459.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:393" />
+          <CubicDetachedVertex x="887.0" y="467.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:394" />
+          <CubicDetachedVertex x="365.0" y="467.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:395" />
+        </PointsPath>
+        <Fill name="Fill" id="0:396">
+          <SolidColor colorValue="FF8FB5BC" name="Original SVG color" id="0:397" />
+        </Fill>
+      </Shape>
+      <Shape name="Background 15" opacity="0.75" id="0:382">
+        <PointsPath name="Editable contour" isClosed="true" isClockwise="true" id="0:383">
+          <CubicDetachedVertex x="365.0" y="432.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:384" />
+          <CubicDetachedVertex x="887.0" y="432.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:385" />
+          <CubicDetachedVertex x="887.0" y="440.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:386" />
+          <CubicDetachedVertex x="365.0" y="440.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:387" />
+        </PointsPath>
+        <Fill name="Fill" id="0:388">
+          <SolidColor colorValue="FF8FB5BC" name="Original SVG color" id="0:389" />
+        </Fill>
+      </Shape>
+      <Shape name="Background 14" opacity="0.75" id="0:374">
+        <PointsPath name="Editable contour" isClosed="true" isClockwise="true" id="0:375">
+          <CubicDetachedVertex x="365.0" y="405.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:376" />
+          <CubicDetachedVertex x="887.0" y="405.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:377" />
+          <CubicDetachedVertex x="887.0" y="413.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:378" />
+          <CubicDetachedVertex x="365.0" y="413.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:379" />
+        </PointsPath>
+        <Fill name="Fill" id="0:380">
+          <SolidColor colorValue="FF8FB5BC" name="Original SVG color" id="0:381" />
+        </Fill>
+      </Shape>
+      <Shape name="Background 13" opacity="0.75" id="0:366">
+        <PointsPath name="Editable contour" isClosed="true" isClockwise="true" id="0:367">
+          <CubicDetachedVertex x="365.0" y="378.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:368" />
+          <CubicDetachedVertex x="887.0" y="378.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:369" />
+          <CubicDetachedVertex x="887.0" y="386.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:370" />
+          <CubicDetachedVertex x="365.0" y="386.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:371" />
+        </PointsPath>
+        <Fill name="Fill" id="0:372">
+          <SolidColor colorValue="FF8FB5BC" name="Original SVG color" id="0:373" />
+        </Fill>
+      </Shape>
+      <Shape name="Background 12" opacity="0.75" id="0:358">
+        <PointsPath name="Editable contour" isClosed="true" isClockwise="true" id="0:359">
+          <CubicDetachedVertex x="365.0" y="351.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:360" />
+          <CubicDetachedVertex x="887.0" y="351.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:361" />
+          <CubicDetachedVertex x="887.0" y="359.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:362" />
+          <CubicDetachedVertex x="365.0" y="359.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:363" />
+        </PointsPath>
+        <Fill name="Fill" id="0:364">
+          <SolidColor colorValue="FF8FB5BC" name="Original SVG color" id="0:365" />
+        </Fill>
+      </Shape>
+      <Shape name="Background 11" opacity="0.75" id="0:350">
+        <PointsPath name="Editable contour" isClosed="true" isClockwise="true" id="0:351">
+          <CubicDetachedVertex x="365.0" y="324.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:352" />
+          <CubicDetachedVertex x="887.0" y="324.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:353" />
+          <CubicDetachedVertex x="887.0" y="332.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:354" />
+          <CubicDetachedVertex x="365.0" y="332.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:355" />
+        </PointsPath>
+        <Fill name="Fill" id="0:356">
+          <SolidColor colorValue="FF8FB5BC" name="Original SVG color" id="0:357" />
+        </Fill>
+      </Shape>
+      <Shape name="Background 10" opacity="0.75" id="0:342">
+        <PointsPath name="Editable contour" isClosed="true" isClockwise="true" id="0:343">
+          <CubicDetachedVertex x="365.0" y="297.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:344" />
+          <CubicDetachedVertex x="887.0" y="297.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:345" />
+          <CubicDetachedVertex x="887.0" y="305.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:346" />
+          <CubicDetachedVertex x="365.0" y="305.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:347" />
+        </PointsPath>
+        <Fill name="Fill" id="0:348">
+          <SolidColor colorValue="FF8FB5BC" name="Original SVG color" id="0:349" />
+        </Fill>
+      </Shape>
+      <Shape name="Background 09" opacity="0.75" id="0:334">
+        <PointsPath name="Editable contour" isClosed="true" isClockwise="true" id="0:335">
+          <CubicDetachedVertex x="365.0" y="270.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:336" />
+          <CubicDetachedVertex x="887.0" y="270.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:337" />
+          <CubicDetachedVertex x="887.0" y="278.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:338" />
+          <CubicDetachedVertex x="365.0" y="278.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:339" />
+        </PointsPath>
+        <Fill name="Fill" id="0:340">
+          <SolidColor colorValue="FF8FB5BC" name="Original SVG color" id="0:341" />
+        </Fill>
+      </Shape>
+      <Shape name="Background 08" opacity="0.75" id="0:326">
+        <PointsPath name="Editable contour" isClosed="true" isClockwise="true" id="0:327">
+          <CubicDetachedVertex x="365.0" y="245.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:328" />
+          <CubicDetachedVertex x="887.0" y="245.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:329" />
+          <CubicDetachedVertex x="887.0" y="251.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:330" />
+          <CubicDetachedVertex x="365.0" y="251.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:331" />
+        </PointsPath>
+        <Fill name="Fill" id="0:332">
+          <SolidColor colorValue="FF8FB5BC" name="Original SVG color" id="0:333" />
+        </Fill>
+      </Shape>
+      <Shape name="Background 07" opacity="1" id="0:318">
+        <PointsPath name="Editable contour" isClosed="true" isClockwise="true" id="0:319">
+          <CubicDetachedVertex x="358.0" y="235.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:320" />
+          <CubicDetachedVertex x="888.0" y="235.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:321" />
+          <CubicDetachedVertex x="888.0" y="760.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:322" />
+          <CubicDetachedVertex x="358.0" y="760.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:323" />
+        </PointsPath>
+        <Fill name="Fill" id="0:324">
+          <SolidColor colorValue="FF4B7884" name="Original SVG color" id="0:325" />
+        </Fill>
+      </Shape>
+      <Shape name="Background 06" opacity="1" id="0:308">
+        <PointsPath name="Editable contour" isClosed="true" isClockwise="true" id="0:309">
+          <CubicDetachedVertex x="326.0" y="800.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:310" />
+          <CubicDetachedVertex x="914.0" y="800.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:311" />
+          <CubicDetachedVertex x="914.0" y="1016.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:312" />
+          <CubicDetachedVertex x="326.0" y="1016.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:313" />
+        </PointsPath>
+        <Fill name="Fill" id="0:314">
+          <LinearGradient name="glass" startX="326.0" startY="800.0" endX="326.0" endY="1016.0" id="0:315">
+            <GradientStop colorValue="FF446E79" position="0" id="0:316" />
+            <GradientStop colorValue="FF658F9B" position="1" id="0:317" />
+          </LinearGradient>
+        </Fill>
+      </Shape>
+      <Shape name="Background 05" opacity=".7" id="0:300">
+        <PointsPath name="Editable contour" isClosed="true" isClockwise="true" id="0:301">
+          <CubicDetachedVertex x="295.0" y="195.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:302" />
+          <CubicDetachedVertex x="326.0" y="195.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:303" />
+          <CubicDetachedVertex x="326.0" y="1019.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:304" />
+          <CubicDetachedVertex x="295.0" y="1019.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:305" />
+        </PointsPath>
+        <Fill name="Fill" id="0:306">
+          <SolidColor colorValue="FFD8C7AE" name="Original SVG color" id="0:307" />
+        </Fill>
+      </Shape>
+      <Shape name="Background 04" opacity="1" id="0:292">
+        <PointsPath name="Editable contour" isClosed="true" isClockwise="true" id="0:293">
+          <CubicDetachedVertex x="294.0" y="195.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:294" />
+          <CubicDetachedVertex x="933.0" y="195.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:295" />
+          <CubicDetachedVertex x="933.0" y="1017.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:296" />
+          <CubicDetachedVertex x="294.0" y="1017.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:297" />
+        </PointsPath>
+        <Fill name="Fill" id="0:298">
+          <SolidColor colorValue="FFFBF2E2" name="Original SVG color" id="0:299" />
+        </Fill>
+      </Shape>
+      <Shape name="Background 03" opacity="1" id="0:284">
+        <PointsPath name="Editable contour" isClosed="true" isClockwise="true" id="0:285">
+          <CubicDetachedVertex x="277.0" y="174.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:286" />
+          <CubicDetachedVertex x="962.0" y="174.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:287" />
+          <CubicDetachedVertex x="962.0" y="1028.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:288" />
+          <CubicDetachedVertex x="277.0" y="1028.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:289" />
+        </PointsPath>
+        <Fill name="Fill" id="0:290">
+          <SolidColor colorValue="FFF3E8D5" name="Original SVG color" id="0:291" />
+        </Fill>
+      </Shape>
+      <Shape name="Background 02" opacity=".58" id="0:258">
+        <PointsPath name="Editable contour" isClosed="true" isClockwise="true" id="0:259">
+          <CubicDetachedVertex x="243.0" y="130.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:260" />
+          <CubicDetachedVertex x="259.0" y="114.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:261" />
+          <CubicDetachedVertex x="985.0" y="114.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:262" />
+          <CubicDetachedVertex x="985.0" y="163.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:263" />
+          <CubicDetachedVertex x="966.0" y="182.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:264" />
+          <CubicDetachedVertex x="966.0" y="199.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:265" />
+          <CubicDetachedVertex x="949.0" y="199.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:266" />
+          <CubicDetachedVertex x="949.0" y="1027.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:267" />
+          <CubicDetachedVertex x="988.0" y="1027.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:268" />
+          <CubicDetachedVertex x="988.0" y="1070.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:269" />
+          <CubicDetachedVertex x="964.0" y="1070.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:270" />
+          <CubicDetachedVertex x="964.0" y="1105.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:271" />
+          <CubicDetachedVertex x="950.0" y="1124.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:272" />
+          <CubicDetachedVertex x="261.0" y="1124.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:273" />
+          <CubicDetachedVertex x="261.0" y="1089.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:274" />
+          <CubicDetachedVertex x="237.0" y="1089.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:275" />
+          <CubicDetachedVertex x="237.0" y="1031.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:276" />
+          <CubicDetachedVertex x="258.0" y="1016.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:277" />
+          <CubicDetachedVertex x="258.0" y="198.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:278" />
+          <CubicDetachedVertex x="260.0" y="198.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:279" />
+          <CubicDetachedVertex x="260.0" y="164.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:280" />
+          <CubicDetachedVertex x="242.0" y="164.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:281" />
+        </PointsPath>
+        <Fill name="Fill" id="0:282">
+          <SolidColor colorValue="FF5A9D9B" name="Original SVG color" id="0:283" />
+        </Fill>
+      </Shape>
+      <Shape name="Background 01" opacity="1" id="0:248">
+        <PointsPath name="Editable contour" isClosed="true" isClockwise="true" id="0:249">
+          <CubicDetachedVertex x="0.0" y="0.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:250" />
+          <CubicDetachedVertex x="1280.0" y="0.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:251" />
+          <CubicDetachedVertex x="1280.0" y="1280.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:252" />
+          <CubicDetachedVertex x="0.0" y="1280.0" inRotation="0.0" inDistance="0.0" outRotation="0.0" outDistance="0.0" id="0:253" />
+        </PointsPath>
+        <Fill name="Fill" id="0:254">
+          <RadialGradient name="wall" startX="640.0" startY="640.0" endX="1280.0" endY="640.0" id="0:255">
+            <GradientStop colorValue="FFC9F0E9" position="0" id="0:256" />
+            <GradientStop colorValue="FFB6E6E2" position="1" id="0:257" />
+          </RadialGradient>
+        </Fill>
+      </Shape>
+    </Node>
+    <RootBone id="0:40" name="TailRoot (fixed)" x="480" y="1000" length="80" rotation="3.141592653589793">
+      <Bone id="0:41" name="TailMiddle" length="80" rotation="0">
+        <Bone id="0:42" name="TailTip" length="55" rotation="0" />
+      </Bone>
+    </RootBone>
+    <StateMachine id="0:7" name="CatStateMachine">
+      <StateMachineLayer name="Sleeping" id="0:849">
+        <AnyState x="200" y="-120" id="0:850" />
+        <ExitState x="400" y="-120" id="0:851" />
+        <EntryState x="0" y="0" id="0:852">
+          <StateTransition stateToId="0:12" id="0:853" />
+        </EntryState>
+        <AnimationState id="0:12" animationId="0:6" x="200" y="0" />
+      </StateMachineLayer>
+    </StateMachine>
+    <LinearAnimation id="0:6" name="Idle" duration="180" fps="60" loopValue="loop">
+      <KeyedObject objectId="0:41" id="0:854">
+        <KeyedProperty propertyKey="15" id="0:855">
+          <KeyFrameDouble frame="0" value="0" interpolationType="cubic" id="0:856">
+            <CubicEaseInterpolator x1="0.42" y1="0" x2="0.58" y2="1" id="0:857" />
+          </KeyFrameDouble>
+          <KeyFrameDouble frame="90" value="0.14" interpolationType="cubic" id="0:858">
+            <CubicEaseInterpolator x1="0.42" y1="0" x2="0.58" y2="1" id="0:859" />
+          </KeyFrameDouble>
+          <KeyFrameDouble frame="180" value="0" interpolationType="cubic" id="0:860">
+            <CubicEaseInterpolator x1="0.42" y1="0" x2="0.58" y2="1" id="0:861" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+      <KeyedObject objectId="0:42" id="0:862">
+        <KeyedProperty propertyKey="15" id="0:863">
+          <KeyFrameDouble frame="0" value="0" interpolationType="cubic" id="0:864">
+            <CubicEaseInterpolator x1="0.42" y1="0" x2="0.58" y2="1" id="0:865" />
+          </KeyFrameDouble>
+          <KeyFrameDouble frame="90" value="0.26" interpolationType="cubic" id="0:866">
+            <CubicEaseInterpolator x1="0.42" y1="0" x2="0.58" y2="1" id="0:867" />
+          </KeyFrameDouble>
+          <KeyFrameDouble frame="180" value="0" interpolationType="cubic" id="0:868">
+            <CubicEaseInterpolator x1="0.42" y1="0" x2="0.58" y2="1" id="0:869" />
+          </KeyFrameDouble>
+        </KeyedProperty>
+      </KeyedObject>
+    </LinearAnimation>
+  </Artboard>
+</Rive>

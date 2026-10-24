@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="1280" viewBox="0 0 1280 1280">
+<defs><radialGradient id="wall"><stop stop-color="#C9F0E9"/><stop offset="1" stop-color="#B6E6E2"/></radialGradient><linearGradient id="trim" x2="0" y2="1"><stop stop-color="#FFF7E8"/><stop offset="1" stop-color="#E8D8C1"/></linearGradient><linearGradient id="glass" x2="0" y2="1"><stop stop-color="#446E79"/><stop offset="1" stop-color="#658F9B"/></linearGradient><pattern id="blinds" width="20" height="27" patternUnits="userSpaceOnUse"><rect width="20" height="27" fill="none"/><path d="M0 4H20" stroke="#8FB5BC" stroke-width="8" opacity=".75"/><path d="M0 12H20" stroke="#426B79" stroke-width="4" opacity=".55"/></pattern></defs>
+<rect width="1280" height="1280" fill="url(#wall)"/>
+<!-- architectural drop shadow -->
+<path d="M243 130 L259 114 H985 V163 L966 182 V199 H949 V1027 H988 V1070 H964 V1105 L950 1124 H261 V1089 H237 V1031 L258 1016 V198 H260 V164 H242Z" fill="#5A9D9B" opacity=".58"/>
+<!-- outer window frame -->
+<rect x="277" y="174" width="685" height="854" fill="#F3E8D5"/>
+<rect x="294" y="195" width="639" height="822" fill="#FBF2E2"/>
+<path d="M295 195H326V1019H295Z" fill="#D8C7AE" opacity=".7"/>
+<!-- glass and blinds -->
+<rect x="326" y="800" width="588" height="216" fill="url(#glass)"/>
+<rect x="358" y="235" width="530" height="525" fill="#4B7884"/>
+<rect x="365" y="245" width="522" height="514" fill="url(#blinds)"/>
+<path d="M358 235H888V246H365V759H358Z" fill="#335D69" opacity=".65"/>
+<!-- inner framing -->
+<rect x="326" y="761" width="588" height="40" fill="#FBF1E1"/>
+<rect x="326" y="795" width="588" height="7" fill="#C6B9A8" opacity=".8"/>
+<rect x="326" y="200" width="32" height="599" fill="#F6E9D5"/>
+<rect x="888" y="200" width="26" height="599" fill="#F6E9D5"/>
+<!-- top trim -->
+<rect x="258" y="115" width="728" height="48" fill="url(#trim)"/>
+<path d="M258 159H986V165H258Z" fill="#BBAA96"/>
+<rect x="278" y="165" width="686" height="32" fill="#F0E4D0"/>
+<path d="M278 194H964V201H278Z" fill="#BFB09D"/>
+<!-- lower sill -->
+<rect x="258" y="1023" width="729" height="47" fill="#FFF3E0"/>
+<path d="M258 1067H987V1074H258Z" fill="#B8A792"/>
+<rect x="279" y="1074" width="686" height="31" fill="#F1E6D4"/>
+<path d="M279 1103H965V1110H279Z" fill="#C1B29E"/>
+<!-- plant pot -->
+<path d="M805 959H902L891 1024H816Z" fill="#B85D46"/>
+<path d="M803 943H907V967H803Z" fill="#D17A5B"/>
+<path d="M806 966H902V974H806Z" fill="#9F5545" opacity=".55"/>
+<!-- stems -->
+<g stroke="#517C55" stroke-width="5" fill="none" stroke-linecap="round"><path d="M856 943Q838 882 797 839"/><path d="M856 943Q864 873 877 846"/><path d="M856 944Q893 894 932 871"/><path d="M851 945Q815 906 790 908"/><path d="M862 945Q898 919 915 932"/></g>
+<!-- foliage -->
+<g fill="#6F8F5A"><path d="M802 839Q775 833 768 863Q777 886 812 883Q832 854 802 839Z"/><path d="M799 882Q760 862 748 918Q756 942 790 933Q822 903 799 882Z"/><path d="M872 850Q858 825 838 841Q824 860 851 894Q881 886 872 850Z"/></g>
+<g fill="#89A964"><path d="M880 842Q897 825 910 846Q918 870 886 894Q861 874 880 842Z"/><path d="M926 858Q962 855 963 899Q951 920 922 904Q898 874 926 858Z"/><path d="M811 894Q835 887 839 913Q838 940 778 962Q770 924 811 894Z"/><path d="M919 909Q947 909 942 960Q914 956 891 928Q892 905 919 909Z"/></g>
+</svg>
