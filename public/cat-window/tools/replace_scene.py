@@ -69,25 +69,29 @@ def add(root,node,d,name):
     if not d:return
     n=copy.deepcopy(node);n.set('d',d);n.set('id',name);root.append(n)
 
-source=E.parse(ROOT/'assets/Scene-upload.svg').getroot()
-assert source.get('viewBox')=='0 0 2170 2170'
-background,body,tail=svg(),svg(),svg()
-E.SubElement(background,f'{{{NS}}}rect',width='1280',height='1280',fill='#BCE8E4',id='Opaque scene backing')
-cat={1,8,22,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40}
-for i,n in enumerate(source):
-    if i in cat:
-        contours=parse(n.get('d'))
-        # A one-pixel overlap under the fixed root avoids an AA seam.
-        add(body,n,' '.join(clip(v,c,480,False) for v,c in contours),f'CatBody source {i:03}')
-        add(tail,n,' '.join(clip(v,c,481,True) for v,c in contours),f'CatTail source {i:03}')
-    else:add(background,n,normalized(n.get('d')),f'Scene source {i:03}')
-    if i==0:
-        # Matching colors sampled from the source SVG's flat window regions.
-        # Source frame/sill paths remain above these backing rectangles.
-        for x,y,w,h,fill in [(288,207,686,927,'#F4EBDC'),(267,121,746,45,'#F3E9DA'),(267,1060,746,38,'#F3E9DA'),(289,1100,683,32,'#F3E9DA'),(338,824,602,230,'#5F8892'),(370,243,542,542,'#618A94'),(270,1000,18,57,'#BCE8E4'),(286,1000,53,57,'#EDE1CE'),(338,995,145,64,'#5F8892')]:
-            E.SubElement(background,f'{{{NS}}}rect',x=str(x),y=str(y),width=str(w),height=str(h),fill=fill,id=f'Tail backing {x}')
-for name,root in [('Background',background),('CatBody',body),('CatTail',tail)]:
-    E.indent(root);E.ElementTree(root).write(ROOT/'assets'/f'{name}.svg',encoding='unicode')
-(ROOT/'poster.svg').write_bytes((ROOT/'assets/Scene-upload.svg').read_bytes())
-(ROOT/'rig.json').write_text(json.dumps({'rootY':1030,'source':'Scene-upload.svg'},indent=2)+'\n')
-print('Prepared exact cubic scene layers; tail rig/timing retained')
+def prepare_scene():
+    source=E.parse(ROOT/'assets/Scene-upload.svg').getroot()
+    assert source.get('viewBox')=='0 0 2170 2170'
+    background,body,tail=svg(),svg(),svg()
+    E.SubElement(background,f'{{{NS}}}rect',width='1280',height='1280',fill='#BCE8E4',id='Opaque scene backing')
+    cat={1,8,22,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40}
+    for i,n in enumerate(source):
+        if i in cat:
+            contours=parse(n.get('d'))
+            # A one-pixel overlap under the fixed root avoids an AA seam.
+            add(body,n,' '.join(clip(v,c,480,False) for v,c in contours),f'CatBody source {i:03}')
+            add(tail,n,' '.join(clip(v,c,481,True) for v,c in contours),f'CatTail source {i:03}')
+        else:add(background,n,normalized(n.get('d')),f'Scene source {i:03}')
+        if i==0:
+            # Matching colors sampled from the source SVG's flat window regions.
+            # Source frame/sill paths remain above these backing rectangles.
+            for x,y,w,h,fill in [(288,207,686,927,'#F4EBDC'),(267,121,746,45,'#F3E9DA'),(267,1060,746,38,'#F3E9DA'),(289,1100,683,32,'#F3E9DA'),(338,824,602,230,'#5F8892'),(370,243,542,542,'#618A94'),(270,1000,18,57,'#BCE8E4'),(286,1000,53,57,'#EDE1CE'),(338,995,145,64,'#5F8892')]:
+                E.SubElement(background,f'{{{NS}}}rect',x=str(x),y=str(y),width=str(w),height=str(h),fill=fill,id=f'Tail backing {x}')
+    for name,root in [('Background',background),('CatBody',body),('CatTail',tail)]:
+        E.indent(root);E.ElementTree(root).write(ROOT/'assets'/f'{name}.svg',encoding='unicode')
+    (ROOT/'poster.svg').write_bytes((ROOT/'assets/Scene-upload.svg').read_bytes())
+    (ROOT/'rig.json').write_text(json.dumps({'rootY':1030,'source':'Scene-upload.svg'},indent=2)+'\n')
+    print('Prepared exact cubic scene layers; tail rig/timing retained')
+
+if __name__ == '__main__':
+    prepare_scene()

@@ -1,7 +1,7 @@
 """Clean the traced illustration into simple native vectors at the same coordinates.
 
 Preserves the scene palette/composition and existing tail rig. Window geometry
-uses exact straight lines; organic contours use a few continuous cubic curves.
+uses exact straight lines; plant contours use a few continuous cubic curves; the cat uses the supplied SVG.
 The supplied SVG remains untouched in assets/Scene-upload.svg for reference.
 """
 from pathlib import Path
@@ -50,15 +50,16 @@ path(bg,'M827 988 L840 988 L850 1053 L839 1053Z','#A65D45','Pot left shading')
 path(bg,'M825 970 L932 970 L932 992 L825 992Z','#CD755A','Pot rim')
 path(bg,'M825 970 L836 970 L833 992 L825 992Z','#A65D45','Pot rim side')
 path(bg,'M836 992 L932 992 L931 997 L837 997Z','#A65D45','Pot rim shadow')
-# Cat: no added facial features; retain the sleeping pose and cream/tan palette.
-path(body,'M470 1017 C495 1006 522 985 548 976 C574 964 596 972 613 975 C636 980 653 979 666 987 C674 973 685 961 699 958 C706 953 709 952 713 961 C728 953 743 944 757 942 L753 968 C761 977 767 989 767 1003 C773 1016 782 1030 784 1047 C770 1052 752 1047 738 1035 C728 1045 718 1057 706 1057 C692 1059 681 1049 674 1041 C649 1057 623 1058 596 1057 C561 1058 534 1053 508 1054 L470 1055Z','#F7EEDE','Smooth sleeping body')
-path(body,'M470 1041 C497 1039 523 1027 546 1023 C567 1018 586 1027 607 1034 C630 1043 653 1049 673 1041 C683 1052 696 1059 706 1057 C718 1057 730 1045 738 1035 C753 1048 771 1052 784 1047 L786 1052 C766 1055 751 1052 740 1047 C727 1057 714 1062 704 1060 C690 1060 681 1056 675 1051 C651 1057 623 1058 596 1057 C561 1058 534 1053 508 1054 L470 1055Z','#E8CFB3','Smooth body underside')
-path(body,'M672 989 C681 973 695 965 714 963 C727 954 742 946 757 942 L752 969 C760 977 767 989 767 1002 L771 995 C772 1003 769 1008 768 1011 C775 1021 782 1035 784 1047 C765 1052 751 1046 738 1035 C727 1048 717 1056 706 1057 C693 1058 683 1049 677 1038 C682 1024 681 1007 672 989Z','#F7EEDE','Smooth head and paws')
-path(body,'M735 958 C741 952 748 947 754 946 L749 968Z','#E8CFB3','Inner ear')
-for i,d in enumerate(['M690 969 C680 955 670 950 657 949','M700 963 C694 949 688 940 681 934','M709 963 C705 950 701 943 697 939']):
- path(body,d,'none',f'Whisker {i+1}',stroke='#F7EEDE',stroke_width=2,stroke_linecap='round')
-path(tail,'M481 1014 C451 1020 420 1018 393 1019 C369 1019 349 1023 331 1019 C306 1016 281 1031 274 1046 C272 1054 289 1057 307 1057 C340 1058 371 1051 401 1054 C427 1056 456 1055 481 1053Z','#F7EEDE','Smooth tail silhouette')
-path(tail,'M274 1046 C292 1041 311 1037 334 1039 C360 1039 380 1043 402 1042 C431 1045 456 1041 481 1039 L481 1053 C455 1055 429 1056 401 1054 C370 1051 342 1058 307 1057 C290 1057 275 1054 274 1046Z','#E8CFB3','Smooth tail underside')
+# Use only the cat from the supplied full-scene SVG. Window and plant above
+# stay clean; the original cat contours and edge details are retained exactly.
+from replace_scene import parse, clip, add as add_original
+source=E.parse(ROOT/'assets/Scene-upload.svg').getroot()
+cat_indices={1,8,22,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40}
+for index,node in enumerate(source):
+ if index not in cat_indices:continue
+ contours=parse(node.get('d'))
+ add_original(body,node,' '.join(clip(v,c,480,False) for v,c in contours),f'CatBody source {index:03}')
+ add_original(tail,node,' '.join(clip(v,c,481,True) for v,c in contours),f'CatTail source {index:03}')
 for name,root in [('Background',bg),('CatBody',body),('CatTail',tail)]:
  E.indent(root);E.ElementTree(root).write(ROOT/'assets'/f'{name}.svg',encoding='unicode')
 poster=svg()
@@ -66,4 +67,4 @@ for name,root in [('Background',bg),('CatTail',tail),('CatBody',body)]:
  group=add(poster,'g',id=name);group.extend(list(root))
 E.indent(poster);E.ElementTree(poster).write(ROOT/'poster.svg',encoding='unicode')
 (ROOT/'rig.json').write_text(json.dumps({'rootY':1030,'source':'clean_scene.py'},indent=2)+'\n')
-print('Cleaned window geometry, organic curves, and matching static poster')
+print('Clean window/plant + original uploaded cat; matching static poster')
