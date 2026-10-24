@@ -13,8 +13,8 @@ pixel validation {
   motionPixels: 2826,
   motionBounds: [ 262, 978, 452, 1031 ],
   motionOutsideTail: 0,
-  originalMeanChannelError: 0.11217681884765625,
-  originalChannelsDiffOver8: 2726,
+  originalMeanChannelError: 0.11397903442382812,
+  originalChannelsDiffOver8: 2962,
   originalMaxChannelError: 165
 }
 initial reduced motion asset requests []

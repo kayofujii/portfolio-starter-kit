@@ -1,7 +1,7 @@
 # Sleeping cat on a windowsill
 
 `cat-window.riv` is a successfully compiled and browser-validated Rive runtime
-asset (16,145 bytes). The animation uses native editable vector geometry and
+asset (28,576 bytes). The animation uses native editable vector geometry and
 bone skinning, with no embedded scripts, textures, fonts, or external assets.
 
 ## Files
@@ -9,11 +9,13 @@ bone skinning, with no embedded scripts, textures, fonts, or external assets.
 - `cat-window.riv`: deployable runtime asset.
 - `index.html`, `style.css`, `cat-window.js`: responsive integration.
 - `vendor/`: official MIT-licensed `@rive-app/webgl2` 2.46.0, including both WASM variants.
-- `assets/`: original background/tail, refined `CatBody.svg`, and the unchanged
-  newly supplied `CatBody-upload.svg` as an edit reference.
+- `assets/`: window background with replacement plant and shadows, original
+  tail, refined `CatBody.svg`, plus unchanged `CatBody-upload.svg` and
+  `Plant-upload.svg` edit references.
 - `poster.svg`: original SVGs composed in their shared coordinate space; static fallback.
 - `scene.rml`, `rive.yaml`: editable Rive CLI project source.
 - `tools/build_scene.py`: reproducible SVG-to-native-vector conversion and rig construction.
+- `tools/update_plant.py`: restores the uploaded plant to the scene and adds vector shadows.
 - `validation/`: CLI captures, scene inspection, browser screenshots and results.
 
 ## Preview the website
@@ -50,6 +52,12 @@ RML lists these in reverse because Rive draws the first sibling on top.
 
 The cat body was refined against the supplied reference: softer head and paw
 contours, finer whiskers, a smaller inner ear and restrained underside shading.
+The supplied plant is placed at (780, 826) with uniform scale 1.05, preserving
+its colors and proportions. A muted cast shadow offsets left 13 px/down 7 px;
+a 16% opaque contact shadow anchors the pot to the sill. Both are editable
+vector paths, without runtime blur or image filters. To regenerate the plant
+and poster, run `python3 tools/update_plant.py` before rebuilding the scene.
+
 The uploaded body used a different artboard; its coordinates were restored by
 adding 546 to Y, retaining the original scene alignment and tail overlap.
 
@@ -134,7 +142,7 @@ Export the runtime asset again after editing and retest the integration.
 - The post-entry full-loop capture at CLI step 181 matches the resting capture
   pixel-for-pixel (zero differing channels). Entry consumes the first CLI step.
 - Resting render compared with the updated SVG composite: mean absolute
-  channel difference 0.112 on a 0–255 scale. Different renderers produce small
+  channel difference 0.114 on a 0–255 scale. Different renderers produce small
   antialiasing/gradient rounding differences; this is not a pixel-identical SVG
   renderer conversion.
 
@@ -143,4 +151,4 @@ Primary references: [Rive CLI](https://rive.app/docs/cli/overview),
 [runtime API](https://rive.app/docs/runtimes/web/rive-parameters).
 
 Runtime asset SHA-256:
-`38368504ce3ee9c7cdb7ada21e166470ded23d123a2b89f68c89d543b86fd783`
+`c10cad73a6f70820685c7632b861385fd9024dfbeb7e3e41af9d1f593c4b7598`
