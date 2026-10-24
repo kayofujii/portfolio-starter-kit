@@ -6,11 +6,13 @@ rectangles, preserving its global user-space phase. No artwork is rasterized.
 """
 from pathlib import Path
 import math
+import json
 import re
 import xml.etree.ElementTree as E
 
 ROOT = Path(__file__).resolve().parents[1]
 counter = 100
+RIG_Y = json.loads((ROOT/"rig.json").read_text())["rootY"] if (ROOT/"rig.json").exists() else 1000
 
 def element(tag, parent=None, **attrs):
     global counter
@@ -89,7 +91,7 @@ def add_path(shape, verts, closed, tail):
     if tail:
         skin = element('Skin', path, name='Tail vector skin')
         for n,x in enumerate((480,400,320)):
-            element('Tendon', skin, boneId=f'0:{40+n}', xx=-1, xy=0, yx=0, yy=-1, tx=x, ty=1000, name=('Root','Middle','Tip')[n])
+            element('Tendon', skin, boneId=f'0:{40+n}', xx=-1, xy=0, yx=0, yy=-1, tx=x, ty=RIG_Y, name=('Root','Middle','Tip')[n])
 
 def color(value): return 'FF'+value.removeprefix('#').upper()
 
@@ -151,7 +153,7 @@ element('LayoutComponentStyle',art,id='0:5',name='Artboard Style')
 translate('CatBody.svg','CatBody')
 translate('CatTail.svg','CatTail',tail=True)
 translate('Background.svg','Background')
-root=element('RootBone',art,id='0:40',name='TailRoot (fixed)',x=480,y=1000,length=80,rotation=math.pi)
+root=element('RootBone',art,id='0:40',name='TailRoot (fixed)',x=480,y=RIG_Y,length=80,rotation=math.pi)
 mid=element('Bone',root,id='0:41',name='TailMiddle',length=80,rotation=0)
 element('Bone',mid,id='0:42',name='TailTip',length=55,rotation=0)
 sm=element('StateMachine',art,id='0:7',name='CatStateMachine')

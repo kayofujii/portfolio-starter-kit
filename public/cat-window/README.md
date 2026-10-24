@@ -1,154 +1,110 @@
-# Sleeping cat on a windowsill
+# Sleeping cat — current scene
 
-`cat-window.riv` is a successfully compiled and browser-validated Rive runtime
-asset (28,576 bytes). The animation uses native editable vector geometry and
-bone skinning, with no embedded scripts, textures, fonts, or external assets.
+The current illustration is the supplied `Frame 2609945 (1).svg`, preserved as
+`assets/Scene-upload.svg`. It replaces the entire previous scene, including the
+window, cat and plant. No prior replacement plant is overlaid on this drawing.
 
-## Files
+`cat-window.riv` is compiled with the official Rive CLI 1.7.0 and contains native
+editable vector paths and bone skinning, without embedded scripts or images.
+Runtime file size: 110,111 bytes. The web integration uses the self-hosted,
+MIT-licensed official `@rive-app/webgl2` 2.46.0 runtime.
 
-- `cat-window.riv`: deployable runtime asset.
-- `index.html`, `style.css`, `cat-window.js`: responsive integration.
-- `vendor/`: official MIT-licensed `@rive-app/webgl2` 2.46.0, including both WASM variants.
-- `assets/`: window background with replacement plant and shadows, original
-  tail, refined `CatBody.svg`, plus unchanged `CatBody-upload.svg` and
-  `Plant-upload.svg` edit references.
-- `poster.svg`: original SVGs composed in their shared coordinate space; static fallback.
-- `scene.rml`, `rive.yaml`: editable Rive CLI project source.
-- `tools/build_scene.py`: reproducible SVG-to-native-vector conversion and rig construction.
-- `tools/update_plant.py`: restores the uploaded plant to the scene and adds vector shadows.
-- `validation/`: CLI captures, scene inspection, browser screenshots and results.
+## Preview
 
-## Preview the website
-
-Serve this directory over HTTP (opening the HTML through `file://` will not load
-WASM correctly):
-
-```sh
-cd /Users/kayofujii/Development/portfolio-starter-kit/public/cat-window
-python3 -m http.server 8765 --bind 127.0.0.1
-```
-
-Open http://127.0.0.1:8765/. If the existing Next.js project is running, this
-example is also available at `/cat-window/index.html` on that server.
-
-Copy the example directory to any static host to deploy it. For a smaller
-deployment, omit `assets/`, `tools/`, `validation/`, `build/`, and CLI source
-files; keep the runtime file, poster, HTML, CSS, JS and vendor files together.
-Serve WASM as `application/wasm`. Enable gzip/Brotli, and use versioned URLs
-before adding immutable cache headers. No third-party CDN is contacted.
-
-The canvas preserves the square 1280 × 1280 artboard using `Fit.Contain` and
-a square CSS container. The named state machine automatically plays `Idle`.
-Pixel density is capped at 2. Rendering pauses offscreen and in hidden tabs;
-the pause button also stops rendering. Reduced motion shows the original
-resting SVG, avoids loading the `.riv` and WASM initially, and responds to live
-preference changes. Loading failures and disabled JavaScript retain the still.
-
-## Rig and animation
-
-The original shared coordinate space is retained without scaling or recentering.
-Compositing order, back to front: `Background`, `CatTail`, `CatBody`.
-RML lists these in reverse because Rive draws the first sibling on top.
-
-The cat body was refined against the supplied reference: softer head and paw
-contours, finer whiskers, a smaller inner ear and restrained underside shading.
-The supplied plant is placed at (780, 826) with uniform scale 1.05, preserving
-its colors and proportions. A muted cast shadow offsets left 13 px/down 7 px;
-a 16% opaque contact shadow anchors the pot to the sill. Both are editable
-vector paths, without runtime blur or image filters. To regenerate the plant
-and poster, run `python3 tools/update_plant.py` before rebuilding the scene.
-
-The uploaded body used a different artboard; its coordinates were restored by
-adding 546 to Y, retaining the original scene alignment and tail overlap.
-
-SVG paths become native Rive paths. Cubic SVG curves are retained exactly.
-Quadratic curves convert mathematically
-to cubic curves; fills, strokes and gradients retain their original values.
-The SVG blinds pattern expands into native clipped rectangles. Every visible
-element can be edited after exporting the editor document; no layer is a bitmap.
-
-The tail has two separately skinned paths (cream silhouette and tan underside),
-bound to the same three-bone chain:
-
-| Bone | Bind origin | Peak local rotation | Animated |
-| --- | --- | --- | --- |
-| TailRoot | (480, 1000), points left | 180° bind orientation | No |
-| TailMiddle | (400, 1000) | +0.14 radians / 8.02° | Yes |
-| TailTip | (320, 1000) | +0.26 radians / 14.90° | Yes |
-
-Weights interpolate continuously along X, including independent cubic handles.
-Both contours use the same influence field. The fixed root stays covered by
-the stationary body. Neither the body nor background has keyed properties.
-
-`Idle`: 60 fps, 180 frames, loop enabled. At frames 0 and 180 both animated
-rotations are zero; at frame 90 they reach their peak. Both segments use
-cubic ease-in-out (0.42, 0, 0.58, 1), with zero endpoint velocity.
-`CatStateMachine` is the default state machine; its Entry transitions directly
-to an AnimationState referencing `Idle`. No runtime input is required.
-
-## Preview and rebuild with the official CLI
-
-Install the official CLI using the instructions at
-https://rive.app/docs/cli/overview. This project was built with version 1.7.0.
 From this directory:
 
 ```sh
-rive .                         # native preview, rebuilds as source changes
-rive . --verify                # compile validation
-rive inspect . --summary       # structure, wiring and skinning validation
-rive . --once                  # creates build/cat-window.riv
-cp build/cat-window.riv cat-window.riv
+python3 -m http.server 8765 --bind 127.0.0.1
 ```
 
-To regenerate RML from the original SVGs, run `python3 tools/build_scene.py`,
-then verify, inspect and rebuild. Regeneration replaces `scene.rml`, including
-hand edits. Keep later editor changes in the editor document or a separate
-source copy.
+Open http://127.0.0.1:8765/. In the portfolio, the same asset plays in the Contact
+footer. It loads when visible, pauses offscreen/in hidden tabs, provides a pause
+button and displays the original still SVG for reduced motion or load failure.
+The canvas uses `Fit.Contain`, a square container and a pixel-density cap of 2.
 
-## Rive Editor handoff — one manual authentication step remains
+## Source and animation
 
-**No `.rev` file is included.** The CLI reported `Not logged in` (exit 3)
-when editor export was attempted. The supported `.rev` export requires a
-Rive account session. The runtime `.riv` already works on the web: signing is
-unnecessary for this project because it contains no scripts.
+- `assets/Scene-upload.svg`: supplied illustration (only trailing whitespace normalized), 2170 × 2170.
+- `poster.svg`: byte-for-byte copy of that illustration, used as the fallback.
+- `assets/Background.svg`, `CatBody.svg`, `CatTail.svg`: generated aligned layers
+  in the common 1280 × 1280 coordinate system, uniformly scaled from the source.
+- `tools/replace_scene.py`: preserves the source cubic curves, separates the
+  tail using exact de Casteljau subdivision, and prepares those three layers.
+- `tools/build_scene.py`: converts the layers into native Rive paths and rig.
+- `rig.json`: current rig origin. `scene.rml` and `rive.yaml`: editable CLI source.
+- `validation/`: official CLI captures, inspection, browser results/screenshots.
+- Older `CatBody-upload.svg`, `Plant-upload.svg`, and `update_plant.py` remain
+  historical references; they are not used by the current scene build.
 
-After signing in, from this directory run:
+The supplied illustration has merged contours rather than separate cat/tail
+objects. The tail is extracted at X=480, with one pixel of overlap beneath the
+fixed root. Matching vector backing fills the original tail footprint and fine
+trace gaps, so the curl reveals the window without transparent cracks. The
+original drawing's vector contours, colors and proportions are retained.
+
+Compositing order, back to front: Background, CatTail, CatBody. The background
+and body have no keyed properties. Eight tail contours, including small edge
+details, share the same three-bone skin. The rig is aligned to the new drawing:
+root (480,1030), middle (400,1030), tip (320,1030), pointing left in bind pose.
+
+The movement is unchanged: `Idle` loops over 180 frames at 60 fps (3 seconds).
+At frames 0 and 180, the middle and tip rotations are zero. At frame 90 they
+reach +0.14 and +0.26 radians respectively. Each segment uses ease-in-out
+(0.42,0,0.58,1). The root stays fixed; shapes bend organically rather than
+rotating as one rigid tail. `CatStateMachine` enters `Idle` and plays continuously.
+
+## Rebuild and edit
+
+From this directory, with the official CLI installed:
+
+```sh
+python3 tools/replace_scene.py
+python3 tools/build_scene.py
+rive . --verify
+rive inspect . --summary
+rive . --once
+cp build/cat-window.riv cat-window.riv
+rive .                         # native live preview
+```
+
+Regeneration replaces generated layer SVGs and RML. Preserve hand edits before
+running it. Do not run the historical `update_plant.py` on the new whole scene.
+
+Editor document export requires a Rive account session. No `.rev` is included:
 
 ```sh
 rive login
 rive . --once --rev=cat-window.rev
 ```
 
-Then open/import `cat-window.rev` in the Rive Editor. Select `CatWindow`, switch
-to Animate, and select `Idle` or `CatStateMachine`. Paths, fills, bones, weights,
-keyframes and state-machine wiring are native editable objects. Confirm the
-rig at frames 0, 90 and 180, then save your editor document. No manual rigging
-or animation construction is required. The editor import itself has not been
-validated in this delivery because the authenticated export was unavailable.
+Open/import `cat-window.rev` in the Rive Editor. Select `CatWindow`, then `Idle`
+or `CatStateMachine` in Animate mode. Paths, colors, bones, weights and keys
+are editable native objects. No manual rigging is needed. Authenticated editor
+import has not been validated. Script signing is unnecessary: no scripts exist.
 
-If you change the illustration in the editor, update the static poster as well.
-Export the runtime asset again after editing and retest the integration.
+## Deploy
 
-## Validation completed
+Deploy `cat-window.riv`, `poster.svg`, `index.html`, `style.css`, `cat-window.js`
+and `vendor/` together for the standalone integration. The portfolio imports
+its runtime as a package and shares the WASM files under `vendor/`. Serve WASM
+as `application/wasm`, enable gzip/Brotli, and version URLs before using immutable
+cache headers. Source, tools and validation assets can be omitted from a minimal
+static deployment.
 
-- Official CLI verify and inspect: zero errors, zero warnings, no problems.
-- Compiled binary reimported by the CLI and loaded by the official web runtime.
-- Browser confirms `Idle`, `CatStateMachine` and 1280 × 1280 bounds.
-- 720 px desktop canvas and 351 px mobile canvas: no aspect distortion/overflow.
-- Pause/resume, reduced-motion preference changes, and initial reduced-motion
-  loading behavior checked in headless Chrome. No application errors.
-- Rest/curl pixel differences occur only within X 262–452, Y 978–1031;
-  there are zero changed pixels outside the tail region.
-- The post-entry full-loop capture at CLI step 181 matches the resting capture
-  pixel-for-pixel (zero differing channels). Entry consumes the first CLI step.
-- Resting render compared with the updated SVG composite: mean absolute
-  channel difference 0.114 on a 0–255 scale. Different renderers produce small
-  antialiasing/gradient rounding differences; this is not a pixel-identical SVG
-  renderer conversion.
+## Validation
 
-Primary references: [Rive CLI](https://rive.app/docs/cli/overview),
-[official web runtime](https://rive.app/docs/runtimes/web/web-js),
+Official CLI verification and inspection report zero errors/warnings. Resting,
+maximum-curl and post-entry full-loop frames were rendered with the official
+CLI. The file is also loaded by the official WebGL2 runtime in Chrome, with
+exported names `Idle`, `CatStateMachine`, and 1280 × 1280 artboard bounds.
+
+`validation/browser-results.txt` records responsive desktop/mobile behavior,
+pause/resume, live and initial reduced-motion checks, pixel differences, and
+page errors. CLI step 1 and step 181 are the same animation pose: Entry consumes
+the first step. Movement is confined to the tail; background and body stay still.
+
+SHA-256: `81b2c1e1ff9c043463e029e04efe95bfd3bf20d2d59116db355b118c1181bfd6`
+
+Official references: [CLI](https://rive.app/docs/cli/overview),
+[web runtime](https://rive.app/docs/runtimes/web/web-js),
 [runtime API](https://rive.app/docs/runtimes/web/rive-parameters).
-
-Runtime asset SHA-256:
-`c10cad73a6f70820685c7632b861385fd9024dfbeb7e3e41af9d1f593c4b7598`

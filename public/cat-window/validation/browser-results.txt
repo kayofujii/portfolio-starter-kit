@@ -10,12 +10,12 @@ runtime {
 pixel validation {
   loopSeamDifferingChannels: 0,
   loopSeamMaxChannelError: 0,
-  motionPixels: 2826,
-  motionBounds: [ 262, 978, 452, 1031 ],
+  motionPixels: 3927,
+  motionBounds: [ 270, 1003, 480, 1058 ],
   motionOutsideTail: 0,
-  originalMeanChannelError: 0.11397903442382812,
-  originalChannelsDiffOver8: 2962,
-  originalMaxChannelError: 165
+  originalMeanChannelError: 0.6336781311035157,
+  originalChannelsDiffOver8: 49786,
+  originalMaxChannelError: 255
 }
 initial reduced motion asset requests []
 errors []
