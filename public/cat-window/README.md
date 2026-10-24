@@ -1,13 +1,16 @@
 # Sleeping cat — current scene
 
-The current illustration is the supplied `Frame 2609945 (1).svg`, preserved as
-`assets/Scene-upload.svg`. It replaces the entire previous scene, including the
-window, cat and plant. No prior replacement plant is overlaid on this drawing.
+The supplied `Frame 2609945 (1).svg` is preserved as a reference in
+`assets/Scene-upload.svg`. The current scene cleans its traced geometry while
+retaining the composition, palette and sleeping pose. Window edges are straight,
+blind slats are evenly spaced, and the cat/plant contours use simple smooth
+curves without trace fragments or transparent cracks.
 
 `cat-window.riv` is compiled with the official Rive CLI 1.7.0 and contains native
 editable vector paths and bone skinning, without embedded scripts or images.
-Runtime file size: 110,111 bytes. The web integration uses the self-hosted,
-MIT-licensed official `@rive-app/webgl2` 2.46.0 runtime.
+Runtime file size: 13,565 bytes (previous traced version: 110,111 bytes).
+The web integration uses the self-hosted, MIT-licensed official
+`@rive-app/webgl2` 2.46.0 runtime.
 
 ## Preview
 
@@ -24,28 +27,28 @@ The canvas uses `Fit.Contain`, a square container and a pixel-density cap of 2.
 
 ## Source and animation
 
-- `assets/Scene-upload.svg`: supplied illustration (only trailing whitespace normalized), 2170 × 2170.
-- `poster.svg`: byte-for-byte copy of that illustration, used as the fallback.
-- `assets/Background.svg`, `CatBody.svg`, `CatTail.svg`: generated aligned layers
-  in the common 1280 × 1280 coordinate system, uniformly scaled from the source.
-- `tools/replace_scene.py`: preserves the source cubic curves, separates the
-  tail using exact de Casteljau subdivision, and prepares those three layers.
+- `assets/Scene-upload.svg`: supplied traced drawing, retained as a reference.
+- `assets/Background.svg`, `CatBody.svg`, `CatTail.svg`: cleaned editable layers
+  in the common 1280 × 1280 coordinate system.
+- `poster.svg`: matching cleaned static SVG, also suitable for standalone use.
+- `tools/clean_scene.py`: reproducible clean vector geometry; this is the active
+  source generator for the current illustration.
 - `tools/build_scene.py`: converts the layers into native Rive paths and rig.
-- `rig.json`: current rig origin. `scene.rml` and `rive.yaml`: editable CLI source.
-- `validation/`: official CLI captures, inspection, browser results/screenshots.
-- Older `CatBody-upload.svg`, `Plant-upload.svg`, and `update_plant.py` remain
-  historical references; they are not used by the current scene build.
-
-The supplied illustration has merged contours rather than separate cat/tail
-objects. The tail is extracted at X=480, with one pixel of overlap beneath the
-fixed root. Matching vector backing fills the original tail footprint and fine
-trace gaps, so the curl reveals the window without transparent cracks. The
-original drawing's vector contours, colors and proportions are retained.
+- `rig.json`: rig origin. `scene.rml` and `rive.yaml`: editable CLI source.
+- `validation/`: official CLI captures, inspection and browser results/screenshots.
+- `replace_scene.py`, `update_plant.py` and older upload SVGs remain historical
+  references; they are not used by the current scene build.
 
 Compositing order, back to front: Background, CatTail, CatBody. The background
-and body have no keyed properties. Eight tail contours, including small edge
-details, share the same three-bone skin. The rig is aligned to the new drawing:
-root (480,1030), middle (400,1030), tip (320,1030), pointing left in bind pose.
+and body have no keyed properties. Two continuous tail contours share the same
+three-bone skin. The root remains at (480,1030), middle at (400,1030) and tip at
+(320,1030), pointing left in bind pose. The root stays beneath the body with
+an overlap so it cannot open a gap.
+
+The cleanup reduces cubic vertices from 2,564 to 318 and removes the small
+trace fragments. Window trim and blinds use exact rectangular geometry, while
+organic shapes remain curved. Flat fills overlap beneath the underside shading
+to prevent antialiasing cracks. Muted cast and contact shadows retain depth.
 
 The movement is unchanged: `Idle` loops over 180 frames at 60 fps (3 seconds).
 At frames 0 and 180, the middle and tip rotations are zero. At frame 90 they
@@ -58,7 +61,7 @@ rotating as one rigid tail. `CatStateMachine` enters `Idle` and plays continuous
 From this directory, with the official CLI installed:
 
 ```sh
-python3 tools/replace_scene.py
+python3 tools/clean_scene.py
 python3 tools/build_scene.py
 rive . --verify
 rive inspect . --summary
@@ -68,7 +71,7 @@ rive .                         # native live preview
 ```
 
 Regeneration replaces generated layer SVGs and RML. Preserve hand edits before
-running it. Do not run the historical `update_plant.py` on the new whole scene.
+running it. Do not run the historical `replace_scene.py` or `update_plant.py` on the cleaned scene.
 
 Editor document export requires a Rive account session. No `.rev` is included:
 
@@ -103,7 +106,7 @@ pause/resume, live and initial reduced-motion checks, pixel differences, and
 page errors. CLI step 1 and step 181 are the same animation pose: Entry consumes
 the first step. Movement is confined to the tail; background and body stay still.
 
-SHA-256: `81b2c1e1ff9c043463e029e04efe95bfd3bf20d2d59116db355b118c1181bfd6`
+SHA-256: `58e54a5c1414ee6befc73863ce46d986b8d2880130e35f3e9f4269acfafd5bc9`
 
 Official references: [CLI](https://rive.app/docs/cli/overview),
 [web runtime](https://rive.app/docs/runtimes/web/web-js),
