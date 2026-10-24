@@ -126,7 +126,7 @@ export default function HeroVisual({ alt, className = '', locale = 'en' }: {
     : (paused ? 'Play animation' : 'Pause animation')
 
   return (
-    <div className={`group mx-auto flex w-[140px] shrink-0 flex-col items-center gap-2 sm:w-[170px] lg:mx-0 lg:w-[210px] xl:w-[240px] ${className}`}>
+    <div className={`group mx-auto flex w-[180px] shrink-0 flex-col items-center gap-2 sm:w-[220px] lg:mx-0 lg:w-[270px] xl:w-[300px] ${className}`}>
       <div ref={sceneRef} className="relative aspect-square w-full overflow-hidden rounded-xl" data-cat-animation={showAnimation ? 'ready' : 'still'}>
         <img
           src={`${ASSET_ROOT}/poster.svg`}
